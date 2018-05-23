@@ -1,17 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="row"
->
-  <div
-    className="col"
-  >
-    <h1
-      className="display-4"
-    >
-      Réservation
-    </h1>
-  </div>
+<div>
+  <h4>
+    Choix de votre préparation Maquillage
+  </h4>
 </div>
 `;

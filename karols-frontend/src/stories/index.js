@@ -24,10 +24,10 @@ storiesOf("Button", module)
     </Button>
   ))
 
-storiesOf("JumbotronExample", module).add("example of title", () => (
+storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
 
-storiesOf("PrestationLabel", module).add("just an example", () => (
+storiesOf("PrestationLabel", module).add("just an title", () => (
   <PrestationLabel />
 ))
