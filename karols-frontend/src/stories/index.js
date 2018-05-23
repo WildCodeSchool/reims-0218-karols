@@ -7,7 +7,7 @@ import JumbotronExample from "../components/JumbotronExample"
 import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
-import SelectPerson from "../components/SelectClient"
+import selectClient from "../components/SelectClient"
 
 import { Button, Welcome } from "@storybook/react/demo"
 
