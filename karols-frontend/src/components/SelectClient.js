@@ -1,12 +1,19 @@
 import React from "react"
-import { Label } from "reactstrap"
+import { Label, Input, FormGroup } from "reactstrap"
 
 const SelectClient = () => {
   return (
-    <Label for="SelectClient">
-      Select person :
-      <input type="number" step="1" value="0" min="0" max="14" />
-    </Label>
+    <FormGroup>
+      <Label for="select-person">Select person : </Label>
+      <Input
+        type="number"
+        id="select-person"
+        step="1"
+        value="0"
+        min="0"
+        max="14"
+      />
+    </FormGroup>
   )
 }
 
