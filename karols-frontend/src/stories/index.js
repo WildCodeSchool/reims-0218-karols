@@ -4,7 +4,12 @@ import { storiesOf } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
 import { linkTo } from "@storybook/addon-links"
 import JumbotronExample from "../components/JumbotronExample"
+<<<<<<< HEAD
 import ReservationTitle from "../components/ReservationTitle"
+=======
+import ListChoiceService from "../components/ListChoiceService"
+import Logo from "../components/Logo"
+>>>>>>> develop
 
 import { Button, Welcome } from "@storybook/react/demo"
 
@@ -28,7 +33,14 @@ storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
 
+<<<<<<< HEAD
 storiesOf("ReservationTitle", module).add(
   "The Reservation Title Component",
   () => <ReservationTitle />
 )
+=======
+storiesOf("ListChoiceService", module).add("just an example", () => (
+  <ListChoiceService />
+))
+storiesOf("Logo", module).add("Logo render", () => <Logo />)
+>>>>>>> develop
