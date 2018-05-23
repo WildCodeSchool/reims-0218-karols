@@ -8,7 +8,11 @@ import PrestationLabel from "../components/PrestationLabel"
 import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
+<<<<<<< HEAD
 import ChoiceService from "../components/ChoiceService"
+=======
+import InfoClient from "../components/InfoClient"
+>>>>>>> develop
 
 import { Button, Welcome } from "@storybook/react/demo"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -32,6 +36,8 @@ storiesOf("Button", module)
 storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
+
+storiesOf("InfoClient", module).add("just an example", () => <InfoClient />)
 
 storiesOf("PrestationLabel", module).add("just an title", () => (
   <PrestationLabel />
