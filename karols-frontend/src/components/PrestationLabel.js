@@ -4,7 +4,7 @@ export default class PrestationLabel extends React.Component {
   render() {
     return (
       <div>
-        <h4>Choix de votre préparation Maquillage</h4>
+        <p>Choix de votre préparation Maquillage</p>
       </div>
     )
   }
