@@ -12,7 +12,9 @@ exports[`renders correctly 1`] = `
         <h5
           className="card-title"
         >
-           Choix du service 
+           
+          Préparation
+           
         </h5>
       </div>
       <a
@@ -32,7 +34,9 @@ exports[`renders correctly 1`] = `
         <p
           className="card-text"
         >
-          Un petit descriptif du service ?
+           
+          Description Préparation
+           
         </p>
       </div>
       <div
@@ -58,7 +62,9 @@ exports[`renders correctly 1`] = `
         <h5
           className="card-title"
         >
-           Choix du service 
+           
+          Table
+           
         </h5>
       </div>
       <a
@@ -78,7 +84,9 @@ exports[`renders correctly 1`] = `
         <p
           className="card-text"
         >
-          Un petit descriptif du service ?
+           
+          Description Table
+           
         </p>
       </div>
       <div
@@ -104,7 +112,9 @@ exports[`renders correctly 1`] = `
         <h5
           className="card-title"
         >
-           Choix du service 
+           
+          Table + Préparation
+           
         </h5>
       </div>
       <a
@@ -124,7 +134,9 @@ exports[`renders correctly 1`] = `
         <p
           className="card-text"
         >
-          Un petit descriptif du service ?
+           
+          Description Table & Préparation
+           
         </p>
       </div>
       <div

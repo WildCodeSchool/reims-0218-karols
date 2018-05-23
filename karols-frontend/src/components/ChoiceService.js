@@ -8,12 +8,12 @@ import {
   CardFooter
 } from "reactstrap"
 
-const ChoiceService = () => {
+const ChoiceService = ({ name, description }) => {
   return (
     <div>
       <Card>
         <CardBody>
-          <CardTitle> Choix du service </CardTitle>
+          <CardTitle> {name} </CardTitle>
         </CardBody>
         <a href="">
           <img
@@ -25,7 +25,7 @@ const ChoiceService = () => {
           />
         </a>
         <CardBody>
-          <CardText>Un petit descriptif du service ?</CardText>
+          <CardText> {description} </CardText>
         </CardBody>
         <CardFooter>
           <Button> Choisir ce service </Button>

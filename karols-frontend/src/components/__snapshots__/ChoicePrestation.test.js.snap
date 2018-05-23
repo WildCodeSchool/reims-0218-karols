@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="card text-white"
+  >
+    <img
+      alt="Prestations"
+      className="img-fluid"
+      src="http://via.placeholder.com/250x250"
+      width="250"
+    />
+    <div
+      className="card-img-overlay"
+    >
+      <h5
+        className="card-title"
+      >
+        Card Title
+      </h5>
+      <p
+        className="card-text"
+      >
+        Choisissez votre prestation
+      </p>
+    </div>
+  </div>
+</div>
+`;
