@@ -7,6 +7,7 @@ import JumbotronExample from "../components/JumbotronExample"
 import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
+import SelectPerson from "../components/SelectClient"
 
 import { Button, Welcome } from "@storybook/react/demo"
 
@@ -29,6 +30,8 @@ storiesOf("Button", module)
 storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
+
+storiesOf("SelectPerson", module).add("just an example", () => <SelectPerson />)
 
 storiesOf("ReservationTitle", module).add(
   "The Reservation Title Component",
