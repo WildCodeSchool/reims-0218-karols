@@ -14,6 +14,7 @@ import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
 import ChoiceService from "../components/ChoiceService"
 import InfoClient from "../components/InfoClient"
+import Header from "../components/Header"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -56,3 +57,5 @@ storiesOf("Logo", module).add("Logo render", () => <Logo />)
 storiesOf("ChoiceService", module).add("Choice service render", () => (
   <ChoiceService />
 ))
+
+storiesOf("Header", module).add("Header render", () => <Header />)
