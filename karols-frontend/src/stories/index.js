@@ -8,6 +8,7 @@ import PrestationLabel from "../components/PrestationLabel"
 import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
+import ChoiceService from "../components/ChoiceService"
 
 import { Button, Welcome } from "@storybook/react/demo"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -43,3 +44,7 @@ storiesOf("ListChoiceService", module).add("just an example", () => (
   <ListChoiceService />
 ))
 storiesOf("Logo", module).add("Logo render", () => <Logo />)
+
+storiesOf("ChoiceService", module).add("Choice service render", () => (
+  <ChoiceService />
+))
