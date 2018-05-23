@@ -5,6 +5,7 @@ import { action } from "@storybook/addon-actions"
 import { linkTo } from "@storybook/addon-links"
 import JumbotronExample from "../components/JumbotronExample"
 import ListChoiceService from "../components/ListChoiceService"
+import Logo from "../components/Logo"
 
 import { Button, Welcome } from "@storybook/react/demo"
 
@@ -31,3 +32,4 @@ storiesOf("JumbotronExample", module).add("just an example", () => (
 storiesOf("ListChoiceService", module).add("just an example", () => (
   <ListChoiceService />
 ))
+storiesOf("Logo", module).add("Logo render", () => <Logo />)
