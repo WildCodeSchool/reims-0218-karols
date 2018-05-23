@@ -47,12 +47,7 @@ storiesOf("ReservationTitle", module).add(
   "The Reservation Title Component",
   () => <ReservationTitle />
 )
-<<<<<<< HEAD
 storiesOf("ListChoiceService", module).add("List choice service render", () => (
-=======
-
-storiesOf("ListChoiceService", module).add("just an example", () => (
->>>>>>> develop
   <ListChoiceService />
 ))
 
