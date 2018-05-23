@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<img
+  alt="logo"
+  src="http://via.placeholder.com/100x100"
+/>
+`;
