@@ -3,10 +3,10 @@ import Logo from "./Logo"
 import ChoiceShop from "./ChoiceShop"
 
 const Header = () => (
-  <Header>
+  <header>
     <Logo />
     <ChoiceShop />
-  </Header>
+  </header>
 )
 
 export default Header
