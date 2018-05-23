@@ -14,6 +14,8 @@ import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
 import ChoiceService from "../components/ChoiceService"
 import InfoClient from "../components/InfoClient"
+import CalendarTime from "../components/CalendarTime"
+import CalendarDay from "../components/CalendarDay"
 import Header from "../components/Header"
 import ChoicePrestation from "../components/ChoicePrestation"
 import ListChoicePrestation from "../components/ListChoicePrestation"
@@ -60,6 +62,13 @@ storiesOf("ChoiceService", module).add("Choice service render", () => (
   <ChoiceService />
 ))
 
+storiesOf("CalendarTime", module).add("Choose a time in the calendar", () => (
+  <CalendarTime />
+))
+
+storiesOf("CalendarDay", module).add("Choose a day in the calendar", () => (
+  <CalendarDay />
+))
 storiesOf("Header", module).add("Header render", () => <Header />)
 
 storiesOf("ChoicePrestation", module).add("ChoicePrestation render", () => (
