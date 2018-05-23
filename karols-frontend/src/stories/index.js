@@ -4,6 +4,7 @@ import { storiesOf } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
 import { linkTo } from "@storybook/addon-links"
 import JumbotronExample from "../components/JumbotronExample"
+import Logo from "../components/Logo"
 
 import { Button, Welcome } from "@storybook/react/demo"
 
@@ -26,3 +27,5 @@ storiesOf("Button", module)
 storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
+
+storiesOf("Logo", module).add("Logo render", () => <Logo />)
