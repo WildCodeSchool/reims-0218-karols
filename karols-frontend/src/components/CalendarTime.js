@@ -1,14 +1,14 @@
 import React from "react"
-import { Alert } from "reactstrap"
+import { Badge } from "reactstrap"
 
-const CalendarTime = props => {
+const CalendarTime = () => {
   return (
     <div>
-      <Alert color="info">
-        <a href="#" className="alert-link">
-          09:00
-        </a>
-      </Alert>
+      <a href="#" className="alert-link">
+        <h2>
+          <Badge color="secondary">09:00</Badge>
+        </h2>
+      </a>
     </div>
   )
 }

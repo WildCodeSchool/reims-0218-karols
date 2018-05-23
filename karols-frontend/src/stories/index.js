@@ -63,6 +63,6 @@ storiesOf("CalendarTime", module).add("Choose a time in the calendar", () => (
   <CalendarTime />
 ))
 
-storiesOf("CalendarDay", module).add("Choose a time in the calendar", () => (
+storiesOf("CalendarDay", module).add("Choose a day in the calendar", () => (
   <CalendarDay />
 ))

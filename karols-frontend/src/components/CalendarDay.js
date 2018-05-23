@@ -1,6 +1,6 @@
 import React from "react"
 
-const CalendarDay = props => {
+const CalendarDay = () => {
   return (
     <div class="text-center">
       <h5>Vendredi</h5>
