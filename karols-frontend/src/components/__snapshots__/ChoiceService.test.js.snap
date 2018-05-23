@@ -14,12 +14,17 @@ exports[`renders correctly 1`] = `
          Choix du service 
       </h5>
     </div>
-    <img
-      alt="Name of service"
-      height="250"
-      src="http://via.placeholder.com/250x250"
-      width="250"
-    />
+    <a
+      href=""
+    >
+      <img
+        alt="Name of service"
+        className="img-fluid"
+        height="250"
+        src="http://via.placeholder.com/250x250"
+        width="250"
+      />
+    </a>
     <div
       className="card-body"
     >
@@ -28,6 +33,17 @@ exports[`renders correctly 1`] = `
       >
         Un petit descriptif du service ?
       </p>
+    </div>
+    <div
+      className="card-footer"
+    >
+      <button
+        className="btn btn-secondary"
+        onClick={[Function]}
+        type={undefined}
+      >
+         Choisir ce service 
+      </button>
     </div>
   </div>
 </div>
