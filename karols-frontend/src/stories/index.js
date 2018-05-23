@@ -14,6 +14,7 @@ import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
 import ChoiceService from "../components/ChoiceService"
 import InfoClient from "../components/InfoClient"
+import Footer from "../components/Footer"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -36,6 +37,8 @@ storiesOf("ChoiceShop", module).add("choice your shop", () => <ChoiceShop />)
 storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
+
+storiesOf("Footer", module).add("just an example", () => <Footer />)
 
 storiesOf("InfoClient", module).add("just an example", () => <InfoClient />)
 
