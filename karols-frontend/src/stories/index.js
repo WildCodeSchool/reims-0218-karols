@@ -31,7 +31,7 @@ storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
 
-storiesOf("SelectPerson", module).add("just an example", () => <SelectPerson />)
+storiesOf("selectClient", module).add("just an example", () => <selectClient />)
 
 storiesOf("ReservationTitle", module).add(
   "The Reservation Title Component",
