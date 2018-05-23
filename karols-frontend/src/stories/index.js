@@ -14,6 +14,8 @@ import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
 import ChoiceService from "../components/ChoiceService"
 import InfoClient from "../components/InfoClient"
+import CalendarTime from "../components/CalendarTime"
+import CalendarDay from "../components/CalendarDay"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -56,4 +58,12 @@ storiesOf("Logo", module).add("Logo render", () => <Logo />)
 
 storiesOf("ChoiceService", module).add("Choice service render", () => (
   <ChoiceService />
+))
+
+storiesOf("CalendarTime", module).add("Choose a time in the calendar", () => (
+  <CalendarTime />
+))
+
+storiesOf("CalendarDay", module).add("Choose a time in the calendar", () => (
+  <CalendarDay />
 ))
