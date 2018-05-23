@@ -4,6 +4,7 @@ import { storiesOf } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
 import { linkTo } from "@storybook/addon-links"
 import JumbotronExample from "../components/JumbotronExample"
+import PrestationLabel from "../components/PrestationLabel"
 import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
@@ -30,6 +31,9 @@ storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
 
+storiesOf("PrestationLabel", module).add("just an title", () => (
+  <PrestationLabel />
+))
 storiesOf("ReservationTitle", module).add(
   "The Reservation Title Component",
   () => <ReservationTitle />
