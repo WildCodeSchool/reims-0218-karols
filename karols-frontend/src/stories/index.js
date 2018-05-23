@@ -3,9 +3,9 @@ import React from "react"
 import { storiesOf } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
 import { linkTo } from "@storybook/addon-links"
-import JumbotronExample from "../components/JumbotronExample"
 
 import { Button, Welcome } from "@storybook/react/demo"
+import ChoiceShop from "../components/ChoiceShop"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -23,6 +23,4 @@ storiesOf("Button", module)
     </Button>
   ))
 
-storiesOf("JumbotronExample", module).add("just an example", () => (
-  <JumbotronExample />
-))
+storiesOf("ChoiceShop", module).add("choice your shop", () => <ChoiceShop />)
