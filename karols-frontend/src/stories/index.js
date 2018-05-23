@@ -47,8 +47,7 @@ storiesOf("ReservationTitle", module).add(
   "The Reservation Title Component",
   () => <ReservationTitle />
 )
-
-storiesOf("ListChoiceService", module).add("just an example", () => (
+storiesOf("ListChoiceService", module).add("List choice service render", () => (
   <ListChoiceService />
 ))
 
