@@ -6,9 +6,15 @@ export default class Service extends React.Component {
   render() {
     return (
       <div>
-        <ChoiceService />
-        <ChoiceService />
-        <ChoiceService />
+        <ChoiceService
+          name="Préparation"
+          description="Description Préparation"
+        />
+        <ChoiceService name="Table" description="Description Table" />
+        <ChoiceService
+          name="Table + Préparation"
+          description="Description Table & Préparation"
+        />
       </div>
     )
   }
