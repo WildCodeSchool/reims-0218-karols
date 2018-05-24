@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-body"
+      >
+        <h5
+          className="card-title"
+        >
+           
+          Préparation
+           
+        </h5>
+      </div>
+      <a
+        href=""
+      >
+        <img
+          alt="Name of service"
+          className="img-fluid"
+          height="250"
+          src="http://via.placeholder.com/250x250"
+          width="250"
+        />
+      </a>
+      <div
+        className="card-body"
+      >
+        <p
+          className="card-text"
+        >
+           
+          Description Préparation
+           
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <button
+          className="btn btn-secondary"
+          onClick={[Function]}
+          type={undefined}
+        >
+           Choisir ce service 
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-body"
+      >
+        <h5
+          className="card-title"
+        >
+           
+          Table
+           
+        </h5>
+      </div>
+      <a
+        href=""
+      >
+        <img
+          alt="Name of service"
+          className="img-fluid"
+          height="250"
+          src="http://via.placeholder.com/250x250"
+          width="250"
+        />
+      </a>
+      <div
+        className="card-body"
+      >
+        <p
+          className="card-text"
+        >
+           
+          Description Table
+           
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <button
+          className="btn btn-secondary"
+          onClick={[Function]}
+          type={undefined}
+        >
+           Choisir ce service 
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-body"
+      >
+        <h5
+          className="card-title"
+        >
+           
+          Table + Préparation
+           
+        </h5>
+      </div>
+      <a
+        href=""
+      >
+        <img
+          alt="Name of service"
+          className="img-fluid"
+          height="250"
+          src="http://via.placeholder.com/250x250"
+          width="250"
+        />
+      </a>
+      <div
+        className="card-body"
+      >
+        <p
+          className="card-text"
+        >
+           
+          Description Table & Préparation
+           
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <button
+          className="btn btn-secondary"
+          onClick={[Function]}
+          type={undefined}
+        >
+           Choisir ce service 
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
