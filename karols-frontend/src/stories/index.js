@@ -45,13 +45,15 @@ storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
 
-storiesOf("SelectClient", module).add("just an example", () => <SelectClient />)
-storiesOf("SelectPerson", module).add("just an example", () => <SelectPerson />)
-storiesOf("Footer", module).add("just an example", () => <Footer />)
+storiesOf("SelectClient", module).add("Selected client", () => <SelectClient />)
+storiesOf("SelectPerson", module).add("Selected person", () => <SelectPerson />)
+storiesOf("Footer", module).add("just a footer", () => <Footer />)
 
-storiesOf("InfoClient", module).add("just an example", () => <InfoClient />)
+storiesOf("InfoClient", module).add("just an information on customer", () => (
+  <InfoClient />
+))
 
-storiesOf("PrestationLabel", module).add("just an title", () => (
+storiesOf("PrestationLabel", module).add("just a title", () => (
   <PrestationLabel />
 ))
 
