@@ -1,9 +1,9 @@
 import React from "react"
-import { FormGroup, Input, Label, Form } from "reactstrap"
+import { FormGroup, Input, Label } from "reactstrap"
 
 const ListChoiceGender = () => {
   return (
-    <Form>
+    <FormGroup>
       <FormGroup check>
         <Label check>
           <Input type="radio" name="gender" /> Femme
@@ -14,7 +14,7 @@ const ListChoiceGender = () => {
           <Input type="radio" name="gender" /> Homme
         </Label>
       </FormGroup>
-    </Form>
+    </FormGroup>
   )
 }
 
