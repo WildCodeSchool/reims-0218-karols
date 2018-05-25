@@ -22,6 +22,7 @@ import CalendarDay from "../components/CalendarDay"
 import Header from "../components/Header"
 import ChoicePrestation from "../components/ChoicePrestation"
 import ListChoicePrestation from "../components/ListChoicePrestation"
+import HairStyleLabel from "../components/HairStyleLabel"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -67,6 +68,10 @@ storiesOf("Logo", module).add("Logo render", () => <Logo />)
 
 storiesOf("ChoiceService", module).add("Choice service render", () => (
   <ChoiceService />
+))
+
+storiesOf("HairStyleLabel", module).add("Title HairStyle", () => (
+  <HairStyleLabel />
 ))
 
 storiesOf("CalendarTime", module).add("Choose a time in the calendar", () => (
