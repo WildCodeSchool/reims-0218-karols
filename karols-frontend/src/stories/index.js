@@ -24,7 +24,7 @@ import ChoicePrestation from "../components/ChoicePrestation"
 import ListChoicePrestation from "../components/ListChoicePrestation"
 import ListCalendarTime from "../components/ListCalendarTime"
 import ListCalendarDayTime from "../components/ListCalendarDayTime"
-import ArrayCalendar from "../components/ArrayCalendar"
+import ResultCalendar from "../components/ResultCalendar"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -99,6 +99,6 @@ storiesOf("ListCalendarDayTime", module).add(
   () => <ListCalendarDayTime />
 )
 
-storiesOf("ArrayCalendar", module).add("Render the calendar with time", () => (
-  <ArrayCalendar />
+storiesOf("ResultCalendar", module).add("Render the calendar with time", () => (
+  <ResultCalendar />
 ))

@@ -4,11 +4,11 @@ exports[`renders correctly 1`] = `
 <div
   className="text-center"
 >
-  <h5>
+  <p>
     Vendredi
-  </h5>
-  <h5>
+  </p>
+  <p>
     25 mai
-  </h5>
+  </p>
 </div>
 `;

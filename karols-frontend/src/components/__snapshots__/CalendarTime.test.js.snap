@@ -6,7 +6,7 @@ exports[`renders correctly 1`] = `
     className="alert-link"
     href="#"
   >
-    <h2
+    <p
       className="text-center"
     >
       <span
@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
       >
         09:00
       </span>
-    </h2>
+    </p>
   </a>
 </div>
 `;

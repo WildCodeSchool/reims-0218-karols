@@ -5,9 +5,9 @@ const CalendarTime = () => {
   return (
     <div>
       <a href="#" className="alert-link">
-        <h2 className="text-center">
+        <p className="text-center">
           <Badge color="secondary">09:00</Badge>
-        </h2>
+        </p>
       </a>
     </div>
   )

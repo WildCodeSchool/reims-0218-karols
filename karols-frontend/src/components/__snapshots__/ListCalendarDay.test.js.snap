@@ -5,12 +5,12 @@ exports[`renders correctly 1`] = `
   <div
     className="text-center"
   >
-    <h5>
+    <p>
       Vendredi
-    </h5>
-    <h5>
+    </p>
+    <p>
       25 mai
-    </h5>
+    </p>
   </div>
   <div>
     <div>
@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
         className="alert-link"
         href="#"
       >
-        <h2
+        <p
           className="text-center"
         >
           <span
@@ -26,7 +26,7 @@ exports[`renders correctly 1`] = `
           >
             09:00
           </span>
-        </h2>
+        </p>
       </a>
     </div>
     <div>
@@ -34,7 +34,7 @@ exports[`renders correctly 1`] = `
         className="alert-link"
         href="#"
       >
-        <h2
+        <p
           className="text-center"
         >
           <span
@@ -42,7 +42,7 @@ exports[`renders correctly 1`] = `
           >
             09:00
           </span>
-        </h2>
+        </p>
       </a>
     </div>
     <div>
@@ -50,7 +50,7 @@ exports[`renders correctly 1`] = `
         className="alert-link"
         href="#"
       >
-        <h2
+        <p
           className="text-center"
         >
           <span
@@ -58,7 +58,7 @@ exports[`renders correctly 1`] = `
           >
             09:00
           </span>
-        </h2>
+        </p>
       </a>
     </div>
     <div>
@@ -66,7 +66,7 @@ exports[`renders correctly 1`] = `
         className="alert-link"
         href="#"
       >
-        <h2
+        <p
           className="text-center"
         >
           <span
@@ -74,7 +74,7 @@ exports[`renders correctly 1`] = `
           >
             09:00
           </span>
-        </h2>
+        </p>
       </a>
     </div>
     <div>
@@ -82,7 +82,7 @@ exports[`renders correctly 1`] = `
         className="alert-link"
         href="#"
       >
-        <h2
+        <p
           className="text-center"
         >
           <span
@@ -90,7 +90,7 @@ exports[`renders correctly 1`] = `
           >
             09:00
           </span>
-        </h2>
+        </p>
       </a>
     </div>
     <div>
@@ -98,7 +98,7 @@ exports[`renders correctly 1`] = `
         className="alert-link"
         href="#"
       >
-        <h2
+        <p
           className="text-center"
         >
           <span
@@ -106,7 +106,7 @@ exports[`renders correctly 1`] = `
           >
             09:00
           </span>
-        </h2>
+        </p>
       </a>
     </div>
     <div>
@@ -114,7 +114,7 @@ exports[`renders correctly 1`] = `
         className="alert-link"
         href="#"
       >
-        <h2
+        <p
           className="text-center"
         >
           <span
@@ -122,7 +122,7 @@ exports[`renders correctly 1`] = `
           >
             09:00
           </span>
-        </h2>
+        </p>
       </a>
     </div>
     <div>
@@ -130,7 +130,7 @@ exports[`renders correctly 1`] = `
         className="alert-link"
         href="#"
       >
-        <h2
+        <p
           className="text-center"
         >
           <span
@@ -138,7 +138,7 @@ exports[`renders correctly 1`] = `
           >
             09:00
           </span>
-        </h2>
+        </p>
       </a>
     </div>
     <div>
@@ -146,7 +146,7 @@ exports[`renders correctly 1`] = `
         className="alert-link"
         href="#"
       >
-        <h2
+        <p
           className="text-center"
         >
           <span
@@ -154,7 +154,7 @@ exports[`renders correctly 1`] = `
           >
             09:00
           </span>
-        </h2>
+        </p>
       </a>
     </div>
     <div>
@@ -162,7 +162,7 @@ exports[`renders correctly 1`] = `
         className="alert-link"
         href="#"
       >
-        <h2
+        <p
           className="text-center"
         >
           <span
@@ -170,7 +170,7 @@ exports[`renders correctly 1`] = `
           >
             09:00
           </span>
-        </h2>
+        </p>
       </a>
     </div>
   </div>
