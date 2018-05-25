@@ -2,7 +2,7 @@ import React from "react"
 import ListCalendarDayTime from "./ListCalendarDayTime"
 import { Table } from "reactstrap"
 
-const ArrayCalendar = () => {
+const ResultCalendar = () => {
   return (
     <Table responsive>
       <tbody>
@@ -25,4 +25,4 @@ const ArrayCalendar = () => {
   )
 }
 
-export default ArrayCalendar
+export default ResultCalendar

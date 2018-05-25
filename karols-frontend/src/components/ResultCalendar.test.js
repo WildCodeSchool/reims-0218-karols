@@ -1,15 +1,15 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import ArrayCalendar from "./ArrayCalendar"
+import ResultCalendar from "./ResultCalendar"
 import renderer from "react-test-renderer"
 
 it("renders without crashing", () => {
   const div = document.createElement("div")
-  ReactDOM.render(<ArrayCalendar />, div)
+  ReactDOM.render(<ResultCalendar />, div)
   ReactDOM.unmountComponentAtNode(div)
 })
 
 it("renders correctly", () => {
-  const tree = renderer.create(<ArrayCalendar />).toJSON()
+  const tree = renderer.create(<ResultCalendar />).toJSON()
   expect(tree).toMatchSnapshot()
 })
