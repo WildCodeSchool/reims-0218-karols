@@ -3,7 +3,7 @@ import { FormGroup, Input, Label } from "reactstrap"
 
 const ListChoiceGender = () => {
   return (
-    <FormGroup>
+    <div>
       <FormGroup check>
         <Label check>
           <Input type="radio" name="gender" /> Femme
@@ -14,7 +14,7 @@ const ListChoiceGender = () => {
           <Input type="radio" name="gender" /> Homme
         </Label>
       </FormGroup>
-    </FormGroup>
+    </div>
   )
 }
 
