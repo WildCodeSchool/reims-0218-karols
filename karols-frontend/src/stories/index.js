@@ -25,6 +25,7 @@ import ListChoicePrestation from "../components/ListChoicePrestation"
 import ListCalendarTime from "../components/ListCalendarTime"
 import ListCalendarDayTime from "../components/ListCalendarDayTime"
 import ResultCalendar from "../components/ResultCalendar"
+import ListChoiceGender from "../components/ListChoiceGender"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -48,13 +49,15 @@ storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
 
-storiesOf("SelectClient", module).add("just an example", () => <SelectClient />)
-storiesOf("SelectPerson", module).add("just an example", () => <SelectPerson />)
-storiesOf("Footer", module).add("just an example", () => <Footer />)
+storiesOf("SelectClient", module).add("Selected client", () => <SelectClient />)
+storiesOf("SelectPerson", module).add("Selected person", () => <SelectPerson />)
+storiesOf("Footer", module).add("just a footer", () => <Footer />)
 
-storiesOf("InfoClient", module).add("just an example", () => <InfoClient />)
+storiesOf("InfoClient", module).add("just an information on customer", () => (
+  <InfoClient />
+))
 
-storiesOf("PrestationLabel", module).add("just an title", () => (
+storiesOf("PrestationLabel", module).add("just a title", () => (
   <PrestationLabel />
 ))
 
@@ -83,6 +86,10 @@ storiesOf("Header", module).add("Header render", () => <Header />)
 
 storiesOf("ChoicePrestation", module).add("ChoicePrestation render", () => (
   <ChoicePrestation />
+))
+
+storiesOf("ListChoiceGender", module).add("ListChoicegender render", () => (
+  <ListChoiceGender />
 ))
 
 storiesOf("ListChoicePrestation", module).add(

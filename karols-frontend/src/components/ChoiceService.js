@@ -8,7 +8,7 @@ import {
   CardFooter
 } from "reactstrap"
 
-const ChoiceService = ({ name, description }) => {
+const ChoiceService = ({ name, description, image }) => {
   return (
     <div>
       <Card>
@@ -20,7 +20,7 @@ const ChoiceService = ({ name, description }) => {
             className="img-fluid"
             width="250"
             height="250"
-            src="http://via.placeholder.com/250x250"
+            src={image}
             alt="Name of service"
           />
         </a>
