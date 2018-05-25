@@ -22,6 +22,7 @@ import CalendarDay from "../components/CalendarDay"
 import Header from "../components/Header"
 import ChoicePrestation from "../components/ChoicePrestation"
 import ListChoicePrestation from "../components/ListChoicePrestation"
+import ListChoiceGender from "../components/ListChoiceGender"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -82,6 +83,10 @@ storiesOf("Header", module).add("Header render", () => <Header />)
 
 storiesOf("ChoicePrestation", module).add("ChoicePrestation render", () => (
   <ChoicePrestation />
+))
+
+storiesOf("ListChoiceGender", module).add("ListChoicegender render", () => (
+  <ListChoiceGender />
 ))
 
 storiesOf("ListChoicePrestation", module).add(
