@@ -23,6 +23,8 @@ import Header from "../components/Header"
 import ChoicePrestation from "../components/ChoicePrestation"
 import ListChoicePrestation from "../components/ListChoicePrestation"
 import ListCalendarTime from "../components/ListCalendarTime"
+import ListCalendarDayTime from "../components/ListCalendarDayTime"
+import ArrayCalendar from "../components/ArrayCalendar"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -90,4 +92,13 @@ storiesOf("ListChoicePrestation", module).add(
 
 storiesOf("ListCalendarTime", module).add("Render the calendar", () => (
   <ListCalendarTime />
+))
+
+storiesOf("ListCalendarDayTime", module).add(
+  "Render the calendar with time",
+  () => <ListCalendarDayTime />
+)
+
+storiesOf("ArrayCalendar", module).add("Render the calendar with time", () => (
+  <ArrayCalendar />
 ))

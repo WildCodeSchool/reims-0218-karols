@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div>
+    <a
+      className="alert-link"
+      href="#"
+    >
+      <h2
+        className="text-center"
+      >
+        <span
+          className="badge badge-secondary"
+        >
+          09:00
+        </span>
+      </h2>
+    </a>
+  </div>
+  <div>
+    <a
+      className="alert-link"
+      href="#"
+    >
+      <h2
+        className="text-center"
+      >
+        <span
+          className="badge badge-secondary"
+        >
+          09:00
+        </span>
+      </h2>
+    </a>
+  </div>
+  <div>
+    <a
+      className="alert-link"
+      href="#"
+    >
+      <h2
+        className="text-center"
+      >
+        <span
+          className="badge badge-secondary"
+        >
+          09:00
+        </span>
+      </h2>
+    </a>
+  </div>
+  <div>
+    <a
+      className="alert-link"
+      href="#"
+    >
+      <h2
+        className="text-center"
+      >
+        <span
+          className="badge badge-secondary"
+        >
+          09:00
+        </span>
+      </h2>
+    </a>
+  </div>
+  <div>
+    <a
+      className="alert-link"
+      href="#"
+    >
+      <h2
+        className="text-center"
+      >
+        <span
+          className="badge badge-secondary"
+        >
+          09:00
+        </span>
+      </h2>
+    </a>
+  </div>
+  <div>
+    <a
+      className="alert-link"
+      href="#"
+    >
+      <h2
+        className="text-center"
+      >
+        <span
+          className="badge badge-secondary"
+        >
+          09:00
+        </span>
+      </h2>
+    </a>
+  </div>
+  <div>
+    <a
+      className="alert-link"
+      href="#"
+    >
+      <h2
+        className="text-center"
+      >
+        <span
+          className="badge badge-secondary"
+        >
+          09:00
+        </span>
+      </h2>
+    </a>
+  </div>
+  <div>
+    <a
+      className="alert-link"
+      href="#"
+    >
+      <h2
+        className="text-center"
+      >
+        <span
+          className="badge badge-secondary"
+        >
+          09:00
+        </span>
+      </h2>
+    </a>
+  </div>
+  <div>
+    <a
+      className="alert-link"
+      href="#"
+    >
+      <h2
+        className="text-center"
+      >
+        <span
+          className="badge badge-secondary"
+        >
+          09:00
+        </span>
+      </h2>
+    </a>
+  </div>
+  <div>
+    <a
+      className="alert-link"
+      href="#"
+    >
+      <h2
+        className="text-center"
+      >
+        <span
+          className="badge badge-secondary"
+        >
+          09:00
+        </span>
+      </h2>
+    </a>
+  </div>
+</div>
+`;
