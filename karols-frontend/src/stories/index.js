@@ -13,7 +13,6 @@ import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
 import SelectClient from "../components/SelectClient"
-import SelectPerson from "../components/SelectClient"
 import ChoiceService from "../components/ChoiceService"
 import InfoClient from "../components/InfoClient"
 import Footer from "../components/Footer"
@@ -22,6 +21,7 @@ import CalendarDay from "../components/CalendarDay"
 import Header from "../components/Header"
 import ChoicePrestation from "../components/ChoicePrestation"
 import ListChoicePrestation from "../components/ListChoicePrestation"
+import ChoiceGender from "../components/ChoiceGender"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -46,7 +46,6 @@ storiesOf("JumbotronExample", module).add("just an example", () => (
 ))
 
 storiesOf("SelectClient", module).add("just an example", () => <SelectClient />)
-storiesOf("SelectPerson", module).add("just an example", () => <SelectPerson />)
 storiesOf("Footer", module).add("just an example", () => <Footer />)
 
 storiesOf("InfoClient", module).add("just an example", () => <InfoClient />)
@@ -81,6 +80,8 @@ storiesOf("Header", module).add("Header render", () => <Header />)
 storiesOf("ChoicePrestation", module).add("ChoicePrestation render", () => (
   <ChoicePrestation />
 ))
+
+storiesOf("ChoiceGender", module).add("Choose gender", () => <ChoiceGender />)
 
 storiesOf("ListChoicePrestation", module).add(
   "ListChoicePrestation render",
