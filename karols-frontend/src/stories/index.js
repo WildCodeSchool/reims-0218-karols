@@ -22,6 +22,9 @@ import CalendarDay from "../components/CalendarDay"
 import Header from "../components/Header"
 import ChoicePrestation from "../components/ChoicePrestation"
 import ListChoicePrestation from "../components/ListChoicePrestation"
+import ListCalendarTime from "../components/ListCalendarTime"
+import ListCalendarDayTime from "../components/ListCalendarDayTime"
+import ResultCalendar from "../components/ResultCalendar"
 import ListChoiceGender from "../components/ListChoiceGender"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
@@ -93,3 +96,16 @@ storiesOf("ListChoicePrestation", module).add(
   "ListChoicePrestation render",
   () => <ListChoicePrestation />
 )
+
+storiesOf("ListCalendarTime", module).add("Render the calendar", () => (
+  <ListCalendarTime />
+))
+
+storiesOf("ListCalendarDayTime", module).add(
+  "Render the calendar with time",
+  () => <ListCalendarDayTime />
+)
+
+storiesOf("ResultCalendar", module).add("Render the calendar with time", () => (
+  <ResultCalendar />
+))
