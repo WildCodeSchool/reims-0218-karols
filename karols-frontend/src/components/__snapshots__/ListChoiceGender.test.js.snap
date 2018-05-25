@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className=""
+>
+  <div
+    className="form-check"
+  >
+    <label
+      className="form-check-label "
+      htmlFor={undefined}
+    >
+      <input
+        className="form-check-input"
+        name="gender"
+        type="radio"
+      />
+       Femme
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <label
+      className="form-check-label "
+      htmlFor={undefined}
+    >
+      <input
+        className="form-check-input"
+        name="gender"
+        type="radio"
+      />
+       Homme
+    </label>
+  </div>
+</form>
+`;
