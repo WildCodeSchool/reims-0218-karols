@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Header from "../components/Header"
+import Header from "./Header"
 import ReservationTitle from "./ReservationTitle"
 import ListChoiceService from "./ListChoiceService"
 import ResultCalendar from "./ResultCalendar"
@@ -26,9 +26,7 @@ class Page extends Component {
             <ReservationTitle />
           </Col>
         </Row>
-        <Row>
-          <ListChoiceService />
-        </Row>
+        <ListChoiceService />
         <Row>
           <Col className="text-center">
             <ListChoiceGender />
