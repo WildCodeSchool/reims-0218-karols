@@ -25,6 +25,7 @@ import ListCalendarTime from "../components/ListCalendarTime"
 import ListCalendarDayTime from "../components/ListCalendarDayTime"
 import ResultCalendar from "../components/ResultCalendar"
 import ListChoiceGender from "../components/ListChoiceGender"
+import Page from "../components/Page"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -41,6 +42,8 @@ storiesOf("Button", module)
       </span>
     </Button>
   ))
+
+storiesOf("Page", module).add("Page with all the content", () => <Page />)
 
 storiesOf("ChoiceShop", module).add("choice your shop", () => <ChoiceShop />)
 
