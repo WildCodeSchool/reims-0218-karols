@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="form-group"
+>
+  <label
+    className=""
+    htmlFor="select-client"
+  >
+    Select client : 
+  </label>
+  <input
+    className="form-control"
+    id="select-client"
+    max="14"
+    min="0"
+    onChange={[Function]}
+    step="1"
+    type="number"
+    value="0"
+  />
+</div>
+`;

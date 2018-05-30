@@ -13,7 +13,6 @@ import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
 import SelectClient from "../components/SelectClient"
-import SelectPerson from "../components/SelectClient"
 import ChoiceService from "../components/ChoiceService"
 import InfoClient from "../components/InfoClient"
 import Footer from "../components/Footer"
@@ -26,6 +25,8 @@ import ListCalendarTime from "../components/ListCalendarTime"
 import ListCalendarDayTime from "../components/ListCalendarDayTime"
 import ResultCalendar from "../components/ResultCalendar"
 import ListChoiceGender from "../components/ListChoiceGender"
+import Page from "../components/Page"
+import ValidationReservationButton from "../components/ValidationReservationButton"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -43,14 +44,21 @@ storiesOf("Button", module)
     </Button>
   ))
 
+storiesOf("Page", module).add("Page with all the content", () => <Page />)
+
 storiesOf("ChoiceShop", module).add("choice your shop", () => <ChoiceShop />)
 
 storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
 
+storiesOf("ValidationReservationButton", module).add(
+  "Recapitulative button",
+  () => <ValidationReservationButton />
+)
+
 storiesOf("SelectClient", module).add("Selected client", () => <SelectClient />)
-storiesOf("SelectPerson", module).add("Selected person", () => <SelectPerson />)
+
 storiesOf("Footer", module).add("just a footer", () => <Footer />)
 
 storiesOf("InfoClient", module).add("just an information on customer", () => (
