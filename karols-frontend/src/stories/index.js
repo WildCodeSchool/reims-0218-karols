@@ -26,6 +26,7 @@ import ListCalendarDayTime from "../components/ListCalendarDayTime"
 import ResultCalendar from "../components/ResultCalendar"
 import ListChoiceGender from "../components/ListChoiceGender"
 import Page from "../components/Page"
+import ValidationReservationButton from "../components/ValidationReservationButton"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -50,6 +51,11 @@ storiesOf("ChoiceShop", module).add("choice your shop", () => <ChoiceShop />)
 storiesOf("JumbotronExample", module).add("just an example", () => (
   <JumbotronExample />
 ))
+
+storiesOf("ValidationReservationButton", module).add(
+  "Recapitulative button",
+  () => <ValidationReservationButton />
+)
 
 storiesOf("SelectClient", module).add("Selected client", () => <SelectClient />)
 

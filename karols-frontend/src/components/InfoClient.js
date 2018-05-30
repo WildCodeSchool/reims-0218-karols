@@ -16,7 +16,6 @@ export default class InfoClient extends React.Component {
           />
         </FormGroup>
         <ListChoiceGender />
-        <Button>Submit</Button>
       </Form>
     )
   }
