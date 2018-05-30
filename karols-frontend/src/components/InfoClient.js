@@ -12,7 +12,7 @@ export default class InfoClient extends React.Component {
             type="text"
             name="firstname"
             id="firstname"
-            placeholder="saisir votre prénom"
+            placeholder="Saisissez le prénom"
           />
         </FormGroup>
         <ListChoiceGender />

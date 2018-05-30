@@ -21,25 +21,27 @@ class Page extends Component {
             <Header />
           </Col>
         </Row>
+        <hr />
         <Row>
-          <Col className="text-center">
+          <Col className="text-center mt-1 mb-3">
             <ReservationTitle />
           </Col>
         </Row>
         <ListChoiceService />
+        <hr />
         <Row>
           <Col className="text-center">
             <ListChoiceGender />
           </Col>
         </Row>
+        <hr />
         <Row>
           <Col className="text-center">
             <PrestationLabel />
           </Col>
         </Row>
-        <Row>
-          <ListChoicePrestation />
-        </Row>
+        <ListChoicePrestation />
+        <hr />
         <Row>
           <Col className="text-center">
             <SelectClient />

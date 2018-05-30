@@ -4,7 +4,7 @@ import { Table } from "reactstrap"
 
 const ResultCalendar = () => {
   return (
-    <Table responsive>
+    <Table responsive bordered>
       <tbody>
         <tr>
           <td>

@@ -3,17 +3,17 @@ import ChoicePrestation from "./ChoicePrestation"
 import { Col, Row } from "reactstrap"
 
 const ListChoicePrestation = () => (
-  <Row>
-    <Col xs="3">
+  <Row className="text-center">
+    <Col xs="12" md="6" lg="3">
       <ChoicePrestation />
     </Col>
-    <Col xs="3">
+    <Col xs="12" md="6" lg="3">
       <ChoicePrestation />
     </Col>
-    <Col xs="3">
+    <Col xs="12" md="6" lg="3">
       <ChoicePrestation />
     </Col>
-    <Col xs="3">
+    <Col xs="12" md="6" lg="3">
       <ChoicePrestation />
     </Col>
   </Row>
