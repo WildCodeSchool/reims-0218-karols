@@ -9,16 +9,16 @@ exports[`renders correctly 1`] = `
   >
     <label
       className=""
-      htmlFor="exampleEmail"
+      htmlFor="firstname"
     >
-      Name
+      Prénom :
     </label>
     <input
       className="form-control"
-      id="exampleEmail"
-      name="email"
-      placeholder="Sandrine"
-      type="email"
+      id="firstname"
+      name="firstname"
+      placeholder="saisir votre prénom"
+      type="text"
     />
   </div>
   <div>

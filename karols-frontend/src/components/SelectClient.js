@@ -12,6 +12,7 @@ const SelectClient = () => {
         value="0"
         min="0"
         max="14"
+        onChange={() => {}}
       />
     </FormGroup>
   )
