@@ -1,5 +1,6 @@
 import React from "react"
 import { Button, Form, FormGroup, Label, Input } from "reactstrap"
+import ListChoiceGender from "../components/ListChoiceGender"
 
 export default class InfoClient extends React.Component {
   render() {
@@ -14,15 +15,7 @@ export default class InfoClient extends React.Component {
             placeholder="Sandrine"
           />
         </FormGroup>
-        <FormGroup>
-          <Label for="examplePassword">Gender</Label>
-          <Input
-            type="password"
-            name="password"
-            id="examplePassword"
-            placeholder="Woman"
-          />
-        </FormGroup>
+        <ListChoiceGender />
         <Button>Submit</Button>
       </Form>
     )

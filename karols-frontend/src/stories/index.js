@@ -13,7 +13,6 @@ import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
 import SelectClient from "../components/SelectClient"
-import SelectPerson from "../components/SelectClient"
 import ChoiceService from "../components/ChoiceService"
 import InfoClient from "../components/InfoClient"
 import Footer from "../components/Footer"
@@ -50,7 +49,7 @@ storiesOf("JumbotronExample", module).add("just an example", () => (
 ))
 
 storiesOf("SelectClient", module).add("Selected client", () => <SelectClient />)
-storiesOf("SelectPerson", module).add("Selected person", () => <SelectPerson />)
+
 storiesOf("Footer", module).add("just a footer", () => <Footer />)
 
 storiesOf("InfoClient", module).add("just an information on customer", () => (
