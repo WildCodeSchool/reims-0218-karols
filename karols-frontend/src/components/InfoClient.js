@@ -1,6 +1,6 @@
 import React from "react"
 import { Button, Form, FormGroup, Label, Input } from "reactstrap"
-import ListChoiceGender from "../components/ListChoiceGender"
+import ListChoiceGender from "./components/ListChoiceGender"
 
 export default class InfoClient extends React.Component {
   render() {
