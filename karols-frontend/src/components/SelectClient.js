@@ -3,15 +3,14 @@ import { Label, Input, FormGroup } from "reactstrap"
 
 const SelectClient = () => {
   return (
-    <FormGroup>
+    <FormGroup className="mt-3">
       <Label for="select-client">Select client : </Label>
       <Input
-        type="number"
         id="select-client"
-        step="1"
-        value="0"
-        min="0"
-        max="14"
+        type="number"
+        min="1"
+        max="6"
+        placeholder="Indiquez le nombre de personnes"
         onChange={() => {}}
       />
     </FormGroup>
