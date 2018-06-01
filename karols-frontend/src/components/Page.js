@@ -11,6 +11,7 @@ import SelectClient from "./SelectClient"
 import InfoClient from "./InfoClient"
 import Footer from "./Footer"
 import ValidationReservationButton from "./ValidationReservationButton"
+import PreferredDateChoice from "./PreferredDateChoice"
 
 class Page extends Component {
   render() {
@@ -52,11 +53,18 @@ class Page extends Component {
             <InfoClient />
           </Col>
         </Row>
+        <hr />
+        <Row>
+          <Col className="text-center">
+            <PreferredDateChoice />
+          </Col>
+        </Row>
         <Row>
           <Col className="text-center">
             <ResultCalendar />
           </Col>
         </Row>
+        <hr />
         <Row>
           <Col className="text-center">
             <ValidationReservationButton />

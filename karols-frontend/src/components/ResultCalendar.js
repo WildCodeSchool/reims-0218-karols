@@ -19,6 +19,9 @@ const ResultCalendar = () => {
           <td>
             <ListCalendarDayTime />
           </td>
+          <td>
+            <ListCalendarDayTime />
+          </td>
         </tr>
       </tbody>
     </Table>

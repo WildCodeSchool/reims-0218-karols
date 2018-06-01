@@ -27,6 +27,7 @@ import ResultCalendar from "../components/ResultCalendar"
 import ListChoiceGender from "../components/ListChoiceGender"
 import Page from "../components/Page"
 import ValidationReservationButton from "../components/ValidationReservationButton"
+import PreferredDateChoice from "../components/PreferredDateChoice"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -104,6 +105,10 @@ storiesOf("ListChoicePrestation", module).add(
   "ListChoicePrestation render",
   () => <ListChoicePrestation />
 )
+
+storiesOf("PreferredDateChoice", module).add("Preferred Date Choice", () => (
+  <PreferredDateChoice />
+))
 
 storiesOf("ListCalendarTime", module).add("Render the calendar", () => (
   <ListCalendarTime />
