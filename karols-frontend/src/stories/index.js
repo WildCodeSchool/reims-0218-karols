@@ -7,7 +7,6 @@ import { Button, Welcome } from "@storybook/react/demo"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import ChoiceShop from "../components/ChoiceShop"
-import JumbotronExample from "../components/JumbotronExample"
 import PrestationLabel from "../components/PrestationLabel"
 import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
@@ -48,10 +47,6 @@ storiesOf("Button", module)
 storiesOf("Page", module).add("Page with all the content", () => <Page />)
 
 storiesOf("ChoiceShop", module).add("choice your shop", () => <ChoiceShop />)
-
-storiesOf("JumbotronExample", module).add("just an example", () => (
-  <JumbotronExample />
-))
 
 storiesOf("ValidationReservationButton", module).add(
   "Recapitulative button",
