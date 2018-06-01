@@ -2,12 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  <h3>
-    <span
-      className="badge badge-secondary"
-    >
-      Créez votre réservation
-    </span>
-  </h3>
+  <h2
+    className="display-4"
+  >
+    Créez votre réservation
+  </h2>
 </div>
 `;

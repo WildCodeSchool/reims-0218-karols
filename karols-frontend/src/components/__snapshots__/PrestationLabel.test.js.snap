@@ -2,8 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  <p>
+  <h2
+    className="mt-3 mb-4 display-4"
+  >
     Choix de votre préparation Maquillage
-  </p>
+  </h2>
 </div>
 `;
