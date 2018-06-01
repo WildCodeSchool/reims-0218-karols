@@ -27,6 +27,7 @@ import ListChoiceGender from "../components/ListChoiceGender"
 import Page from "../components/Page"
 import ValidationReservationButton from "../components/ValidationReservationButton"
 import PreferredDateChoice from "../components/PreferredDateChoice"
+import CardHover from "../components/CardHover"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -54,6 +55,8 @@ storiesOf("ValidationReservationButton", module).add(
 )
 
 storiesOf("SelectClient", module).add("Selected client", () => <SelectClient />)
+
+storiesOf("CardHover", module).add("just a CardHover", () => <CardHover />)
 
 storiesOf("Footer", module).add("just a footer", () => <Footer />)
 

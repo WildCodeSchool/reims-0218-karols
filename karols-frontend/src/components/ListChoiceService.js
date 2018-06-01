@@ -2,6 +2,7 @@ import React from "react"
 // Component
 import ChoiceService from "./ChoiceService"
 import { Row, Col } from "reactstrap"
+import CardSelected from "./CardSelected"
 
 export default class Service extends React.Component {
   render() {
@@ -15,7 +16,7 @@ export default class Service extends React.Component {
           />
         </Col>
         <Col lg="4" className="text-center">
-          <ChoiceService
+          <CardSelected
             name="Table"
             description="Description Table"
             image="https://images.unsplash.com/uploads/1412198485051133af17f/5049dacb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dddba89812ed0325b966bf07aba683e3&auto=format&fit=crop&w=1050&q=80"
