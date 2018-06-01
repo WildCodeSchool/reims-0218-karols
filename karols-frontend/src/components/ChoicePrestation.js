@@ -1,6 +1,8 @@
 import React from "react"
 import { Card, CardTitle, CardText, CardImgOverlay } from "reactstrap"
 
+// Display card when it's normal state
+
 const ChoicePrestation = () => {
   return (
     <div className="mb-4">
