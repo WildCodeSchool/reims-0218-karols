@@ -6,10 +6,10 @@ const SelectClient = () => {
     <FormGroup className="mt-3">
       <Label for="select-client">Select client : </Label>
       <Input
-        type="number"
         id="select-client"
+        type="number"
+        min="1"
         max="6"
-        min="0"
         placeholder="Indiquez le nombre de personnes"
         onChange={() => {}}
       />
