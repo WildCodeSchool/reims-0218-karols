@@ -83,7 +83,9 @@ const ChoiceService = ({ name, description, image }) => {
           </CardText>
         </CardImgOverlay>
         <CardFooter>
-          <Button> Choisir ce service </Button>
+          <Button color="default" size="lg" block>
+            Choisir ce service
+          </Button>
         </CardFooter>
       </Card>
     </div>
