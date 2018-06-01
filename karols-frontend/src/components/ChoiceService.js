@@ -13,7 +13,13 @@ const ChoiceService = ({ name, description, image }) => {
     <div>
       <Card>
         <CardBody>
-          <CardTitle> {name} </CardTitle>
+          <CardTitle
+            style={{
+              "font-size": "2em"
+            }}
+          >
+            {name}
+          </CardTitle>
         </CardBody>
         <a href="">
           <img
@@ -25,7 +31,14 @@ const ChoiceService = ({ name, description, image }) => {
           />
         </a>
         <CardBody>
-          <CardText> {description} </CardText>
+          <CardText
+            style={{
+              "font-size": "1.5em"
+            }}
+          >
+            {" "}
+            {description}{" "}
+          </CardText>
         </CardBody>
         <CardFooter>
           <Button> Choisir ce service </Button>

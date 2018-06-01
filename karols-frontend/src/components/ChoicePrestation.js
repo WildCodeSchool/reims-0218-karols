@@ -11,7 +11,13 @@ const ChoicePrestation = () => {
           alt="Prestations"
         />
         <CardImgOverlay>
-          <CardTitle>Card Title</CardTitle>
+          <CardTitle
+            style={{
+              "font-size": "2em"
+            }}
+          >
+            Card Title
+          </CardTitle>
           <CardText>Choisissez votre prestation</CardText>
         </CardImgOverlay>
       </Card>
