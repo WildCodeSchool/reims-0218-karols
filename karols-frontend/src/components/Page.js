@@ -55,7 +55,7 @@ class Page extends Component {
         </Row>
         <hr />
         <Row>
-          <Col className="text-center">
+          <Col>
             <PreferredDateChoice />
           </Col>
         </Row>
