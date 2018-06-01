@@ -5,43 +5,39 @@ exports[`renders correctly 1`] = `
   className="row"
 >
   <div
-    className="col-lg-4"
+    className="text-center mb-3 col-lg-4"
   >
     <div>
       <div
-        className="card"
+        className="card text-white"
       >
+        <img
+          className="card-img"
+          src="https://images.unsplash.com/photo-1481501940778-c8bb63e376c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=842a2f0d2f40bb7bb59bbdfd78289a0f&auto=format&fit=crop&w=1050&q=80"
+          width="100%"
+        />
         <div
-          className="card-body"
+          className="card-img-overlay"
         >
           <h5
             className="card-title"
+            style={
+              Object {
+                "fontSize": "2em",
+              }
+            }
           >
-             
             Préparation
-             
           </h5>
-        </div>
-        <a
-          href=""
-        >
-          <img
-            alt="Name of service"
-            className="img-fluid"
-            height="250"
-            src="https://images.unsplash.com/photo-1481501940778-c8bb63e376c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=842a2f0d2f40bb7bb59bbdfd78289a0f&auto=format&fit=crop&w=1050&q=80"
-            width="250"
-          />
-        </a>
-        <div
-          className="card-body"
-        >
           <p
             className="card-text"
+            style={
+              Object {
+                "fontSize": "1.5em",
+              }
+            }
           >
-             
             Description Préparation
-             
           </p>
         </div>
         <div
@@ -59,43 +55,39 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="col-lg-4"
+    className="text-center col-lg-4"
   >
     <div>
       <div
-        className="card"
+        className="card text-white"
       >
+        <img
+          className="card-img"
+          src="https://images.unsplash.com/uploads/1412198485051133af17f/5049dacb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dddba89812ed0325b966bf07aba683e3&auto=format&fit=crop&w=1050&q=80"
+          width="100%"
+        />
         <div
-          className="card-body"
+          className="card-img-overlay"
         >
           <h5
             className="card-title"
+            style={
+              Object {
+                "fontSize": "2em",
+              }
+            }
           >
-             
             Table
-             
           </h5>
-        </div>
-        <a
-          href=""
-        >
-          <img
-            alt="Name of service"
-            className="img-fluid"
-            height="250"
-            src="https://images.unsplash.com/uploads/1412198485051133af17f/5049dacb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dddba89812ed0325b966bf07aba683e3&auto=format&fit=crop&w=1050&q=80"
-            width="250"
-          />
-        </a>
-        <div
-          className="card-body"
-        >
           <p
             className="card-text"
+            style={
+              Object {
+                "fontSize": "1.5em",
+              }
+            }
           >
-             
             Description Table
-             
           </p>
         </div>
         <div
@@ -113,43 +105,39 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="col-lg-4"
+    className="text-center col-lg-4"
   >
     <div>
       <div
-        className="card"
+        className="card text-white"
       >
+        <img
+          className="card-img"
+          src="https://images.unsplash.com/photo-1466201570621-6dee7c8dbe11?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0eda6a341afd70d53eaca3b17e674fab&auto=format&fit=crop&w=2250&q=80"
+          width="100%"
+        />
         <div
-          className="card-body"
+          className="card-img-overlay"
         >
           <h5
             className="card-title"
+            style={
+              Object {
+                "fontSize": "2em",
+              }
+            }
           >
-             
             Table + Préparation
-             
           </h5>
-        </div>
-        <a
-          href=""
-        >
-          <img
-            alt="Name of service"
-            className="img-fluid"
-            height="250"
-            src="https://images.unsplash.com/photo-1521001819313-f84e889dd60f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4138705d19bea36b2955d3e799285feb&auto=format&fit=crop&w=634&q=80"
-            width="250"
-          />
-        </a>
-        <div
-          className="card-body"
-        >
           <p
             className="card-text"
+            style={
+              Object {
+                "fontSize": "1.5em",
+              }
+            }
           >
-             
             Description Table & Préparation
-             
           </p>
         </div>
         <div

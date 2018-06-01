@@ -101,39 +101,35 @@ exports[`renders correctly 1`] = `
     >
       <div>
         <div
-          className="card"
+          className="card text-white"
         >
+          <img
+            className="card-img"
+            src="https://images.unsplash.com/photo-1481501940778-c8bb63e376c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=842a2f0d2f40bb7bb59bbdfd78289a0f&auto=format&fit=crop&w=1050&q=80"
+            width="100%"
+          />
           <div
-            className="card-body"
+            className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-               
               Préparation
-               
             </h5>
-          </div>
-          <a
-            href=""
-          >
-            <img
-              alt="Name of service"
-              className="img-fluid"
-              height="250"
-              src="https://images.unsplash.com/photo-1481501940778-c8bb63e376c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=842a2f0d2f40bb7bb59bbdfd78289a0f&auto=format&fit=crop&w=1050&q=80"
-              width="250"
-            />
-          </a>
-          <div
-            className="card-body"
-          >
             <p
               className="card-text"
+              style={
+                Object {
+                  "fontSize": "1.5em",
+                }
+              }
             >
-               
               Description Préparation
-               
             </p>
           </div>
           <div
@@ -155,39 +151,35 @@ exports[`renders correctly 1`] = `
     >
       <div>
         <div
-          className="card"
+          className="card text-white"
         >
+          <img
+            className="card-img"
+            src="https://images.unsplash.com/uploads/1412198485051133af17f/5049dacb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dddba89812ed0325b966bf07aba683e3&auto=format&fit=crop&w=1050&q=80"
+            width="100%"
+          />
           <div
-            className="card-body"
+            className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-               
               Table
-               
             </h5>
-          </div>
-          <a
-            href=""
-          >
-            <img
-              alt="Name of service"
-              className="img-fluid"
-              height="250"
-              src="https://images.unsplash.com/uploads/1412198485051133af17f/5049dacb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dddba89812ed0325b966bf07aba683e3&auto=format&fit=crop&w=1050&q=80"
-              width="250"
-            />
-          </a>
-          <div
-            className="card-body"
-          >
             <p
               className="card-text"
+              style={
+                Object {
+                  "fontSize": "1.5em",
+                }
+              }
             >
-               
               Description Table
-               
             </p>
           </div>
           <div
@@ -209,39 +201,35 @@ exports[`renders correctly 1`] = `
     >
       <div>
         <div
-          className="card"
+          className="card text-white"
         >
+          <img
+            className="card-img"
+            src="https://images.unsplash.com/photo-1466201570621-6dee7c8dbe11?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0eda6a341afd70d53eaca3b17e674fab&auto=format&fit=crop&w=2250&q=80"
+            width="100%"
+          />
           <div
-            className="card-body"
+            className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-               
               Table + Préparation
-               
             </h5>
-          </div>
-          <a
-            href=""
-          >
-            <img
-              alt="Name of service"
-              className="img-fluid"
-              height="250"
-              src="https://images.unsplash.com/photo-1466201570621-6dee7c8dbe11?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0eda6a341afd70d53eaca3b17e674fab&auto=format&fit=crop&w=2250&q=80"
-              width="250"
-            />
-          </a>
-          <div
-            className="card-body"
-          >
             <p
               className="card-text"
+              style={
+                Object {
+                  "fontSize": "1.5em",
+                }
+              }
             >
-               
               Description Table & Préparation
-               
             </p>
           </div>
           <div
@@ -269,35 +257,71 @@ exports[`renders correctly 1`] = `
       <div
         className="mt-4 mb-4"
       >
-        <div
-          className="form-check form-check-inline"
-        >
-          <label
-            className="form-check-label "
-            htmlFor={undefined}
+        <div>
+          <div
+            className="card text-white card-body"
+            style={
+              Object {
+                "backgroundColor": "#333",
+                "borderColor": "#333",
+              }
+            }
           >
-            <input
-              className="form-check-input"
-              name="gender"
-              type="radio"
-            />
-             Femme
-          </label>
-        </div>
-        <div
-          className="form-check form-check-inline"
-        >
-          <label
-            className=""
-            htmlFor={undefined}
-          >
-            <input
-              className="form-check-input"
-              name="gender"
-              type="radio"
-            />
-             Homme
-          </label>
+            <h5
+              className="card-title"
+              style={
+                Object {
+                  "fontSize": "2.5em",
+                }
+              }
+            >
+              Choisissez votre sexe
+            </h5>
+            <div
+              className="d-flex"
+            >
+              <div
+                className=" m-3 card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top"
+                  height="300"
+                  src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-0.3.5ixid=eyJhcHBfaWQiOjEyMDd9s=361907f0deaaf183ac4ce6b62551dfb3auto=formatfit=cropw=1350q=80"
+                  width="300"
+                />
+                <div
+                  className="card-body"
+                >
+                  <button
+                    className="btn btn-secondary"
+                    onClick={[Function]}
+                    type={undefined}
+                  />
+                </div>
+              </div>
+              <div
+                className="m-3 card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top"
+                  height="300"
+                  src="https://images.unsplash.com/photo-1512236393941-3d6da97e56bc?ixlib=rb-0.3.5ixid=eyJhcHBfaWQiOjEyMDd9s=4deda26387ec695d02899757ecbad822auto=formatfit=cropw=1351q=80"
+                  width="300"
+                />
+                <div
+                  className="text-center card-body"
+                >
+                  <button
+                    className="btn btn-secondary"
+                    onClick={[Function]}
+                    type={undefined}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -318,134 +342,6 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="text-center row"
-  >
-    <div
-      className="col-12 col-md-6 col-lg-3"
-    >
-      <div
-        className="mb-4"
-      >
-        <div
-          className="card text-white"
-        >
-          <img
-            alt="Prestations"
-            className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
-          />
-          <div
-            className="card-img-overlay"
-          >
-            <h5
-              className="card-title"
-            >
-              Card Title
-            </h5>
-            <p
-              className="card-text"
-            >
-              Choisissez votre prestation
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="col-12 col-md-6 col-lg-3"
-    >
-      <div
-        className="mb-4"
-      >
-        <div
-          className="card text-white"
-        >
-          <img
-            alt="Prestations"
-            className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
-          />
-          <div
-            className="card-img-overlay"
-          >
-            <h5
-              className="card-title"
-            >
-              Card Title
-            </h5>
-            <p
-              className="card-text"
-            >
-              Choisissez votre prestation
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="col-12 col-md-6 col-lg-3"
-    >
-      <div
-        className="mb-4"
-      >
-        <div
-          className="card text-white"
-        >
-          <img
-            alt="Prestations"
-            className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
-          />
-          <div
-            className="card-img-overlay"
-          >
-            <h5
-              className="card-title"
-            >
-              Card Title
-            </h5>
-            <p
-              className="card-text"
-            >
-              Choisissez votre prestation
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="col-12 col-md-6 col-lg-3"
-    >
-      <div
-        className="mb-4"
-      >
-        <div
-          className="card text-white"
-        >
-          <img
-            alt="Prestations"
-            className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
-          />
-          <div
-            className="card-img-overlay"
-          >
-            <h5
-              className="card-title"
-            >
-              Card Title
-            </h5>
-            <p
-              className="card-text"
-            >
-              Choisissez votre prestation
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <hr />
   <div
     className="row"
@@ -454,87 +350,161 @@ exports[`renders correctly 1`] = `
       className="text-center col"
     >
       <div
-        className="mt-3 form-group"
+        className="row"
       >
-        <label
-          className=""
-          htmlFor="select-client"
+        <div
+          className="text-center mb-3 col-lg-3"
         >
-          Select client : 
-        </label>
-        <input
-          className="form-control"
-          id="select-client"
-          max="6"
-          min="1"
-          onChange={[Function]}
-          placeholder="Indiquez le nombre de personnes"
-          type="number"
-        />
+          <div
+            className="mb-4"
+          >
+            <div
+              className="card text-white"
+            >
+              <img
+                alt="Name of service"
+                className="img-fluid"
+                height="250"
+                src="http://cache.marieclaire.fr/data/photo/w500_h250_ci/53/maquillage-peche.jpg"
+                width="500"
+              />
+              <div
+                className="card-img-overlay"
+              >
+                <h5
+                  className="card-title"
+                  style={
+                    Object {
+                      "fontSize": "2em",
+                    }
+                  }
+                >
+                  Maquillage naturel
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Description
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="text-center col-lg-3"
+        >
+          <div
+            className="mb-4"
+          >
+            <div
+              className="card text-white"
+            >
+              <img
+                alt="Name of service"
+                className="img-fluid"
+                height="250"
+                src="https://s3.amazonaws.com/rose.vero/wp-content/uploads/2017/01/09113800/VERO07_476-500x250.jpg"
+                width="500"
+              />
+              <div
+                className="card-img-overlay"
+              >
+                <h5
+                  className="card-title"
+                  style={
+                    Object {
+                      "fontSize": "2em",
+                    }
+                  }
+                >
+                  Maquillage glamour
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Description
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="text-center col-lg-3"
+        >
+          <div
+            className="mb-4"
+          >
+            <div
+              className="card text-white"
+            >
+              <img
+                alt="Name of service"
+                className="img-fluid"
+                height="250"
+                src="http://astuces-de-mamie.com/wp-content/uploads/2017/04/femme-maquillage-vert.jpg"
+                width="500"
+              />
+              <div
+                className="card-img-overlay"
+              >
+                <h5
+                  className="card-title"
+                  style={
+                    Object {
+                      "fontSize": "2em",
+                    }
+                  }
+                >
+                  Maquillage magique
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Description
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="text-center col-lg-3"
+        >
+          <div
+            className="mb-4"
+          >
+            <div
+              className="card text-white"
+            >
+              <img
+                alt="Name of service"
+                className="img-fluid"
+                height="250"
+                src="http://cache.magicmaman.com/data/photo/w500_h250_ci/4s/maquillage-enfant-carnaval.jpg"
+                width="500"
+              />
+              <div
+                className="card-img-overlay"
+              >
+                <h5
+                  className="card-title"
+                  style={
+                    Object {
+                      "fontSize": "2em",
+                    }
+                  }
+                >
+                  Maquillage enfant
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Description
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div
-    className="row"
-  >
-    <div
-      className="text-center col"
-    >
-      <form
-        className=""
-      >
-        <div
-          className="form-group"
-        >
-          <label
-            className=""
-            htmlFor="firstname"
-          >
-            Prénom :
-          </label>
-          <input
-            className="form-control"
-            id="firstname"
-            name="firstname"
-            placeholder="Saisissez le prénom"
-            type="text"
-          />
-        </div>
-        <div
-          className="mt-4 mb-4"
-        >
-          <div
-            className="form-check form-check-inline"
-          >
-            <label
-              className="form-check-label "
-              htmlFor={undefined}
-            >
-              <input
-                className="form-check-input"
-                name="gender"
-                type="radio"
-              />
-               Femme
-            </label>
-          </div>
-          <div
-            className="form-check form-check-inline"
-          >
-            <label
-              className=""
-              htmlFor={undefined}
-            >
-              <input
-                className="form-check-input"
-                name="gender"
-                type="radio"
-              />
-               Homme
-            </label>
-          </div>
-        </div>
-      </form>
     </div>
   </div>
   <hr />
