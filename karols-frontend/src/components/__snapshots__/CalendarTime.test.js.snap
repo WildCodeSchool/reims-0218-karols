@@ -1,20 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
-  <a
-    className="alert-link"
-    href="#"
+<div
+  className="justify-content-center"
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ccecfa",
+        "borderRadius": "4px",
+        "cursor": "pointer",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "height": "34px",
+        "lineHeight": "34px",
+        "margin": "10px 0",
+        "position": "relative",
+        "textAlign": "center",
+        "width": "100%",
+      }
+    }
   >
-    <p
-      className="text-center"
-    >
-      <span
-        className="badge badge-secondary"
-      >
-        09:00
-      </span>
-    </p>
-  </a>
+     
+    13:30
+     
+  </div>
 </div>
 `;
