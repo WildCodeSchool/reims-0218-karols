@@ -17,13 +17,15 @@ exports[`renders correctly 1`] = `
       className="form-control"
       id="firstname"
       name="firstname"
-      placeholder="saisir votre prénom"
+      placeholder="Saisissez le prénom"
       type="text"
     />
   </div>
-  <div>
+  <div
+    className="mt-4 mb-4"
+  >
     <div
-      className="form-check"
+      className="form-check form-check-inline"
     >
       <label
         className="form-check-label "
@@ -38,10 +40,10 @@ exports[`renders correctly 1`] = `
       </label>
     </div>
     <div
-      className="form-check"
+      className="form-check form-check-inline"
     >
       <label
-        className="form-check-label "
+        className=""
         htmlFor={undefined}
       >
         <input

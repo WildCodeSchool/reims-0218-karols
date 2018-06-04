@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="form-group"
+  className="mt-3 form-group"
 >
   <label
     className=""
@@ -13,12 +13,11 @@ exports[`renders correctly 1`] = `
   <input
     className="form-control"
     id="select-client"
-    max="14"
+    max="6"
     min="0"
     onChange={[Function]}
-    step="1"
+    placeholder="Indiquez le nombre de personnes"
     type="number"
-    value="0"
   />
 </div>
 `;

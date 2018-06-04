@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="row"
 >
   <div
-    className="col-lg-4"
+    className="text-center mb-3 col-lg-4"
   >
     <div>
       <div
@@ -59,7 +59,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="col-lg-4"
+    className="text-center col-lg-4"
   >
     <div>
       <div
@@ -113,7 +113,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="col-lg-4"
+    className="text-center col-lg-4"
   >
     <div>
       <div
@@ -137,7 +137,7 @@ exports[`renders correctly 1`] = `
             alt="Name of service"
             className="img-fluid"
             height="250"
-            src="https://images.unsplash.com/photo-1521001819313-f84e889dd60f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4138705d19bea36b2955d3e799285feb&auto=format&fit=crop&w=634&q=80"
+            src="https://images.unsplash.com/photo-1466201570621-6dee7c8dbe11?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0eda6a341afd70d53eaca3b17e674fab&auto=format&fit=crop&w=2250&q=80"
             width="250"
           />
         </a>

@@ -1,30 +1,15 @@
 import React from "react"
 import ListCalendarDayTime from "./ListCalendarDayTime"
-import { Table } from "reactstrap"
 
 const ResultCalendar = () => {
   return (
-    <Table responsive bordered>
-      <tbody>
-        <tr>
-          <td>
-            <ListCalendarDayTime />
-          </td>
-          <td>
-            <ListCalendarDayTime />
-          </td>
-          <td>
-            <ListCalendarDayTime />
-          </td>
-          <td>
-            <ListCalendarDayTime />
-          </td>
-          <td>
-            <ListCalendarDayTime />
-          </td>
-        </tr>
-      </tbody>
-    </Table>
+    <div className="d-flex justify-content-center">
+      <ListCalendarDayTime />
+      <ListCalendarDayTime />
+      <ListCalendarDayTime />
+      <ListCalendarDayTime />
+      <ListCalendarDayTime />
+    </div>
   )
 }
 
