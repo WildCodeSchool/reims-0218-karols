@@ -4,9 +4,7 @@ import { Badge } from "reactstrap"
 const ReservationTitle = () => {
   return (
     <div>
-      <h3>
-        <Badge color="secondary">Créez votre réservation</Badge>
-      </h3>
+      <h3>Créez votre réservation</h3>
     </div>
   )
 }

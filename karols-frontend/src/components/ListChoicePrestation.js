@@ -1,13 +1,22 @@
 import React from "react"
 import ChoicePrestation from "./ChoicePrestation"
+import { Col, Row } from "reactstrap"
 
 const ListChoicePrestation = () => (
-  <div>
-    <ChoicePrestation />
-    <ChoicePrestation />
-    <ChoicePrestation />
-    <ChoicePrestation />
-  </div>
+  <Row className="text-center">
+    <Col xs="12" md="6" lg="3">
+      <ChoicePrestation />
+    </Col>
+    <Col xs="12" md="6" lg="3">
+      <ChoicePrestation />
+    </Col>
+    <Col xs="12" md="6" lg="3">
+      <ChoicePrestation />
+    </Col>
+    <Col xs="12" md="6" lg="3">
+      <ChoicePrestation />
+    </Col>
+  </Row>
 )
 
 export default ListChoicePrestation

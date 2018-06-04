@@ -22,7 +22,7 @@ exports[`renders correctly 1`] = `
         alt="Name of service"
         className="img-fluid"
         height="250"
-        src="http://via.placeholder.com/250x250"
+        src={undefined}
         width="250"
       />
     </a>

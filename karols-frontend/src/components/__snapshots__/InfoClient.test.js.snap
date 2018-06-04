@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className=""
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className=""
+      htmlFor="firstname"
+    >
+      Prénom :
+    </label>
+    <input
+      className="form-control"
+      id="firstname"
+      name="firstname"
+      placeholder="saisir votre prénom"
+      type="text"
+    />
+  </div>
+  <div>
+    <div
+      className="form-check"
+    >
+      <label
+        className="form-check-label "
+        htmlFor={undefined}
+      >
+        <input
+          className="form-check-input"
+          name="gender"
+          type="radio"
+        />
+         Femme
+      </label>
+    </div>
+    <div
+      className="form-check"
+    >
+      <label
+        className="form-check-label "
+        htmlFor={undefined}
+      >
+        <input
+          className="form-check-input"
+          name="gender"
+          type="radio"
+        />
+         Homme
+      </label>
+    </div>
+  </div>
+</form>
+`;
