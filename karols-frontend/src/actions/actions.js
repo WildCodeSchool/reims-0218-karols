@@ -1,4 +1,4 @@
-export const CHOOSE_SHOP = "CHOOSE_SHOP"
+export const CHOOSE_SHOP = "CHOSE_CHOICESHOP"
 export const CHOOSE_PRESTATION = "CHOOSE_PRESTATION"
 export const ADD_SLOTS = "ADD_SLOTS"
 export const CHOOSE_SEX = "CHOOSE_SEX"
