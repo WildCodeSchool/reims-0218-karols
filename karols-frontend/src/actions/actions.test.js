@@ -1,14 +1,14 @@
 import {
   CHOOSE_SHOP,
-  makeChooseShopAction,
+  makeChooseShop,
   CHOOSE_SERVICE,
-  makeChooseServiceAction,
+  makeChooseService,
   CHOOSE_SEX,
-  chooseSexAction,
-  ADD_SLOTS,
-  choiceSlotReservation,
+  makeChooseSex,
+  CHOOSE_TIMESLOT,
+  makeChooseSlotReservation,
   CHOOSE_PRESTATION,
-  makeChoicePrestation
+  makeChoosePrestation
 } from "./actions"
 
 describe("action to choose a prestation", () => {
@@ -18,17 +18,17 @@ describe("action to choose a prestation", () => {
       prestationId: 2
     }
 
-    expect(makeChoicePrestation(2)).toEqual(expected)
+    expect(makeChoosePrestation(2)).toEqual(expected)
   })
 })
 
 describe("action add slot creator", () => {
-  it("should return an action ADD_SLOTS WITH TIME", () => {
+  it("should return an action CHOOSE_TIMESLOT WITH TIME", () => {
     const expected = {
-      type: ADD_SLOTS,
+      type: CHOOSE_TIMESLOT,
       timeSlot: { year: 2018, month: 4, day: 24, hour: 12 }
     }
-    expect(choiceSlotReservation(expected.timeSlot)).toEqual(expected)
+    expect(makeChooseSlotReservation(expected.timeSlot)).toEqual(expected)
   })
 })
 
@@ -39,7 +39,7 @@ describe("action choose sex creator", () => {
       sex: "M"
     }
 
-    expect(chooseSexAction("M")).toEqual(expectedForMale)
+    expect(makeChooseSex("M")).toEqual(expectedForMale)
   })
 
   it("should return F gender", () => {
@@ -47,7 +47,7 @@ describe("action choose sex creator", () => {
       type: CHOOSE_SEX,
       sex: "F"
     }
-    expect(chooseSexAction("F")).toEqual(expectedForFemale)
+    expect(makeChooseSex("F")).toEqual(expectedForFemale)
   })
 })
 
@@ -58,7 +58,7 @@ describe("action choose service creator", () => {
       serviceId: 1
     }
 
-    expect(makeChooseServiceAction(1)).toEqual(expected)
+    expect(makeChooseService(1)).toEqual(expected)
   })
 })
 
@@ -69,6 +69,6 @@ describe("action selected shop", () => {
       shopId: 1
     }
 
-    expect(makeChooseShopAction(1)).toEqual(expected)
+    expect(makeChooseShop(1)).toEqual(expected)
   })
 })

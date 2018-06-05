@@ -1,29 +1,30 @@
-export const CHOOSE_SHOP = "CHOSE_CHOICESHOP"
 export const CHOOSE_PRESTATION = "CHOOSE_PRESTATION"
-export const ADD_SLOTS = "ADD_SLOTS"
-export const CHOOSE_SEX = "CHOOSE_SEX"
 export const CHOOSE_SERVICE = "CHOOSE_SERVICE"
+export const CHOOSE_SEX = "CHOOSE_SEX"
+export const CHOOSE_SHOP = "CHOOSE_SHOP"
+export const CHOOSE_TIMESLOT = "CHOOSE_TIMESLOT"
 
-export const makeChoicePrestation = prestationId => ({
+export const makeChoosePrestation = prestationId => ({
   type: CHOOSE_PRESTATION,
   prestationId
 })
 
-export const choiceSlotReservation = timeSlot => ({
-  type: ADD_SLOTS,
-  timeSlot
+export const makeChooseService = serviceId => ({
+  type: CHOOSE_SERVICE,
+  serviceId
 })
 
-export const chooseSexAction = sex => ({
+export const makeChooseSex = sex => ({
   type: CHOOSE_SEX,
   sex
 })
 
-export const makeChooseServiceAction = serviceId => ({
-  type: CHOOSE_SERVICE,
-  serviceId
-})
-export const makeChooseShopAction = shopId => ({
+export const makeChooseShop = shopId => ({
   type: CHOOSE_SHOP,
   shopId
+})
+
+export const makeChooseSlotReservation = timeSlot => ({
+  type: CHOOSE_TIMESLOT,
+  timeSlot
 })
