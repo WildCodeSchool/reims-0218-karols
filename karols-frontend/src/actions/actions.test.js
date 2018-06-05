@@ -1,13 +1,20 @@
-import { SELECTED_CHOICESHOP, makeChoseChoiceShopAction } from "./actions"
-import { CHOICE_PRESTATION, makeChoicePrestation } from "./actions"
-import { choiceSlotReservation } from "./actions"
-import { CHOOSE_SEX, chooseSexAction } from "./actions"
-import { CHOOSE_SERVICE, makeChooseServiceAction } from "./actions"
+import {
+  CHOOSE_SHOP,
+  makeChooseShopAction,
+  CHOOSE_SERVICE,
+  makeChooseServiceAction,
+  CHOOSE_SEX,
+  chooseSexAction,
+  ADD_SLOTS,
+  choiceSlotReservation,
+  CHOOSE_PRESTATION,
+  makeChoicePrestation
+} from "./actions"
 
 describe("action to choose a prestation", () => {
   it("should return an choice of a prestation with a prestation id", () => {
     const expected = {
-      type: CHOICE_PRESTATION,
+      type: CHOOSE_PRESTATION,
       prestationId: 2
     }
 
@@ -18,7 +25,7 @@ describe("action to choose a prestation", () => {
 describe("action add slot creator", () => {
   it("should return an action ADD_SLOTS WITH TIME", () => {
     const expected = {
-      type: "ADD_SLOTS",
+      type: ADD_SLOTS,
       timeSlot: { year: 2018, month: 4, day: 24, hour: 12 }
     }
     expect(choiceSlotReservation(expected.timeSlot)).toEqual(expected)
@@ -56,12 +63,12 @@ describe("action choose service creator", () => {
 })
 
 describe("action selected shop", () => {
-  it("should return an SELECTED_CHOICESHOP action", () => {
+  it("should return an CHOOSE_SHOP action", () => {
     const expected = {
-      type: SELECTED_CHOICESHOP,
+      type: CHOOSE_SHOP,
       shopId: 1
     }
 
-    expect(makeChoseChoiceShopAction(1)).toEqual(expected)
+    expect(makeChooseShopAction(1)).toEqual(expected)
   })
 })

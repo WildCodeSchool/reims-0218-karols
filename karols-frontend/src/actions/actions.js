@@ -1,11 +1,11 @@
-export const SELECTED_CHOICESHOP = "CHOSE_CHOICESHOP"
-export const CHOICE_PRESTATION = "CHOICE_PRESTATION"
+export const CHOOSE_SHOP = "CHOOSE_SHOP"
+export const CHOOSE_PRESTATION = "CHOOSE_PRESTATION"
 export const ADD_SLOTS = "ADD_SLOTS"
 export const CHOOSE_SEX = "CHOOSE_SEX"
 export const CHOOSE_SERVICE = "CHOOSE_SERVICE"
 
 export const makeChoicePrestation = prestationId => ({
-  type: CHOICE_PRESTATION,
+  type: CHOOSE_PRESTATION,
   prestationId
 })
 
@@ -23,7 +23,7 @@ export const makeChooseServiceAction = serviceId => ({
   type: CHOOSE_SERVICE,
   serviceId
 })
-export const makeChoseChoiceShopAction = shopId => ({
-  type: SELECTED_CHOICESHOP,
+export const makeChooseShopAction = shopId => ({
+  type: CHOOSE_SHOP,
   shopId
 })
