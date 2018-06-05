@@ -3,6 +3,7 @@ import React from "react"
 import ChoiceService from "./ChoiceService"
 import { Row, Col } from "reactstrap"
 import CardSelected from "./CardSelected"
+import CardHover from "./CardHover"
 
 export default class Service extends React.Component {
   render() {
@@ -23,7 +24,7 @@ export default class Service extends React.Component {
           />
         </Col>
         <Col lg="4" className="text-center">
-          <ChoiceService
+          <CardHover
             name="Table + Préparation"
             description="Description Table & Préparation"
             image="https://images.unsplash.com/photo-1466201570621-6dee7c8dbe11?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0eda6a341afd70d53eaca3b17e674fab&auto=format&fit=crop&w=2250&q=80"

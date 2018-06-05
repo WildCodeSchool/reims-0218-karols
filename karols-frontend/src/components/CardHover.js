@@ -2,10 +2,9 @@ import React, { Component } from "react"
 import {
   Card,
   CardImg,
+  CardFooter,
   CardText,
-  CardBody,
   CardTitle,
-  CardSubtitle,
   CardImgOverlay,
   Button
 } from "reactstrap"
@@ -35,28 +34,40 @@ class CardHover extends Component {
         >
           <div>
             <Card inverse>
-              <CardImg
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97270&w=318&h=270&bg=333333&txtclr=666666"
-                alt="Card image cap"
-              />
-              <CardImgOverlay>
-                {this.state.isHovering && <CardTitle> Card Title</CardTitle>}
-                {this.state.isHovering && (
-                  <CardText>Ca fonctionne plutôt bien</CardText>
-                )}
-                {this.state.isHovering && (
-                  <CardText>
-                    <small className="text-muted">
-                      Last updated 3 mins ago
-                    </small>
-                  </CardText>
-                )}
-              </CardImgOverlay>
+              <div>
+                <CardImg
+                  width="100%"
+                  src="http://www.lespiedssurterre.fr/wp-content/uploads/2017/09/MissCoiffure-choix.jpg"
+                  alt="Card image cap"
+                />
+                <CardImgOverlay className="text-center">
+                  <CardTitle
+                    style={{
+                      fontSize: "2em"
+                    }}
+                  >
+                    Titre !
+                  </CardTitle>
+                  {this.state.isHovering && (
+                    <CardText
+                      style={{
+                        paddingTop: "10px",
+                        fontSize: "1.5em"
+                      }}
+                    >
+                      Ca fonctionne plutôt bien
+                    </CardText>
+                  )}
+                </CardImgOverlay>
+              </div>
+              <CardFooter>
+                <Button color="default" size="lg" block>
+                  Choisir ce service
+                </Button>
+              </CardFooter>
             </Card>
           </div>
         </div>
-        {this.state.isHovering && <div />}
       </div>
     )
   }
