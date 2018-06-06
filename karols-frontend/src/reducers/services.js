@@ -3,15 +3,18 @@ import { CHOOSE_SERVICE } from "../actions/actions"
 const initialState = [
   {
     id: 1,
-    name: "Préparation"
+    name: "Préparation",
+    selected: false
   },
   {
     id: 2,
-    name: "Table"
+    name: "Table",
+    selected: false
   },
   {
     id: 3,
-    name: "Table + préparation"
+    name: "Table + préparation",
+    selected: false
   }
 ]
 
