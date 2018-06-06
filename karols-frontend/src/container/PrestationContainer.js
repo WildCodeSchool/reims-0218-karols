@@ -12,12 +12,21 @@ const mapDispatchToProps = dispatch => ({
   onPrestationsReceived: response => dispatch(makePrestationsReceived(response))
 })
 
-class PrestationWrap extends Component {
+export class PrestationWrap extends Component {
   render() {
     return (
       <div>
-        {this.props.prestations.map(prestation => console.log(prestation))}
-        <ChoicePrestation {...this.props.prestations} />
+        {console.log(this.props.prestations)}
+        {this.props.prestations.map(prestation => {
+          console.log(prestation)
+          return (
+            <ChoicePrestation
+              name={prestation.name}
+              key={prestation.id}
+              imgSrc={prestation.image}
+            />
+          )
+        })}
       </div>
     )
   }

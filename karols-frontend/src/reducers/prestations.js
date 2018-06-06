@@ -1,6 +1,6 @@
 import { PRESTATIONS_RECEIVED } from "../actions/actions"
 
-const initialState = {}
+const initialState = []
 
 const prestations = (prevState = initialState, action) => {
   if (action.type === PRESTATIONS_RECEIVED) {
