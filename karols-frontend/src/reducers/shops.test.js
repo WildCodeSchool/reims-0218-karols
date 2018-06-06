@@ -1,3 +1,5 @@
+import { makeChooseShop, CHOOSE_SHOP } from "../actions/actions"
+
 import shops from "./shops"
 
 describe("shops", () => {
@@ -5,15 +7,18 @@ describe("shops", () => {
     const prevState = [
       {
         id: 1,
-        name: "Paris"
+        name: "Paris",
+        selected: false
       },
       {
         id: 2,
-        name: "Lyon"
+        name: "Lyon",
+        selected: false
       },
       {
         id: 3,
-        name: "Cannes"
+        name: "Cannes",
+        selected: false
       }
     ]
 
@@ -22,5 +27,45 @@ describe("shops", () => {
     }
 
     expect(shops(prevState, anyAction)).toEqual(prevState)
+  })
+
+  it("should change the state for choose action", () => {
+    const prevState = [
+      {
+        id: 1,
+        name: "Paris",
+        selected: false
+      },
+      {
+        id: 2,
+        name: "Lyon",
+        selected: false
+      },
+      {
+        id: 3,
+        name: "Cannes",
+        selected: false
+      }
+    ]
+    const expectedState = [
+      {
+        id: 1,
+        name: "Paris",
+        selected: false
+      },
+      {
+        id: 2,
+        name: "Lyon",
+        selected: true
+      },
+      {
+        id: 3,
+        name: "Cannes",
+        selected: false
+      }
+    ]
+
+    const selectedShop = makeChooseShop(2)
+    expect(shops(prevState, selectedShop)).toEqual(expectedState)
   })
 })
