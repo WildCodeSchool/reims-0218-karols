@@ -1,177 +1,154 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "flexBasis": "0px",
+      "flexGrow": "1",
+      "flexShrink": "0",
+      "margin": "0 7px",
+      "maxWidth": "75px",
+    }
+  }
+>
   <div
-    className="text-center"
+    style={
+      Object {
+        "color": "#435f71",
+        "fontSize": "14px",
+        "marginBottom": "24px",
+        "textAlign": "center",
+      }
+    }
   >
-    <p>
-      Vendredi
+    <p
+      style={
+        Object {
+          "fontWeight": "700",
+        }
+      }
+    >
+      mercredi
     </p>
-    <p>
-      25 mai
+    <p
+      style={
+        Object {
+          "fontSize": "14px",
+          "marginBottom": "24px",
+          "textAlign": "center",
+        }
+      }
+    >
+       6 juin
     </p>
   </div>
-  <div>
-    <div>
-      <a
-        className="alert-link"
-        href="#"
+  <div
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <div
+      className="justify-content-center"
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "#ccecfa",
+            "borderRadius": "4px",
+            "cursor": "pointer",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "height": "34px",
+            "lineHeight": "34px",
+            "margin": "10px 0",
+            "position": "relative",
+            "textAlign": "center",
+            "width": "100%",
+          }
+        }
       >
-        <p
-          className="text-center"
-        >
-          <span
-            className="badge badge-secondary"
-          >
-            09:00
-          </span>
-        </p>
-      </a>
+         
+        13:30
+         
+      </div>
     </div>
-    <div>
-      <a
-        className="alert-link"
-        href="#"
+    <div
+      className="justify-content-center"
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "#ccecfa",
+            "borderRadius": "4px",
+            "cursor": "pointer",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "height": "34px",
+            "lineHeight": "34px",
+            "margin": "10px 0",
+            "position": "relative",
+            "textAlign": "center",
+            "width": "100%",
+          }
+        }
       >
-        <p
-          className="text-center"
-        >
-          <span
-            className="badge badge-secondary"
-          >
-            09:00
-          </span>
-        </p>
-      </a>
+         
+        13:30
+         
+      </div>
     </div>
-    <div>
-      <a
-        className="alert-link"
-        href="#"
+    <div
+      className="justify-content-center"
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "#ccecfa",
+            "borderRadius": "4px",
+            "cursor": "pointer",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "height": "34px",
+            "lineHeight": "34px",
+            "margin": "10px 0",
+            "position": "relative",
+            "textAlign": "center",
+            "width": "100%",
+          }
+        }
       >
-        <p
-          className="text-center"
-        >
-          <span
-            className="badge badge-secondary"
-          >
-            09:00
-          </span>
-        </p>
-      </a>
+         
+        13:30
+         
+      </div>
     </div>
-    <div>
-      <a
-        className="alert-link"
-        href="#"
+    <div
+      className="justify-content-center"
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "#ccecfa",
+            "borderRadius": "4px",
+            "cursor": "pointer",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "height": "34px",
+            "lineHeight": "34px",
+            "margin": "10px 0",
+            "position": "relative",
+            "textAlign": "center",
+            "width": "100%",
+          }
+        }
       >
-        <p
-          className="text-center"
-        >
-          <span
-            className="badge badge-secondary"
-          >
-            09:00
-          </span>
-        </p>
-      </a>
-    </div>
-    <div>
-      <a
-        className="alert-link"
-        href="#"
-      >
-        <p
-          className="text-center"
-        >
-          <span
-            className="badge badge-secondary"
-          >
-            09:00
-          </span>
-        </p>
-      </a>
-    </div>
-    <div>
-      <a
-        className="alert-link"
-        href="#"
-      >
-        <p
-          className="text-center"
-        >
-          <span
-            className="badge badge-secondary"
-          >
-            09:00
-          </span>
-        </p>
-      </a>
-    </div>
-    <div>
-      <a
-        className="alert-link"
-        href="#"
-      >
-        <p
-          className="text-center"
-        >
-          <span
-            className="badge badge-secondary"
-          >
-            09:00
-          </span>
-        </p>
-      </a>
-    </div>
-    <div>
-      <a
-        className="alert-link"
-        href="#"
-      >
-        <p
-          className="text-center"
-        >
-          <span
-            className="badge badge-secondary"
-          >
-            09:00
-          </span>
-        </p>
-      </a>
-    </div>
-    <div>
-      <a
-        className="alert-link"
-        href="#"
-      >
-        <p
-          className="text-center"
-        >
-          <span
-            className="badge badge-secondary"
-          >
-            09:00
-          </span>
-        </p>
-      </a>
-    </div>
-    <div>
-      <a
-        className="alert-link"
-        href="#"
-      >
-        <p
-          className="text-center"
-        >
-          <span
-            className="badge badge-secondary"
-          >
-            09:00
-          </span>
-        </p>
-      </a>
+         
+        13:30
+         
+      </div>
     </div>
   </div>
 </div>

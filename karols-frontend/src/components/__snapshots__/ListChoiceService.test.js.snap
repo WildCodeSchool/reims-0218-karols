@@ -44,12 +44,62 @@ exports[`renders correctly 1`] = `
           className="card-footer"
         >
           <button
-            className="btn btn-secondary"
+            className="btn btn-default btn-lg btn-block"
             onClick={[Function]}
             type={undefined}
           >
-             Choisir ce service 
+            Choisir ce service
           </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="text-center col-lg-4"
+  >
+    <div>
+      <div
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div>
+          <div
+            className="card text-white"
+          >
+            <div>
+              <img
+                alt="Card image cap"
+                className="card-img"
+                src="http://www.lespiedssurterre.fr/wp-content/uploads/2017/09/MissCoiffure-choix.jpg"
+                width="100%"
+              />
+              <div
+                className="text-center card-img-overlay"
+              >
+                <h5
+                  className="card-title"
+                  style={
+                    Object {
+                      "fontSize": "2em",
+                    }
+                  }
+                >
+                  Titre !
+                </h5>
+              </div>
+            </div>
+            <div
+              className="card-footer"
+            >
+              <button
+                className="btn btn-default btn-lg btn-block"
+                onClick={[Function]}
+                type={undefined}
+              >
+                Choisir ce service
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -94,61 +144,11 @@ exports[`renders correctly 1`] = `
           className="card-footer"
         >
           <button
-            className="btn btn-secondary"
+            className="btn btn-primary btn-lg btn-block"
             onClick={[Function]}
             type={undefined}
           >
-             Choisir ce service 
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="text-center col-lg-4"
-  >
-    <div>
-      <div
-        className="card text-white"
-      >
-        <img
-          className="card-img"
-          src="https://images.unsplash.com/photo-1466201570621-6dee7c8dbe11?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0eda6a341afd70d53eaca3b17e674fab&auto=format&fit=crop&w=2250&q=80"
-          width="100%"
-        />
-        <div
-          className="card-img-overlay"
-        >
-          <h5
-            className="card-title"
-            style={
-              Object {
-                "fontSize": "2em",
-              }
-            }
-          >
-            Table + Préparation
-          </h5>
-          <p
-            className="card-text"
-            style={
-              Object {
-                "fontSize": "1.5em",
-              }
-            }
-          >
-            Description Table & Préparation
-          </p>
-        </div>
-        <div
-          className="card-footer"
-        >
-          <button
-            className="btn btn-secondary"
-            onClick={[Function]}
-            type={undefined}
-          >
-             Choisir ce service 
+            Choisir
           </button>
         </div>
       </div>

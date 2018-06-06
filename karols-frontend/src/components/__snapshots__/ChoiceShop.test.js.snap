@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="dropdown"
+  className="mt-3 mb-4 dropdown"
   onKeyDown={[Function]}
 >
   <button
@@ -12,7 +12,7 @@ exports[`renders correctly 1`] = `
     onClick={[Function]}
     type="button"
   >
-    Change your shop
+    Choisissez votre boutique
   </button>
   <div
     aria-hidden={true}
@@ -21,30 +21,13 @@ exports[`renders correctly 1`] = `
     tabIndex="-1"
     x-placement={undefined}
   >
-    <h6
-      className="dropdown-header"
-      onClick={[Function]}
-      tabIndex="-1"
-      type={undefined}
-    >
-      Header
-    </h6>
-    <button
-      className="disabled dropdown-item"
-      disabled={true}
-      onClick={[Function]}
-      tabIndex="-1"
-      type="button"
-    >
-      Action
-    </button>
     <button
       className="dropdown-item"
       onClick={[Function]}
       tabIndex="0"
       type="button"
     >
-      Another Action
+      Paris
     </button>
     <div
       className="dropdown-divider"
@@ -58,7 +41,21 @@ exports[`renders correctly 1`] = `
       tabIndex="0"
       type="button"
     >
-      Another Action
+      Lyon
+    </button>
+    <div
+      className="dropdown-divider"
+      onClick={[Function]}
+      tabIndex="-1"
+      type={undefined}
+    />
+    <button
+      className="dropdown-item"
+      onClick={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      Cannes
     </button>
   </div>
 </div>

@@ -38,7 +38,21 @@ class Page extends Component {
         <hr />
         <Row>
           <Col className="text-center">
-            <PrestationLabel />
+            <PrestationLabel prestationLabelName="Maquillage" />
+          </Col>
+        </Row>
+        <ListChoicePrestation />
+        <hr />
+        <Row>
+          <Col className="text-center">
+            <PrestationLabel prestationLabelName="Coiffure" />
+          </Col>
+        </Row>
+        <ListChoicePrestation />
+        <hr />
+        <Row>
+          <Col className="text-center">
+            <PrestationLabel prestationLabelName="Ongles" />
           </Col>
         </Row>
         <hr />
