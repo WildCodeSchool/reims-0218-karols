@@ -19,6 +19,12 @@ const initialState = [
 ]
 
 const services = (prevState = initialState, action) => {
+  if (action.type === CHOOSE_SERVICE) {
+    return prevState.map(service => ({
+      ...service,
+      selected: action.serviceId === service.id
+    }))
+  }
   return prevState
 }
 
