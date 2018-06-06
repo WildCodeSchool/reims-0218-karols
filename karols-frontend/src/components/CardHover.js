@@ -74,4 +74,3 @@ class CardHover extends Component {
 }
 
 export default CardHover
-//{this.state.isHovering && (
