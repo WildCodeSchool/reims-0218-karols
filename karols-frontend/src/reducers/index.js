@@ -1,7 +1,7 @@
 import { combineReducers } from "redux"
 
-import choiceShop from "./choiceShop"
+import services from "./services"
 
 export default combineReducers({
-  choiceShop
+  services
 })
