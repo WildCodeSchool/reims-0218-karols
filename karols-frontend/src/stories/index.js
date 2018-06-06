@@ -4,16 +4,15 @@ import { storiesOf } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
 import { linkTo } from "@storybook/addon-links"
 import { Button, Welcome } from "@storybook/react/demo"
+
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import ChoiceShop from "../components/ChoiceShop"
-import JumbotronExample from "../components/JumbotronExample"
 import PrestationLabel from "../components/PrestationLabel"
 import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
 import SelectClient from "../components/SelectClient"
-import SelectPerson from "../components/SelectClient"
 import ChoiceService from "../components/ChoiceService"
 import InfoClient from "../components/InfoClient"
 import Footer from "../components/Footer"
@@ -26,6 +25,10 @@ import ListCalendarTime from "../components/ListCalendarTime"
 import ListCalendarDayTime from "../components/ListCalendarDayTime"
 import ResultCalendar from "../components/ResultCalendar"
 import ListChoiceGender from "../components/ListChoiceGender"
+import Page from "../components/Page"
+import ValidationReservationButton from "../components/ValidationReservationButton"
+import PreferredDateChoice from "../components/PreferredDateChoice"
+import CardHover from "../components/CardHover"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -43,14 +46,19 @@ storiesOf("Button", module)
     </Button>
   ))
 
+storiesOf("Page", module).add("Page with all the content", () => <Page />)
+
 storiesOf("ChoiceShop", module).add("choice your shop", () => <ChoiceShop />)
 
-storiesOf("JumbotronExample", module).add("just an example", () => (
-  <JumbotronExample />
-))
+storiesOf("ValidationReservationButton", module).add(
+  "Recapitulative button",
+  () => <ValidationReservationButton />
+)
 
 storiesOf("SelectClient", module).add("Selected client", () => <SelectClient />)
-storiesOf("SelectPerson", module).add("Selected person", () => <SelectPerson />)
+
+storiesOf("CardHover", module).add("just a CardHover", () => <CardHover />)
+
 storiesOf("Footer", module).add("just a footer", () => <Footer />)
 
 storiesOf("InfoClient", module).add("just an information on customer", () => (
@@ -96,6 +104,10 @@ storiesOf("ListChoicePrestation", module).add(
   "ListChoicePrestation render",
   () => <ListChoicePrestation />
 )
+
+storiesOf("PreferredDateChoice", module).add("Preferred Date Choice", () => (
+  <PreferredDateChoice />
+))
 
 storiesOf("ListCalendarTime", module).add("Render the calendar", () => (
   <ListCalendarTime />

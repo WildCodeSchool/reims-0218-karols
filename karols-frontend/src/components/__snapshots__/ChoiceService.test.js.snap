@@ -3,38 +3,32 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
-    className="card"
+    className="card text-white"
   >
+    <img
+      className="card-img"
+      src={undefined}
+      width="100%"
+    />
     <div
-      className="card-body"
+      className="card-img-overlay"
     >
       <h5
         className="card-title"
-      >
-         
-         
-      </h5>
-    </div>
-    <a
-      href=""
-    >
-      <img
-        alt="Name of service"
-        className="img-fluid"
-        height="250"
-        src="http://via.placeholder.com/250x250"
-        width="250"
+        style={
+          Object {
+            "fontSize": "2em",
+          }
+        }
       />
-    </a>
-    <div
-      className="card-body"
-    >
       <p
         className="card-text"
-      >
-         
-         
-      </p>
+        style={
+          Object {
+            "fontSize": "1.5em",
+          }
+        }
+      />
     </div>
     <div
       className="card-footer"

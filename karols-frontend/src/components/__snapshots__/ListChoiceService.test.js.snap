@@ -1,154 +1,156 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
-  <div>
-    <div
-      className="card"
-    >
+<div
+  className="row"
+>
+  <div
+    className="text-center mb-3 col-lg-4"
+  >
+    <div>
       <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-           
-          Préparation
-           
-        </h5>
-      </div>
-      <a
-        href=""
+        className="card text-white"
       >
         <img
-          alt="Name of service"
-          className="img-fluid"
-          height="250"
-          src="http://via.placeholder.com/250x250"
-          width="250"
+          className="card-img"
+          src="https://images.unsplash.com/photo-1481501940778-c8bb63e376c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=842a2f0d2f40bb7bb59bbdfd78289a0f&auto=format&fit=crop&w=1050&q=80"
+          width="100%"
         />
-      </a>
-      <div
-        className="card-body"
-      >
-        <p
-          className="card-text"
+        <div
+          className="card-img-overlay"
         >
-           
-          Description Préparation
-           
-        </p>
-      </div>
-      <div
-        className="card-footer"
-      >
-        <button
-          className="btn btn-secondary"
-          onClick={[Function]}
-          type={undefined}
+          <h5
+            className="card-title"
+            style={
+              Object {
+                "fontSize": "2em",
+              }
+            }
+          >
+            Préparation
+          </h5>
+          <p
+            className="card-text"
+            style={
+              Object {
+                "fontSize": "1.5em",
+              }
+            }
+          >
+            Description Préparation
+          </p>
+        </div>
+        <div
+          className="card-footer"
         >
-           Choisir ce service 
-        </button>
+          <button
+            className="btn btn-default btn-lg btn-block"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Choisir ce service
+          </button>
+        </div>
       </div>
     </div>
   </div>
-  <div>
-    <div
-      className="card"
-    >
+  <div
+    className="text-center col-lg-4"
+  >
+    <div>
       <div
-        className="card-body"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
       >
-        <h5
-          className="card-title"
-        >
-           
-          Table
-           
-        </h5>
-      </div>
-      <a
-        href=""
-      >
-        <img
-          alt="Name of service"
-          className="img-fluid"
-          height="250"
-          src="http://via.placeholder.com/250x250"
-          width="250"
-        />
-      </a>
-      <div
-        className="card-body"
-      >
-        <p
-          className="card-text"
-        >
-           
-          Description Table
-           
-        </p>
-      </div>
-      <div
-        className="card-footer"
-      >
-        <button
-          className="btn btn-secondary"
-          onClick={[Function]}
-          type={undefined}
-        >
-           Choisir ce service 
-        </button>
+        <div>
+          <div
+            className="card text-white"
+          >
+            <div>
+              <img
+                alt="Card image cap"
+                className="card-img"
+                src="http://www.lespiedssurterre.fr/wp-content/uploads/2017/09/MissCoiffure-choix.jpg"
+                width="100%"
+              />
+              <div
+                className="text-center card-img-overlay"
+              >
+                <h5
+                  className="card-title"
+                  style={
+                    Object {
+                      "fontSize": "2em",
+                    }
+                  }
+                >
+                  Titre !
+                </h5>
+              </div>
+            </div>
+            <div
+              className="card-footer"
+            >
+              <button
+                className="btn btn-default btn-lg btn-block"
+                onClick={[Function]}
+                type={undefined}
+              >
+                Choisir ce service
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div>
-    <div
-      className="card"
-    >
+  <div
+    className="text-center col-lg-4"
+  >
+    <div>
       <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-           
-          Table + Préparation
-           
-        </h5>
-      </div>
-      <a
-        href=""
+        className="card text-white"
       >
         <img
-          alt="Name of service"
-          className="img-fluid"
-          height="250"
-          src="http://via.placeholder.com/250x250"
-          width="250"
+          className="card-img"
+          src="https://images.unsplash.com/uploads/1412198485051133af17f/5049dacb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dddba89812ed0325b966bf07aba683e3&auto=format&fit=crop&w=1050&q=80"
+          width="100%"
         />
-      </a>
-      <div
-        className="card-body"
-      >
-        <p
-          className="card-text"
+        <div
+          className="card-img-overlay"
         >
-           
-          Description Table & Préparation
-           
-        </p>
-      </div>
-      <div
-        className="card-footer"
-      >
-        <button
-          className="btn btn-secondary"
-          onClick={[Function]}
-          type={undefined}
+          <h5
+            className="card-title"
+            style={
+              Object {
+                "fontSize": "2em",
+              }
+            }
+          >
+            Table
+          </h5>
+          <p
+            className="card-text"
+            style={
+              Object {
+                "fontSize": "1.5em",
+              }
+            }
+          >
+            Description Table
+          </p>
+        </div>
+        <div
+          className="card-footer"
         >
-           Choisir ce service 
-        </button>
+          <button
+            className="btn btn-primary btn-lg btn-block"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Choisir
+          </button>
+        </div>
       </div>
     </div>
   </div>

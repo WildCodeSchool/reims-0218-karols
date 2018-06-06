@@ -2,719 +2,762 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="table-responsive"
+  className="d-flex justify-content-center"
 >
-  <table
-    className="table"
+  <div
+    style={
+      Object {
+        "flexBasis": "0px",
+        "flexGrow": "1",
+        "flexShrink": "0",
+        "margin": "0 7px",
+        "maxWidth": "75px",
+      }
+    }
   >
-    <tbody>
-      <tr>
-        <td>
-          <div>
-            <div
-              className="text-center"
-            >
-              <p>
-                Vendredi
-              </p>
-              <p>
-                25 mai
-              </p>
-            </div>
-            <div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div>
-            <div
-              className="text-center"
-            >
-              <p>
-                Vendredi
-              </p>
-              <p>
-                25 mai
-              </p>
-            </div>
-            <div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div>
-            <div
-              className="text-center"
-            >
-              <p>
-                Vendredi
-              </p>
-              <p>
-                25 mai
-              </p>
-            </div>
-            <div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div>
-            <div
-              className="text-center"
-            >
-              <p>
-                Vendredi
-              </p>
-              <p>
-                25 mai
-              </p>
-            </div>
-            <div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-              <div>
-                <a
-                  className="alert-link"
-                  href="#"
-                >
-                  <p
-                    className="text-center"
-                  >
-                    <span
-                      className="badge badge-secondary"
-                    >
-                      09:00
-                    </span>
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <div
+      style={
+        Object {
+          "color": "#435f71",
+          "fontSize": "14px",
+          "marginBottom": "24px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "fontWeight": "700",
+          }
+        }
+      >
+        mercredi
+      </p>
+      <p
+        style={
+          Object {
+            "fontSize": "14px",
+            "marginBottom": "24px",
+            "textAlign": "center",
+          }
+        }
+      >
+         6 juin
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    >
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "flexBasis": "0px",
+        "flexGrow": "1",
+        "flexShrink": "0",
+        "margin": "0 7px",
+        "maxWidth": "75px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#435f71",
+          "fontSize": "14px",
+          "marginBottom": "24px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "fontWeight": "700",
+          }
+        }
+      >
+        mercredi
+      </p>
+      <p
+        style={
+          Object {
+            "fontSize": "14px",
+            "marginBottom": "24px",
+            "textAlign": "center",
+          }
+        }
+      >
+         6 juin
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    >
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "flexBasis": "0px",
+        "flexGrow": "1",
+        "flexShrink": "0",
+        "margin": "0 7px",
+        "maxWidth": "75px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#435f71",
+          "fontSize": "14px",
+          "marginBottom": "24px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "fontWeight": "700",
+          }
+        }
+      >
+        mercredi
+      </p>
+      <p
+        style={
+          Object {
+            "fontSize": "14px",
+            "marginBottom": "24px",
+            "textAlign": "center",
+          }
+        }
+      >
+         6 juin
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    >
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "flexBasis": "0px",
+        "flexGrow": "1",
+        "flexShrink": "0",
+        "margin": "0 7px",
+        "maxWidth": "75px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#435f71",
+          "fontSize": "14px",
+          "marginBottom": "24px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "fontWeight": "700",
+          }
+        }
+      >
+        mercredi
+      </p>
+      <p
+        style={
+          Object {
+            "fontSize": "14px",
+            "marginBottom": "24px",
+            "textAlign": "center",
+          }
+        }
+      >
+         6 juin
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    >
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "flexBasis": "0px",
+        "flexGrow": "1",
+        "flexShrink": "0",
+        "margin": "0 7px",
+        "maxWidth": "75px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#435f71",
+          "fontSize": "14px",
+          "marginBottom": "24px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "fontWeight": "700",
+          }
+        }
+      >
+        mercredi
+      </p>
+      <p
+        style={
+          Object {
+            "fontSize": "14px",
+            "marginBottom": "24px",
+            "textAlign": "center",
+          }
+        }
+      >
+         6 juin
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    >
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#ccecfa",
+              "borderRadius": "4px",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:30
+           
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

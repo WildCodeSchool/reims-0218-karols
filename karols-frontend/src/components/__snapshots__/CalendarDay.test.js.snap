@@ -2,13 +2,34 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="text-center"
+  style={
+    Object {
+      "color": "#435f71",
+      "fontSize": "14px",
+      "marginBottom": "24px",
+      "textAlign": "center",
+    }
+  }
 >
-  <p>
-    Vendredi
+  <p
+    style={
+      Object {
+        "fontWeight": "700",
+      }
+    }
+  >
+    mercredi
   </p>
-  <p>
-    25 mai
+  <p
+    style={
+      Object {
+        "fontSize": "14px",
+        "marginBottom": "24px",
+        "textAlign": "center",
+      }
+    }
+  >
+     6 juin
   </p>
 </div>
 `;

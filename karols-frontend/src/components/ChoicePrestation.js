@@ -1,19 +1,29 @@
 import React from "react"
 import { Card, CardTitle, CardText, CardImgOverlay } from "reactstrap"
 
-const ChoicePrestation = () => {
+// Display card when it's normal state
+
+const ChoicePrestation = ({ image, description, title }) => {
   return (
-    <div>
+    <div className="mb-4">
       <Card inverse>
         <img
           className="img-fluid"
-          width="250"
-          src="http://via.placeholder.com/250x250"
-          alt="Prestations"
+          width="500"
+          height="250"
+          src={image}
+          alt="Name of service"
         />
+
         <CardImgOverlay>
-          <CardTitle>Card Title</CardTitle>
-          <CardText>Choisissez votre prestation</CardText>
+          <CardTitle
+            style={{
+              fontSize: "2em"
+            }}
+          >
+            {title}
+          </CardTitle>
+          <CardText>{description}</CardText>
         </CardImgOverlay>
       </Card>
     </div>

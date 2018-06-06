@@ -24,14 +24,36 @@ export default class ChoiceShop extends React.Component {
 
   render() {
     return (
-      <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle caret>Change your shop</DropdownToggle>
-        <DropdownMenu>
-          <DropdownItem header>Header</DropdownItem>
-          <DropdownItem disabled>Action</DropdownItem>
-          <DropdownItem>Another Action</DropdownItem>
+      <Dropdown
+        className="mt-3 mb-4"
+        isOpen={this.state.dropdownOpen}
+        toggle={this.toggle}
+      >
+        <DropdownToggle
+          caret
+          style={{
+            fontSize: "1.5em"
+          }}
+        >
+          Votre boutique
+        </DropdownToggle>
+        <DropdownMenu
+          className="text-center"
+          style={{
+            fontSize: "1.5em"
+          }}
+        >
+          <DropdownItem
+            style={{
+              width: "200px"
+            }}
+          >
+            Paris
+          </DropdownItem>
           <DropdownItem divider />
-          <DropdownItem>Another Action</DropdownItem>
+          <DropdownItem>Lyon</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem>Cannes</DropdownItem>
         </DropdownMenu>
       </Dropdown>
     )
