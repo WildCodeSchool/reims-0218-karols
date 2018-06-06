@@ -26,9 +26,9 @@ describe("action add slot creator", () => {
   it("should return an action CHOOSE_TIMESLOT WITH TIME", () => {
     const expected = {
       type: CHOOSE_TIMESLOT,
-      timeSlot: { year: 2018, month: 4, day: 24, hour: 12 }
+      timeSlotId: { year: 2018, month: 4, day: 24, hour: 12 }
     }
-    expect(makeChooseSlotReservation(expected.timeSlot)).toEqual(expected)
+    expect(makeChooseSlotReservation(expected.timeSlotId)).toEqual(expected)
   })
 })
 
