@@ -4,7 +4,9 @@ import ChoicePrestation from "../components/ChoicePrestation"
 import { fetchPrestation } from "../api"
 import { makePrestationsReceived } from "../actions/actions"
 
-const mapStateToProps = state => ({})
+const mapStateToProps = state => ({
+  prestations: state.prestations
+})
 
 const mapDispatchToProps = dispatch => ({
   onPrestationsReceived: response => dispatch(makePrestationsReceived(response))
@@ -14,12 +16,8 @@ class PrestationWrap extends Component {
   render() {
     return (
       <div>
-        <ChoicePrestation
-          name={"gugusse"}
-          imgSrc={
-            "https://www.dickson-constant.com/medias/images/catalogue/api/orc-6028-680.jpg"
-          }
-        />
+        {this.props.prestations.map(prestation => console.log(prestation))}
+        <ChoicePrestation {...this.props.prestations} />
       </div>
     )
   }
