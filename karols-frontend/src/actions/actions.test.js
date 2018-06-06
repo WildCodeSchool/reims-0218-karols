@@ -36,7 +36,7 @@ describe("action choose sex creator", () => {
   it("should return M gender", () => {
     const expectedForMale = {
       type: CHOOSE_SEX,
-      sex: "M"
+      sexId: "M"
     }
 
     expect(makeChooseSex("M")).toEqual(expectedForMale)
@@ -45,7 +45,7 @@ describe("action choose sex creator", () => {
   it("should return F gender", () => {
     const expectedForFemale = {
       type: CHOOSE_SEX,
-      sex: "F"
+      sexId: "F"
     }
     expect(makeChooseSex("F")).toEqual(expectedForFemale)
   })

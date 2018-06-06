@@ -14,9 +14,9 @@ export const makeChooseService = serviceId => ({
   serviceId
 })
 
-export const makeChooseSex = sex => ({
+export const makeChooseSex = sexId => ({
   type: CHOOSE_SEX,
-  sex
+  sexId
 })
 
 export const makeChooseShop = shopId => ({
