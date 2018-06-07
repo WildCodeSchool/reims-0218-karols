@@ -29,9 +29,27 @@ export default class ChoiceShop extends React.Component {
         isOpen={this.state.dropdownOpen}
         toggle={this.toggle}
       >
-        <DropdownToggle caret>Choisissez votre boutique</DropdownToggle>
-        <DropdownMenu>
-          <DropdownItem>Paris</DropdownItem>
+        <DropdownToggle
+          caret
+          style={{
+            fontSize: "1.5em"
+          }}
+        >
+          Votre boutique
+        </DropdownToggle>
+        <DropdownMenu
+          className="text-center"
+          style={{
+            fontSize: "1.5em"
+          }}
+        >
+          <DropdownItem
+            style={{
+              width: "200px"
+            }}
+          >
+            Paris
+          </DropdownItem>
           <DropdownItem divider />
           <DropdownItem>Lyon</DropdownItem>
           <DropdownItem divider />
