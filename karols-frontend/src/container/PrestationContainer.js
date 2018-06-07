@@ -16,9 +16,7 @@ export class PrestationWrap extends Component {
   render() {
     return (
       <div>
-        {console.log(this.props.prestations)}
         {this.props.prestations.map(prestation => {
-          console.log(prestation)
           return (
             <ChoicePrestation
               name={prestation.name}
