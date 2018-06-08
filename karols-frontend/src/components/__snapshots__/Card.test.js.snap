@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className="example-2 card"
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="data"
+      >
+        <div
+          className="content text-center"
+        >
+          <h1
+            className="title"
+          >
+            <a
+              href="#"
+            >
+               Karols 
+            </a>
+          </h1>
+          <p
+            className="text"
+          >
+            The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.
+          </p>
+          <a
+            className="btn justify-content-center btn btn-secondary"
+            href="#"
+            onClick={[Function]}
+            type={undefined}
+          >
+             
+            Coucou
+             
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
