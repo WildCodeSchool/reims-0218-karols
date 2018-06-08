@@ -6,7 +6,7 @@ describe("genders", () => {
   it("should not change the state for unhandled action", () => {
     const prevState = [
       {
-        sex: "H",
+        sex: "M",
         selected: false
       },
       {
@@ -25,7 +25,7 @@ describe("genders", () => {
   it("should change the state for choose gender action", () => {
     const prevState = [
       {
-        sex: "H",
+        sex: "M",
         selected: false
       },
       {
@@ -35,7 +35,7 @@ describe("genders", () => {
     ]
     const expectedState = [
       {
-        sex: "H",
+        sex: "M",
         selected: true
       },
       {
@@ -44,7 +44,7 @@ describe("genders", () => {
       }
     ]
 
-    const action = makeChooseSex("H")
+    const action = makeChooseSex("M")
     expect(genders(prevState, action)).toEqual(expectedState)
   })
 })
