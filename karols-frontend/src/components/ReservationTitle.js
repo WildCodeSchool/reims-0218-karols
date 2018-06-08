@@ -1,10 +1,9 @@
 import React from "react"
-import { Badge } from "reactstrap"
 
 const ReservationTitle = () => {
   return (
     <div>
-      <h3>Créez votre réservation</h3>
+      <h2 className="display-4">Créez votre réservation</h2>
     </div>
   )
 }

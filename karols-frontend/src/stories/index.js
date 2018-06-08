@@ -8,7 +8,6 @@ import { Button, Welcome } from "@storybook/react/demo"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import ChoiceShop from "../components/ChoiceShop"
-import JumbotronExample from "../components/JumbotronExample"
 import PrestationLabel from "../components/PrestationLabel"
 import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
@@ -29,6 +28,7 @@ import ListChoiceGender from "../components/ListChoiceGender"
 import Page from "../components/Page"
 import ValidationReservationButton from "../components/ValidationReservationButton"
 import PreferredDateChoice from "../components/PreferredDateChoice"
+import CardHover from "../components/CardHover"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -50,16 +50,14 @@ storiesOf("Page", module).add("Page with all the content", () => <Page />)
 
 storiesOf("ChoiceShop", module).add("choice your shop", () => <ChoiceShop />)
 
-storiesOf("JumbotronExample", module).add("just an example", () => (
-  <JumbotronExample />
-))
-
 storiesOf("ValidationReservationButton", module).add(
   "Recapitulative button",
   () => <ValidationReservationButton />
 )
 
 storiesOf("SelectClient", module).add("Selected client", () => <SelectClient />)
+
+storiesOf("CardHover", module).add("just a CardHover", () => <CardHover />)
 
 storiesOf("Footer", module).add("just a footer", () => <Footer />)
 

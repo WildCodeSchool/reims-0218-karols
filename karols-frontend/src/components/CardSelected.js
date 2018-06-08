@@ -9,7 +9,7 @@ import {
   Button
 } from "reactstrap"
 
-const ChoiceService = ({ name, description, image }) => {
+const CardSelected = ({ name, description, image }) => {
   return (
     <div>
       <Card inverse>
@@ -31,8 +31,8 @@ const ChoiceService = ({ name, description, image }) => {
           </CardText>
         </CardImgOverlay>
         <CardFooter>
-          <Button color="default" size="lg" block>
-            Choisir ce service
+          <Button color="primary" size="lg" block>
+            Choisir
           </Button>
         </CardFooter>
       </Card>
@@ -40,4 +40,4 @@ const ChoiceService = ({ name, description, image }) => {
   )
 }
 
-export default ChoiceService
+export default CardSelected

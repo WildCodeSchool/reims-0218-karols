@@ -55,18 +55,13 @@ class Page extends Component {
             <PrestationLabel prestationLabelName="Ongles" />
           </Col>
         </Row>
-        <ListChoicePrestation />
         <hr />
         <Row>
           <Col className="text-center">
-            <SelectClient />
+            <ListChoicePrestation />
           </Col>
         </Row>
-        <Row>
-          <Col className="text-center">
-            <InfoClient />
-          </Col>
-        </Row>
+
         <hr />
         <Row>
           <Col className="text-center">
