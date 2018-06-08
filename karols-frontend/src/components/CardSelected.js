@@ -12,7 +12,7 @@ import {
 const CardSelected = ({ name, description, image }) => {
   return (
     <div>
-      <Card inverse>
+      <Card inverse className="text-center">
         <CardImg width="100%" src={image} />
         <CardImgOverlay>
           <CardTitle
@@ -31,7 +31,7 @@ const CardSelected = ({ name, description, image }) => {
           </CardText>
         </CardImgOverlay>
         <CardFooter>
-          <Button color="primary" size="lg" block>
+          <Button className="btn" color="primary" size="lg" block>
             Choisir
           </Button>
         </CardFooter>
