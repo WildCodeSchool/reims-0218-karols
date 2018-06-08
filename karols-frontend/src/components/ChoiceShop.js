@@ -1,5 +1,12 @@
 import React from "react"
-import { Card, CardTitle, CardText, CardImgOverlay } from "reactstrap"
+import {
+  Card,
+  CardTitle,
+  CardText,
+  CardImgOverlay,
+  CardFooter,
+  Button
+} from "reactstrap"
 
 const ChoiceShop = ({ city, image, adresse }) => {
   return (
@@ -23,6 +30,11 @@ const ChoiceShop = ({ city, image, adresse }) => {
           </CardTitle>
           <CardText>{adresse}</CardText>
         </CardImgOverlay>
+        <CardFooter>
+          <Button color="default" size="lg" block>
+            Choisir ce service
+          </Button>
+        </CardFooter>
       </Card>
     </div>
   )
