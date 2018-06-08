@@ -33,19 +33,19 @@ describe("action add slot creator", () => {
 })
 
 describe("action choose sex creator", () => {
-  it("should return M gender", () => {
+  it("should return H gender", () => {
     const expectedForMale = {
       type: CHOOSE_SEX,
-      sexId: "M"
+      sex: "H"
     }
 
-    expect(makeChooseSex("M")).toEqual(expectedForMale)
+    expect(makeChooseSex("H")).toEqual(expectedForMale)
   })
 
   it("should return F gender", () => {
     const expectedForFemale = {
       type: CHOOSE_SEX,
-      sexId: "F"
+      sex: "F"
     }
     expect(makeChooseSex("F")).toEqual(expectedForFemale)
   })
