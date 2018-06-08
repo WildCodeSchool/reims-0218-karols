@@ -24,7 +24,7 @@ export const makeChooseShop = shopId => ({
   shopId
 })
 
-export const makeChooseSlotReservation = timeSlotId => ({
+export const makeChooseSlotReservation = timeSlot => ({
   type: CHOOSE_TIMESLOT,
-  timeSlotId
+  timeSlot
 })
