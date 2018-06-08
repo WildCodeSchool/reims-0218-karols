@@ -17,76 +17,33 @@ exports[`renders correctly 1`] = `
           src="http://res.cloudinary.com/dlfnke6kc/image/upload/v1527837786/karols-600x600px_fdxlcu.jpg"
         />
         <div
-          className="mt-3 mb-4 dropdown"
-          onKeyDown={[Function]}
+          className="mb-4"
         >
-          <button
-            aria-expanded={false}
-            aria-haspopup={true}
-            className="dropdown-toggle btn btn-secondary"
-            onClick={[Function]}
-            style={
-              Object {
-                "fontSize": "1.5em",
-              }
-            }
-            type="button"
-          >
-            Votre boutique
-          </button>
           <div
-            aria-hidden={true}
-            className="text-center dropdown-menu"
-            role="menu"
-            style={
-              Object {
-                "fontSize": "1.5em",
-              }
-            }
-            tabIndex="-1"
-            x-placement={undefined}
+            className="card text-white"
           >
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              style={
-                Object {
-                  "width": "200px",
+            <img
+              alt="Name of service"
+              className="img-fluid"
+              height="250"
+              src={undefined}
+              width="500"
+            />
+            <div
+              className="card-img-overlay"
+            >
+              <h5
+                className="card-title"
+                style={
+                  Object {
+                    "fontSize": "2em",
+                  }
                 }
-              }
-              tabIndex="0"
-              type="button"
-            >
-              Paris
-            </button>
-            <div
-              className="dropdown-divider"
-              onClick={[Function]}
-              tabIndex="-1"
-              type={undefined}
-            />
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Lyon
-            </button>
-            <div
-              className="dropdown-divider"
-              onClick={[Function]}
-              tabIndex="-1"
-              type={undefined}
-            />
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Cannes
-            </button>
+              />
+              <p
+                className="card-text"
+              />
+            </div>
           </div>
         </div>
       </header>
