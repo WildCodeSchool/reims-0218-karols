@@ -1,10 +1,10 @@
 import React from "react"
 import { Button } from "reactstrap"
-import styles from "../styles/cardDesign.css"
+import styles from "../styles/card.css"
 
-const CardDesign = () => {
+const Card = () => {
   return (
-    <div className={styles.CardDesign}>
+    <div className={styles.Card}>
       <div className="example-2 card">
         <div className="wrapper">
           <div className="data">
@@ -28,4 +28,4 @@ const CardDesign = () => {
   )
 }
 
-export default CardDesign
+export default Card

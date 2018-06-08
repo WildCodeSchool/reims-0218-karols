@@ -1,15 +1,15 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import CardDesign from "./CardDesign"
+import Card from "./Card"
 import renderer from "react-test-renderer"
 
 it("renders without crashing", () => {
   const div = document.createElement("div")
-  ReactDOM.render(<CardDesign />, div)
+  ReactDOM.render(<Card />, div)
   ReactDOM.unmountComponentAtNode(div)
 })
 
 it("renders correctly", () => {
-  const tree = renderer.create(<CardDesign />).toJSON()
+  const tree = renderer.create(<Card />).toJSON()
   expect(tree).toMatchSnapshot()
 })
