@@ -8,7 +8,7 @@ import {
   Button
 } from "reactstrap"
 
-const ChoiceShop = ({ city, image, adresse }) => {
+const ChoiceShop = ({ city, image, adress }) => {
   return (
     <div className="mb-4">
       <Card inverse>
@@ -28,11 +28,11 @@ const ChoiceShop = ({ city, image, adresse }) => {
           >
             {city}
           </CardTitle>
-          <CardText>{adresse}</CardText>
+          <CardText>{adress}</CardText>
         </CardImgOverlay>
         <CardFooter>
           <Button color="default" size="lg" block>
-            Choisir ce service
+            Choisir cette boutique
           </Button>
         </CardFooter>
       </Card>

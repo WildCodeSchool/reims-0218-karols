@@ -29,6 +29,7 @@ import Page from "../components/Page"
 import ValidationReservationButton from "../components/ValidationReservationButton"
 import PreferredDateChoice from "../components/PreferredDateChoice"
 import CardHover from "../components/CardHover"
+import ListChoiceShop from "../components/ListChoiceShop"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -49,6 +50,10 @@ storiesOf("Button", module)
 storiesOf("Page", module).add("Page with all the content", () => <Page />)
 
 storiesOf("ChoiceShop", module).add("choice your shop", () => <ChoiceShop />)
+
+storiesOf("ListChoiceShop", module).add("List choice Shop render", () => (
+  <ListChoiceShop />
+))
 
 storiesOf("ValidationReservationButton", module).add(
   "Recapitulative button",
