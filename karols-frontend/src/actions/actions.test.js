@@ -72,27 +72,3 @@ describe("action selected shop", () => {
     expect(makeChooseShop(1)).toEqual(expected)
   })
 })
-
-/*
-
-{
-      type: 'CHOOSE_PRESTATION',
-      prestationId: 1
-    }
-
-{
-      type: 'CHOOSE_SEX',
-      sex: "M"
-    }
-
-{
-      type: 'CHOOSE_SERVICE',
-      serviceId: 1
-    }
-
-{
-      type: 'CHOOSE_SHOP',
-      shopId: 1
-    }
-
-*/
