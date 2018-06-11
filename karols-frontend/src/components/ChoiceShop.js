@@ -1,41 +1,74 @@
 import React from "react"
-import {
-  Card,
-  CardTitle,
-  CardText,
-  CardImgOverlay,
-  CardFooter,
-  Button
-} from "reactstrap"
+import styles from "../styles/cardModel.css"
+import { Card, CardTitle, CardBody, CardFooter, Button } from "reactstrap"
 
 const ChoiceShop = ({ city, image, adress }) => {
   return (
     <div className="mb-4">
-      <Card inverse>
-        <img
-          className="img-fluid"
-          width="500"
-          height="250"
-          src={image}
-          alt="Name of service"
-        />
-
-        <CardImgOverlay>
-          <CardTitle
+      <div className={styles.card}>
+        <Card className="cardModel card" style={{}}>
+          <div
+            className="wrapper text-center"
             style={{
-              fontSize: "2em"
+              backgroundImage: `url(${image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat"
             }}
           >
-            {city}
-          </CardTitle>
-          <CardText>{adress}</CardText>
-        </CardImgOverlay>
-        <CardFooter>
-          <Button color="default" size="lg" block>
-            Choisir cette boutique
-          </Button>
-        </CardFooter>
-      </Card>
+            <div className="data">
+              <CardBody className="content">
+                <CardTitle
+                  className="city"
+                  style={{
+                    fontWeight: "500",
+                    marginTop: "10px"
+                  }}
+                >
+                  <p
+                    style={{
+                      color: "#FFF"
+                    }}
+                  >
+                    {city}
+                  </p>
+                </CardTitle>
+                <Button
+                  style={{
+                    display: "block",
+                    margin: "2em auto 1em",
+                    textAlign: "center",
+                    fontSize: "12px",
+                    color: "#fff",
+                    lineHeight: "1",
+                    position: "relative",
+                    fontWeight: "700",
+                    marginBottom: "40px",
+                    padding: "10px 20px"
+                  }}
+                >
+                  Sélectionner
+                </Button>
+              </CardBody>
+              <CardFooter
+                style={{
+                  backgroundColor: "rgba(136,136,136, 0.5)"
+                }}
+              >
+                <p
+                  className="text"
+                  style={{
+                    height: "70px",
+                    margin: "0"
+                  }}
+                >
+                  {adress}
+                </p>
+              </CardFooter>
+            </div>
+          </div>
+        </Card>
+      </div>
     </div>
   )
 }
