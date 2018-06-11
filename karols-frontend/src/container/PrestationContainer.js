@@ -20,9 +20,9 @@ export class PrestationWrap extends Component {
         {this.props.prestations.map(prestation => {
           return (
             <ChoicePrestation
-              name={prestation.name}
+              title={prestation.name}
               key={prestation.id}
-              imgSrc={prestation.image}
+              image={prestation.image}
             />
           )
         })}
