@@ -25,13 +25,13 @@ const CardModel = ({ title, description, image }) => {
                     marginTop: "10px"
                   }}
                 >
-                  <h3
+                  <p
                     style={{
                       color: "#FFF"
                     }}
                   >
                     {title}
-                  </h3>
+                  </p>
                 </CardTitle>
                 <Button
                   style={{
