@@ -4,7 +4,7 @@ const initialState = []
 
 const prestationReceived = (prevState = initialState, action) => {
   if (action.type === PRESTATIONS_RECEIVED) {
-    return prevState
+    return action.prestations
   }
   return prevState
 }

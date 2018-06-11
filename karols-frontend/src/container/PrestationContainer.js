@@ -5,7 +5,7 @@ import { fetchPrestation } from "../api"
 import { makePrestationsReceived } from "../actions/actions"
 
 const mapStateToProps = state => ({
-  prestations: state.prestations
+  prestations: state.prestationReceveid
 })
 
 const mapDispatchToProps = dispatch => ({
