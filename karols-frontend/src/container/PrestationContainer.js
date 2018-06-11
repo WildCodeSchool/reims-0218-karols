@@ -5,23 +5,26 @@ import { fetchPrestation } from "../api"
 import { makePrestationsReceived } from "../actions/actions"
 
 const mapStateToProps = state => ({
-  prestations: state.prestations
+  prestations: state.prestationReceveid
 })
 
 const mapDispatchToProps = dispatch => ({
-  onPrestationsReceived: response => dispatch(makePrestationsReceived(response))
+  onPrestationsReceived: prestations =>
+    dispatch(makePrestationsReceived(prestations))
 })
 
 export class PrestationWrap extends Component {
   render() {
+    console.log("ARE WE ACCESSING", this.props.prestations)
     return (
       <div>
+        <p>Hello</p>
         {this.props.prestations.map(prestation => {
           return (
             <ChoicePrestation
-              name={prestation.name}
+              title={prestation.name}
               key={prestation.id}
-              imgSrc={prestation.image}
+              image={prestation.image}
             />
           )
         })}
