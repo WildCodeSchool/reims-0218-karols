@@ -30,7 +30,7 @@ export const makeChooseSlotReservation = timeSlot => ({
   timeSlot
 })
 
-export const makePrestationsReceived = response => ({
+export const makePrestationsReceived = prestations => ({
   type: PRESTATIONS_RECEIVED,
-  response
+  prestations
 })

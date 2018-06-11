@@ -2,21 +2,23 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import ChoicePrestation from "../components/ChoicePrestation"
 import { fetchPrestation } from "../api"
-import { makeChoosePrestation } from "../actions/actions"
+import { makePrestationsReceived } from "../actions/actions"
 
 const mapStateToProps = state => ({
   prestations: state.prestations
 })
 
 const mapDispatchToProps = dispatch => ({
-  onPrestationsReceived: prestationId =>
-    dispatch(makeChoosePrestation(prestationId))
+  onPrestationsReceived: prestations =>
+    dispatch(makePrestationsReceived(prestations))
 })
 
 export class PrestationWrap extends Component {
   render() {
+    console.log("ARE WE ACCESSING", this.props.prestations)
     return (
       <div>
+        <p>Hello</p>
         {this.props.prestations.map(prestation => {
           return (
             <ChoicePrestation
