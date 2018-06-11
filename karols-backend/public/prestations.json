@@ -217,9 +217,9 @@
   {
     "id": 4,
     "name": "Vernis",
-    "image": "",
-    "description":
-      "https://images.unsplash.com/photo-1523283245631-696bf7a521a9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1696172190bf33a6361b2d6eca8549cb&auto=format&fit=crop&w=1350&q=80",
+    "image":
+      "http://cache.cosmopolitan.fr/data/photo/w2000_ci/4v/vernis-ongles-colores.jpg",
+    "description": "",
     "preparations": [
       {
         "id": 1,

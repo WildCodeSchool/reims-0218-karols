@@ -18,7 +18,8 @@ const ChoicePrestation = ({ image, description, title }) => {
         <CardImgOverlay>
           <CardTitle
             style={{
-              fontSize: "2em"
+              fontSize: "2em",
+              color: "black"
             }}
           >
             {title}
