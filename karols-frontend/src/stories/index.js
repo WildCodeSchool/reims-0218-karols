@@ -30,6 +30,7 @@ import ValidationReservationButton from "../components/ValidationReservationButt
 import PreferredDateChoice from "../components/PreferredDateChoice"
 import CardHover from "../components/CardHover"
 import ListChoiceShop from "../components/ListChoiceShop"
+import CardModel from "../components/CardModel"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -126,3 +127,5 @@ storiesOf("ListCalendarDayTime", module).add(
 storiesOf("ResultCalendar", module).add("Render the calendar with time", () => (
   <ResultCalendar />
 ))
+
+storiesOf("CardModel", module).add("Render CardModel", () => <CardModel />)
