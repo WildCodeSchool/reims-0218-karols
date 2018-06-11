@@ -31,18 +31,18 @@ class Page extends Component {
         </Row>
         <Row className="justify-content-center">
           <CardModel
-            title="Tanguy"
-            description="salut la famille "
+            title="Réservation"
+            description="Pour la description"
             image="https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg"
           />
           <CardModel
-            title="Tanguy"
-            description="salut la famille "
+            title="Réservation"
+            description="Pour la description"
             image="https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg"
           />
           <CardModel
-            title="Tanguy"
-            description="salut la famille "
+            title="Réservation"
+            description="Pour la description"
             image="https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg"
           />
         </Row>
