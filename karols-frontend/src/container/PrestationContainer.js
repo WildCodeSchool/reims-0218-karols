@@ -2,14 +2,15 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import ChoicePrestation from "../components/ChoicePrestation"
 import { fetchPrestation } from "../api"
-import { makePrestationsReceived } from "../actions/actions"
+import { makeChoosePrestation } from "../actions/actions"
 
 const mapStateToProps = state => ({
   prestations: state.prestations
 })
 
 const mapDispatchToProps = dispatch => ({
-  onPrestationsReceived: response => dispatch(makePrestationsReceived(response))
+  onPrestationsReceived: prestationId =>
+    dispatch(makeChoosePrestation(prestationId))
 })
 
 export class PrestationWrap extends Component {
