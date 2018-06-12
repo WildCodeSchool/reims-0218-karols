@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import logo from "./logo.svg"
 import "./App.css"
 
-import PageContainer from "./container/PageContainer"
+import PageContainer from "./containers/PageContainer"
 
 class App extends Component {
   render() {
