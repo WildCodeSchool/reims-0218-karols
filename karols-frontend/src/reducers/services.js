@@ -1,4 +1,4 @@
-import { CHOOSE_SERVICE, GENDERS_SERVICES_RECEIVED } from "../actions/actions"
+import { CHOOSE_SERVICE } from "../actions/actions"
 
 const initialState = [
   {
@@ -24,9 +24,6 @@ const services = (prevState = initialState, action) => {
       ...service,
       selected: action.serviceId === service.id
     }))
-  }
-  if (action.type === GENDERS_SERVICES_RECEIVED) {
-    return action.response.prestations
   }
   return prevState
 }
