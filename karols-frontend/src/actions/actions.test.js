@@ -18,7 +18,7 @@ describe("action to choose a prestation", () => {
       prestationId: 2
     }
 
-    expect(makeChoosePrestation(2)).toEqual(expected)
+    expect(makeChoosePrestation(2, 4)).toEqual(expected)
   })
 })
 
