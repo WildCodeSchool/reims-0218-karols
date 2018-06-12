@@ -2,7 +2,7 @@ import React from "react"
 import styles from "../styles/cardModel.css"
 import { Card, CardTitle, Col, CardBody, CardFooter, Button } from "reactstrap"
 
-const CardModel = ({ title, description, image }) => {
+const CardModel = ({ id, title, description, image, selected, select }) => {
   return (
     <Col xs="12" md="4" lg="3">
       <div className={styles.card}>
@@ -34,6 +34,9 @@ const CardModel = ({ title, description, image }) => {
                   </p>
                 </CardTitle>
                 <Button
+                  onClick={() => {
+                    select(id)
+                  }}
                   style={{
                     display: "block",
                     margin: "2em auto 1em",
