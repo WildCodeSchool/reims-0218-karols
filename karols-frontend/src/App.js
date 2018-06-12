@@ -5,6 +5,7 @@ import "./App.css"
 import PageContainer from "./container/PageContainer"
 import ContainerPrestationFemale from "./container/ContainerPrestationFemale"
 import ContainerPrestationMale from "./container/ContainerPrestationMale"
+import GenderContainer from "./container/GenderContainer"
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
         <PageContainer />
         <ContainerPrestationFemale />
         <ContainerPrestationMale />
+        <GenderContainer />
       </div>
     )
   }
