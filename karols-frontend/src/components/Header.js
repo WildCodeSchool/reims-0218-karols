@@ -1,11 +1,11 @@
 import React from "react"
 import Logo from "./Logo"
-import ChoiceShop from "./ChoiceShop"
+import ListChoiceShop from "./ListChoiceShop"
 
 const Header = () => (
   <header>
     <Logo />
-    <ChoiceShop />
+    <ListChoiceShop />
   </header>
 )
 

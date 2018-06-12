@@ -1,8 +1,8 @@
 import React from "react"
 import styles from "../styles/cardModel.css"
-import { Card, CardTitle, CardBody, CardFooter, Button } from "reactstrap"
+import { Card, CardTitle, CardBody, Button } from "reactstrap"
 
-const ChoiceShop = ({ city, image, adress }) => {
+const ChoiceGender = ({ gender, image }) => {
   return (
     <div className="mb-4">
       <div className={styles.card}>
@@ -30,7 +30,7 @@ const ChoiceShop = ({ city, image, adress }) => {
                       color: "#FFF"
                     }}
                   >
-                    {city}
+                    {gender}
                   </p>
                 </CardTitle>
                 <Button
@@ -50,21 +50,6 @@ const ChoiceShop = ({ city, image, adress }) => {
                   Sélectionner
                 </Button>
               </CardBody>
-              <CardFooter
-                style={{
-                  backgroundColor: "rgba(136,136,136, 0.5)"
-                }}
-              >
-                <p
-                  className="text"
-                  style={{
-                    height: "70px",
-                    margin: "0"
-                  }}
-                >
-                  {adress}
-                </p>
-              </CardFooter>
             </div>
           </div>
         </Card>
@@ -73,4 +58,4 @@ const ChoiceShop = ({ city, image, adress }) => {
   )
 }
 
-export default ChoiceShop
+export default ChoiceGender
