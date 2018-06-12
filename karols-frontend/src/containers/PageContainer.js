@@ -14,19 +14,40 @@ import PrestationFemaleContainer from "./PrestationFemaleContainer"
 import PrestationMaleContainer from "./PrestationMaleContainer"
 import GenderContainer from "./GenderContainer"
 
+import { makeShopsPrestationsReceived } from "../actions/actions"
+
 import { fetchShopsPrestations } from "../api"
+
+const mapStateToProps = state => ({
+  showServices: showServices(state),
+  showSex: showSex(state),
+  showFemalePrestation: showFemalePrestation(state),
+  showMalePrestation: showMalePrestation(state)
+})
+
+const mapDispatchToProps = dispatch => ({
+  onShopsPrestationsReceived: response =>
+    dispatch(makeShopsPrestationsReceived(response))
+})
 
 class Page extends Component {
   render() {
-    return <div>Page</div>
+    return (
+      <div>
+        <ShopContainer />
+        <ServiceContainer />
+        <GenderContainer />
+        <PrestationFemaleContainer />
+        <PrestationMaleContainer />
+      </div>
+    )
   }
   componentDidMount() {
     //TODO fetch shopsandprestations
     fetchShopsPrestations().then(response => {
-      // dispatch SHOPS_PRESTATIONS_RECEIVED
-      console.log(response)
+      this.props.onShopsPrestationsReceived(response)
     })
   }
 }
 
-export default Page
+export default connect(mapStateToProps, mapDispatchToProps)(Page)
