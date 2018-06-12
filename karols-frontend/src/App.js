@@ -3,6 +3,8 @@ import logo from "./logo.svg"
 import "./App.css"
 
 import PageContainer from "./container/PageContainer"
+import ContainerPrestationFemale from "./container/ContainerPrestationFemale"
+import ContainerPrestationMale from "./container/ContainerPrestationMale"
 
 class App extends Component {
   render() {
@@ -16,6 +18,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <PageContainer />
+        <ContainerPrestationFemale />
+        <ContainerPrestationMale />
       </div>
     )
   }
