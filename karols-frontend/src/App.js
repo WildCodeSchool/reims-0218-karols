@@ -6,6 +6,7 @@ import PageContainer from "./container/PageContainer"
 import ContainerPrestationFemale from "./container/ContainerPrestationFemale"
 import ContainerPrestationMale from "./container/ContainerPrestationMale"
 import GenderContainer from "./container/GenderContainer"
+import ShopContainer from "./container/ShopContainer"
 
 class App extends Component {
   render() {
@@ -19,9 +20,10 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <PageContainer />
+        <ShopContainer />
+        <GenderContainer />
         <ContainerPrestationFemale />
         <ContainerPrestationMale />
-        <GenderContainer />
       </div>
     )
   }
