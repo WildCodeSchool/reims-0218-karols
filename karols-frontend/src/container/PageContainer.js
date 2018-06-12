@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 
-import { fetchShopsPrestations, fetchGendersServices } from "../api"
+import { fetchShopsPrestations } from "../api"
 
 class Page extends Component {
   render() {
@@ -12,9 +12,6 @@ class Page extends Component {
     fetchShopsPrestations().then(response => {
       // dispatch SHOPS_PRESTATIONS_RECEIVED
       console.log(response)
-    })
-    fetchGendersServices().then(responseGS => {
-      console.log(responseGS)
     })
   }
 }

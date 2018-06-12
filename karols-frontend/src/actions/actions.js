@@ -36,8 +36,3 @@ export const makeShopsPrestationsReceived = response => ({
   type: SHOPS_PRESTATIONS_RECEIVED,
   response
 })
-
-export const makeGendersServicesReceived = responseGS => ({
-  type: GENDERS_SERVICES_RECEIVED,
-  responseGS
-})
