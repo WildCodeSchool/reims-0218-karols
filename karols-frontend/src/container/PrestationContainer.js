@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import ChoicePrestation from "../components/ChoicePrestation"
+import CardModel from "../components/CardModel"
 import { fetchPrestation } from "../api"
 import { makePrestationsReceived } from "../actions/actions"
 
@@ -21,7 +21,7 @@ export class PrestationWrap extends Component {
         <p>Hello</p>
         {this.props.prestations.map(prestation => {
           return (
-            <ChoicePrestation
+            <CardModel
               title={prestation.name}
               key={prestation.id}
               image={prestation.image}
