@@ -1,4 +1,4 @@
-import { CHOOSE_SEX } from "../actions/actions"
+import { CHOOSE_SEX, GENDERS_SERVICES_RECEIVED } from "../actions/actions"
 
 const initialState = [
   {
@@ -17,6 +17,9 @@ const genders = (prevState = initialState, action) => {
       ...sexObject,
       selected: action.sex === sexObject.sex
     }))
+  }
+  if (action.type === GENDERS_SERVICES_RECEIVED) {
+    return action.response.prestations
   }
   return prevState
 }
