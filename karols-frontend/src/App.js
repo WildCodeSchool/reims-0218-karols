@@ -2,11 +2,11 @@ import React, { Component } from "react"
 import logo from "./logo.svg"
 import "./App.css"
 
-import PageContainer from "./container/PageContainer"
-import ContainerPrestationFemale from "./container/ContainerPrestationFemale"
-import ContainerPrestationMale from "./container/ContainerPrestationMale"
-import GenderContainer from "./container/GenderContainer"
-import ShopContainer from "./container/ShopContainer"
+import PageContainer from "./containers/PageContainer"
+import PrestationFemaleContainer from "./containers/PrestationFemaleContainer"
+import PrestationMaleContainer from "./containers/PrestationMaleContainer"
+import GenderContainer from "./containers/GenderContainer"
+import ShopContainer from "./containers/ShopContainer"
 
 class App extends Component {
   render() {
@@ -22,8 +22,8 @@ class App extends Component {
         <PageContainer />
         <ShopContainer />
         <GenderContainer />
-        <ContainerPrestationFemale />
-        <ContainerPrestationMale />
+        <PrestationFemaleContainer />
+        <PrestationMaleContainer />
       </div>
     )
   }
