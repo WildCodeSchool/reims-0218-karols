@@ -77,102 +77,95 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="row"
+    className="justify-content-center row"
   >
     <div
-      className="text-center mb-3 col-lg-4"
+      className="col-12 col-md-4 col-lg-3"
     >
-      <div>
+      <div
+        className={undefined}
+      >
         <div
-          className="card text-white"
+          className="cardModel card card"
+          style={Object {}}
         >
-          <img
-            className="card-img"
-            src="https://images.unsplash.com/photo-1481501940778-c8bb63e376c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=842a2f0d2f40bb7bb59bbdfd78289a0f&auto=format&fit=crop&w=1050&q=80"
-            width="100%"
-          />
           <div
-            className="card-img-overlay"
-          >
-            <h5
-              className="card-title"
-              style={
-                Object {
-                  "fontSize": "2em",
-                }
+            className="wrapper text-center"
+            style={
+              Object {
+                "backgroundImage": "url(https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg)",
+                "backgroundPosition": "center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
               }
-            >
-              Préparation
-            </h5>
-            <p
-              className="card-text"
-              style={
-                Object {
-                  "fontSize": "1.5em",
-                }
-              }
-            >
-              Description Préparation
-            </p>
-          </div>
-          <div
-            className="card-footer"
+            }
           >
-            <button
-              className="btn btn-default btn-lg btn-block"
-              onClick={[Function]}
-              type={undefined}
-            >
-              Choisir ce service
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="text-center col-lg-4"
-    >
-      <div>
-        <div
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-        >
-          <div>
             <div
-              className="card text-white"
+              className="data"
             >
-              <div>
-                <img
-                  alt="Card image cap"
-                  className="card-img"
-                  src="http://www.lespiedssurterre.fr/wp-content/uploads/2017/09/MissCoiffure-choix.jpg"
-                  width="100%"
-                />
-                <div
-                  className="text-center card-img-overlay"
+              <div
+                className="content card-body"
+              >
+                <h5
+                  className="title card-title"
+                  style={
+                    Object {
+                      "fontWeight": "500",
+                      "marginTop": "10px",
+                    }
+                  }
                 >
-                  <h5
-                    className="card-title"
+                  <p
                     style={
                       Object {
-                        "fontSize": "2em",
+                        "color": "#FFF",
                       }
                     }
                   >
-                    Titre !
-                  </h5>
-                </div>
+                    Réservation
+                  </p>
+                </h5>
+                <button
+                  className="btn btn-secondary"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "display": "block",
+                      "fontSize": "12px",
+                      "fontWeight": "700",
+                      "lineHeight": "1",
+                      "margin": "2em auto 1em",
+                      "marginBottom": "40px",
+                      "padding": "10px 20px",
+                      "position": "relative",
+                      "textAlign": "center",
+                    }
+                  }
+                  type={undefined}
+                >
+                  Sélectionner
+                </button>
               </div>
               <div
                 className="card-footer"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(136,136,136, 0.5)",
+                  }
+                }
               >
-                <button
-                  className="btn btn-default btn-lg btn-block"
-                  onClick={[Function]}
-                  type={undefined}
+                <p
+                  className="text"
+                  style={
+                    Object {
+                      "height": "70px",
+                      "margin": "0",
+                    }
+                  }
                 >
-                  Choisir ce service
-                </button>
+                  Pour la description
+                </p>
               </div>
             </div>
           </div>
@@ -180,51 +173,187 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="text-center col-lg-4"
+      className="col-12 col-md-4 col-lg-3"
     >
-      <div>
+      <div
+        className={undefined}
+      >
         <div
-          className="card text-white"
+          className="cardModel card card"
+          style={Object {}}
         >
-          <img
-            className="card-img"
-            src="https://images.unsplash.com/uploads/1412198485051133af17f/5049dacb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dddba89812ed0325b966bf07aba683e3&auto=format&fit=crop&w=1050&q=80"
-            width="100%"
-          />
           <div
-            className="card-img-overlay"
+            className="wrapper text-center"
+            style={
+              Object {
+                "backgroundImage": "url(https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg)",
+                "backgroundPosition": "center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
+              }
+            }
           >
-            <h5
-              className="card-title"
-              style={
-                Object {
-                  "fontSize": "2em",
-                }
-              }
+            <div
+              className="data"
             >
-              Table
-            </h5>
-            <p
-              className="card-text"
-              style={
-                Object {
-                  "fontSize": "1.5em",
+              <div
+                className="content card-body"
+              >
+                <h5
+                  className="title card-title"
+                  style={
+                    Object {
+                      "fontWeight": "500",
+                      "marginTop": "10px",
+                    }
+                  }
+                >
+                  <p
+                    style={
+                      Object {
+                        "color": "#FFF",
+                      }
+                    }
+                  >
+                    Réservation
+                  </p>
+                </h5>
+                <button
+                  className="btn btn-secondary"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "display": "block",
+                      "fontSize": "12px",
+                      "fontWeight": "700",
+                      "lineHeight": "1",
+                      "margin": "2em auto 1em",
+                      "marginBottom": "40px",
+                      "padding": "10px 20px",
+                      "position": "relative",
+                      "textAlign": "center",
+                    }
+                  }
+                  type={undefined}
+                >
+                  Sélectionner
+                </button>
+              </div>
+              <div
+                className="card-footer"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(136,136,136, 0.5)",
+                  }
                 }
-              }
-            >
-              Description Table
-            </p>
+              >
+                <p
+                  className="text"
+                  style={
+                    Object {
+                      "height": "70px",
+                      "margin": "0",
+                    }
+                  }
+                >
+                  Pour la description
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-12 col-md-4 col-lg-3"
+    >
+      <div
+        className={undefined}
+      >
+        <div
+          className="cardModel card card"
+          style={Object {}}
+        >
           <div
-            className="card-footer"
+            className="wrapper text-center"
+            style={
+              Object {
+                "backgroundImage": "url(https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg)",
+                "backgroundPosition": "center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
+              }
+            }
           >
-            <button
-              className="btn btn-primary btn-lg btn-block"
-              onClick={[Function]}
-              type={undefined}
+            <div
+              className="data"
             >
-              Choisir
-            </button>
+              <div
+                className="content card-body"
+              >
+                <h5
+                  className="title card-title"
+                  style={
+                    Object {
+                      "fontWeight": "500",
+                      "marginTop": "10px",
+                    }
+                  }
+                >
+                  <p
+                    style={
+                      Object {
+                        "color": "#FFF",
+                      }
+                    }
+                  >
+                    Réservation
+                  </p>
+                </h5>
+                <button
+                  className="btn btn-secondary"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "display": "block",
+                      "fontSize": "12px",
+                      "fontWeight": "700",
+                      "lineHeight": "1",
+                      "margin": "2em auto 1em",
+                      "marginBottom": "40px",
+                      "padding": "10px 20px",
+                      "position": "relative",
+                      "textAlign": "center",
+                    }
+                  }
+                  type={undefined}
+                >
+                  Sélectionner
+                </button>
+              </div>
+              <div
+                className="card-footer"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(136,136,136, 0.5)",
+                  }
+                }
+              >
+                <p
+                  className="text"
+                  style={
+                    Object {
+                      "height": "70px",
+                      "margin": "0",
+                    }
+                  }
+                >
+                  Pour la description
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -238,69 +367,157 @@ exports[`renders correctly 1`] = `
       className="text-center col"
     >
       <div
-        className="mt-4 mb-4"
+        className="row"
       >
-        <div>
+        <div
+          className="text-center mb-3 col-lg-6"
+        >
           <div
-            className="card text-white card-body"
-            style={
-              Object {
-                "backgroundColor": "#333",
-                "borderColor": "#333",
-              }
-            }
+            className="mb-4"
           >
-            <h5
-              className="card-title"
-              style={
-                Object {
-                  "fontSize": "2.5em",
-                }
-              }
-            >
-              Choisissez votre sexe
-            </h5>
             <div
-              className="d-flex"
+              className={undefined}
             >
               <div
-                className=" m-3 card"
+                className="cardModel card card"
+                style={Object {}}
               >
-                <img
-                  alt="Card image cap"
-                  className="card-img-top"
-                  height="300"
-                  src="https://images.unsplash.com/photo-1448376561459-dbe8868fa34c?ixlib=rb-0.3.5ixid=eyJhcHBfaWQiOjEyMDd9s=361907f0deaaf183ac4ce6b62551dfb3auto=formatfit=cropw=1350q=80"
-                  width="300"
-                />
                 <div
-                  className="card-body"
+                  className="wrapper text-center"
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://images.unsplash.com/photo-1476493279419-b785d41e38d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4920987ab334960a4d39b9db70555ef5&auto=format&fit=crop&w=1050&q=80)",
+                      "backgroundPosition": "center",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                    }
+                  }
                 >
-                  <button
-                    className="btn btn-secondary"
-                    onClick={[Function]}
-                    type={undefined}
-                  />
+                  <div
+                    className="data"
+                  >
+                    <div
+                      className="content card-body"
+                    >
+                      <h5
+                        className="city card-title"
+                        style={
+                          Object {
+                            "fontWeight": "500",
+                            "marginTop": "10px",
+                          }
+                        }
+                      >
+                        <p
+                          style={
+                            Object {
+                              "color": "#FFF",
+                            }
+                          }
+                        >
+                          Femme
+                        </p>
+                      </h5>
+                      <button
+                        className="btn btn-secondary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "color": "#fff",
+                            "display": "block",
+                            "fontSize": "12px",
+                            "fontWeight": "700",
+                            "lineHeight": "1",
+                            "margin": "2em auto 1em",
+                            "marginBottom": "40px",
+                            "padding": "10px 20px",
+                            "position": "relative",
+                            "textAlign": "center",
+                          }
+                        }
+                        type={undefined}
+                      >
+                        Sélectionner
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="text-center col-lg-6"
+        >
+          <div
+            className="mb-4"
+          >
+            <div
+              className={undefined}
+            >
               <div
-                className="m-3 card"
+                className="cardModel card card"
+                style={Object {}}
               >
-                <img
-                  alt="Card image cap"
-                  className="card-img-top"
-                  height="300"
-                  src="https://images.unsplash.com/photo-1512236393941-3d6da97e56bc?ixlib=rb-0.3.5ixid=eyJhcHBfaWQiOjEyMDd9s=4deda26387ec695d02899757ecbad822auto=formatfit=cropw=1351q=80"
-                  width="300"
-                />
                 <div
-                  className="text-center card-body"
+                  className="wrapper text-center"
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=153fb8f3b75056ae1c47da65bf392afa&auto=format&fit=crop&w=1050&q=80)",
+                      "backgroundPosition": "center",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                    }
+                  }
                 >
-                  <button
-                    className="btn btn-secondary"
-                    onClick={[Function]}
-                    type={undefined}
-                  />
+                  <div
+                    className="data"
+                  >
+                    <div
+                      className="content card-body"
+                    >
+                      <h5
+                        className="city card-title"
+                        style={
+                          Object {
+                            "fontWeight": "500",
+                            "marginTop": "10px",
+                          }
+                        }
+                      >
+                        <p
+                          style={
+                            Object {
+                              "color": "#FFF",
+                            }
+                          }
+                        >
+                          Homme
+                        </p>
+                      </h5>
+                      <button
+                        className="btn btn-secondary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "color": "#fff",
+                            "display": "block",
+                            "fontSize": "12px",
+                            "fontWeight": "700",
+                            "lineHeight": "1",
+                            "margin": "2em auto 1em",
+                            "marginBottom": "40px",
+                            "padding": "10px 20px",
+                            "position": "relative",
+                            "textAlign": "center",
+                          }
+                        }
+                        type={undefined}
+                      >
+                        Sélectionner
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
