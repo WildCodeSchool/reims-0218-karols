@@ -1,61 +1,76 @@
 import React from "react"
-import {
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from "reactstrap"
+import styles from "../styles/cardModel.css"
+import { Card, CardTitle, CardBody, CardFooter, Button } from "reactstrap"
 
-export default class ChoiceShop extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.toggle = this.toggle.bind(this)
-    this.state = {
-      dropdownOpen: false
-    }
-  }
-
-  toggle() {
-    this.setState(prevState => ({
-      dropdownOpen: !prevState.dropdownOpen
-    }))
-  }
-
-  render() {
-    return (
-      <Dropdown
-        className="mt-3 mb-4"
-        isOpen={this.state.dropdownOpen}
-        toggle={this.toggle}
-      >
-        <DropdownToggle
-          caret
-          style={{
-            fontSize: "1.5em"
-          }}
-        >
-          Votre boutique
-        </DropdownToggle>
-        <DropdownMenu
-          className="text-center"
-          style={{
-            fontSize: "1.5em"
-          }}
-        >
-          <DropdownItem
+const ChoiceShop = ({ city, image, adress }) => {
+  return (
+    <div className="mb-4">
+      <div className={styles.card}>
+        <Card className="cardModel card" style={{}}>
+          <div
+            className="wrapper text-center"
             style={{
-              width: "200px"
+              backgroundImage: `url(${image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat"
             }}
           >
-            Paris
-          </DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>Lyon</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>Cannes</DropdownItem>
-        </DropdownMenu>
-      </Dropdown>
-    )
-  }
+            <div className="data">
+              <CardBody className="content">
+                <CardTitle
+                  className="city"
+                  style={{
+                    fontWeight: "500",
+                    marginTop: "10px"
+                  }}
+                >
+                  <p
+                    style={{
+                      color: "#FFF"
+                    }}
+                  >
+                    {city}
+                  </p>
+                </CardTitle>
+                <Button
+                  style={{
+                    display: "block",
+                    margin: "2em auto 1em",
+                    textAlign: "center",
+                    fontSize: "12px",
+                    color: "#fff",
+                    lineHeight: "1",
+                    position: "relative",
+                    fontWeight: "700",
+                    marginBottom: "40px",
+                    padding: "10px 20px"
+                  }}
+                >
+                  Sélectionner
+                </Button>
+              </CardBody>
+              <CardFooter
+                style={{
+                  backgroundColor: "rgba(136,136,136, 0.5)"
+                }}
+              >
+                <p
+                  className="text"
+                  style={{
+                    height: "70px",
+                    margin: "0"
+                  }}
+                >
+                  {adress}
+                </p>
+              </CardFooter>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </div>
+  )
 }
+
+export default ChoiceShop
