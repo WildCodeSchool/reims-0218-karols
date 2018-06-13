@@ -1,7 +1,7 @@
 import React from "react"
 import CardModel from "./CardModel"
 
-const PreparationChoice = ({ id, name, preparations, select, image }) => (
+const ChoicePrestation = ({ id, name, preparations, select, image }) => (
   <div>
     <h5>{name}</h5>
     {preparations.map(preparation => (
@@ -18,4 +18,4 @@ const PreparationChoice = ({ id, name, preparations, select, image }) => (
   </div>
 )
 
-export default PreparationChoice
+export default ChoicePrestation
