@@ -9,12 +9,14 @@ const prestations = (prevState = initialState, action) => {
   if (action.type === CHOOSE_PRESTATION) {
     // si action type = choose_prestation alors =>
     return prevState.map(prestation => ({
-      //return prevstate parcours chaque prestation
-      ...prestation, // destructuration de l'objet
+      // return prevstate, parcours chaque prestation
+      ...prestation, // on destructure l'objet
       preparations: prestation.preparations.map(preparation => ({
-        ...preparation,
+        // propriété preparations, sous objet à l'intérieur
+        ...preparation, // on faits une copie de chaque élément
+        // on rajoute la propriété selected
         selected:
-          action.prestationId === prestation.id
+          prestation.id === action.prestationId // elle est vraie si prestation.id = action.prestationId
             ? preparation.id === action.preparationId
               ? !preparation.selected
               : false
