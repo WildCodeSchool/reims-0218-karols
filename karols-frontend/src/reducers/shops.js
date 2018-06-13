@@ -1,4 +1,4 @@
-import { CHOOSE_SHOP } from "../actions/actions"
+import { CHOOSE_SHOP, SHOPS_PRESTATIONS_RECEIVED } from "../actions/actions"
 
 const initialState = []
 
@@ -8,6 +8,9 @@ const shops = (prevState = initialState, action) => {
       ...shop,
       selected: action.shopId === shop.id
     }))
+  }
+  if (action.type === SHOPS_PRESTATIONS_RECEIVED) {
+    return action.response.shops  
   }
   return prevState
 }
