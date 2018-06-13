@@ -24,6 +24,7 @@ const CardModel = ({ id, title, description, image, selected, select }) => {
                   marginTop: "10px"
                 }}
               >
+                {selected && <p>SELECTED</p>}
                 <p
                   style={{
                     color: "#FFF"

@@ -35,10 +35,10 @@ class Page extends Component {
     return (
       <div>
         <ShopContainer />
-        <ServiceContainer />
-        <GenderContainer />
-        <PrestationFemaleContainer />
-        <PrestationMaleContainer />
+        {this.props.showServices && <ServiceContainer />}
+        {this.props.showSex && <GenderContainer />}
+        {this.props.showFemalePrestation && <PrestationFemaleContainer />}
+        {this.props.showMalePrestation && <PrestationMaleContainer />}
       </div>
     )
   }
