@@ -2,7 +2,7 @@ import { CHOOSE_SEX } from "../actions/actions"
 
 const initialState = [
   {
-    sex: "H",
+    sex: "M",
     selected: false
   },
   {

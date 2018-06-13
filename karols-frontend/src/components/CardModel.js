@@ -1,10 +1,10 @@
 import React from "react"
 import styles from "../styles/cardModel.css"
-import { Card, CardTitle, CardBody, CardFooter, Button } from "reactstrap"
+import { Card, CardTitle, Col, CardBody, CardFooter, Button } from "reactstrap"
 
-const ChoiceShop = ({ city, image, adress }) => {
+const CardModel = ({ id, title, description, image, selected, select }) => {
   return (
-    <div className="mb-4">
+    <Col xs="12" md="4" lg="3">
       <div className={styles.card}>
         <Card className="cardModel card" style={{}}>
           <div
@@ -19,7 +19,7 @@ const ChoiceShop = ({ city, image, adress }) => {
             <div className="data">
               <CardBody className="content">
                 <CardTitle
-                  className="city"
+                  className="title"
                   style={{
                     fontWeight: "500",
                     marginTop: "10px"
@@ -30,10 +30,13 @@ const ChoiceShop = ({ city, image, adress }) => {
                       color: "#FFF"
                     }}
                   >
-                    {city}
+                    {title}
                   </p>
                 </CardTitle>
                 <Button
+                  onClick={() => {
+                    select(id)
+                  }}
                   style={{
                     display: "block",
                     margin: "2em auto 1em",
@@ -62,15 +65,15 @@ const ChoiceShop = ({ city, image, adress }) => {
                     margin: "0"
                   }}
                 >
-                  {adress}
+                  {description}
                 </p>
               </CardFooter>
             </div>
           </div>
         </Card>
       </div>
-    </div>
+    </Col>
   )
 }
 
-export default ChoiceShop
+export default CardModel

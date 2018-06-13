@@ -17,61 +17,44 @@ exports[`renders correctly 1`] = `
           src="http://res.cloudinary.com/dlfnke6kc/image/upload/v1527837786/karols-600x600px_fdxlcu.jpg"
         />
         <div
-          className="mt-3 mb-4 dropdown"
-          onKeyDown={[Function]}
+          className="mb-4"
         >
-          <button
-            aria-expanded={false}
-            aria-haspopup={true}
-            className="dropdown-toggle btn btn-secondary"
-            onClick={[Function]}
-            type="button"
-          >
-            Choisissez votre boutique
-          </button>
           <div
-            aria-hidden={true}
-            className="dropdown-menu"
-            role="menu"
-            tabIndex="-1"
-            x-placement={undefined}
+            className="card text-white"
           >
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Paris
-            </button>
-            <div
-              className="dropdown-divider"
-              onClick={[Function]}
-              tabIndex="-1"
-              type={undefined}
+            <img
+              alt="Name of service"
+              className="img-fluid"
+              height="250"
+              src={undefined}
+              width="500"
             />
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Lyon
-            </button>
             <div
-              className="dropdown-divider"
-              onClick={[Function]}
-              tabIndex="-1"
-              type={undefined}
-            />
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
+              className="card-img-overlay"
             >
-              Cannes
-            </button>
+              <h5
+                className="card-title"
+                style={
+                  Object {
+                    "fontSize": "2em",
+                  }
+                }
+              />
+              <p
+                className="card-text"
+              />
+            </div>
+            <div
+              className="card-footer"
+            >
+              <button
+                className="btn btn-default btn-lg btn-block"
+                onClick={[Function]}
+                type={undefined}
+              >
+                Choisir ce service
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -85,173 +68,292 @@ exports[`renders correctly 1`] = `
       className="text-center mt-1 mb-3 col"
     >
       <div>
-        <h3>
+        <h2
+          className="display-4"
+        >
           Créez votre réservation
-        </h3>
+        </h2>
       </div>
     </div>
   </div>
   <div
-    className="row"
+    className="justify-content-center row"
   >
     <div
-      className="text-center mb-3 col-lg-4"
+      className="col-12 col-md-4 col-lg-3"
     >
-      <div>
+      <div
+        className={undefined}
+      >
         <div
-          className="card"
+          className="cardModel card card"
+          style={Object {}}
         >
           <div
-            className="card-body"
+            className="wrapper text-center"
+            style={
+              Object {
+                "backgroundImage": "url(https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg)",
+                "backgroundPosition": "center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
+              }
+            }
           >
-            <h5
-              className="card-title"
+            <div
+              className="data"
             >
-               
-              Préparation
-               
-            </h5>
-          </div>
-          <a
-            href=""
-          >
-            <img
-              alt="Name of service"
-              className="img-fluid"
-              height="250"
-              src="https://images.unsplash.com/photo-1481501940778-c8bb63e376c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=842a2f0d2f40bb7bb59bbdfd78289a0f&auto=format&fit=crop&w=1050&q=80"
-              width="250"
-            />
-          </a>
-          <div
-            className="card-body"
-          >
-            <p
-              className="card-text"
-            >
-               
-              Description Préparation
-               
-            </p>
-          </div>
-          <div
-            className="card-footer"
-          >
-            <button
-              className="btn btn-secondary"
-              onClick={[Function]}
-              type={undefined}
-            >
-               Choisir ce service 
-            </button>
+              <div
+                className="content card-body"
+              >
+                <h5
+                  className="title card-title"
+                  style={
+                    Object {
+                      "fontWeight": "500",
+                      "marginTop": "10px",
+                    }
+                  }
+                >
+                  <p
+                    style={
+                      Object {
+                        "color": "#FFF",
+                      }
+                    }
+                  >
+                    Réservation
+                  </p>
+                </h5>
+                <button
+                  className="btn btn-secondary"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "display": "block",
+                      "fontSize": "12px",
+                      "fontWeight": "700",
+                      "lineHeight": "1",
+                      "margin": "2em auto 1em",
+                      "marginBottom": "40px",
+                      "padding": "10px 20px",
+                      "position": "relative",
+                      "textAlign": "center",
+                    }
+                  }
+                  type={undefined}
+                >
+                  Sélectionner
+                </button>
+              </div>
+              <div
+                className="card-footer"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(136,136,136, 0.5)",
+                  }
+                }
+              >
+                <p
+                  className="text"
+                  style={
+                    Object {
+                      "height": "70px",
+                      "margin": "0",
+                    }
+                  }
+                >
+                  Pour la description
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="text-center col-lg-4"
+      className="col-12 col-md-4 col-lg-3"
     >
-      <div>
+      <div
+        className={undefined}
+      >
         <div
-          className="card"
+          className="cardModel card card"
+          style={Object {}}
         >
           <div
-            className="card-body"
+            className="wrapper text-center"
+            style={
+              Object {
+                "backgroundImage": "url(https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg)",
+                "backgroundPosition": "center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
+              }
+            }
           >
-            <h5
-              className="card-title"
+            <div
+              className="data"
             >
-               
-              Table
-               
-            </h5>
-          </div>
-          <a
-            href=""
-          >
-            <img
-              alt="Name of service"
-              className="img-fluid"
-              height="250"
-              src="https://images.unsplash.com/uploads/1412198485051133af17f/5049dacb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dddba89812ed0325b966bf07aba683e3&auto=format&fit=crop&w=1050&q=80"
-              width="250"
-            />
-          </a>
-          <div
-            className="card-body"
-          >
-            <p
-              className="card-text"
-            >
-               
-              Description Table
-               
-            </p>
-          </div>
-          <div
-            className="card-footer"
-          >
-            <button
-              className="btn btn-secondary"
-              onClick={[Function]}
-              type={undefined}
-            >
-               Choisir ce service 
-            </button>
+              <div
+                className="content card-body"
+              >
+                <h5
+                  className="title card-title"
+                  style={
+                    Object {
+                      "fontWeight": "500",
+                      "marginTop": "10px",
+                    }
+                  }
+                >
+                  <p
+                    style={
+                      Object {
+                        "color": "#FFF",
+                      }
+                    }
+                  >
+                    Réservation
+                  </p>
+                </h5>
+                <button
+                  className="btn btn-secondary"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "display": "block",
+                      "fontSize": "12px",
+                      "fontWeight": "700",
+                      "lineHeight": "1",
+                      "margin": "2em auto 1em",
+                      "marginBottom": "40px",
+                      "padding": "10px 20px",
+                      "position": "relative",
+                      "textAlign": "center",
+                    }
+                  }
+                  type={undefined}
+                >
+                  Sélectionner
+                </button>
+              </div>
+              <div
+                className="card-footer"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(136,136,136, 0.5)",
+                  }
+                }
+              >
+                <p
+                  className="text"
+                  style={
+                    Object {
+                      "height": "70px",
+                      "margin": "0",
+                    }
+                  }
+                >
+                  Pour la description
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="text-center col-lg-4"
+      className="col-12 col-md-4 col-lg-3"
     >
-      <div>
+      <div
+        className={undefined}
+      >
         <div
-          className="card"
+          className="cardModel card card"
+          style={Object {}}
         >
           <div
-            className="card-body"
+            className="wrapper text-center"
+            style={
+              Object {
+                "backgroundImage": "url(https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg)",
+                "backgroundPosition": "center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
+              }
+            }
           >
-            <h5
-              className="card-title"
+            <div
+              className="data"
             >
-               
-              Table + Préparation
-               
-            </h5>
-          </div>
-          <a
-            href=""
-          >
-            <img
-              alt="Name of service"
-              className="img-fluid"
-              height="250"
-              src="https://images.unsplash.com/photo-1466201570621-6dee7c8dbe11?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0eda6a341afd70d53eaca3b17e674fab&auto=format&fit=crop&w=2250&q=80"
-              width="250"
-            />
-          </a>
-          <div
-            className="card-body"
-          >
-            <p
-              className="card-text"
-            >
-               
-              Description Table & Préparation
-               
-            </p>
-          </div>
-          <div
-            className="card-footer"
-          >
-            <button
-              className="btn btn-secondary"
-              onClick={[Function]}
-              type={undefined}
-            >
-               Choisir ce service 
-            </button>
+              <div
+                className="content card-body"
+              >
+                <h5
+                  className="title card-title"
+                  style={
+                    Object {
+                      "fontWeight": "500",
+                      "marginTop": "10px",
+                    }
+                  }
+                >
+                  <p
+                    style={
+                      Object {
+                        "color": "#FFF",
+                      }
+                    }
+                  >
+                    Réservation
+                  </p>
+                </h5>
+                <button
+                  className="btn btn-secondary"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "display": "block",
+                      "fontSize": "12px",
+                      "fontWeight": "700",
+                      "lineHeight": "1",
+                      "margin": "2em auto 1em",
+                      "marginBottom": "40px",
+                      "padding": "10px 20px",
+                      "position": "relative",
+                      "textAlign": "center",
+                    }
+                  }
+                  type={undefined}
+                >
+                  Sélectionner
+                </button>
+              </div>
+              <div
+                className="card-footer"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(136,136,136, 0.5)",
+                  }
+                }
+              >
+                <p
+                  className="text"
+                  style={
+                    Object {
+                      "height": "70px",
+                      "margin": "0",
+                    }
+                  }
+                >
+                  Pour la description
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -265,37 +367,161 @@ exports[`renders correctly 1`] = `
       className="text-center col"
     >
       <div
-        className="mt-4 mb-4"
+        className="row"
       >
         <div
-          className="form-check form-check-inline"
+          className="text-center mb-3 col-lg-6"
         >
-          <label
-            className="form-check-label "
-            htmlFor={undefined}
+          <div
+            className="mb-4"
           >
-            <input
-              className="form-check-input"
-              name="gender"
-              type="radio"
-            />
-             Femme
-          </label>
+            <div
+              className={undefined}
+            >
+              <div
+                className="cardModel card card"
+                style={Object {}}
+              >
+                <div
+                  className="wrapper text-center"
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://images.unsplash.com/photo-1476493279419-b785d41e38d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4920987ab334960a4d39b9db70555ef5&auto=format&fit=crop&w=1050&q=80)",
+                      "backgroundPosition": "center",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                    }
+                  }
+                >
+                  <div
+                    className="data"
+                  >
+                    <div
+                      className="content card-body"
+                    >
+                      <h5
+                        className="city card-title"
+                        style={
+                          Object {
+                            "fontWeight": "500",
+                            "marginTop": "10px",
+                          }
+                        }
+                      >
+                        <p
+                          style={
+                            Object {
+                              "color": "#FFF",
+                            }
+                          }
+                        >
+                          Femme
+                        </p>
+                      </h5>
+                      <button
+                        className="btn btn-secondary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "color": "#fff",
+                            "display": "block",
+                            "fontSize": "12px",
+                            "fontWeight": "700",
+                            "lineHeight": "1",
+                            "margin": "2em auto 1em",
+                            "marginBottom": "40px",
+                            "padding": "10px 20px",
+                            "position": "relative",
+                            "textAlign": "center",
+                          }
+                        }
+                        type={undefined}
+                      >
+                        Sélectionner
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div
-          className="form-check form-check-inline"
+          className="text-center col-lg-6"
         >
-          <label
-            className=""
-            htmlFor={undefined}
+          <div
+            className="mb-4"
           >
-            <input
-              className="form-check-input"
-              name="gender"
-              type="radio"
-            />
-             Homme
-          </label>
+            <div
+              className={undefined}
+            >
+              <div
+                className="cardModel card card"
+                style={Object {}}
+              >
+                <div
+                  className="wrapper text-center"
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=153fb8f3b75056ae1c47da65bf392afa&auto=format&fit=crop&w=1050&q=80)",
+                      "backgroundPosition": "center",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                    }
+                  }
+                >
+                  <div
+                    className="data"
+                  >
+                    <div
+                      className="content card-body"
+                    >
+                      <h5
+                        className="city card-title"
+                        style={
+                          Object {
+                            "fontWeight": "500",
+                            "marginTop": "10px",
+                          }
+                        }
+                      >
+                        <p
+                          style={
+                            Object {
+                              "color": "#FFF",
+                            }
+                          }
+                        >
+                          Homme
+                        </p>
+                      </h5>
+                      <button
+                        className="btn btn-secondary"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "color": "#fff",
+                            "display": "block",
+                            "fontSize": "12px",
+                            "fontWeight": "700",
+                            "lineHeight": "1",
+                            "margin": "2em auto 1em",
+                            "marginBottom": "40px",
+                            "padding": "10px 20px",
+                            "position": "relative",
+                            "textAlign": "center",
+                          }
+                        }
+                        type={undefined}
+                      >
+                        Sélectionner
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -319,10 +545,10 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="text-center row"
+    className="row"
   >
     <div
-      className="col-12 col-md-6 col-lg-3"
+      className="text-center mb-3 col-lg-3"
     >
       <div
         className="mb-4"
@@ -331,29 +557,36 @@ exports[`renders correctly 1`] = `
           className="card text-white"
         >
           <img
-            alt="Prestations"
+            alt="Name of service"
             className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
+            height="250"
+            src="http://cache.marieclaire.fr/data/photo/w500_h250_ci/53/maquillage-peche.jpg"
+            width="500"
           />
           <div
             className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-              Card Title
+              Maquillage naturel
             </h5>
             <p
               className="card-text"
             >
-              Choisissez votre prestation
+              Description
             </p>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-md-6 col-lg-3"
+      className="text-center col-lg-3"
     >
       <div
         className="mb-4"
@@ -362,29 +595,36 @@ exports[`renders correctly 1`] = `
           className="card text-white"
         >
           <img
-            alt="Prestations"
+            alt="Name of service"
             className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
+            height="250"
+            src="https://s3.amazonaws.com/rose.vero/wp-content/uploads/2017/01/09113800/VERO07_476-500x250.jpg"
+            width="500"
           />
           <div
             className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-              Card Title
+              Maquillage glamour
             </h5>
             <p
               className="card-text"
             >
-              Choisissez votre prestation
+              Description
             </p>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-md-6 col-lg-3"
+      className="text-center col-lg-3"
     >
       <div
         className="mb-4"
@@ -393,29 +633,36 @@ exports[`renders correctly 1`] = `
           className="card text-white"
         >
           <img
-            alt="Prestations"
+            alt="Name of service"
             className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
+            height="250"
+            src="http://astuces-de-mamie.com/wp-content/uploads/2017/04/femme-maquillage-vert.jpg"
+            width="500"
           />
           <div
             className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-              Card Title
+              Maquillage magique
             </h5>
             <p
               className="card-text"
             >
-              Choisissez votre prestation
+              Description
             </p>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-md-6 col-lg-3"
+      className="text-center col-lg-3"
     >
       <div
         className="mb-4"
@@ -424,22 +671,29 @@ exports[`renders correctly 1`] = `
           className="card text-white"
         >
           <img
-            alt="Prestations"
+            alt="Name of service"
             className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
+            height="250"
+            src="http://cache.magicmaman.com/data/photo/w500_h250_ci/4s/maquillage-enfant-carnaval.jpg"
+            width="500"
           />
           <div
             className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-              Card Title
+              Maquillage enfant
             </h5>
             <p
               className="card-text"
             >
-              Choisissez votre prestation
+              Description
             </p>
           </div>
         </div>
@@ -465,10 +719,10 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="text-center row"
+    className="row"
   >
     <div
-      className="col-12 col-md-6 col-lg-3"
+      className="text-center mb-3 col-lg-3"
     >
       <div
         className="mb-4"
@@ -477,29 +731,36 @@ exports[`renders correctly 1`] = `
           className="card text-white"
         >
           <img
-            alt="Prestations"
+            alt="Name of service"
             className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
+            height="250"
+            src="http://cache.marieclaire.fr/data/photo/w500_h250_ci/53/maquillage-peche.jpg"
+            width="500"
           />
           <div
             className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-              Card Title
+              Maquillage naturel
             </h5>
             <p
               className="card-text"
             >
-              Choisissez votre prestation
+              Description
             </p>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-md-6 col-lg-3"
+      className="text-center col-lg-3"
     >
       <div
         className="mb-4"
@@ -508,29 +769,36 @@ exports[`renders correctly 1`] = `
           className="card text-white"
         >
           <img
-            alt="Prestations"
+            alt="Name of service"
             className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
+            height="250"
+            src="https://s3.amazonaws.com/rose.vero/wp-content/uploads/2017/01/09113800/VERO07_476-500x250.jpg"
+            width="500"
           />
           <div
             className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-              Card Title
+              Maquillage glamour
             </h5>
             <p
               className="card-text"
             >
-              Choisissez votre prestation
+              Description
             </p>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-md-6 col-lg-3"
+      className="text-center col-lg-3"
     >
       <div
         className="mb-4"
@@ -539,29 +807,36 @@ exports[`renders correctly 1`] = `
           className="card text-white"
         >
           <img
-            alt="Prestations"
+            alt="Name of service"
             className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
+            height="250"
+            src="http://astuces-de-mamie.com/wp-content/uploads/2017/04/femme-maquillage-vert.jpg"
+            width="500"
           />
           <div
             className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-              Card Title
+              Maquillage magique
             </h5>
             <p
               className="card-text"
             >
-              Choisissez votre prestation
+              Description
             </p>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="col-12 col-md-6 col-lg-3"
+      className="text-center col-lg-3"
     >
       <div
         className="mb-4"
@@ -570,22 +845,29 @@ exports[`renders correctly 1`] = `
           className="card text-white"
         >
           <img
-            alt="Prestations"
+            alt="Name of service"
             className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
+            height="250"
+            src="http://cache.magicmaman.com/data/photo/w500_h250_ci/4s/maquillage-enfant-carnaval.jpg"
+            width="500"
           />
           <div
             className="card-img-overlay"
           >
             <h5
               className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
             >
-              Card Title
+              Maquillage enfant
             </h5>
             <p
               className="card-text"
             >
-              Choisissez votre prestation
+              Description
             </p>
           </div>
         </div>
@@ -610,134 +892,6 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="text-center row"
-  >
-    <div
-      className="col-12 col-md-6 col-lg-3"
-    >
-      <div
-        className="mb-4"
-      >
-        <div
-          className="card text-white"
-        >
-          <img
-            alt="Prestations"
-            className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
-          />
-          <div
-            className="card-img-overlay"
-          >
-            <h5
-              className="card-title"
-            >
-              Card Title
-            </h5>
-            <p
-              className="card-text"
-            >
-              Choisissez votre prestation
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="col-12 col-md-6 col-lg-3"
-    >
-      <div
-        className="mb-4"
-      >
-        <div
-          className="card text-white"
-        >
-          <img
-            alt="Prestations"
-            className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
-          />
-          <div
-            className="card-img-overlay"
-          >
-            <h5
-              className="card-title"
-            >
-              Card Title
-            </h5>
-            <p
-              className="card-text"
-            >
-              Choisissez votre prestation
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="col-12 col-md-6 col-lg-3"
-    >
-      <div
-        className="mb-4"
-      >
-        <div
-          className="card text-white"
-        >
-          <img
-            alt="Prestations"
-            className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
-          />
-          <div
-            className="card-img-overlay"
-          >
-            <h5
-              className="card-title"
-            >
-              Card Title
-            </h5>
-            <p
-              className="card-text"
-            >
-              Choisissez votre prestation
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="col-12 col-md-6 col-lg-3"
-    >
-      <div
-        className="mb-4"
-      >
-        <div
-          className="card text-white"
-        >
-          <img
-            alt="Prestations"
-            className="img-fluid"
-            src="https://images.unsplash.com/photo-1520173043194-dc6b2a237fee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9da78404d02fafbd40afdf2b59dc2d9d&auto=format&fit=crop&w=800&q=60"
-          />
-          <div
-            className="card-img-overlay"
-          >
-            <h5
-              className="card-title"
-            >
-              Card Title
-            </h5>
-            <p
-              className="card-text"
-            >
-              Choisissez votre prestation
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <hr />
   <div
     className="row"
@@ -746,87 +900,161 @@ exports[`renders correctly 1`] = `
       className="text-center col"
     >
       <div
-        className="mt-3 form-group"
+        className="row"
       >
-        <label
-          className=""
-          htmlFor="select-client"
+        <div
+          className="text-center mb-3 col-lg-3"
         >
-          Select client : 
-        </label>
-        <input
-          className="form-control"
-          id="select-client"
-          max="6"
-          min="0"
-          onChange={[Function]}
-          placeholder="Indiquez le nombre de personnes"
-          type="number"
-        />
+          <div
+            className="mb-4"
+          >
+            <div
+              className="card text-white"
+            >
+              <img
+                alt="Name of service"
+                className="img-fluid"
+                height="250"
+                src="http://cache.marieclaire.fr/data/photo/w500_h250_ci/53/maquillage-peche.jpg"
+                width="500"
+              />
+              <div
+                className="card-img-overlay"
+              >
+                <h5
+                  className="card-title"
+                  style={
+                    Object {
+                      "fontSize": "2em",
+                    }
+                  }
+                >
+                  Maquillage naturel
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Description
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="text-center col-lg-3"
+        >
+          <div
+            className="mb-4"
+          >
+            <div
+              className="card text-white"
+            >
+              <img
+                alt="Name of service"
+                className="img-fluid"
+                height="250"
+                src="https://s3.amazonaws.com/rose.vero/wp-content/uploads/2017/01/09113800/VERO07_476-500x250.jpg"
+                width="500"
+              />
+              <div
+                className="card-img-overlay"
+              >
+                <h5
+                  className="card-title"
+                  style={
+                    Object {
+                      "fontSize": "2em",
+                    }
+                  }
+                >
+                  Maquillage glamour
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Description
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="text-center col-lg-3"
+        >
+          <div
+            className="mb-4"
+          >
+            <div
+              className="card text-white"
+            >
+              <img
+                alt="Name of service"
+                className="img-fluid"
+                height="250"
+                src="http://astuces-de-mamie.com/wp-content/uploads/2017/04/femme-maquillage-vert.jpg"
+                width="500"
+              />
+              <div
+                className="card-img-overlay"
+              >
+                <h5
+                  className="card-title"
+                  style={
+                    Object {
+                      "fontSize": "2em",
+                    }
+                  }
+                >
+                  Maquillage magique
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Description
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="text-center col-lg-3"
+        >
+          <div
+            className="mb-4"
+          >
+            <div
+              className="card text-white"
+            >
+              <img
+                alt="Name of service"
+                className="img-fluid"
+                height="250"
+                src="http://cache.magicmaman.com/data/photo/w500_h250_ci/4s/maquillage-enfant-carnaval.jpg"
+                width="500"
+              />
+              <div
+                className="card-img-overlay"
+              >
+                <h5
+                  className="card-title"
+                  style={
+                    Object {
+                      "fontSize": "2em",
+                    }
+                  }
+                >
+                  Maquillage enfant
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Description
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div
-    className="row"
-  >
-    <div
-      className="text-center col"
-    >
-      <form
-        className=""
-      >
-        <div
-          className="form-group"
-        >
-          <label
-            className=""
-            htmlFor="firstname"
-          >
-            Prénom :
-          </label>
-          <input
-            className="form-control"
-            id="firstname"
-            name="firstname"
-            placeholder="Saisissez le prénom"
-            type="text"
-          />
-        </div>
-        <div
-          className="mt-4 mb-4"
-        >
-          <div
-            className="form-check form-check-inline"
-          >
-            <label
-              className="form-check-label "
-              htmlFor={undefined}
-            >
-              <input
-                className="form-check-input"
-                name="gender"
-                type="radio"
-              />
-               Femme
-            </label>
-          </div>
-          <div
-            className="form-check form-check-inline"
-          >
-            <label
-              className=""
-              htmlFor={undefined}
-            >
-              <input
-                className="form-check-input"
-                name="gender"
-                type="radio"
-              />
-               Homme
-            </label>
-          </div>
-        </div>
-      </form>
     </div>
   </div>
   <hr />

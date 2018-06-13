@@ -12,6 +12,7 @@ import InfoClient from "./InfoClient"
 import Footer from "./Footer"
 import ValidationReservationButton from "./ValidationReservationButton"
 import PreferredDateChoice from "./PreferredDateChoice"
+import CardModel from "./CardModel"
 
 class Page extends Component {
   render() {
@@ -28,7 +29,23 @@ class Page extends Component {
             <ReservationTitle />
           </Col>
         </Row>
-        <ListChoiceService />
+        <Row className="justify-content-center">
+          <CardModel
+            title="Réservation"
+            description="Pour la description"
+            image="https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg"
+          />
+          <CardModel
+            title="Réservation"
+            description="Pour la description"
+            image="https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg"
+          />
+          <CardModel
+            title="Réservation"
+            description="Pour la description"
+            image="https://cdn.foot-sur7.fr/700x503/articles/2017/11/Nabil%20Fekir%20iconsport_icon_laf_291117_05_34-3.jpg"
+          />
+        </Row>
         <hr />
         <Row>
           <Col className="text-center">
@@ -55,18 +72,13 @@ class Page extends Component {
             <PrestationLabel prestationLabelName="Ongles" />
           </Col>
         </Row>
-        <ListChoicePrestation />
         <hr />
         <Row>
           <Col className="text-center">
-            <SelectClient />
+            <ListChoicePrestation />
           </Col>
         </Row>
-        <Row>
-          <Col className="text-center">
-            <InfoClient />
-          </Col>
-        </Row>
+
         <hr />
         <Row>
           <Col className="text-center">

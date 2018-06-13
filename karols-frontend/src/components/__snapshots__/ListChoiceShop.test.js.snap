@@ -17,7 +17,7 @@ exports[`renders correctly 1`] = `
           alt="Name of service"
           className="img-fluid"
           height="250"
-          src="http://cache.marieclaire.fr/data/photo/w500_h250_ci/53/maquillage-peche.jpg"
+          src="https://images.unsplash.com/33/YOfYx7zhTvYBGYs6g83s_IMG_8643.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82fecbde67b1966b4ea8118f3bea896e&auto=format&fit=crop&w=967&q=80"
           width="500"
         />
         <div
@@ -31,13 +31,24 @@ exports[`renders correctly 1`] = `
               }
             }
           >
-            Maquillage naturel
+            Paris
           </h5>
           <p
             className="card-text"
           >
-            Description
+            75000
           </p>
+        </div>
+        <div
+          className="card-footer"
+        >
+          <button
+            className="btn btn-default btn-lg btn-block"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Choisir ce service
+          </button>
         </div>
       </div>
     </div>
@@ -55,7 +66,7 @@ exports[`renders correctly 1`] = `
           alt="Name of service"
           className="img-fluid"
           height="250"
-          src="https://s3.amazonaws.com/rose.vero/wp-content/uploads/2017/01/09113800/VERO07_476-500x250.jpg"
+          src="https://images.unsplash.com/photo-1496277195689-21125faa0eeb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=789210ffc73d1822ce69059fcefcabf0&auto=format&fit=crop&w=1050&q=80"
           width="500"
         />
         <div
@@ -69,13 +80,24 @@ exports[`renders correctly 1`] = `
               }
             }
           >
-            Maquillage glamour
+            Lyon
           </h5>
           <p
             className="card-text"
           >
-            Description
+            69000
           </p>
+        </div>
+        <div
+          className="card-footer"
+        >
+          <button
+            className="btn btn-default btn-lg btn-block"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Choisir ce service
+          </button>
         </div>
       </div>
     </div>
@@ -93,7 +115,7 @@ exports[`renders correctly 1`] = `
           alt="Name of service"
           className="img-fluid"
           height="250"
-          src="http://astuces-de-mamie.com/wp-content/uploads/2017/04/femme-maquillage-vert.jpg"
+          src="https://thumb7.shutterstock.com/display_pic_with_logo/570547/155126774/stock-photo-image-shows-the-cosmopolitan-city-of-cannes-in-the-french-riviera-155126774.jpg"
           width="500"
         />
         <div
@@ -107,51 +129,24 @@ exports[`renders correctly 1`] = `
               }
             }
           >
-            Maquillage magique
+            Cannes
           </h5>
           <p
             className="card-text"
           >
-            Description
+            06150
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="text-center col-lg-3"
-  >
-    <div
-      className="mb-4"
-    >
-      <div
-        className="card text-white"
-      >
-        <img
-          alt="Name of service"
-          className="img-fluid"
-          height="250"
-          src="http://cache.magicmaman.com/data/photo/w500_h250_ci/4s/maquillage-enfant-carnaval.jpg"
-          width="500"
-        />
         <div
-          className="card-img-overlay"
+          className="card-footer"
         >
-          <h5
-            className="card-title"
-            style={
-              Object {
-                "fontSize": "2em",
-              }
-            }
+          <button
+            className="btn btn-default btn-lg btn-block"
+            onClick={[Function]}
+            type={undefined}
           >
-            Maquillage enfant
-          </h5>
-          <p
-            className="card-text"
-          >
-            Description
-          </p>
+            Choisir ce service
+          </button>
         </div>
       </div>
     </div>

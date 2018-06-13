@@ -18,7 +18,7 @@ describe("action to choose a prestation", () => {
       prestationId: 2
     }
 
-    expect(makeChoosePrestation(2)).toEqual(expected)
+    expect(makeChoosePrestation(2, 4)).toEqual(expected)
   })
 })
 
@@ -26,20 +26,20 @@ describe("action add slot creator", () => {
   it("should return an action CHOOSE_TIMESLOT WITH TIME", () => {
     const expected = {
       type: CHOOSE_TIMESLOT,
-      timeSlotId: { year: 2018, month: 4, day: 24, hour: 12 }
+      timeSlot: { year: 2018, month: 4, day: 24, hour: 12 }
     }
-    expect(makeChooseSlotReservation(expected.timeSlotId)).toEqual(expected)
+    expect(makeChooseSlotReservation(expected.timeSlot)).toEqual(expected)
   })
 })
 
 describe("action choose sex creator", () => {
-  it("should return H gender", () => {
+  it("should return M gender", () => {
     const expectedForMale = {
       type: CHOOSE_SEX,
-      sex: "H"
+      sex: "M"
     }
 
-    expect(makeChooseSex("H")).toEqual(expectedForMale)
+    expect(makeChooseSex("M")).toEqual(expectedForMale)
   })
 
   it("should return F gender", () => {
