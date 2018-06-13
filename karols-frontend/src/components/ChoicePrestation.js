@@ -1,33 +1,21 @@
 import React from "react"
-import { Card, CardTitle, CardText, CardImgOverlay } from "reactstrap"
+import CardModel from "./CardModel"
 
-// Display card when it's normal state
+const PreparationChoice = ({ id, name, preparations, select, image }) => (
+  <div>
+    <h5>{name}</h5>
+    {preparations.map(preparation => (
+      <CardModel
+        key={preparation.id}
+        {...preparation}
+        title={preparation.titlePreparation}
+        image={preparation.image}
+        select={preparationId => {
+          select(id, preparationId)
+        }}
+      />
+    ))}
+  </div>
+)
 
-const ChoicePrestation = ({ image, description, title }) => {
-  return (
-    <div className="mb-4">
-      <Card inverse>
-        <img
-          className="img-fluid"
-          width="500"
-          height="250"
-          src={image}
-          alt="Name of service"
-        />
-
-        <CardImgOverlay>
-          <CardTitle
-            style={{
-              fontSize: "2em"
-            }}
-          >
-            {title}
-          </CardTitle>
-          <CardText>{description}</CardText>
-        </CardImgOverlay>
-      </Card>
-    </div>
-  )
-}
-
-export default ChoicePrestation
+export default PreparationChoice
