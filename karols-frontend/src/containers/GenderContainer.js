@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 
-import ListChoiceGender from "../components/ListChoiceGender"
 import { makeChooseSex } from "../actions/actions"
+import CardModel from "../components/CardModel"
 
 const mapStateToProps = state => ({
   genders: state.genders
@@ -17,11 +17,11 @@ class GenderSelect extends Component {
     return (
       <div>
         {this.props.genders.map(gender => (
-          <ListChoiceGender
+          <CardModel
             key={gender.sex}
-            name={gender.sex}
             id={gender.sex}
             select={this.props.select}
+            image={gender.image}
           />
         ))}
       </div>
