@@ -35,9 +35,13 @@ class Page extends Component {
     return (
       <div>
         <ShopContainer />
+        <hr />
         {this.props.showServices && <ServiceContainer />}
+        <hr />
         {this.props.showSex && <GenderContainer />}
+        <hr />
         {this.props.showFemalePrestation && <PrestationFemaleContainer />}
+        <hr />
         {this.props.showMalePrestation && <PrestationMaleContainer />}
       </div>
     )

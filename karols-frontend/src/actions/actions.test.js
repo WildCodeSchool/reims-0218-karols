@@ -10,15 +10,20 @@ import {
   CHOOSE_PRESTATION,
   makeChoosePrestation
 } from "./actions"
+// import des actions et actions creator pour faire des testes
 
 describe("action to choose a prestation", () => {
+  // décrire l'action qui choisit la prestation
   it("should return an choice of a prestation with a prestation id", () => {
+    // il devrait retourner le choix d'une prestation avec une Id prestation
     const expected = {
       type: CHOOSE_PRESTATION,
       prestationId: 2
+      // déclaration d'une variable expected qui prend un object
     }
 
     expect(makeChoosePrestation(2, 4)).toEqual(expected)
+    //le resultat attendu
   })
 })
 
