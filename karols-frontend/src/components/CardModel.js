@@ -58,6 +58,7 @@ const CardModel = ({ id, title, description, image, selected, select }) => {
                   backgroundColor: "rgba(136,136,136, 0.5)"
                 }}
               >
+                {selected && <p>SELECTED</p>}
                 <p
                   className="text"
                   style={{
