@@ -24,7 +24,7 @@ export default class ListChoiceShop extends React.Component {
           <ChoiceShop
             city="Cannes"
             adress="06150"
-            image="https://thumb7.shutterstock.com/display_pic_with_logo/570547/155126774/stock-photo-image-shows-the-cosmopolitan-city-of-cannes-in-the-french-riviera-155126774.jpg"
+            image="https://thumbs.dreamstime.com/z/ville-de-cannes-france-2627857.jpg"
           />
         </Col>
       </Row>

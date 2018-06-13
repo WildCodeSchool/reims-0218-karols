@@ -19,7 +19,9 @@ class ShopSelect extends Component {
         {this.props.shops.map(shop => (
           <CardModel
             key={shop.id}
-            title={shop.name}
+            title={shop.city}
+            description={shop.address}
+            image={shop.image}
             {...shop}
             select={this.props.select}
           />
