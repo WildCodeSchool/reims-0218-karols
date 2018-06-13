@@ -1,6 +1,7 @@
+import React, { Component } from "react"
 import { connect } from "react-redux"
 
-import ListChoicePrestation from "../components/ListChoicePrestation"
+import CardModel from "../components/CardModel"
 import { makeChoosePrestation } from "../actions/actions"
 
 const mapStateToProps = state => ({
@@ -12,6 +13,24 @@ const mapDispatchToProps = dispatch => ({
     dispatch(makeChoosePrestation(prestationId, preparationId))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(
-  ListChoicePrestation
-)
+export class PrestationMaleWrap extends Component {
+  render() {
+    return (
+      <div>
+        {this.props.prestations.map(prestation => {
+          console.log(prestation)
+          return (
+            <CardModel
+              id={prestation.id}
+              title={prestation.name}
+              image={prestation.image}
+              description={prestation.description}
+            />
+          )
+        })}
+      </div>
+    )
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PrestationMaleWrap)

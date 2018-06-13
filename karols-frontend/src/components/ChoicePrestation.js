@@ -3,7 +3,7 @@ import { Card, CardTitle, CardText, CardImgOverlay } from "reactstrap"
 
 // Display card when it's normal state
 
-const ChoicePrestation = ({ image, description, title }) => {
+const ChoicePrestation = ({ name, imageSrc, description }) => {
   return (
     <div className="mb-4">
       <Card inverse>
@@ -11,7 +11,7 @@ const ChoicePrestation = ({ image, description, title }) => {
           className="img-fluid"
           width="500"
           height="250"
-          src={image}
+          src={imageSrc}
           alt="Name of service"
         />
 
@@ -21,7 +21,7 @@ const ChoicePrestation = ({ image, description, title }) => {
               fontSize: "2em"
             }}
           >
-            {title}
+            {name}
           </CardTitle>
           <CardText>{description}</CardText>
         </CardImgOverlay>
