@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
+import { Container } from "reactstrap"
 
 import {
   showServices,
@@ -33,7 +34,7 @@ const mapDispatchToProps = dispatch => ({
 class Page extends Component {
   render() {
     return (
-      <div>
+      <Container>
         <ShopContainer />
         <hr />
         {this.props.showServices && <ServiceContainer />}
@@ -43,7 +44,7 @@ class Page extends Component {
         {this.props.showFemalePrestation && <PrestationFemaleContainer />}
         <hr />
         {this.props.showMalePrestation && <PrestationMaleContainer />}
-      </div>
+      </Container>
     )
   }
   componentDidMount() {
