@@ -2,7 +2,15 @@ import React from "react"
 import styles from "../styles/cardModel.css"
 import { Card, CardTitle, CardBody, CardFooter, Button } from "reactstrap"
 
-const CardModel = ({ id, title, description, image, selected, select }) => {
+const CardModel = ({
+  id,
+  index,
+  title,
+  description,
+  image,
+  selected,
+  select
+}) => {
   return (
     <div className={styles.card}>
       <Card

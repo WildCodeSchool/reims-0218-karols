@@ -21,9 +21,8 @@ class ServiceSelect extends Component {
         <ReservationTitle />
         <Row className="justify-content-center">
           {this.props.services.map(service => (
-            <Col md="6" className="text-center mb-3">
+            <Col key={service.id} md="6" className="text-center mb-3">
               <CardModel
-                key={service.id}
                 title={service.name}
                 {...service}
                 select={this.props.select}
