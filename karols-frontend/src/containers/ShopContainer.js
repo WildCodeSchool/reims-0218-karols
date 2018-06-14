@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Row, Col } from "reactstrap"
+import { scroller } from "react-scroll"
 
 import CardModel from "../components/CardModel"
 import { makeChooseShop } from "../actions/actions"
@@ -10,7 +11,14 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  select: shopId => dispatch(makeChooseShop(shopId))
+  select: shopId => {
+    dispatch(makeChooseShop(shopId))
+    scroller.scrollTo("myScrollToElement", {
+      duration: 1500,
+      delay: 100,
+      smooth: true
+    })
+  }
 })
 
 class ShopSelect extends Component {

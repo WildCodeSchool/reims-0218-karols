@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Container } from "reactstrap"
+import { Element } from "react-scroll"
 
 import {
   showServices,
@@ -37,7 +38,9 @@ class Page extends Component {
       <Container>
         <ShopContainer />
         <hr />
-        {this.props.showServices && <ServiceContainer />}
+        <Element name="services">
+          {this.props.showServices && <ServiceContainer />}
+        </Element>
         <hr />
         {this.props.showSex && <GenderContainer />}
         <hr />
