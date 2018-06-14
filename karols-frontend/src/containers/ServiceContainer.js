@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Row, Col } from "reactstrap"
+import { scroller } from "react-scroll"
 
 import CardModel from "../components/CardModel"
 import ReservationTitle from "../components/ReservationTitle"
@@ -15,6 +16,9 @@ const mapDispatchToProps = dispatch => ({
 })
 
 class ServiceSelect extends Component {
+  componentDidMount() {
+    scroller.scrollTo("services")
+  }
   render() {
     return (
       <div>
