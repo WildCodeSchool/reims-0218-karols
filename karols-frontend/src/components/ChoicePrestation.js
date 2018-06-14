@@ -2,7 +2,7 @@ import React from "react"
 import CardModel from "./CardModel"
 import { Row, Col } from "reactstrap"
 
-const PreparationChoice = ({ id, name, preparations, select }) => (
+const PreparationChoice = ({ id, name, preparations, select, image }) => (
   <div>
     <h5>{name}</h5>
     <Row className="justify-content-center">
@@ -12,6 +12,7 @@ const PreparationChoice = ({ id, name, preparations, select }) => (
             key={preparation.id}
             {...preparation}
             title={preparation.titlePreparation}
+            image={preparation.image}
             select={preparationId => {
               select(id, preparationId)
             }}
