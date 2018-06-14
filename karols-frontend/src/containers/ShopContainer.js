@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
+import { Row, Col } from "reactstrap"
 
 import CardModel from "../components/CardModel"
 import { makeChooseShop } from "../actions/actions"
@@ -15,18 +16,20 @@ const mapDispatchToProps = dispatch => ({
 class ShopSelect extends Component {
   render() {
     return (
-      <div>
+      <Row className="justify-content-center">
         {this.props.shops.map(shop => (
-          <CardModel
-            key={shop.id}
-            title={shop.city}
-            description={shop.address}
-            image={shop.image}
-            {...shop}
-            select={this.props.select}
-          />
+          <Col md="6" className="text-center mb-3">
+            <CardModel
+              key={shop.id}
+              title={shop.city}
+              description={shop.address}
+              image={shop.image}
+              {...shop}
+              select={this.props.select}
+            />
+          </Col>
         ))}
-      </div>
+      </Row>
     )
   }
 }

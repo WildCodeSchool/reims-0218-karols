@@ -12,7 +12,7 @@ const mapDispatchToProps = dispatch => ({
   onPrestationsReceived: response => dispatch(makePrestationsReceived(response))
 })
 
-export class PrestationWrap extends Component {
+class PrestationWrap extends Component {
   render() {
     return (
       <div>

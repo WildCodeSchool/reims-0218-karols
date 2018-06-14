@@ -1,7 +1,9 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
+import { Row, Col } from "reactstrap"
 
 import CardModel from "../components/CardModel"
+import ReservationTitle from "../components/ReservationTitle"
 import { makeChooseService } from "../actions/actions"
 
 const mapStateToProps = state => ({
@@ -16,14 +18,19 @@ class ServiceSelect extends Component {
   render() {
     return (
       <div>
-        {this.props.services.map(service => (
-          <CardModel
-            key={service.id}
-            title={service.name}
-            {...service}
-            select={this.props.select}
-          />
-        ))}
+        <ReservationTitle />
+        <Row className="justify-content-center">
+          {this.props.services.map(service => (
+            <Col md="6" className="text-center mb-3">
+              <CardModel
+                key={service.id}
+                title={service.name}
+                {...service}
+                select={this.props.select}
+              />
+            </Col>
+          ))}
+        </Row>
       </div>
     )
   }
