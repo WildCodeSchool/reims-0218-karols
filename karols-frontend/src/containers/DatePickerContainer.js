@@ -3,8 +3,8 @@ import InfiniteCalendar from "react-infinite-calendar"
 import "react-infinite-calendar/styles.css" // Make sure to import the default stylesheet
 
 // Render the Calendar
-var today = new Date()
-var lastWeek = new Date(
+let today = new Date()
+let lastWeek = new Date(
   today.getFullYear(),
   today.getMonth(),
   today.getDate() - 7
@@ -16,14 +16,18 @@ class DatePickerSelect extends Component {
   }
 
   onChange = date => this.setState({ date })
+  onSelect = date => this.setState({ date })
 
   render() {
     return (
       <div className="justify-content-center">
         <InfiniteCalendar
+          onSelect={function(date) {
+            console.log(date)
+          }}
           style={{ margin: "auto" }}
-          width={400}
-          height={400}
+          width={300}
+          height={300}
           selected={today}
           disabledDays={[0, 7]}
           minDate={lastWeek}
