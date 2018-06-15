@@ -49,11 +49,9 @@ class Page extends Component {
           {this.props.showSex && <GenderContainer />}
         </Element>
         <hr />
-        <Element name="prestations">
-          {this.props.showFemalePrestation && <PrestationFemaleContainer />}
-          <hr />
-          {this.props.showMalePrestation && <PrestationMaleContainerWrap />}
-        </Element>
+        {this.props.showFemalePrestation && <PrestationFemaleContainer />}
+        <hr />
+        {this.props.showMalePrestation && <PrestationMaleContainerWrap />}
         <hr />
         {this.props.showDatePicker && <DatePickerContainer />}
       </Container>
