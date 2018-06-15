@@ -1,3 +1,4 @@
+import React, { Component } from "react"
 import { connect } from "react-redux"
 
 import ListChoicePrestation from "../components/ListChoicePrestation"
@@ -12,6 +13,12 @@ const mapDispatchToProps = dispatch => ({
     dispatch(makeChoosePrestation(prestationId, preparationId))
 })
 
+class PrestationMaleContainerWrap extends Component {
+  render() {
+    return <ListChoicePrestation />
+  }
+}
+
 export default connect(mapStateToProps, mapDispatchToProps)(
-  ListChoicePrestation
+  PrestationMaleContainerWrap
 )

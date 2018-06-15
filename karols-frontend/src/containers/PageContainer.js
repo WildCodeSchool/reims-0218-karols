@@ -13,7 +13,7 @@ import {
 import ServiceContainer from "./ServiceContainer"
 import ShopContainer from "./ShopContainer"
 import PrestationFemaleContainer from "./PrestationFemaleContainer"
-import PrestationMaleContainer from "./PrestationMaleContainer"
+import PrestationMaleContainerWrap from "./PrestationMaleContainer"
 import GenderContainer from "./GenderContainer"
 
 import { makeShopsPrestationsReceived } from "../actions/actions"
@@ -42,11 +42,15 @@ class Page extends Component {
           {this.props.showServices && <ServiceContainer />}
         </Element>
         <hr />
-        {this.props.showSex && <GenderContainer />}
+        <Element name="genders">
+          {this.props.showSex && <GenderContainer />}
+        </Element>
         <hr />
-        {this.props.showFemalePrestation && <PrestationFemaleContainer />}
-        <hr />
-        {this.props.showMalePrestation && <PrestationMaleContainer />}
+        <Element name="prestations">
+          {this.props.showFemalePrestation && <PrestationFemaleContainer />}
+          <hr />
+          {this.props.showMalePrestation && <PrestationMaleContainerWrap />}
+        </Element>
       </Container>
     )
   }

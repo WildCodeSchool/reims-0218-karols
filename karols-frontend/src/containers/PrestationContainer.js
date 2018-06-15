@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import ChoicePrestation from "../components/ChoicePrestation"
 import { fetchPrestation } from "../api"
 import { makePrestationsReceived } from "../actions/actions"
+import { scroller } from "react-scroll"
 
 const mapStateToProps = state => ({
   prestations: state.prestations
@@ -13,6 +14,9 @@ const mapDispatchToProps = dispatch => ({
 })
 
 class PrestationWrap extends Component {
+  componentDidMount() {
+    scroller.scrollTo("prestations")
+  }
   render() {
     return (
       <div>
