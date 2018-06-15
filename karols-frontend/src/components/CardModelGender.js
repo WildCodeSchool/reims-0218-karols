@@ -1,9 +1,10 @@
 import React from "react"
 import styles from "../styles/cardModel.css"
-import { Card, CardTitle, CardBody, Button } from "reactstrap"
+import { Card, CardTitle, CardBody } from "reactstrap"
 
 const CardModelGender = ({
   id,
+  index,
   title,
   description,
   image,
@@ -12,14 +13,27 @@ const CardModelGender = ({
 }) => {
   return (
     <div className={styles.card}>
-      <Card className="cardModel card" style={{}}>
+      <Card
+        className="cardModel card"
+        onClick={() => {
+          select(id)
+        }}
+        style={{
+          cursor: "pointer"
+        }}
+      >
         <div
           className="wrapper text-center"
           style={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
+            background: selected
+              ? `linear-gradient(
+  rgba(255, 255, 255, 0.1), 
+ rgba(255, 255, 255, 0.1)
+ ), url(${image}) center/100% no-repeat`
+              : `linear-gradient(
+ rgba(0, 0, 0, 0.5), 
+ rgba(0, 0, 0, 0.5)
+ ), url(${image}) center/100% no-repeat`
           }}
         >
           <div className="data">
@@ -31,7 +45,6 @@ const CardModelGender = ({
                   marginTop: "10px"
                 }}
               >
-                {selected && <p>SELECTED</p>}
                 <p
                   style={{
                     color: "#FFF"
@@ -40,7 +53,7 @@ const CardModelGender = ({
                   {title}
                 </p>
               </CardTitle>
-              <Button
+              {/* <Button
                 onClick={() => {
                   select(id)
                 }}
@@ -58,7 +71,7 @@ const CardModelGender = ({
                 }}
               >
                 Sélectionner
-              </Button>
+              </Button> */}
             </CardBody>
           </div>
         </div>

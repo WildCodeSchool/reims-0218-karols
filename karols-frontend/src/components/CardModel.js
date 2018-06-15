@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../styles/cardModel.css"
-import { Card, CardTitle, CardBody, CardFooter, Button } from "reactstrap"
+import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
 
 const CardModel = ({
   id,
@@ -15,9 +15,11 @@ const CardModel = ({
     <div className={styles.card}>
       <Card
         className="cardModel card"
-        style={{}}
         onClick={() => {
           select(id)
+        }}
+        style={{
+          cursor: "pointer"
         }}
       >
         <div

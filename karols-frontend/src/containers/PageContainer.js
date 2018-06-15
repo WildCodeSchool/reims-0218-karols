@@ -36,6 +36,7 @@ class Page extends Component {
     return (
       <Container>
         <ShopContainer />
+
         <hr />
         {this.props.showServices && <ServiceContainer />}
         <hr />
