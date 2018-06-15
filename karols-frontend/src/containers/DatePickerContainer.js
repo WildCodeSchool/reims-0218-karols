@@ -11,19 +11,20 @@ let lastWeek = new Date(
 )
 
 class DatePickerSelect extends Component {
-  state = {
-    date: new Date()
+  constructor(props) {
+    super(props)
+    this.state = { date: new Date() }
   }
-
-  onChange = date => this.setState({ date })
-  onSelect = date => this.setState({ date })
 
   render() {
     return (
       <div className="justify-content-center">
         <InfiniteCalendar
-          onSelect={function(date) {
-            console.log(date)
+          onSelect={date => {
+            this.setState({
+              dateSelected: date
+            })
+            console.log(this.state)
           }}
           style={{ margin: "auto" }}
           width={300}
