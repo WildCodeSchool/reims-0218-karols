@@ -24,7 +24,6 @@ class DatePickerSelect extends Component {
             this.setState({
               dateSelected: date
             })
-            console.log(this.state)
           }}
           style={{ margin: "auto" }}
           width={300}
