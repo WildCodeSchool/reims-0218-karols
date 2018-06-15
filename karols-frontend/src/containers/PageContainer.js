@@ -7,7 +7,8 @@ import {
   showServices,
   showSex,
   showFemalePrestation,
-  showMalePrestation
+  showMalePrestation,
+  showDatePicker
 } from "../display"
 
 import ServiceContainer from "./ServiceContainer"
@@ -15,6 +16,7 @@ import ShopContainer from "./ShopContainer"
 import PrestationFemaleContainer from "./PrestationFemaleContainer"
 import PrestationMaleContainerWrap from "./PrestationMaleContainer"
 import GenderContainer from "./GenderContainer"
+import DatePickerContainer from "./DatePickerContainer"
 
 import { makeShopsPrestationsReceived } from "../actions/actions"
 
@@ -24,7 +26,8 @@ const mapStateToProps = state => ({
   showServices: showServices(state),
   showSex: showSex(state),
   showFemalePrestation: showFemalePrestation(state),
-  showMalePrestation: showMalePrestation(state)
+  showMalePrestation: showMalePrestation(state),
+  showDatePicker: showDatePicker(state)
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -51,6 +54,8 @@ class Page extends Component {
           <hr />
           {this.props.showMalePrestation && <PrestationMaleContainerWrap />}
         </Element>
+        <hr />
+        {this.props.showDatePicker && <DatePickerContainer />}
       </Container>
     )
   }

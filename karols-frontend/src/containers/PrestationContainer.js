@@ -25,6 +25,7 @@ class PrestationWrap extends Component {
             <ChoicePrestation
               name={prestation.name}
               key={prestation.id}
+              id={prestation.id}
               imgSrc={prestation.image}
             />
           )

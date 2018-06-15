@@ -22,9 +22,8 @@ class GenderSelect extends Component {
     return (
       <Row className="justify-content-center">
         {this.props.genders.map(gender => (
-          <Col md="6" className="text-center mb-3">
+          <Col key={gender.sex} md="6" className="text-center mb-3">
             <CardModelGender
-              key={gender.sex}
               id={gender.sex}
               select={this.props.select}
               image={gender.image}
