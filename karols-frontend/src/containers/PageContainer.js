@@ -14,7 +14,7 @@ import {
 import ServiceContainer from "./ServiceContainer"
 import ShopContainer from "./ShopContainer"
 import PrestationFemaleContainer from "./PrestationFemaleContainer"
-import PrestationMaleContainerWrap from "./PrestationMaleContainer"
+import PrestationMaleContainer from "./PrestationMaleContainer"
 import GenderContainer from "./GenderContainer"
 import DatePickerContainer from "./DatePickerContainer"
 
@@ -54,7 +54,7 @@ class Page extends Component {
         </Element>
         <hr />
         <Element name="male">
-          {this.props.showMalePrestation && <PrestationMaleContainerWrap />}
+          {this.props.showMalePrestation && <PrestationMaleContainer />}
           <hr />
         </Element>
         {this.props.showDatePicker && <DatePickerContainer />}
