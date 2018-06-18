@@ -7,7 +7,9 @@ const JumboRecap = props => {
       <Jumbotron
         style={{
           textAlign: "center",
-          backgroundColor: "#71a3f2"
+          backgroundColor: "#d7dbe2",
+          fontSize: "25px",
+          borderRadius: "100px"
         }}
       >
         <h1 className="display-12">Récapitulatif</h1>

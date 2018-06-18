@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Container } from "reactstrap"
+import { Element } from "react-scroll"
 
 import {
   showServices,
@@ -39,15 +40,18 @@ class Page extends Component {
     return (
       <Container>
         <ShopContainer />
-
-        {this.props.showServices && <ServiceContainer />}
-
-        {this.props.showSex && <GenderContainer />}
-
-        {this.props.showFemalePrestation && <PrestationFemaleContainer />}
-
-        {this.props.showMalePrestation && <PrestationMaleContainer />}
-
+        <Element name="services">
+          {this.props.showServices && <ServiceContainer />}
+        </Element>
+        <Element name="genders">
+          {this.props.showSex && <GenderContainer />}
+        </Element>
+        <Element name="female">
+          {this.props.showFemalePrestation && <PrestationFemaleContainer />}
+        </Element>
+        <Element name="male">
+          {this.props.showMalePrestation && <PrestationMaleContainer />}
+        </Element>
         {this.props.showDatePicker && <DatePickerContainer />}
       </Container>
     )

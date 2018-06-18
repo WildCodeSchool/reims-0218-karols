@@ -1,5 +1,4 @@
 import React from "react"
-
 import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
 
 const CardModel = ({
@@ -47,7 +46,7 @@ const CardModel = ({
               width: "100%",
               webkitTransform: "translateY(calc(-10px + 1em))",
               transform: "translateY(calc(-10px + 1em))",
-              transition: " -webkit-transform 0.3s"
+              transition: "-webkit-transform 0.3s"
             }}
           >
             <CardBody className="content">

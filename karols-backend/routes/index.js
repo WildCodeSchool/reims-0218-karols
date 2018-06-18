@@ -1,14 +1,16 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
+const { DateTime } = require("luxon");
 
 const shopsPrestations = require("../public/shopsPrestations.json");
+const createWeekTimeSlots = require("../timeslots/timeslots");
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
   res.render("index", { title: "Express" });
 });
 
-const test = {
+var test = {
   name: "khalid",
   say: "Hello"
 };
@@ -19,6 +21,18 @@ router.get("/test", (req, res) => {
 
 router.get("/shops-prestations", (req, res) => {
   res.json(shopsPrestations);
+});
+
+router.get("/timeslots", (req, res) => {
+  res.json(
+    createWeekTimeSlots(
+      DateTime.fromObject({
+        day: 27,
+        month: 7,
+        year: 2018
+      })
+    )
+  );
 });
 
 module.exports = router;

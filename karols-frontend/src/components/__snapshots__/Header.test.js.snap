@@ -16,7 +16,13 @@ exports[`renders correctly 1`] = `
       <div
         className="mb-4"
       >
+<<<<<<< HEAD
         <div>
+=======
+        <div
+          className={undefined}
+        >
+>>>>>>> a08c76497db1dfe48dd78f1ffbd439aff775be69
           <div
             className="cardModel card card"
             style={Object {}}
@@ -111,7 +117,13 @@ exports[`renders correctly 1`] = `
       <div
         className="mb-4"
       >
+<<<<<<< HEAD
         <div>
+=======
+        <div
+          className={undefined}
+        >
+>>>>>>> a08c76497db1dfe48dd78f1ffbd439aff775be69
           <div
             className="cardModel card card"
             style={Object {}}
@@ -206,7 +218,13 @@ exports[`renders correctly 1`] = `
       <div
         className="mb-4"
       >
+<<<<<<< HEAD
         <div>
+=======
+        <div
+          className={undefined}
+        >
+>>>>>>> a08c76497db1dfe48dd78f1ffbd439aff775be69
           <div
             className="cardModel card card"
             style={Object {}}
