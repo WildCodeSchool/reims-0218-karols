@@ -1,11 +1,11 @@
 import React from "react"
-import styles from "../styles/cardModel.css"
+
 import { Card, CardTitle, CardBody, CardFooter, Button } from "reactstrap"
 
 const ChoiceShop = ({ city, image, adress }) => {
   return (
     <div className="mb-4">
-      <div className={styles.card}>
+      <div>
         <Card className="cardModel card" style={{}}>
           <div
             className="wrapper text-center"

@@ -1,11 +1,11 @@
 import React from "react"
-import styles from "../styles/cardModel.css"
+
 import { Card, CardTitle, CardBody, Button } from "reactstrap"
 
 const ChoiceGender = ({ gender, image }) => {
   return (
     <div className="mb-4">
-      <div className={styles.card}>
+      <div>
         <Card className="cardModel card" style={{}}>
           <div
             className="wrapper text-center"

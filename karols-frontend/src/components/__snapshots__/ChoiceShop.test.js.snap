@@ -4,41 +4,87 @@ exports[`renders correctly 1`] = `
 <div
   className="mb-4"
 >
-  <div
-    className="card text-white"
-  >
-    <img
-      alt="Name of service"
-      className="img-fluid"
-      height="250"
-      src={undefined}
-      width="500"
-    />
+  <div>
     <div
-      className="card-img-overlay"
+      className="cardModel card card"
+      style={Object {}}
     >
-      <h5
-        className="card-title"
+      <div
+        className="wrapper text-center"
         style={
           Object {
-            "fontSize": "2em",
+            "backgroundImage": "url(undefined)",
+            "backgroundPosition": "center",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "cover",
           }
         }
-      />
-      <p
-        className="card-text"
-      />
-    </div>
-    <div
-      className="card-footer"
-    >
-      <button
-        className="btn btn-default btn-lg btn-block"
-        onClick={[Function]}
-        type={undefined}
       >
-        Choisir ce service
-      </button>
+        <div
+          className="data"
+        >
+          <div
+            className="content card-body"
+          >
+            <h5
+              className="city card-title"
+              style={
+                Object {
+                  "fontWeight": "500",
+                  "marginTop": "10px",
+                }
+              }
+            >
+              <p
+                style={
+                  Object {
+                    "color": "#FFF",
+                  }
+                }
+              />
+            </h5>
+            <button
+              className="btn btn-secondary"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "#fff",
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": "700",
+                  "lineHeight": "1",
+                  "margin": "2em auto 1em",
+                  "marginBottom": "40px",
+                  "padding": "10px 20px",
+                  "position": "relative",
+                  "textAlign": "center",
+                }
+              }
+              type={undefined}
+            >
+              Sélectionner
+            </button>
+          </div>
+          <div
+            className="card-footer"
+            style={
+              Object {
+                "backgroundColor": "rgba(136,136,136, 0.5)",
+              }
+            }
+          >
+            <p
+              className="text"
+              style={
+                Object {
+                  "height": "70px",
+                  "margin": "0",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -4,9 +4,7 @@ exports[`renders correctly 1`] = `
 <div
   className="mb-4"
 >
-  <div
-    className={undefined}
-  >
+  <div>
     <div
       className="cardModel card card"
       style={Object {}}

@@ -4,7 +4,12 @@ import { Jumbotron } from "reactstrap"
 const JumboRecap = props => {
   return (
     <div>
-      <Jumbotron>
+      <Jumbotron
+        style={{
+          textAlign: "center",
+          backgroundColor: "#71a3f2"
+        }}
+      >
         <h1 className="display-12">Récapitulatif</h1>
         <p className="shop">Votre réservation se fera à .....</p>
         <hr className="my-2" />

@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Container } from "reactstrap"
-import styles from "../styles/styleKarols.css"
 
 import {
   showServices,
