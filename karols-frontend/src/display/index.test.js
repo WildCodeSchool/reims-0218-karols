@@ -1,5 +1,4 @@
-import { showServices, showDatePicker } from "."
-import { showSex } from "."
+import { showServices, showDatePicker, showSex } from "."
 
 describe("showServices", () => {
   it("should return false if no shop selected", () => {
