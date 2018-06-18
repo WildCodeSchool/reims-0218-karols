@@ -1,6 +1,5 @@
 import React from "react"
-import styles from "../styles/cardModel.css"
-import { Card, CardTitle, CardBody, CardFooter, Button } from "reactstrap"
+import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
 
 const CardModel = ({
   id,
@@ -12,17 +11,22 @@ const CardModel = ({
   select
 }) => {
   return (
-    <div className={styles.card}>
+    <div>
       <Card
-        className="cardModel card"
-        style={{}}
+        style={{
+          cursor: "pointer"
+        }}
         onClick={() => {
           select(id)
         }}
       >
         <div
-          className="wrapper text-center"
           style={{
+            minHeight: "300px",
+            position: "relative",
+            overflow: "hidden",
+            boxShadow:
+              "0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2)",
             background: selected
               ? `linear-gradient(
   rgba(255, 255, 255, 0.1), 
@@ -34,14 +38,41 @@ const CardModel = ({
  ), url(${image}) center/100% no-repeat`
           }}
         >
-          <div className="data">
+          <div
+            className="data"
+            style={{
+              position: "absolute",
+              bottom: "0",
+              width: "100%",
+              webkitTransform: "translateY(calc(-10px + 1em))",
+              transform: "translateY(calc(-10px + 1em))",
+              transition:
+                "-webkit-transform 0.3s, transform 0.3s, transform 0.3s, -webkit-transform 0.3s"
+            }}
+          >
             <CardBody className="content">
               <CardTitle
                 className="title"
                 style={{
                   fontWeight: "500",
                   fontSize: "30px",
-                  marginBottom: "120px"
+                  marginBottom: "120px",
+
+                  backgroundColor: "rgba(255, 255, 255, 0.2)",
+                  borderRadius: "10px",
+                  width: "auto",
+                  minWidth: "auto",
+                  maxWidth: "auto",
+
+                  background: selected
+                    ? `linear-gradient(
+                      rgba(0, 0, 0, 0.5), 
+                      rgba(0, 0, 0, 0.5)
+                      ),  center/100% no-repeat`
+                    : `linear-gradient(
+                      rgba(255, 255, 255, 0.1), 
+                     rgba(255, 255, 255, 0.1)
+                     ),  center/100% no-repeat`
                 }}
               >
                 <p
@@ -62,7 +93,10 @@ const CardModel = ({
                 className="text"
                 style={{
                   height: "70px",
-                  margin: "0"
+                  margin: "0",
+                  color: "#fff",
+                  webkitTransform: "translateY(calc(0px + 1em))",
+                  transform: "translateY(calc(0px + 1em))"
                 }}
               >
                 {description}

@@ -5,6 +5,7 @@ import { scroller } from "react-scroll"
 import Zoom from "react-reveal/Zoom"
 
 import { makeChooseSex } from "../actions/actions"
+import GenderTitle from "../components/GenderTitle"
 import CardModelGender from "../components/CardModelGender"
 
 const mapStateToProps = state => ({
@@ -32,7 +33,7 @@ class GenderSelect extends Component {
               <CardModelGender
                 id={gender.sex}
                 select={this.props.select}
-                image={gender.image}
+                {...gender}
               />
             </Zoom>
           </Col>

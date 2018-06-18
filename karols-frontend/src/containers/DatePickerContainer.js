@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import InfiniteCalendar from "react-infinite-calendar"
 import "react-infinite-calendar/styles.css" // Make sure to import the default stylesheet
+import DatePickerTitle from "../components/DatePickerTitle"
 import { Button, Modal, ModalHeader, ModalBody, Container } from "reactstrap"
 
 // Render the Calendar
@@ -35,6 +36,7 @@ class DatePickerSelect extends Component {
     return (
       <div className="justify-content-center">
         <Container>
+          <DatePickerTitle />
           <Button onClick={this.showModal.bind(this)}>Choisir une date</Button>
           <Modal isOpen={this.state.modal} toggle={this.closeModal.bind(this)}>
             <ModalHeader toggle={this.closeModal.bind(this)}>

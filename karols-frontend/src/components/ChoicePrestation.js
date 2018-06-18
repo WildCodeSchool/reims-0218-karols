@@ -7,7 +7,7 @@ const PreparationChoice = ({ id, name, preparations, select, image }) => (
     <h5>{name}</h5>
     <Row className="justify-content-center">
       {preparations.map(preparation => (
-        <Col md="3" className="text-center mb-3">
+        <Col key={preparation.id} md="6" className="text-center mb-6">
           <CardModel
             key={preparation.id}
             {...preparation}

@@ -40,22 +40,17 @@ class Page extends Component {
     return (
       <Container>
         <ShopContainer />
-        <hr />
         <Element name="services">
           {this.props.showServices && <ServiceContainer />}
         </Element>
-        <hr />
         <Element name="genders">
           {this.props.showSex && <GenderContainer />}
         </Element>
-        <hr />
         <Element name="female">
           {this.props.showFemalePrestation && <PrestationFemaleContainer />}
         </Element>
-        <hr />
         <Element name="male">
           {this.props.showMalePrestation && <PrestationMaleContainer />}
-          <hr />
         </Element>
         {this.props.showDatePicker && <DatePickerContainer />}
       </Container>
