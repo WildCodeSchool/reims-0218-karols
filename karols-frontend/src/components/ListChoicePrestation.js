@@ -2,7 +2,7 @@ import React from "react"
 import ChoicePrestation from "./ChoicePrestation"
 import PrestationTitle from "./PrestationTitle"
 
-const ListPrestations = ({ prestations, select }) => (
+const ListChoicePrestation = ({ prestations, select }) => (
   <div>
     <PrestationTitle />
     {prestations.map(prestation => (
@@ -11,4 +11,4 @@ const ListPrestations = ({ prestations, select }) => (
   </div>
 )
 
-export default ListPrestations
+export default ListChoicePrestation

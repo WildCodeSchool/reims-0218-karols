@@ -18,6 +18,7 @@ describe("action to choose a prestation", () => {
     // il devrait retourner le choix d'une prestation avec une Id prestation
     const expected = {
       type: CHOOSE_PRESTATION,
+      preparationId: 4,
       prestationId: 2
       // déclaration d'une variable expected qui prend un object
     }

@@ -9,6 +9,7 @@ const PreparationChoice = ({ id, name, preparations, select, image }) => (
       {preparations.map(preparation => (
         <Col key={preparation.id} md="6" className="text-center mb-6">
           <CardModel
+            key={preparation.id}
             {...preparation}
             title={preparation.titlePreparation}
             image={preparation.image}
