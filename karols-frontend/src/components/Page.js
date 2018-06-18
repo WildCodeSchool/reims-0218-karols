@@ -13,6 +13,7 @@ import Footer from "./Footer"
 import ValidationReservationButton from "./ValidationReservationButton"
 import PreferredDateChoice from "./PreferredDateChoice"
 import CardModel from "./CardModel"
+import JumboRecap from "./JumboRecap"
 
 class Page extends Component {
   render() {
@@ -97,6 +98,11 @@ class Page extends Component {
         <Row>
           <Col className="text-center">
             <Footer />
+          </Col>
+        </Row>
+        <Row>
+          <Col className="text-center">
+            <JumboRecap />
           </Col>
         </Row>
       </Container>

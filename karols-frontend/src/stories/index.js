@@ -31,6 +31,7 @@ import PreferredDateChoice from "../components/PreferredDateChoice"
 import CardHover from "../components/CardHover"
 import ListChoiceShop from "../components/ListChoiceShop"
 import CardModel from "../components/CardModel"
+import JumboRecap from "../components/JumboRecap"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -69,6 +70,10 @@ storiesOf("Footer", module).add("just a footer", () => <Footer />)
 
 storiesOf("InfoClient", module).add("just an information on customer", () => (
   <InfoClient />
+))
+
+storiesOf("JumboRecap", module).add("just a jumbotron recapitulatif", () => (
+  <JumboRecap />
 ))
 
 storiesOf("PrestationLabel", module).add("just a title", () => (
