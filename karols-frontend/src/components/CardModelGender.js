@@ -45,8 +45,7 @@ const CardModelGender = ({
               width: "100%",
               webkitTransform: "translateY(calc(-10px + 1em))",
               transform: "translateY(calc(-10px + 1em))",
-              transition:
-                "-webkit-transform 0.3s, transform 0.3s, transform 0.3s, -webkit-transform 0.3s"
+              transition: "-webkit-transform 0.3s"
             }}
           >
             <CardBody className="content">
@@ -57,7 +56,6 @@ const CardModelGender = ({
                   marginTop: "10px"
                 }}
               >
-                {selected && <p>SELECTED</p>}
                 <p
                   style={{
                     color: "#FFF"
