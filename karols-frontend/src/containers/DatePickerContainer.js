@@ -37,7 +37,16 @@ class DatePickerSelect extends Component {
       <div className="justify-content-center">
         <Container>
           <DatePickerTitle />
-          <Button onClick={this.showModal.bind(this)}>Choisir une date</Button>
+          <Button
+            style={{
+              height: "100px",
+              width: "200px",
+              marginTop: "50px"
+            }}
+            onClick={this.showModal.bind(this)}
+          >
+            Choisir une date
+          </Button>
           <Modal isOpen={this.state.modal} toggle={this.closeModal.bind(this)}>
             <ModalHeader toggle={this.closeModal.bind(this)}>
               Choisissez la date de votre prestation
