@@ -49,7 +49,9 @@ class Page extends Component {
           {this.props.showSex && <GenderContainer />}
         </Element>
         <hr />
-        {this.props.showFemalePrestation && <PrestationFemaleContainer />}
+        <Element name="femalePrestations">
+          {this.props.showFemalePrestation && <PrestationFemaleContainer />}
+        </Element>
         <hr />
         {this.props.showMalePrestation && <PrestationMaleContainerWrap />}
         <hr />

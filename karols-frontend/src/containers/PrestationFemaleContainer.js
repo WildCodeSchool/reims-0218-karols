@@ -1,6 +1,6 @@
 import { connect } from "react-redux"
 import ListChoicePrestation from "../components/ListChoicePrestation"
-import { makeChoosePrestation }from "../actions/actions"
+import { makeChoosePrestation } from "../actions/actions"
 
 const mapStateToProps = state => ({
   prestations: state.prestations.filter(prestation => prestation.gender === "F")
@@ -12,7 +12,6 @@ const mapDispatchToProps = dispatch => ({
   }
 })
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ListChoicePrestation)
+export default connect(mapStateToProps, mapDispatchToProps)(
+  ListChoicePrestation
+)
