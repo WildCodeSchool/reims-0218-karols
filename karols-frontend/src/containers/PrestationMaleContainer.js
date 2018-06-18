@@ -16,14 +16,15 @@ const mapDispatchToProps = dispatch => ({
 
 class MaleSelected extends Component {
   componentDidMount() {
-    scroller.scrollTo("male")
+    scroller.scrollTo("male", {
+      duration: 1500,
+      delay: 100,
+      smooth: true
+    })
   }
   render() {
-    return <ListChoicePrestation />
+    return <ListChoicePrestation {...this.props} />
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(
-  ListChoicePrestation,
-  MaleSelected
-)
+export default connect(mapStateToProps, mapDispatchToProps)(MaleSelected)
