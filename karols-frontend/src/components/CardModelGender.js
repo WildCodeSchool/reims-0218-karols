@@ -1,5 +1,4 @@
 import React from "react"
-//import styles from "../styles/cardModel.css"
 import { Card, CardTitle, CardBody } from "reactstrap"
 
 const CardModelGender = ({
@@ -13,7 +12,6 @@ const CardModelGender = ({
   return (
     <div>
       <Card
-        className="cardModel card"
         style={{
           cursor: "pointer"
         }}
@@ -22,7 +20,6 @@ const CardModelGender = ({
         }}
       >
         <div
-          //className="wrapper text-center"
           style={{
             minHeight: "300px",
             position: "relative",
