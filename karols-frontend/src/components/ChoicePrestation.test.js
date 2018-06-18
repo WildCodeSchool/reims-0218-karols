@@ -5,11 +5,11 @@ import renderer from "react-test-renderer"
 
 it("renders without crashing", () => {
   const div = document.createElement("div")
-  ReactDOM.render(<ChoicePrestation />, div)
+  ReactDOM.render(<ChoicePrestation preparations={[]}/>, div)
   ReactDOM.unmountComponentAtNode(div)
 })
 
 it("renders correctly", () => {
-  const tree = renderer.create(<ChoicePrestation />).toJSON()
+  const tree = renderer.create(<ChoicePrestation preparations={[]}/>).toJSON()
   expect(tree).toMatchSnapshot()
 })

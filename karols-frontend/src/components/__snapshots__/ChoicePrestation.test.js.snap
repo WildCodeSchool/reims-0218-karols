@@ -1,34 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="mb-4"
->
+<div>
+  <h5 />
   <div
-    className="card text-white"
-  >
-    <img
-      alt="Name of service"
-      className="img-fluid"
-      height="250"
-      src={undefined}
-      width="500"
-    />
-    <div
-      className="card-img-overlay"
-    >
-      <h5
-        className="card-title"
-        style={
-          Object {
-            "fontSize": "2em",
-          }
-        }
-      />
-      <p
-        className="card-text"
-      />
-    </div>
-  </div>
+    className="justify-content-center row"
+  />
 </div>
 `;
