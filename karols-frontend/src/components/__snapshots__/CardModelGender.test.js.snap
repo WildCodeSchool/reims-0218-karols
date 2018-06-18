@@ -6,17 +6,16 @@ exports[`renders correctly 1`] = `
 >
   <div
     className="cardModel card card"
-    onClick={[Function]}
     style={Object {}}
   >
     <div
       className="wrapper text-center"
       style={
         Object {
-          "background": "linear-gradient(
-         rgba(0, 0, 0, 0.5), 
-         rgba(0, 0, 0, 0.5)
-         ), url(undefined) center/100% no-repeat",
+          "backgroundImage": "url(undefined)",
+          "backgroundPosition": "center",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
         }
       }
     >
@@ -30,9 +29,8 @@ exports[`renders correctly 1`] = `
             className="title card-title"
             style={
               Object {
-                "fontSize": "30px",
                 "fontWeight": "500",
-                "marginBottom": "120px",
+                "marginTop": "10px",
               }
             }
           >
@@ -44,24 +42,27 @@ exports[`renders correctly 1`] = `
               }
             />
           </h5>
-        </div>
-        <div
-          className="card-footer"
-          style={
-            Object {
-              "backgroundColor": "rgba(136,136,136, 0.5)",
-            }
-          }
-        >
-          <p
-            className="text"
+          <button
+            className="btn btn-secondary"
+            onClick={[Function]}
             style={
               Object {
-                "height": "70px",
-                "margin": "0",
+                "color": "#fff",
+                "display": "block",
+                "fontSize": "12px",
+                "fontWeight": "700",
+                "lineHeight": "1",
+                "margin": "2em auto 1em",
+                "marginBottom": "80px",
+                "padding": "10px 20px",
+                "position": "relative",
+                "textAlign": "center",
               }
             }
-          />
+            type="button"
+          >
+            Sélectionner
+          </button>
         </div>
       </div>
     </div>
