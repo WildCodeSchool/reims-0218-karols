@@ -1,15 +1,7 @@
 import React, { Component } from "react"
 import InfiniteCalendar from "react-infinite-calendar"
 import "react-infinite-calendar/styles.css" // Make sure to import the default stylesheet
-import {
-  Button,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  Container,
-  Row,
-  Col
-} from "reactstrap"
+import { Button, Modal, ModalHeader, Container } from "reactstrap"
 
 // Render the Calendar
 let today = new Date()
@@ -44,7 +36,6 @@ class DatePickerSelect extends Component {
     this.setState({
       [modal]: true
     })
-    console.log(this.state)
   }
 
   render() {
@@ -66,7 +57,7 @@ class DatePickerSelect extends Component {
                   })
                 }}
                 style={{ margin: "auto" }}
-                width={300}
+                width={466}
                 height={300}
                 selected={today}
                 disabledDays={[0, 7]}
