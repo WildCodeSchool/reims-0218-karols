@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Row, Col } from "reactstrap"
+import { scroller } from "react-scroll"
 
 import { makeChooseSex } from "../actions/actions"
 import CardModelGender from "../components/CardModelGender"
@@ -14,6 +15,13 @@ const mapDispatchToProps = dispatch => ({
 })
 
 class GenderSelect extends Component {
+  componentDidMount() {
+    scroller.scrollTo("genders", {
+      duration: 1500,
+      delay: 100,
+      smooth: true
+    })
+  }
   render() {
     return (
       <Row className="justify-content-center">
