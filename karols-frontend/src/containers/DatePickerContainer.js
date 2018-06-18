@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import InfiniteCalendar from "react-infinite-calendar"
 import "react-infinite-calendar/styles.css" // Make sure to import the default stylesheet
-
+import DatePickerTitle from "../components/DatePickerTitle"
 // Render the Calendar
 let today = new Date()
 let lastWeek = new Date(
@@ -19,6 +19,7 @@ class DatePickerSelect extends Component {
   render() {
     return (
       <div className="justify-content-center">
+        <DatePickerTitle />
         <InfiniteCalendar
           onSelect={date => {
             this.setState({

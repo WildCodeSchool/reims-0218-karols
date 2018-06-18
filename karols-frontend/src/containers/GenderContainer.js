@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import { Row, Col } from "reactstrap"
 
 import { makeChooseSex } from "../actions/actions"
+import GenderTitle from "../components/GenderTitle"
 import CardModelGender from "../components/CardModelGender"
 
 const mapStateToProps = state => ({
@@ -16,18 +17,21 @@ const mapDispatchToProps = dispatch => ({
 class GenderSelect extends Component {
   render() {
     return (
-      <Row className="justify-content-center">
-        {this.props.genders.map(gender => (
-          <Col key={gender.sex} md="6" className="text-center mb-3">
-            <CardModelGender
-              id={gender.sex}
-              {...gender}
-              select={this.props.select}
-              image={gender.image}
-            />
-          </Col>
-        ))}
-      </Row>
+      <div>
+        <GenderTitle />
+        <Row className="justify-content-center">
+          {this.props.genders.map(gender => (
+            <Col key={gender.sex} md="6" className="text-center mb-3">
+              <CardModelGender
+                id={gender.sex}
+                {...gender}
+                select={this.props.select}
+                image={gender.image}
+              />
+            </Col>
+          ))}
+        </Row>
+      </div>
     )
   }
 }

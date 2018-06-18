@@ -65,7 +65,17 @@ const CardModel = ({
                   borderRadius: "10px",
                   width: "auto",
                   minWidth: "auto",
-                  maxWidth: "auto"
+                  maxWidth: "auto",
+
+                  background: selected
+                    ? `linear-gradient(
+                      rgba(0, 0, 0, 0.5), 
+                      rgba(0, 0, 0, 0.5)
+                      ),  center/100% no-repeat`
+                    : `linear-gradient(
+                      rgba(255, 255, 255, 0.1), 
+                     rgba(255, 255, 255, 0.1)
+                     ),  center/100% no-repeat`
                 }}
               >
                 <p

@@ -3,7 +3,8 @@ import React from "react"
 const ShopTitle = () => {
   return (
     <div>
-      <h2 className="display-4">Etape 1: Sélectionner votre magasin</h2>
+      <hr />
+      <h2 className="display-4">Etape 1: Sélectionnez votre magasin</h2>
     </div>
   )
 }

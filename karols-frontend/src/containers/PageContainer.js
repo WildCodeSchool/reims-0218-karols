@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Container } from "reactstrap"
+import styles from "../styles/styleKarols.css"
 
 import {
   showServices,
@@ -39,15 +40,15 @@ class Page extends Component {
     return (
       <Container>
         <ShopContainer />
-        <hr />
+
         {this.props.showServices && <ServiceContainer />}
-        <hr />
+
         {this.props.showSex && <GenderContainer />}
-        <hr />
+
         {this.props.showFemalePrestation && <PrestationFemaleContainer />}
-        <hr />
+
         {this.props.showMalePrestation && <PrestationMaleContainer />}
-        <hr />
+
         {this.props.showDatePicker && <DatePickerContainer />}
       </Container>
     )
