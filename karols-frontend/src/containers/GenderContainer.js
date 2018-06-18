@@ -16,7 +16,11 @@ const mapDispatchToProps = dispatch => ({
 
 class GenderSelect extends Component {
   componentDidMount() {
-    scroller.scrollTo("genders")
+    scroller.scrollTo("genders", {
+      duration: 1500,
+      delay: 100,
+      smooth: true
+    })
   }
   render() {
     return (

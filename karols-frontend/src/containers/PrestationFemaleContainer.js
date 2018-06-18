@@ -1,6 +1,8 @@
+import React, { Component } from "react"
 import { connect } from "react-redux"
 import ListChoicePrestation from "../components/ListChoicePrestation"
 import { makeChoosePrestation } from "../actions/actions"
+import { scroller } from "react-scroll"
 
 const mapStateToProps = state => ({
   prestations: state.prestations.filter(prestation => prestation.gender === "F")
@@ -12,6 +14,16 @@ const mapDispatchToProps = dispatch => ({
   }
 })
 
+class FemaleSelected extends Component {
+  componentDidMount() {
+    scroller.scrollTo("female")
+  }
+  render() {
+    return <ListChoicePrestation />
+  }
+}
+
 export default connect(mapStateToProps, mapDispatchToProps)(
-  ListChoicePrestation
+  ListChoicePrestation,
+  FemaleSelected
 )

@@ -17,7 +17,11 @@ const mapDispatchToProps = dispatch => ({
 
 class ServiceSelect extends Component {
   componentDidMount() {
-    scroller.scrollTo("services")
+    scroller.scrollTo("services", {
+      duration: 1500,
+      delay: 100,
+      smooth: true
+    })
   }
   render() {
     return (
