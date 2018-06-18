@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import InfiniteCalendar from "react-infinite-calendar"
 import "react-infinite-calendar/styles.css" // Make sure to import the default stylesheet
-import { Button, Modal, ModalHeader, Container } from "reactstrap"
+import { Button, Modal, ModalHeader, ModalBody, Container } from "reactstrap"
 
 // Render the Calendar
 let today = new Date()
@@ -14,27 +14,20 @@ let lastWeek = new Date(
 class DatePickerSelect extends Component {
   constructor(props) {
     super(props)
-    this.state = { date: new Date() }
     this.state = {
-      dd1: false,
-      modal1: false
+      date: new Date(),
+      modal: false
     }
-    this.dropdownToggle = this.dropdownToggle.bind(this)
   }
 
-  dropdownToggle() {
+  closeModal() {
     this.setState({
-      dd1: !this.state.dd1
+      modal: false
     })
   }
-  closeModal(tabId) {
+  showModal() {
     this.setState({
-      [tabId]: false
-    })
-  }
-  showModal(modal) {
-    this.setState({
-      [modal]: true
+      modal: true
     })
   }
 
@@ -42,14 +35,10 @@ class DatePickerSelect extends Component {
     return (
       <div className="justify-content-center">
         <Container>
-          <Button onClick={this.showModal.bind(this, "modal1")}>
-            Choisir une date
-          </Button>
-          <Modal
-            isOpen={this.state.modal1}
-            toggle={this.closeModal.bind(this, "modal1")}
-          >
-            <ModalHeader toggle={this.closeModal.bind(this, "modal1")}>
+          <Button onClick={this.showModal.bind(this)}>Choisir une date</Button>
+          <Modal isOpen={this.state.modal} toggle={this.closeModal.bind(this)}>
+            <ModalHeader toggle={this.closeModal.bind(this)} />
+            <ModalBody>
               <InfiniteCalendar
                 onSelect={date => {
                   this.setState({
@@ -57,7 +46,7 @@ class DatePickerSelect extends Component {
                   })
                 }}
                 style={{ margin: "auto" }}
-                width={466}
+                width="100%"
                 height={300}
                 selected={today}
                 disabledDays={[0, 7]}
@@ -94,7 +83,7 @@ class DatePickerSelect extends Component {
                   }
                 }}
               />
-            </ModalHeader>
+            </ModalBody>
           </Modal>
         </Container>
       </div>
