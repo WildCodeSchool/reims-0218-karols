@@ -4,6 +4,7 @@ import { connect } from "react-redux"
 import ListChoicePrestation from "../components/ListChoicePrestation"
 import { makeChoosePrestation } from "../actions/actions"
 import { scroller } from "react-scroll"
+import Zoom from "react-reveal/Zoom"
 
 const mapStateToProps = state => ({
   prestations: state.prestations.filter(prestation => prestation.gender === "M")
@@ -23,7 +24,13 @@ class MaleSelected extends Component {
     })
   }
   render() {
-    return <ListChoicePrestation {...this.props} />
+    return (
+      <div>
+        <Zoom>
+          <ListChoicePrestation {...this.props} />
+        </Zoom>
+      </div>
+    )
   }
 }
 
