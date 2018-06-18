@@ -17,11 +17,11 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  -webkit-transform: translateY(calc(70px + 1em));
+  /* -webkit-transform: translateY(calc(70px + 1em));
   transform: translateY(calc(70px + 1em));
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; */
 }
 
 .cardModel .wrapper:hover .menu-content span {

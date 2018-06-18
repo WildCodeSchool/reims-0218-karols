@@ -4,6 +4,7 @@ import { Row, Col } from "reactstrap"
 import { scroller } from "react-scroll"
 
 import CardModel from "../components/CardModel"
+import ShopTitle from "../components/ShopTitle"
 import { makeChooseShop } from "../actions/actions"
 
 const mapStateToProps = state => ({
@@ -24,19 +25,22 @@ const mapDispatchToProps = dispatch => ({
 class ShopSelect extends Component {
   render() {
     return (
-      <Row className="justify-content-center">
-        {this.props.shops.map(shop => (
-          <Col key={shop.id} md="6" className="text-center mb-3">
-            <CardModel
-              title={shop.city}
-              description={shop.address}
-              image={shop.image}
-              {...shop}
-              select={this.props.select}
-            />
-          </Col>
-        ))}
-      </Row>
+      <div>
+        <ShopTitle />
+        <Row className="justify-content-center">
+          {this.props.shops.map(shop => (
+            <Col key={shop.id} md="6" className="text-center mb-3">
+              <CardModel
+                title={shop.city}
+                description={shop.address}
+                image={shop.image}
+                {...shop}
+                select={this.props.select}
+              />
+            </Col>
+          ))}
+        </Row>
+      </div>
     )
   }
 }

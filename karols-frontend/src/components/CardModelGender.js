@@ -1,6 +1,6 @@
 import React from "react"
-import styles from "../styles/cardModel.css"
-import { Card, CardTitle, CardBody, Button } from "reactstrap"
+//import styles from "../styles/cardModel.css"
+import { Card, CardTitle, CardBody } from "reactstrap"
 
 const CardModelGender = ({
   id,
@@ -11,18 +11,47 @@ const CardModelGender = ({
   select
 }) => {
   return (
-    <div className={styles.card}>
-      <Card className="cardModel card" style={{}}>
+    <div>
+      <Card
+        className="cardModel card"
+        style={{
+          cursor: "pointer"
+        }}
+        onClick={() => {
+          select(id)
+        }}
+      >
         <div
-          className="wrapper text-center"
+          //className="wrapper text-center"
           style={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
+            minHeight: "300px",
+            position: "relative",
+            overflow: "hidden",
+            boxShadow:
+              "0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2)",
+            background: selected
+              ? `linear-gradient(
+  rgba(255, 255, 255, 0.1), 
+ rgba(255, 255, 255, 0.1)
+ ), url(${image}) center/100% no-repeat`
+              : `linear-gradient(
+ rgba(0, 0, 0, 0.5), 
+ rgba(0, 0, 0, 0.5)
+ ), url(${image}) center/100% no-repeat`
           }}
         >
-          <div className="data">
+          <div
+            className="data"
+            style={{
+              position: "absolute",
+              bottom: "0",
+              width: "100%",
+              webkitTransform: "translateY(calc(-10px + 1em))",
+              transform: "translateY(calc(-10px + 1em))",
+              transition:
+                "-webkit-transform 0.3s, transform 0.3s, transform 0.3s, -webkit-transform 0.3s"
+            }}
+          >
             <CardBody className="content">
               <CardTitle
                 className="title"
@@ -40,25 +69,6 @@ const CardModelGender = ({
                   {title}
                 </p>
               </CardTitle>
-              <Button
-                onClick={() => {
-                  select(id)
-                }}
-                style={{
-                  display: "block",
-                  margin: "2em auto 1em",
-                  textAlign: "center",
-                  fontSize: "12px",
-                  color: "#fff",
-                  lineHeight: "1",
-                  position: "relative",
-                  fontWeight: "700",
-                  marginBottom: "80px",
-                  padding: "10px 20px"
-                }}
-              >
-                Sélectionner
-              </Button>
             </CardBody>
           </div>
         </div>
