@@ -1,16 +1,16 @@
 import React from "react"
 import CalendarTime from "./CalendarTime"
 
-const ListCalendarTime = () => (
+const ListCalendarTime = ({ time }) => (
   <div
     style={{
       display: "block"
     }}
   >
-    <CalendarTime />
-    <CalendarTime />
-    <CalendarTime />
-    <CalendarTime />
+    <CalendarTime time={time} />
+    <CalendarTime time={time} />
+    <CalendarTime time={time} />
+    <CalendarTime time={time} />
   </div>
 )
 

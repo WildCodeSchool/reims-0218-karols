@@ -31,6 +31,7 @@ import PreferredDateChoice from "../components/PreferredDateChoice"
 import CardHover from "../components/CardHover"
 import ListChoiceShop from "../components/ListChoiceShop"
 import CardModel from "../components/CardModel"
+import { DateTime } from "luxon"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -93,8 +94,12 @@ storiesOf("CalendarTime", module).add("Choose a time in the calendar", () => (
   <CalendarTime />
 ))
 
+const myNewDate = DateTime.fromISO("2018-06-19T13:00:00.054")
+  .setLocale("fr")
+  .toFormat("cccc dd LLLL")
+
 storiesOf("CalendarDay", module).add("Choose a day in the calendar", () => (
-  <CalendarDay />
+  <CalendarDay date={myNewDate} />
 ))
 storiesOf("Header", module).add("Header render", () => <Header />)
 
@@ -115,8 +120,12 @@ storiesOf("PreferredDateChoice", module).add("Preferred Date Choice", () => (
   <PreferredDateChoice />
 ))
 
+const myNewTime = DateTime.fromISO("2018-07-25T09:00:00.000+02:00")
+  .setLocale("fr")
+  .toFormat("T")
+
 storiesOf("ListCalendarTime", module).add("Render the calendar", () => (
-  <ListCalendarTime />
+  <ListCalendarTime time={myNewTime} />
 ))
 
 storiesOf("ListCalendarDayTime", module).add(

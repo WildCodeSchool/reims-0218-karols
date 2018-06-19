@@ -1,7 +1,7 @@
 import React from "react"
 import { Col } from "reactstrap"
 
-const CalendarTime = () => {
+const CalendarTime = ({ time }) => {
   return (
     <div className="justify-content-center">
       <div
@@ -20,7 +20,7 @@ const CalendarTime = () => {
         }}
       >
         {" "}
-        13:30{" "}
+        {time}{" "}
       </div>
     </div>
   )
