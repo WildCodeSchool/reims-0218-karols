@@ -1,11 +1,13 @@
-// declaration of all functions that will determine if we want to show or not a section
+// déclaration de toutes les fonctions qui détermineront si nous voulons montrer ou non une section
 
-// show services if a shop is selected
+// afficher les services si un magasin est sélectionné
 export const showServices = state =>
   state.shops.filter(shop => shop.selected).length > 0
 
-// show sex if préparation is selected (the service with id 1)
+// montrer le sexe si la préparation est sélectionnée (le service avec l'identifiant 1)
 
+// on filtre le tableau services du state pour récuperer le service dont la propriete selected es à true et dont l'id est 1
+// on va calculer la longueur du tableau et si la longueur et superieur a 0 il renvoi true
 export const showSex = state =>
   state.services.filter(service => service.selected && service.id === 1)
     .length > 0

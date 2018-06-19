@@ -24,7 +24,7 @@ describe("action to choose a prestation", () => {
     }
 
     expect(makeChoosePrestation(2, 4)).toEqual(expected)
-    //le resultat attendu
+    //le resultat attendu des parametre 2 et 4 de la fonction makeChoosePrestation doivent etre égal à expected
   })
 })
 
