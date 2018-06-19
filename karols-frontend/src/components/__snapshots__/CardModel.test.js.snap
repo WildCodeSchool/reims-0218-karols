@@ -33,7 +33,7 @@ exports[`renders correctly 1`] = `
             "bottom": "0",
             "position": "absolute",
             "transform": "translateY(calc(-10px + 1em))",
-            "transition": "-webkit-transform 0.3s, transform 0.3s, transform 0.3s, -webkit-transform 0.3s",
+            "transition": "-webkit-transform 0.3s",
             "width": "100%",
           }
         }
