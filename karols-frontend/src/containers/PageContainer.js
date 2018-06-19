@@ -23,6 +23,7 @@ import { makeShopsPrestationsReceived } from "../actions/actions"
 import { fetchShopsPrestations } from "../api"
 
 const mapStateToProps = state => ({
+  service: state.services.find(service => service.selected),
   showServices: showServices(state),
   showSex: showSex(state),
   showFemalePrestation: showFemalePrestation(state),
@@ -39,6 +40,7 @@ class Page extends Component {
   render() {
     return (
       <Container>
+        {this.props.service && this.props.service.name}
         <ShopContainer />
         <Element name="services">
           {this.props.showServices && <ServiceContainer />}
