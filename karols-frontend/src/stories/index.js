@@ -31,6 +31,8 @@ import PreferredDateChoice from "../components/PreferredDateChoice"
 import CardHover from "../components/CardHover"
 import ListChoiceShop from "../components/ListChoiceShop"
 import CardModel from "../components/CardModel"
+import JumboRecap from "../components/JumboRecap"
+import JumboProps from "../components/JumboProps"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -85,6 +87,8 @@ storiesOf("ListChoiceService", module).add("List choice service render", () => (
 
 storiesOf("Logo", module).add("Logo render", () => <Logo />)
 
+storiesOf("JumboRecap", module).add("Render Jumbottron", () => <JumboRecap />)
+
 storiesOf("ChoiceService", module).add("Choice service render", () => (
   <ChoiceService />
 ))
@@ -101,6 +105,8 @@ storiesOf("Header", module).add("Header render", () => <Header />)
 storiesOf("ChoicePrestation", module).add("ChoicePrestation render", () => (
   <ChoicePrestation />
 ))
+
+storiesOf("JumboProps", module).add("JumboProps render", () => <JumboProps />)
 
 storiesOf("ListChoiceGender", module).add("ListChoicegender render", () => (
   <ListChoiceGender />
