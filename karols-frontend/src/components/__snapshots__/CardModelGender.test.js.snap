@@ -1,26 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className={undefined}
->
+<div>
   <div
-    className="cardModel card card"
-    style={Object {}}
+    className="card"
+    onClick={[Function]}
+    style={
+      Object {
+        "cursor": "pointer",
+      }
+    }
   >
     <div
-      className="wrapper text-center"
       style={
         Object {
-          "backgroundImage": "url(undefined)",
-          "backgroundPosition": "center",
-          "backgroundRepeat": "no-repeat",
-          "backgroundSize": "cover",
+          "background": "linear-gradient(
+         rgba(0, 0, 0, 0.5), 
+         rgba(0, 0, 0, 0.5)
+         ), url(undefined) center/100% no-repeat",
+          "boxShadow": "0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2)",
+          "minHeight": "300px",
+          "overflow": "hidden",
+          "position": "relative",
         }
       }
     >
       <div
         className="data"
+        style={
+          Object {
+            "bottom": "0",
+            "position": "absolute",
+            "transform": "translateY(calc(-10px + 1em))",
+            "transition": "-webkit-transform 0.3s, transform 0.3s, transform 0.3s, -webkit-transform 0.3s",
+            "webkitTransform": "translateY(calc(-10px + 1em))",
+            "width": "100%",
+          }
+        }
       >
         <div
           className="content card-body"
@@ -42,27 +58,6 @@ exports[`renders correctly 1`] = `
               }
             />
           </h5>
-          <button
-            className="btn btn-secondary"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "#fff",
-                "display": "block",
-                "fontSize": "12px",
-                "fontWeight": "700",
-                "lineHeight": "1",
-                "margin": "2em auto 1em",
-                "marginBottom": "80px",
-                "padding": "10px 20px",
-                "position": "relative",
-                "textAlign": "center",
-              }
-            }
-            type="button"
-          >
-            Sélectionner
-          </button>
         </div>
       </div>
     </div>
