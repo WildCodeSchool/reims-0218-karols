@@ -13,6 +13,12 @@ const newFormat = Object.assign({ weekday: "long" }, DateTime.DATE_HUGE)
 
 const formatedDate = myDate.toLocaleString(newFormat)
 
+console.log(
+  DateTime.fromISO("2014-08-06T13:07:04.054")
+    .setLocale("fr")
+    .toFormat("cccc dd LLLL")
+)
+
 class CalendarDay extends Component {
   constructor(props) {
     super(props)
