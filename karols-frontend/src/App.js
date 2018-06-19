@@ -3,7 +3,7 @@ import "./App.css"
 
 import Logo from "./components/Logo"
 import PageContainer from "./containers/PageContainer"
-import TimeSlotsContainer from "./containers/TimeSlotsContainer"
+import CalendarContainer from "./containers/CalendarContainer"
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <Logo />
         <PageContainer />
-        <TimeSlotsContainer />
+        <CalendarContainer />
       </div>
     )
   }
