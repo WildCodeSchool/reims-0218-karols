@@ -34,11 +34,11 @@ exports[`renders correctly 1`] = `
       className="card-footer"
     >
       <button
-        className="btn btn-secondary"
+        className="btn btn-default btn-lg btn-block"
         onClick={[Function]}
         type={undefined}
       >
-         Choisir ce service 
+        Choisir ce service
       </button>
     </div>
   </div>

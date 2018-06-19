@@ -5,148 +5,277 @@ exports[`renders correctly 1`] = `
   className="row"
 >
   <div
-    className="text-center mb-3 col-lg-3"
+    className="text-center mb-3 col-lg-4"
   >
     <div
       className="mb-4"
     >
       <div
-        className="card text-white"
+        className="card"
       >
-        <img
-          alt="Name of service"
-          className="img-fluid"
-          height="250"
-          src="https://images.unsplash.com/33/YOfYx7zhTvYBGYs6g83s_IMG_8643.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82fecbde67b1966b4ea8118f3bea896e&auto=format&fit=crop&w=967&q=80"
-          width="500"
-        />
         <div
-          className="card-img-overlay"
-        >
-          <h5
-            className="card-title"
-            style={
-              Object {
-                "fontSize": "2em",
-              }
+          className="wrapper text-center"
+          style={
+            Object {
+              "backgroundImage": "url(https://images.unsplash.com/33/YOfYx7zhTvYBGYs6g83s_IMG_8643.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82fecbde67b1966b4ea8118f3bea896e&auto=format&fit=crop&w=967&q=80)",
+              "backgroundPosition": "center",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
             }
-          >
-            Paris
-          </h5>
-          <p
-            className="card-text"
-          >
-            75000
-          </p>
-        </div>
-        <div
-          className="card-footer"
+          }
         >
-          <button
-            className="btn btn-default btn-lg btn-block"
-            onClick={[Function]}
-            type={undefined}
+          <div
+            className="data"
           >
-            Choisir ce service
-          </button>
+            <div
+              className="content card-body"
+            >
+              <h5
+                className="city card-title"
+                style={
+                  Object {
+                    "fontWeight": "500",
+                    "marginTop": "10px",
+                  }
+                }
+              >
+                <p
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }
+                >
+                  Paris
+                </p>
+              </h5>
+              <button
+                className="btn btn-secondary"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "#fff",
+                    "display": "block",
+                    "fontSize": "12px",
+                    "fontWeight": "700",
+                    "lineHeight": "1",
+                    "margin": "2em auto 1em",
+                    "marginBottom": "40px",
+                    "padding": "10px 20px",
+                    "position": "relative",
+                    "textAlign": "center",
+                  }
+                }
+                type={undefined}
+              >
+                Sélectionner
+              </button>
+            </div>
+            <div
+              className="card-footer"
+              style={
+                Object {
+                  "backgroundColor": "rgba(136,136,136, 0.5)",
+                }
+              }
+            >
+              <p
+                className="text"
+                style={
+                  Object {
+                    "height": "70px",
+                    "margin": "0",
+                  }
+                }
+              >
+                75000
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="text-center col-lg-3"
+    className="text-center col-lg-4"
   >
     <div
       className="mb-4"
     >
       <div
-        className="card text-white"
+        className="card"
       >
-        <img
-          alt="Name of service"
-          className="img-fluid"
-          height="250"
-          src="https://images.unsplash.com/photo-1496277195689-21125faa0eeb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=789210ffc73d1822ce69059fcefcabf0&auto=format&fit=crop&w=1050&q=80"
-          width="500"
-        />
         <div
-          className="card-img-overlay"
-        >
-          <h5
-            className="card-title"
-            style={
-              Object {
-                "fontSize": "2em",
-              }
+          className="wrapper text-center"
+          style={
+            Object {
+              "backgroundImage": "url(https://images.unsplash.com/photo-1496277195689-21125faa0eeb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=789210ffc73d1822ce69059fcefcabf0&auto=format&fit=crop&w=1050&q=80)",
+              "backgroundPosition": "center",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
             }
-          >
-            Lyon
-          </h5>
-          <p
-            className="card-text"
-          >
-            69000
-          </p>
-        </div>
-        <div
-          className="card-footer"
+          }
         >
-          <button
-            className="btn btn-default btn-lg btn-block"
-            onClick={[Function]}
-            type={undefined}
+          <div
+            className="data"
           >
-            Choisir ce service
-          </button>
+            <div
+              className="content card-body"
+            >
+              <h5
+                className="city card-title"
+                style={
+                  Object {
+                    "fontWeight": "500",
+                    "marginTop": "10px",
+                  }
+                }
+              >
+                <p
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }
+                >
+                  Lyon
+                </p>
+              </h5>
+              <button
+                className="btn btn-secondary"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "#fff",
+                    "display": "block",
+                    "fontSize": "12px",
+                    "fontWeight": "700",
+                    "lineHeight": "1",
+                    "margin": "2em auto 1em",
+                    "marginBottom": "40px",
+                    "padding": "10px 20px",
+                    "position": "relative",
+                    "textAlign": "center",
+                  }
+                }
+                type={undefined}
+              >
+                Sélectionner
+              </button>
+            </div>
+            <div
+              className="card-footer"
+              style={
+                Object {
+                  "backgroundColor": "rgba(136,136,136, 0.5)",
+                }
+              }
+            >
+              <p
+                className="text"
+                style={
+                  Object {
+                    "height": "70px",
+                    "margin": "0",
+                  }
+                }
+              >
+                69000
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="text-center col-lg-3"
+    className="text-center col-lg-4"
   >
     <div
       className="mb-4"
     >
       <div
-        className="card text-white"
+        className="card"
       >
-        <img
-          alt="Name of service"
-          className="img-fluid"
-          height="250"
-          src="https://thumb7.shutterstock.com/display_pic_with_logo/570547/155126774/stock-photo-image-shows-the-cosmopolitan-city-of-cannes-in-the-french-riviera-155126774.jpg"
-          width="500"
-        />
         <div
-          className="card-img-overlay"
-        >
-          <h5
-            className="card-title"
-            style={
-              Object {
-                "fontSize": "2em",
-              }
+          className="wrapper text-center"
+          style={
+            Object {
+              "backgroundImage": "url(https://thumbs.dreamstime.com/z/ville-de-cannes-france-2627857.jpg)",
+              "backgroundPosition": "center",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
             }
-          >
-            Cannes
-          </h5>
-          <p
-            className="card-text"
-          >
-            06150
-          </p>
-        </div>
-        <div
-          className="card-footer"
+          }
         >
-          <button
-            className="btn btn-default btn-lg btn-block"
-            onClick={[Function]}
-            type={undefined}
+          <div
+            className="data"
           >
-            Choisir ce service
-          </button>
+            <div
+              className="content card-body"
+            >
+              <h5
+                className="city card-title"
+                style={
+                  Object {
+                    "fontWeight": "500",
+                    "marginTop": "10px",
+                  }
+                }
+              >
+                <p
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }
+                >
+                  Cannes
+                </p>
+              </h5>
+              <button
+                className="btn btn-secondary"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "#fff",
+                    "display": "block",
+                    "fontSize": "12px",
+                    "fontWeight": "700",
+                    "lineHeight": "1",
+                    "margin": "2em auto 1em",
+                    "marginBottom": "40px",
+                    "padding": "10px 20px",
+                    "position": "relative",
+                    "textAlign": "center",
+                  }
+                }
+                type={undefined}
+              >
+                Sélectionner
+              </button>
+            </div>
+            <div
+              className="card-footer"
+              style={
+                Object {
+                  "backgroundColor": "rgba(136,136,136, 0.5)",
+                }
+              }
+            >
+              <p
+                className="text"
+                style={
+                  Object {
+                    "height": "70px",
+                    "margin": "0",
+                  }
+                }
+              >
+                06150
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

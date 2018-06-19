@@ -1,90 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="col-12 col-md-4 col-lg-3"
->
+<div>
   <div
-    className={undefined}
+    className="card"
+    onClick={[Function]}
+    style={
+      Object {
+        "cursor": "pointer",
+      }
+    }
   >
     <div
-      className="cardModel card card"
-      style={Object {}}
+      style={
+        Object {
+          "background": "linear-gradient(
+         rgba(0, 0, 0, 0.5), 
+         rgba(0, 0, 0, 0.5)
+         ), url(undefined) center/100% no-repeat",
+          "boxShadow": "0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2)",
+          "minHeight": "300px",
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
     >
       <div
-        className="wrapper text-center"
+        className="data"
         style={
           Object {
-            "backgroundImage": "url(undefined)",
-            "backgroundPosition": "center",
-            "backgroundRepeat": "no-repeat",
-            "backgroundSize": "cover",
+            "WebkitTransform": "translateY(calc(-10px + 1em))",
+            "bottom": "0",
+            "position": "absolute",
+            "transform": "translateY(calc(-10px + 1em))",
+            "transition": "-webkit-transform 0.3s",
+            "width": "100%",
           }
         }
       >
         <div
-          className="data"
+          className="content card-body"
         >
-          <div
-            className="content card-body"
-          >
-            <h5
-              className="title card-title"
-              style={
-                Object {
-                  "fontWeight": "500",
-                  "marginTop": "10px",
-                }
-              }
-            >
-              <h3
-                style={
-                  Object {
-                    "color": "#FFF",
-                  }
-                }
-              />
-            </h5>
-            <button
-              className="btn btn-secondary"
-              onClick={[Function]}
-              style={
-                Object {
-                  "color": "#fff",
-                  "display": "block",
-                  "fontSize": "12px",
-                  "fontWeight": "700",
-                  "lineHeight": "1",
-                  "margin": "2em auto 1em",
-                  "marginBottom": "40px",
-                  "padding": "10px 20px",
-                  "position": "relative",
-                  "textAlign": "center",
-                }
-              }
-              type={undefined}
-            >
-              Sélectionner
-            </button>
-          </div>
-          <div
-            className="card-footer"
+          <h5
+            className="title card-title"
             style={
               Object {
-                "backgroundColor": "rgba(136,136,136, 0.5)",
+                "background": "linear-gradient(
+                                    rgba(255, 255, 255, 0.1), 
+                                   rgba(255, 255, 255, 0.1)
+                                   ),  center/100% no-repeat",
+                "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                "borderRadius": "10px",
+                "fontSize": "30px",
+                "fontWeight": "500",
+                "marginBottom": "120px",
+                "maxWidth": "auto",
+                "minWidth": "auto",
+                "width": "auto",
               }
             }
           >
             <p
-              className="text"
               style={
                 Object {
-                  "height": "70px",
-                  "margin": "0",
+                  "color": "#FFF",
                 }
               }
             />
-          </div>
+          </h5>
+        </div>
+        <div
+          className="card-footer"
+          style={
+            Object {
+              "backgroundColor": "rgba(136,136,136, 0.5)",
+            }
+          }
+        >
+          <p
+            className="text"
+            style={
+              Object {
+                "WebkitTransform": "translateY(calc(0px + 1em))",
+                "color": "#fff",
+                "height": "70px",
+                "margin": "0",
+                "transform": "translateY(calc(0px + 1em))",
+              }
+            }
+          />
         </div>
       </div>
     </div>

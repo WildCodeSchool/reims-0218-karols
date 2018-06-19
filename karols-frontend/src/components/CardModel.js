@@ -1,78 +1,110 @@
 import React from "react"
-import styles from "../styles/cardModel.css"
-import { Card, CardTitle, Col, CardBody, CardFooter, Button } from "reactstrap"
+import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
 
-const CardModel = ({ id, title, description, image, selected, select }) => {
+const CardModel = ({
+  id,
+  index,
+  title,
+  description,
+  image,
+  selected,
+  select
+}) => {
   return (
-    <Col xs="12" md="4" lg="3">
-      <div className={styles.card}>
-        <Card className="cardModel card" style={{}}>
+    <div>
+      <Card
+        style={{
+          cursor: "pointer"
+        }}
+        onClick={() => {
+          select(id)
+        }}
+      >
+        <div
+          style={{
+            minHeight: "300px",
+            position: "relative",
+            overflow: "hidden",
+            boxShadow:
+              "0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2)",
+            background: selected
+              ? `linear-gradient(
+  rgba(255, 255, 255, 0.1), 
+ rgba(255, 255, 255, 0.1)
+ ), url(${image}) center/100% no-repeat`
+              : `linear-gradient(
+ rgba(0, 0, 0, 0.5), 
+ rgba(0, 0, 0, 0.5)
+ ), url(${image}) center/100% no-repeat`
+          }}
+        >
           <div
-            className="wrapper text-center"
+            className="data"
             style={{
-              backgroundImage: `url(${image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat"
+              position: "absolute",
+              bottom: "0",
+              width: "100%",
+              WebkitTransform: "translateY(calc(-10px + 1em))",
+              transform: "translateY(calc(-10px + 1em))",
+              transition: "-webkit-transform 0.3s"
             }}
           >
-            <div className="data">
-              <CardBody className="content">
-                <CardTitle
-                  className="title"
-                  style={{
-                    fontWeight: "500",
-                    marginTop: "10px"
-                  }}
-                >
-                  <p
-                    style={{
-                      color: "#FFF"
-                    }}
-                  >
-                    {title}
-                  </p>
-                </CardTitle>
-                <Button
-                  onClick={() => {
-                    select(id)
-                  }}
-                  style={{
-                    display: "block",
-                    margin: "2em auto 1em",
-                    textAlign: "center",
-                    fontSize: "12px",
-                    color: "#fff",
-                    lineHeight: "1",
-                    position: "relative",
-                    fontWeight: "700",
-                    marginBottom: "40px",
-                    padding: "10px 20px"
-                  }}
-                >
-                  Sélectionner
-                </Button>
-              </CardBody>
-              <CardFooter
+            <CardBody className="content">
+              <CardTitle
+                className="title"
                 style={{
-                  backgroundColor: "rgba(136,136,136, 0.5)"
+                  fontWeight: "500",
+                  fontSize: "30px",
+                  marginBottom: "120px",
+
+                  backgroundColor: "rgba(255, 255, 255, 0.2)",
+                  borderRadius: "10px",
+                  width: "auto",
+                  minWidth: "auto",
+                  maxWidth: "auto",
+
+                  background: selected
+                    ? `linear-gradient(
+                      rgba(0, 0, 0, 0.5), 
+                      rgba(0, 0, 0, 0.5)
+                      ),  center/100% no-repeat`
+                    : `linear-gradient(
+                      rgba(255, 255, 255, 0.1), 
+                     rgba(255, 255, 255, 0.1)
+                     ),  center/100% no-repeat`
                 }}
               >
                 <p
-                  className="text"
                   style={{
-                    height: "70px",
-                    margin: "0"
+                    color: "#FFF"
                   }}
                 >
-                  {description}
+                  {title}
                 </p>
-              </CardFooter>
-            </div>
+              </CardTitle>
+            </CardBody>
+            <CardFooter
+              style={{
+                backgroundColor: "rgba(136,136,136, 0.5)"
+              }}
+            >
+              <p
+                className="text"
+                style={{
+                  height: "70px",
+                  margin: "0",
+                  color: "#fff",
+                  WebkitTransform: "translateY(calc(0px + 1em))",
+                  transform: "translateY(calc(0px + 1em))"
+                }}
+              >
+                {description}
+              </p>
+            </CardFooter>
           </div>
-        </Card>
-      </div>
-    </Col>
+        </div>
+      </Card>
+    </div>
   )
 }
 

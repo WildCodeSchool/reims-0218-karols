@@ -5,68 +5,63 @@ exports[`renders correctly 1`] = `
   className="mb-4"
 >
   <div
-    className={undefined}
+    className="card"
   >
     <div
-      className="cardModel card card"
-      style={Object {}}
+      className="wrapper text-center"
+      style={
+        Object {
+          "backgroundImage": "url(undefined)",
+          "backgroundPosition": "center",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
     >
       <div
-        className="wrapper text-center"
-        style={
-          Object {
-            "backgroundImage": "url(undefined)",
-            "backgroundPosition": "center",
-            "backgroundRepeat": "no-repeat",
-            "backgroundSize": "cover",
-          }
-        }
+        className="data"
       >
         <div
-          className="data"
+          className="content card-body"
         >
-          <div
-            className="content card-body"
+          <h5
+            className="city card-title"
+            style={
+              Object {
+                "fontWeight": "500",
+                "marginTop": "10px",
+              }
+            }
           >
-            <h5
-              className="city card-title"
+            <p
               style={
                 Object {
-                  "fontWeight": "500",
-                  "marginTop": "10px",
+                  "color": "#FFF",
                 }
               }
-            >
-              <p
-                style={
-                  Object {
-                    "color": "#FFF",
-                  }
-                }
-              />
-            </h5>
-            <button
-              className="btn btn-secondary"
-              onClick={[Function]}
-              style={
-                Object {
-                  "color": "#fff",
-                  "display": "block",
-                  "fontSize": "12px",
-                  "fontWeight": "700",
-                  "lineHeight": "1",
-                  "margin": "2em auto 1em",
-                  "marginBottom": "40px",
-                  "padding": "10px 20px",
-                  "position": "relative",
-                  "textAlign": "center",
-                }
+            />
+          </h5>
+          <button
+            className="btn btn-secondary"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "#fff",
+                "display": "block",
+                "fontSize": "12px",
+                "fontWeight": "700",
+                "lineHeight": "1",
+                "margin": "2em auto 1em",
+                "marginBottom": "40px",
+                "padding": "10px 20px",
+                "position": "relative",
+                "textAlign": "center",
               }
-              type={undefined}
-            >
-              Sélectionner
-            </button>
-          </div>
+            }
+            type={undefined}
+          >
+            Sélectionner
+          </button>
         </div>
       </div>
     </div>

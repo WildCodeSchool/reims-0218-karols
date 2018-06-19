@@ -1,11 +1,14 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
+import { Container } from "reactstrap"
+import { Element } from "react-scroll"
 
 import {
   showServices,
   showSex,
   showFemalePrestation,
-  showMalePrestation
+  showMalePrestation,
+  showDatePicker
 } from "../display"
 
 import ServiceContainer from "./ServiceContainer"
@@ -13,16 +16,19 @@ import ShopContainer from "./ShopContainer"
 import PrestationFemaleContainer from "./PrestationFemaleContainer"
 import PrestationMaleContainer from "./PrestationMaleContainer"
 import GenderContainer from "./GenderContainer"
+import DatePickerContainer from "./DatePickerContainer"
 
 import { makeShopsPrestationsReceived } from "../actions/actions"
 
 import { fetchShopsPrestations } from "../api"
 
 const mapStateToProps = state => ({
+  service: state.services.find(service => service.selected),
   showServices: showServices(state),
   showSex: showSex(state),
   showFemalePrestation: showFemalePrestation(state),
-  showMalePrestation: showMalePrestation(state)
+  showMalePrestation: showMalePrestation(state),
+  showDatePicker: showDatePicker(state)
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -33,13 +39,23 @@ const mapDispatchToProps = dispatch => ({
 class Page extends Component {
   render() {
     return (
-      <div>
+      <Container>
+        {this.props.service && this.props.service.name}
         <ShopContainer />
-        <ServiceContainer />
-        <GenderContainer />
-        <PrestationFemaleContainer />
-        <PrestationMaleContainer />
-      </div>
+        <Element name="services">
+          {this.props.showServices && <ServiceContainer />}
+        </Element>
+        <Element name="genders">
+          {this.props.showSex && <GenderContainer />}
+        </Element>
+        <Element name="female">
+          {this.props.showFemalePrestation && <PrestationFemaleContainer />}
+        </Element>
+        <Element name="male">
+          {this.props.showMalePrestation && <PrestationMaleContainer />}
+        </Element>
+        {this.props.showDatePicker && <DatePickerContainer />}
+      </Container>
     )
   }
   componentDidMount() {

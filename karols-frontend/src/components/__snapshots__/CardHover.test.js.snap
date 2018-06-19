@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div>
+      <div
+        className="card text-white"
+      >
+        <div>
+          <img
+            alt="Card image cap"
+            className="card-img"
+            src="http://www.lespiedssurterre.fr/wp-content/uploads/2017/09/MissCoiffure-choix.jpg"
+            width="100%"
+          />
+          <div
+            className="text-center card-img-overlay"
+          >
+            <h5
+              className="card-title"
+              style={
+                Object {
+                  "fontSize": "2em",
+                }
+              }
+            >
+              Titre !
+            </h5>
+          </div>
+        </div>
+        <div
+          className="card-footer"
+        >
+          <button
+            className="btn btn-default btn-lg btn-block"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Choisir ce service
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
