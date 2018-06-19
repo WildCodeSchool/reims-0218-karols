@@ -4,6 +4,7 @@ export const CHOOSE_SEX = "CHOOSE_SEX"
 export const CHOOSE_SHOP = "CHOOSE_SHOP"
 export const CHOOSE_TIMESLOT = "CHOOSE_TIMESLOT"
 export const SHOPS_PRESTATIONS_RECEIVED = "SHOPS_PRESTATIONS_RECEIVED"
+export const TIMESLOTS_RECEIVED = "TIMESLOTS_RECEIVED"
 
 export const makeChoosePrestation = (prestationId, preparationId) => ({
   type: CHOOSE_PRESTATION,
@@ -33,5 +34,10 @@ export const makeChooseSlotReservation = timeSlot => ({
 
 export const makeShopsPrestationsReceived = response => ({
   type: SHOPS_PRESTATIONS_RECEIVED,
+  response
+})
+
+export const makeTimeslotsReceived = response => ({
+  type: TIMESLOTS_RECEIVED,
   response
 })
