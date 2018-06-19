@@ -11,11 +11,9 @@ export const showSex = state =>
     .length > 0
 
 export const showFemalePrestation = state => {
-  console.log(state)
-
   return (
     state.genders.filter(gender => gender.selected && gender.sex === "F")
-      .length > 0
+      .length > 0 && showSex(state)
   )
 }
 

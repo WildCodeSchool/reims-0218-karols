@@ -29,11 +29,11 @@ exports[`renders correctly 1`] = `
         className="data"
         style={
           Object {
+            "WebkitTransform": "translateY(calc(-10px + 1em))",
             "bottom": "0",
             "position": "absolute",
             "transform": "translateY(calc(-10px + 1em))",
-            "transition": "-webkit-transform 0.3s, transform 0.3s, transform 0.3s, -webkit-transform 0.3s",
-            "webkitTransform": "translateY(calc(-10px + 1em))",
+            "transition": "-webkit-transform 0.3s",
             "width": "100%",
           }
         }
@@ -81,11 +81,11 @@ exports[`renders correctly 1`] = `
             className="text"
             style={
               Object {
+                "WebkitTransform": "translateY(calc(0px + 1em))",
                 "color": "#fff",
                 "height": "70px",
                 "margin": "0",
                 "transform": "translateY(calc(0px + 1em))",
-                "webkitTransform": "translateY(calc(0px + 1em))",
               }
             }
           />

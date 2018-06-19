@@ -44,10 +44,9 @@ const CardModel = ({
               position: "absolute",
               bottom: "0",
               width: "100%",
-              webkitTransform: "translateY(calc(-10px + 1em))",
+              WebkitTransform: "translateY(calc(-10px + 1em))",
               transform: "translateY(calc(-10px + 1em))",
-              transition:
-                "-webkit-transform 0.3s, transform 0.3s, transform 0.3s, -webkit-transform 0.3s"
+              transition: "-webkit-transform 0.3s"
             }}
           >
             <CardBody className="content">
@@ -95,7 +94,7 @@ const CardModel = ({
                   height: "70px",
                   margin: "0",
                   color: "#fff",
-                  webkitTransform: "translateY(calc(0px + 1em))",
+                  WebkitTransform: "translateY(calc(0px + 1em))",
                   transform: "translateY(calc(0px + 1em))"
                 }}
               >
