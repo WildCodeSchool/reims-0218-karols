@@ -818,7 +818,7 @@ describe("showServices", () => {
 
 describe("showSex", () => {
   it("should return false if no service is selected", () => {
-    const noReservationSelectedState = {
+    const noServiceSelectedState = {
       prestations: [
         {
           id: 1,
@@ -1218,11 +1218,11 @@ describe("showSex", () => {
       ],
       timeSlots: []
     }
-    expect(showSex(noReservationSelectedState)).toEqual(false)
+    expect(showSex(noServiceSelectedState)).toEqual(false)
   })
 
   it("should return true if the selected service is prestation", () => {
-    const selectedReservationState = {
+    const selectedServiceState = {
       prestations: [
         {
           id: 1,
@@ -1622,14 +1622,14 @@ describe("showSex", () => {
       ],
       timeSlots: []
     }
-    expect(showSex(selectedReservationState)).toEqual(true)
+    expect(showSex(selectedServiceState)).toEqual(true)
   })
 })
 
 // on montre le datepicker si au moins une preparation est selectionné
 describe("showDatePicker", () => {
   it("should return false if no preparation is selected", () => {
-    const todayDatePickerReserved = {
+    const noPreparationSelected = {
       prestations: [
         {
           id: 1,
@@ -2029,11 +2029,11 @@ describe("showDatePicker", () => {
       ],
       timeSlots: []
     }
-    expect(showDatePicker(todayDatePickerReserved)).toEqual(false)
+    expect(showDatePicker(noPreparationSelected)).toEqual(false)
   })
 
   it("should return true if a preparation is selected", () => {
-    const selectedDatePicker = {
+    const preparationSelected = {
       prestations: [
         {
           id: 1,
@@ -2433,7 +2433,7 @@ describe("showDatePicker", () => {
       ],
       timeSlots: []
     }
-    expect(showDatePicker(selectedDatePicker)).toEqual(true)
+    expect(showDatePicker(preparationSelected)).toEqual(true)
   })
 })
 
