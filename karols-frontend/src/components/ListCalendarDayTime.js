@@ -12,8 +12,8 @@ const ListCalendarDayTime = ({ day }) => (
       maxWidth: "75px"
     }}
   >
-    <CalendarDay date={day.date} />
-    <ListCalendarTime timeslots={day.timeslots} />
+    <CalendarDay date={day} />
+    <ListCalendarTime timeSlots={day.timeSlots} />
   </div>
 )
 

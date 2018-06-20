@@ -425,6 +425,12 @@ storiesOf("CalendarDay", module).add("Render the calendar day", () => (
   <CalendarDay date={day} />
 ))
 
+//ListCalendarDayTime
+storiesOf("ListCalendarDayTime", module).add(
+  "Render the calendar with time",
+  () => <ListCalendarDayTime day={day} />
+)
+
 const day = {
   date: "2018-07-25T00:00:00.000+02:00",
   timeSlots: [
@@ -1028,11 +1034,6 @@ const weekTimeSlots = [
 //   )
 
 // // console.log(arrayOfTimes)
-
-// storiesOf("ListCalendarDayTime", module).add(
-//   "Render the calendar with time",
-//   () => <ListCalendarDayTime date={arrayOfDates} />
-// )
 
 // storiesOf("ResultCalendar", module).add("Render the calendar with time", () => (
 //   <ResultCalendar />

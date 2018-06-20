@@ -7,7 +7,9 @@ const ListCalendarTime = ({ timeSlots }) => (
       display: "block"
     }}
   >
-    {timeSlots.map(timeSlot => <CalendarTime timeSlot={timeSlot} />)}
+    {timeSlots.map((timeSlot, index) => (
+      <CalendarTime timeSlot={timeSlot} key={index} />
+    ))}
   </div>
 )
 
