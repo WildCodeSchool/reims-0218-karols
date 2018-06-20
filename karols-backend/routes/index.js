@@ -35,4 +35,8 @@ router.get("/timeslots", (req, res) => {
   );
 });
 
+router.get("/date-selected/:date", (req, res) => {
+  res.send(console.log(req.params.date));
+});
+
 module.exports = router;
