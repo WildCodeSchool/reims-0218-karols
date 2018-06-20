@@ -1,6 +1,12 @@
 import React from "react"
+import { DateTime } from "luxon"
 
-const CalendarTime = ({ time }) => {
+const transformTimeSlot = timeSlot =>
+  DateTime.fromISO(timeSlot.time.s)
+    .setLocale("fr")
+    .toFormat("T")
+
+const CalendarTime = ({ timeSlot }) => {
   return (
     <div className="justify-content-center">
       <div
@@ -19,7 +25,7 @@ const CalendarTime = ({ time }) => {
         }}
       >
         {" "}
-        {time}{" "}
+        {transformTimeSlot(timeSlot)}{" "}
       </div>
     </div>
   )

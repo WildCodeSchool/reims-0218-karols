@@ -14,7 +14,6 @@ const ListCalendarDayTime = ({ date }) => (
   >
     <CalendarDay />
     <ListCalendarTime />
-    {console.log(date)}
   </div>
 )
 
