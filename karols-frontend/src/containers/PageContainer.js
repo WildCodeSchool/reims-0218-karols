@@ -18,6 +18,7 @@ import PrestationMaleContainer from "./PrestationMaleContainer"
 import GenderContainer from "./GenderContainer"
 import DatePickerContainer from "./DatePickerContainer"
 import ResumeContainer from "./ResumeContainer"
+import ContactForm from "../components/ContactForm"
 
 import { makeShopsPrestationsReceived } from "../actions/actions"
 
@@ -40,6 +41,7 @@ class Page extends Component {
   render() {
     return (
       <Container>
+        <ContactForm />
         <ShopContainer />
         <Element name="services">
           {this.props.showServices && <ServiceContainer />}
