@@ -31,8 +31,7 @@ import PreferredDateChoice from "../components/PreferredDateChoice"
 import CardHover from "../components/CardHover"
 import ListChoiceShop from "../components/ListChoiceShop"
 import CardModel from "../components/CardModel"
-import JumbotronRecap from "../components/JumbotronRecap"
-import JumbotronProps from "../components/JumbotronProps"
+import Resume from "../components/Resume"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -87,10 +86,6 @@ storiesOf("ListChoiceService", module).add("List choice service render", () => (
 
 storiesOf("Logo", module).add("Logo render", () => <Logo />)
 
-storiesOf("JumbotronRecap", module).add("Render Jumbottron", () => (
-  <JumbotronRecap />
-))
-
 storiesOf("ChoiceService", module).add("Choice service render", () => (
   <ChoiceService />
 ))
@@ -108,8 +103,15 @@ storiesOf("ChoicePrestation", module).add("ChoicePrestation render", () => (
   <ChoicePrestation />
 ))
 
-storiesOf("JumbotronProps", module).add("JumbotronProps render", () => (
-  <JumbotronProps />
+storiesOf("Resume", module).add("Resume render", () => (
+  <Resume
+    shop="Paris"
+    preparation="preparation"
+    gender="une Femme"
+    prestation="Maquillage ultime"
+    prestation2="Coiffure belle gosse"
+    horaire="Dimanche à 23H"
+  />
 ))
 
 storiesOf("ListChoiceGender", module).add("ListChoicegender render", () => (

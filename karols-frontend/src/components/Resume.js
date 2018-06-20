@@ -1,7 +1,7 @@
 import React from "react"
 import { Jumbotron } from "reactstrap"
-
-const JumbotronRecap = ({
+// Resume
+const Resume = ({
   shop,
   preparation,
   gender,
@@ -37,4 +37,4 @@ const JumbotronRecap = ({
   )
 }
 
-export default JumbotronRecap
+export default Resume
