@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Header from "./Header"
-import ReservationTitle from "./ReservationTitle"
+
 import ListChoiceService from "./ListChoiceService"
 import ResultCalendar from "./ResultCalendar"
 import ListChoiceGender from "./ListChoiceGender"
@@ -25,9 +25,7 @@ class Page extends Component {
         </Row>
         <hr />
         <Row>
-          <Col className="text-center mt-1 mb-3">
-            <ReservationTitle />
-          </Col>
+          <Col className="text-center mt-1 mb-3" />
         </Row>
         <Row className="justify-content-center">
           <CardModel
