@@ -1,7 +1,7 @@
 import React from "react"
 import { DateTime } from "luxon"
 
-const createDate = date =>
+const transformDate = date =>
   DateTime.fromISO(date)
     .setLocale("fr")
     .toFormat("cccc dd LLLL")
@@ -23,7 +23,7 @@ const CalendarDay = ({ date }) => (
         fontSize: "14px"
       }}
     >
-      {createDate(date.date)}
+      {transformDate(date)}
     </p>
   </div>
 )

@@ -12,7 +12,7 @@ const ListCalendarDayTime = ({ day }) => (
       maxWidth: "75px"
     }}
   >
-    <CalendarDay date={day} />
+    <CalendarDay date={day.date} />
     <ListCalendarTime timeSlots={day.timeSlots} />
   </div>
 )

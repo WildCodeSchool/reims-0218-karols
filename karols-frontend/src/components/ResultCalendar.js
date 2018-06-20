@@ -4,8 +4,8 @@ import ListCalendarDayTime from "./ListCalendarDayTime"
 const ResultCalendar = ({ weekTimeSlots }) => {
   return (
     <div className="d-flex justify-content-center">
-      {weekTimeSlots.map(weekTimeSlot => (
-        <ListCalendarDayTime day={weekTimeSlot} />
+      {weekTimeSlots.map(dayTimeSlot => (
+        <ListCalendarDayTime day={dayTimeSlot} />
       ))}
     </div>
   )

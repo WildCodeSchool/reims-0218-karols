@@ -422,7 +422,7 @@ const date = "2018-07-25T00:00:00.000+02:00"
 
 //  CalendarDay
 storiesOf("CalendarDay", module).add("Render the calendar day", () => (
-  <CalendarDay date={day} />
+  <CalendarDay date={day.date} />
 ))
 
 //ListCalendarDayTime
