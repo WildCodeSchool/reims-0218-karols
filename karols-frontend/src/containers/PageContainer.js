@@ -54,9 +54,7 @@ class Page extends Component {
           {this.props.showMalePrestation && <PrestationMaleContainer />}
         </Element>
         {this.props.showDatePicker && <DatePickerContainer />}
-        <Element name="resume">
-          <ResumeContainer />
-        </Element>
+        <ResumeContainer />
       </Container>
     )
   }

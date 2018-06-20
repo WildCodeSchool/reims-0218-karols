@@ -1,6 +1,6 @@
-import { getShopResume, getServiceResume, getGenderResume, getPreparationResume } from "."
+import { getSelectedShop, getSelectedService, getSelectedGender, getSelectedPreparation } from "."
 
-describe("getShopResume", () => {
+describe("getSelectedShop", () => {
   it("should return falsy if no shop selected", () => {
     const noGetShopState = {
       prestations: [
@@ -403,7 +403,7 @@ describe("getShopResume", () => {
       timeSlots: []
     }
 
-    expect(getShopResume(noGetShopState)).toBeFalsy()
+    expect(getSelectedShop(noGetShopState)).toBeFalsy()
   })
   it("should return shop data of the shop selected", () => {
     const getShopState = {
@@ -814,11 +814,11 @@ describe("getShopResume", () => {
         "https://images.unsplash.com/33/YOfYx7zhTvYBGYs6g83s_IMG_8643.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82fecbde67b1966b4ea8118f3bea896e&auto=format&fit=crop&w=967&q=80",
       selected: true
     }
-    expect(getShopResume(getShopState)).toEqual(expected)
+    expect(getSelectedShop(getShopState)).toEqual(expected)
   })
 })
 
-describe("getServiceResume", () => {
+describe("getSelectedService", () => {
   it("should return falsy if no service selected", () => {
     const noGetServiceState = {
       prestations: [
@@ -1220,7 +1220,7 @@ describe("getServiceResume", () => {
       ],
       timeSlots: []
     }
-    expect(getServiceResume(noGetServiceState)).toBeFalsy()
+    expect(getSelectedService(noGetServiceState)).toBeFalsy()
   })
   it("should return service data of the service selected", () => {
     const getServiceState = {
@@ -1631,11 +1631,11 @@ describe("getServiceResume", () => {
       description: "Venez vous faire maquiller",
       selected: true
     }
-    expect(getServiceResume(getServiceState)).toEqual(expected)
+    expect(getSelectedService(getServiceState)).toEqual(expected)
   })
 })
 
-describe("getGenderResume", () => {
+describe("getSelectedGender", () => {
   it("should return falsy if no gender selected", () => {
     const noGetGenderState = {
       prestations: [
@@ -2038,7 +2038,7 @@ describe("getGenderResume", () => {
       timeSlots: []
     }
 
-    expect(getGenderResume(noGetGenderState)).toBeFalsy()
+    expect(getSelectedGender(noGetGenderState)).toBeFalsy()
   })
   it("should return gender data of the gender selected", () => {
     const getGenderState = {
@@ -2447,11 +2447,11 @@ describe("getGenderResume", () => {
       image:
         "https://images.unsplash.com/photo-1523264653568-d3d4032d1476?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f5bb4869d80176df6b68e5f160b1c76&auto=format&fit=crop&w=1834&q=80"
     }
-    expect(getGenderResume(getGenderState)).toEqual(expected)
+    expect(getSelectedGender(getGenderState)).toEqual(expected)
   })
 })
 
-describe("getPreparationResume", () => {
+describe("getSelectedPreparation", () => {
   it("should return an empty array if no preparation selected", () => {
     const noGetPreparationState = {
       prestations: [
@@ -2853,7 +2853,7 @@ describe("getPreparationResume", () => {
       ],
       timeSlots: []
     }
-    expect(getPreparationResume(noGetPreparationState)).toEqual([])
+    expect(getSelectedPreparation(noGetPreparationState)).toEqual([])
   })
   it("sould return preparation data of the preparation selected", () => {
     const getPreparationState = {
@@ -3299,6 +3299,6 @@ describe("getPreparationResume", () => {
         }
       ]
     
-    expect(getPreparationResume(getPreparationState)).toEqual(expected)
+    expect(getSelectedPreparation(getPreparationState)).toEqual(expected)
   })
 })

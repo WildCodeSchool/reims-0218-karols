@@ -1,12 +1,12 @@
-export const getShopResume = state => state.shops.find(shop => shop.selected)
+export const getSelectedShop = state => state.shops.find(shop => shop.selected)
 
-export const getServiceResume = state =>
+export const getSelectedService = state =>
   state.services.find(service => service.selected)
 
-export const getGenderResume = state =>
+export const getSelectedGender = state =>
   state.genders.find(gender => gender.selected)
 
-export const getPreparationResume = state =>
+export const getSelectedPreparation = state =>
   state.prestations
     .filter(
       prestation =>
