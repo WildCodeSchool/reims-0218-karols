@@ -1,4 +1,10 @@
 import React from "react"
+import { DateTime } from "luxon"
+
+const createDate = date =>
+  DateTime.fromISO(date)
+    .setLocale("fr")
+    .toFormat("cccc dd LLLL")
 
 const CalendarDay = ({ date }) => (
   <div
@@ -17,7 +23,7 @@ const CalendarDay = ({ date }) => (
         fontSize: "14px"
       }}
     >
-      {date}
+      {createDate(date.date)}
     </p>
   </div>
 )

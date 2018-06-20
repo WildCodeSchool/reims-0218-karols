@@ -421,6 +421,9 @@ storiesOf("ListCalendarTime", module).add("Render the calendar", () => (
 const date = "2018-07-25T00:00:00.000+02:00"
 
 //  CalendarDay
+storiesOf("CalendarDay", module).add("Render the calendar day", () => (
+  <CalendarDay date={day} />
+))
 
 const day = {
   date: "2018-07-25T00:00:00.000+02:00",
@@ -1023,11 +1026,6 @@ const weekTimeSlots = [
 //         .toFormat("T")
 //     })
 //   )
-
-// const createDate = date =>
-//   DateTime.fromISO(date)
-//     .setLocale("fr")
-//     .toFormat("cccc dd LLLL")
 
 // // console.log(arrayOfTimes)
 
