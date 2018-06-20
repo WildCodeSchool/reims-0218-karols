@@ -1,13 +1,13 @@
 import React from "react"
-import JumboRecap from "./JumboRecap"
+import JumbotronRecap from "./JumbotronRecap"
 import { Row, Col } from "reactstrap"
 
-export default class JumboProps extends React.Component {
+export default class JumbotronProps extends React.Component {
   render() {
     return (
       <Row>
         <Col>
-          <JumboRecap
+          <JumbotronRecap
             shop="Paris"
             preparation="preparation"
             gender="une Femme"
