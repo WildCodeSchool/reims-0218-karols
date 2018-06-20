@@ -31,7 +31,7 @@ import PreferredDateChoice from "../components/PreferredDateChoice"
 import CardHover from "../components/CardHover"
 import ListChoiceShop from "../components/ListChoiceShop"
 import CardModel from "../components/CardModel"
-import { DateTime } from "luxon"
+import { DateTime, Interval } from "luxon"
 
 const datas = [
   {
@@ -1589,9 +1589,30 @@ storiesOf("PreferredDateChoice", module).add("Preferred Date Choice", () => (
   <PreferredDateChoice />
 ))
 
-const myNewTime = DateTime.fromISO("2018-07-25T09:00:00.000+02:00")
-  .setLocale("fr")
-  .toFormat("T")
+const myNewTime = time => {
+  DateTime.fromISO(time)
+    .setLocale("fr")
+    .toFormat("T")
+}
+
+// const arrayOfTime = datas.map(data =>
+//   data.timeSlots.map(timeSlot => {
+//     console.log(
+//       DateTime.fromISO(timeSlot.time.s)
+//         .setLocale("fr")
+//         .toFormat("T")
+//     )
+//     return {
+//       ...timeSlot,
+//       time: Interval.fromDateTimes(
+//         myNewTime(timeSlot.time.s),
+//         myNewTime(timeSlot.time.e)
+//       )
+//     }
+//   })
+// )
+
+// console.log(arrayOfTime)
 
 storiesOf("ListCalendarTime", module).add("Render the calendar", () => (
   <ListCalendarTime time={myNewTime} />
