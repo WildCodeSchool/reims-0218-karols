@@ -6,7 +6,7 @@ export const getSelectedService = state =>
 export const getSelectedGender = state =>
   state.genders.find(gender => gender.selected)
 
-export const getSelectedPreparation = state =>
+export const getSelectedPreparations = state =>
   state.prestations
     .filter(
       prestation =>

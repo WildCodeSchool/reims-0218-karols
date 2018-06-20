@@ -1,4 +1,4 @@
-import { getSelectedShop, getSelectedService, getSelectedGender, getSelectedPreparation } from "."
+import { getSelectedShop, getSelectedService, getSelectedGender, getSelectedPreparations } from "."
 
 describe("getSelectedShop", () => {
   it("should return falsy if no shop selected", () => {
@@ -2451,7 +2451,7 @@ describe("getSelectedGender", () => {
   })
 })
 
-describe("getSelectedPreparation", () => {
+describe("getSelectedPreparations", () => {
   it("should return an empty array if no preparation selected", () => {
     const noGetPreparationState = {
       prestations: [
@@ -2853,10 +2853,10 @@ describe("getSelectedPreparation", () => {
       ],
       timeSlots: []
     }
-    expect(getSelectedPreparation(noGetPreparationState)).toEqual([])
+    expect(getSelectedPreparations(noGetPreparationState)).toEqual([])
   })
   it("sould return preparation data of the preparation selected", () => {
-    const getPreparationState = {
+    const getPreparationsState = {
       prestations: [
         {
           id: 1,
@@ -3299,6 +3299,6 @@ describe("getSelectedPreparation", () => {
         }
       ]
     
-    expect(getSelectedPreparation(getPreparationState)).toEqual(expected)
+    expect(getSelectedPreparations(getPreparationsState)).toEqual(expected)
   })
 })
