@@ -17,6 +17,7 @@ import PrestationFemaleContainer from "./PrestationFemaleContainer"
 import PrestationMaleContainer from "./PrestationMaleContainer"
 import GenderContainer from "./GenderContainer"
 import DatePickerContainer from "./DatePickerContainer"
+import CalendarContainer from "./CalendarContainer"
 
 import { makeShopsPrestationsReceived } from "../actions/actions"
 
@@ -39,6 +40,7 @@ class Page extends Component {
   render() {
     return (
       <Container>
+        <CalendarContainer />
         <ShopContainer />
         <hr />
         <Element name="services">

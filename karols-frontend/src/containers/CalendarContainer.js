@@ -19,7 +19,7 @@ class TimeSlots extends Component {
   render() {
     return (
       <Container>
-        <ResultCalendar timeSlots={this.props.timeSlots} />
+        <ResultCalendar weekTimeSlots={this.props.timeSlots} />
       </Container>
     )
   }
