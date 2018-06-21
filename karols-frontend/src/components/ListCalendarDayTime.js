@@ -1,8 +1,8 @@
 import React from "react"
 import ListCalendarTime from "./ListCalendarTime"
-import CalendarTime from "./CalendarDay"
+import CalendarDay from "./CalendarDay"
 
-const ListCalendarDayTime = () => (
+const ListCalendarDayTime = ({ day }) => (
   <div
     style={{
       flexGrow: "1",
@@ -12,8 +12,8 @@ const ListCalendarDayTime = () => (
       maxWidth: "75px"
     }}
   >
-    <CalendarTime />
-    <ListCalendarTime />
+    <CalendarDay date={day.date} />
+    <ListCalendarTime timeSlots={day.timeSlots} />
   </div>
 )
 

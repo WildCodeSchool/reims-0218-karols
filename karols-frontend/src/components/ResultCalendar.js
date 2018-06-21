@@ -1,14 +1,12 @@
 import React from "react"
 import ListCalendarDayTime from "./ListCalendarDayTime"
 
-const ResultCalendar = () => {
+const ResultCalendar = ({ weekTimeSlots }) => {
   return (
     <div className="d-flex justify-content-center">
-      <ListCalendarDayTime />
-      <ListCalendarDayTime />
-      <ListCalendarDayTime />
-      <ListCalendarDayTime />
-      <ListCalendarDayTime />
+      {weekTimeSlots.map((dayTimeSlot, index) => (
+        <ListCalendarDayTime key={index} day={dayTimeSlot} />
+      ))}
     </div>
   )
 }
