@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic");
+
+@font-face {
+  font-family: "Didact Gothic", cursive;
+  src: url("https://fonts.googleapis.com/css?family=Didact+Gothic");
+}
+
 .App {
   text-align: center;
 }
