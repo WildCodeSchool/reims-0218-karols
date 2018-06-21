@@ -5,11 +5,27 @@ import renderer from "react-test-renderer"
 
 it("renders without crashing", () => {
   const div = document.createElement("div")
-  ReactDOM.render(<CalendarTime />, div)
+  const timeSlot = {
+    available: true,
+    time: {
+      s: "2018-07-25T09:00:00.000+02:00",
+      e: "2018-07-25T09:15:00.000+02:00",
+      invalid: null
+    }
+  }
+  ReactDOM.render(<CalendarTime timeSlot={timeSlot} />, div)
   ReactDOM.unmountComponentAtNode(div)
 })
 
 it("renders correctly", () => {
-  const tree = renderer.create(<CalendarTime />).toJSON()
+  const timeSlot = {
+    available: true,
+    time: {
+      s: "2018-07-25T09:00:00.000+02:00",
+      e: "2018-07-25T09:15:00.000+02:00",
+      invalid: null
+    }
+  }
+  const tree = renderer.create(<CalendarTime timeSlot={timeSlot} />).toJSON()
   expect(tree).toMatchSnapshot()
 })

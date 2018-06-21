@@ -6,6 +6,7 @@ import {
   getSelectedShop,
   getSelectedService,
   getSelectedGender,
+  getSelectedForm,
   getSelectedPreparations
 } from "../resume"
 
@@ -13,6 +14,7 @@ const mapStateToProps = state => ({
   selectedShop: getSelectedShop(state),
   selectedService: getSelectedService(state),
   selectedGender: getSelectedGender(state),
+  selectedForm: getSelectedForm(state),
   selectedPreparations: getSelectedPreparations(state)
 })
 
@@ -22,9 +24,10 @@ class ShowResume extends Component {
       <Jumbotron
         style={{
           textAlign: "center",
-          backgroundColor: "#d7dbe2",
+          backgroundColor: "#FFF",
           fontSize: "25px",
-          borderRadius: "100px"
+          borderRadius: "70px",
+          border: "2px solid black"
         }}
       >
         <h1 className="display-12">Récapitulatif</h1>
@@ -38,6 +41,16 @@ class ShowResume extends Component {
           <p className="préparation">
             Vous avez choisi {this.props.selectedService.name}
           </p>
+        )}
+
+        {this.props.selectedForm && (
+          <p className="form">Prénom :{this.props.selectedForm.firstName}</p>
+        )}
+        {this.props.selectedForm && (
+          <p className="form">Nom :{this.props.selectedForm.lastName}</p>
+        )}
+        {this.props.selectedForm && (
+          <p className="form">Email :{this.props.selectedForm.email}</p>
         )}
         {this.props.selectedGender && (
           <p className="gender">Pour {this.props.selectedGender.sex}</p>

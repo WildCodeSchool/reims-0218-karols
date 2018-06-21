@@ -18,7 +18,7 @@ const PreparationChoice = ({ id, name, preparations, select, image }) => (
       {preparations.map(preparation => (
         <Col
           key={preparation.id}
-          md="6"
+          md="4"
           className="text-center mb-6"
           style={{
             height: "325px"

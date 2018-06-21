@@ -30,7 +30,7 @@ class ServiceSelect extends Component {
         <ReservationTitle />
         <Row className="justify-content-center">
           {this.props.services.map(service => (
-            <Col key={service.id} md="6" className="text-center mb-3">
+            <Col key={service.id} md="4" className="text-center mb-3">
               <Zoom>
                 <CardModel
                   title={service.name}
