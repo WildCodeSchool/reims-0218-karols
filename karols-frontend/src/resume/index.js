@@ -3,6 +3,9 @@ export const getSelectedShop = state => state.shops.find(shop => shop.selected)
 export const getSelectedService = state =>
   state.services.find(service => service.selected)
 
+export const getSelectedForm = state =>
+  state.form.contact ? state.form.contact.values : {}
+
 export const getSelectedGender = state =>
   state.genders.find(gender => gender.selected)
 

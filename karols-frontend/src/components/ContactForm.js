@@ -5,20 +5,29 @@ class ContactForm extends Component {
   render() {
     const { handleSubmit } = this.props
     return (
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        style={{
+          backgroundColor: "#FFF",
+          border: "2px solid grey",
+          paddingTop: "10%",
+          paddingBottom: "10%",
+          borderRadius: "50px",
+          fontSize: "25px"
+        }}
+      >
         <div>
-          <label htmlFor="firstName">First Name</label>
+          <label htmlFor="firstName">* First Name :</label>
           <Field name="firstName" component="input" type="text" />
         </div>
         <div>
-          <label htmlFor="lastName">Last Name</label>
+          <label htmlFor="lastName">* Last Name :</label>
           <Field name="lastName" component="input" type="text" />
         </div>
         <div>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">* Email :</label>
           <Field name="email" component="input" type="email" />
         </div>
-        <button type="submit">Submit</button>
       </form>
     )
   }

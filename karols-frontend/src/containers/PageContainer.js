@@ -41,13 +41,15 @@ class Page extends Component {
   render() {
     return (
       <Container>
-        <ContactForm />
         <ShopContainer />
         <Element name="services">
           {this.props.showServices && <ServiceContainer />}
         </Element>
         <Element name="genders">
           {this.props.showSex && <GenderContainer />}
+          <Element name="genders">
+            {this.props.showSex && <ContactForm />}
+          </Element>
         </Element>
         <Element name="female">
           {this.props.showFemalePrestation && <PrestationFemaleContainer />}
