@@ -50,6 +50,7 @@ exports[`renders correctly 1`] = `
   >
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -75,6 +76,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -100,6 +102,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -125,6 +128,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -150,6 +154,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -175,6 +180,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -200,6 +206,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -225,6 +232,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -250,6 +258,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -275,6 +284,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -300,6 +310,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -325,6 +336,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -350,6 +362,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -375,6 +388,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -400,6 +414,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -425,6 +440,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -450,6 +466,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -475,6 +492,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -500,6 +518,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -525,6 +544,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -550,6 +570,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -575,6 +596,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -600,6 +622,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -625,6 +648,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -650,6 +674,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -675,6 +700,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -700,6 +726,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -725,6 +752,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -750,6 +778,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -775,6 +804,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -800,6 +830,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -825,6 +856,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -850,6 +882,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -875,6 +908,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -900,6 +934,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
@@ -925,6 +960,7 @@ exports[`renders correctly 1`] = `
     </div>
     <div
       className="justify-content-center"
+      onClick={[Function]}
     >
       <div
         style={
