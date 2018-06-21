@@ -4,7 +4,6 @@ import { Container } from "reactstrap"
 
 import { makeTimeslotsReceived } from "../actions/actions"
 
-import { fetchTimeSlots } from "../api/fetchtimeslots"
 import ResultCalendar from "../components/ResultCalendar"
 
 const mapStateToProps = state => ({
@@ -22,11 +21,6 @@ class TimeSlots extends Component {
         <ResultCalendar weekTimeSlots={this.props.timeSlots} />
       </Container>
     )
-  }
-  componentDidMount() {
-    fetchTimeSlots().then(response => {
-      this.props.onTimeSlotsReceived(response)
-    })
   }
 }
 

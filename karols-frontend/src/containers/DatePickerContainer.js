@@ -1,8 +1,18 @@
 import React, { Component } from "react"
+import { connect } from "react-redux"
+import { makeTimeslotsReceived } from "../actions/actions"
 import InfiniteCalendar from "react-infinite-calendar"
 import "react-infinite-calendar/styles.css" // Make sure to import the default stylesheet
 import DatePickerTitle from "../components/DatePickerTitle"
+import { fetchDateSelected } from "../api/fetchDateSelected"
 import { Button, Modal, ModalHeader, ModalBody, Container } from "reactstrap"
+const { DateTime } = require("luxon")
+
+const mapStateToProps = state => ({})
+
+const mapDispatchToProps = dispatch => ({
+  onTimeSlotsReceived: response => dispatch(makeTimeslotsReceived(response))
+})
 
 // Render the Calendar
 let today = new Date()
@@ -57,6 +67,11 @@ class DatePickerSelect extends Component {
                   this.setState({
                     dateSelected: date
                   })
+                  // Fetch route date selected
+                  const dateFromJsDate = DateTime.fromJSDate(date).toISO()
+                  fetchDateSelected(dateFromJsDate).then(response => {
+                    this.props.onTimeSlotsReceived(response)
+                  })
                 }}
                 style={{ margin: "auto" }}
                 width="100%"
@@ -104,4 +119,4 @@ class DatePickerSelect extends Component {
   }
 }
 
-export default DatePickerSelect
+export default connect(mapStateToProps, mapDispatchToProps)(DatePickerSelect)
