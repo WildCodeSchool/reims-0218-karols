@@ -58,8 +58,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -74,7 +76,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:00
-           
         </div>
       </div>
       <div
@@ -84,8 +85,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -100,7 +103,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:15
-           
         </div>
       </div>
       <div
@@ -110,8 +112,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -126,7 +130,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:30
-           
         </div>
       </div>
       <div
@@ -136,8 +139,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -152,7 +157,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:45
-           
         </div>
       </div>
       <div
@@ -162,8 +166,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -178,7 +184,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:00
-           
         </div>
       </div>
       <div
@@ -188,8 +193,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -204,7 +211,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:15
-           
         </div>
       </div>
       <div
@@ -214,8 +220,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -230,7 +238,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:30
-           
         </div>
       </div>
       <div
@@ -240,8 +247,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -256,7 +265,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:45
-           
         </div>
       </div>
       <div
@@ -266,8 +274,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -282,7 +292,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:00
-           
         </div>
       </div>
       <div
@@ -292,8 +301,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -308,7 +319,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:15
-           
         </div>
       </div>
       <div
@@ -318,8 +328,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -334,7 +346,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:30
-           
         </div>
       </div>
       <div
@@ -344,8 +355,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -360,7 +373,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:45
-           
         </div>
       </div>
       <div
@@ -370,8 +382,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -386,7 +400,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:00
-           
         </div>
       </div>
       <div
@@ -396,8 +409,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -412,7 +427,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:15
-           
         </div>
       </div>
       <div
@@ -422,8 +436,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -438,7 +454,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:30
-           
         </div>
       </div>
       <div
@@ -448,8 +463,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -464,7 +481,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:45
-           
         </div>
       </div>
       <div
@@ -474,8 +490,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -490,7 +508,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:00
-           
         </div>
       </div>
       <div
@@ -500,8 +517,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -516,7 +535,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:15
-           
         </div>
       </div>
       <div
@@ -526,8 +544,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -542,7 +562,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:30
-           
         </div>
       </div>
       <div
@@ -552,8 +571,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -568,7 +589,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:45
-           
         </div>
       </div>
       <div
@@ -578,8 +598,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -594,7 +616,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:00
-           
         </div>
       </div>
       <div
@@ -604,8 +625,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -620,7 +643,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:15
-           
         </div>
       </div>
       <div
@@ -630,8 +652,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -646,7 +670,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:30
-           
         </div>
       </div>
       <div
@@ -656,8 +679,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -672,7 +697,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:45
-           
         </div>
       </div>
       <div
@@ -682,8 +706,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -698,7 +724,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:00
-           
         </div>
       </div>
       <div
@@ -708,8 +733,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -724,7 +751,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:15
-           
         </div>
       </div>
       <div
@@ -734,8 +760,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -750,7 +778,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:30
-           
         </div>
       </div>
       <div
@@ -760,8 +787,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -776,7 +805,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:45
-           
         </div>
       </div>
       <div
@@ -786,8 +814,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -802,7 +832,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:00
-           
         </div>
       </div>
       <div
@@ -812,8 +841,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -828,7 +859,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:15
-           
         </div>
       </div>
       <div
@@ -838,8 +868,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -854,7 +886,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:30
-           
         </div>
       </div>
       <div
@@ -864,8 +895,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -880,7 +913,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:45
-           
         </div>
       </div>
       <div
@@ -890,8 +922,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -906,7 +940,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:00
-           
         </div>
       </div>
       <div
@@ -916,8 +949,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -932,7 +967,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:15
-           
         </div>
       </div>
       <div
@@ -942,8 +976,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -958,7 +994,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:30
-           
         </div>
       </div>
       <div
@@ -968,8 +1003,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -984,7 +1021,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:45
-           
         </div>
       </div>
     </div>
@@ -1043,8 +1079,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1059,7 +1097,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:00
-           
         </div>
       </div>
       <div
@@ -1069,8 +1106,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1085,7 +1124,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:15
-           
         </div>
       </div>
       <div
@@ -1095,8 +1133,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1111,7 +1151,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:30
-           
         </div>
       </div>
       <div
@@ -1121,8 +1160,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1137,7 +1178,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:45
-           
         </div>
       </div>
       <div
@@ -1147,8 +1187,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1163,7 +1205,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:00
-           
         </div>
       </div>
       <div
@@ -1173,8 +1214,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1189,7 +1232,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:15
-           
         </div>
       </div>
       <div
@@ -1199,8 +1241,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1215,7 +1259,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:30
-           
         </div>
       </div>
       <div
@@ -1225,8 +1268,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1241,7 +1286,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:45
-           
         </div>
       </div>
       <div
@@ -1251,8 +1295,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1267,7 +1313,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:00
-           
         </div>
       </div>
       <div
@@ -1277,8 +1322,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1293,7 +1340,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:15
-           
         </div>
       </div>
       <div
@@ -1303,8 +1349,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1319,7 +1367,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:30
-           
         </div>
       </div>
       <div
@@ -1329,8 +1376,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1345,7 +1394,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:45
-           
         </div>
       </div>
       <div
@@ -1355,8 +1403,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1371,7 +1421,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:00
-           
         </div>
       </div>
       <div
@@ -1381,8 +1430,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1397,7 +1448,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:15
-           
         </div>
       </div>
       <div
@@ -1407,8 +1457,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1423,7 +1475,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:30
-           
         </div>
       </div>
       <div
@@ -1433,8 +1484,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1449,7 +1502,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:45
-           
         </div>
       </div>
       <div
@@ -1459,8 +1511,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1475,7 +1529,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:00
-           
         </div>
       </div>
       <div
@@ -1485,8 +1538,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1501,7 +1556,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:15
-           
         </div>
       </div>
       <div
@@ -1511,8 +1565,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1527,7 +1583,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:30
-           
         </div>
       </div>
       <div
@@ -1537,8 +1592,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1553,7 +1610,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:45
-           
         </div>
       </div>
       <div
@@ -1563,8 +1619,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1579,7 +1637,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:00
-           
         </div>
       </div>
       <div
@@ -1589,8 +1646,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1605,7 +1664,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:15
-           
         </div>
       </div>
       <div
@@ -1615,8 +1673,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1631,7 +1691,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:30
-           
         </div>
       </div>
       <div
@@ -1641,8 +1700,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1657,7 +1718,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:45
-           
         </div>
       </div>
       <div
@@ -1667,8 +1727,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1683,7 +1745,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:00
-           
         </div>
       </div>
       <div
@@ -1693,8 +1754,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1709,7 +1772,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:15
-           
         </div>
       </div>
       <div
@@ -1719,8 +1781,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1735,7 +1799,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:30
-           
         </div>
       </div>
       <div
@@ -1745,8 +1808,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1761,7 +1826,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:45
-           
         </div>
       </div>
       <div
@@ -1771,8 +1835,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1787,7 +1853,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:00
-           
         </div>
       </div>
       <div
@@ -1797,8 +1862,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1813,7 +1880,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:15
-           
         </div>
       </div>
       <div
@@ -1823,8 +1889,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1839,7 +1907,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:30
-           
         </div>
       </div>
       <div
@@ -1849,8 +1916,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1865,7 +1934,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:45
-           
         </div>
       </div>
       <div
@@ -1875,8 +1943,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1891,7 +1961,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:00
-           
         </div>
       </div>
       <div
@@ -1901,8 +1970,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1917,7 +1988,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:15
-           
         </div>
       </div>
       <div
@@ -1927,8 +1997,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1943,7 +2015,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:30
-           
         </div>
       </div>
       <div
@@ -1953,8 +2024,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -1969,7 +2042,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:45
-           
         </div>
       </div>
     </div>
@@ -2028,8 +2100,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2044,7 +2118,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:00
-           
         </div>
       </div>
       <div
@@ -2054,8 +2127,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2070,7 +2145,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:15
-           
         </div>
       </div>
       <div
@@ -2080,8 +2154,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2096,7 +2172,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:30
-           
         </div>
       </div>
       <div
@@ -2106,8 +2181,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2122,7 +2199,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:45
-           
         </div>
       </div>
       <div
@@ -2132,8 +2208,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2148,7 +2226,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:00
-           
         </div>
       </div>
       <div
@@ -2158,8 +2235,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2174,7 +2253,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:15
-           
         </div>
       </div>
       <div
@@ -2184,8 +2262,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2200,7 +2280,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:30
-           
         </div>
       </div>
       <div
@@ -2210,8 +2289,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2226,7 +2307,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:45
-           
         </div>
       </div>
       <div
@@ -2236,8 +2316,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2252,7 +2334,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:00
-           
         </div>
       </div>
       <div
@@ -2262,8 +2343,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2278,7 +2361,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:15
-           
         </div>
       </div>
       <div
@@ -2288,8 +2370,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2304,7 +2388,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:30
-           
         </div>
       </div>
       <div
@@ -2314,8 +2397,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2330,7 +2415,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:45
-           
         </div>
       </div>
       <div
@@ -2340,8 +2424,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2356,7 +2442,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:00
-           
         </div>
       </div>
       <div
@@ -2366,8 +2451,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2382,7 +2469,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:15
-           
         </div>
       </div>
       <div
@@ -2392,8 +2478,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2408,7 +2496,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:30
-           
         </div>
       </div>
       <div
@@ -2418,8 +2505,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2434,7 +2523,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:45
-           
         </div>
       </div>
       <div
@@ -2444,8 +2532,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2460,7 +2550,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:00
-           
         </div>
       </div>
       <div
@@ -2470,8 +2559,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2486,7 +2577,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:15
-           
         </div>
       </div>
       <div
@@ -2496,8 +2586,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2512,7 +2604,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:30
-           
         </div>
       </div>
       <div
@@ -2522,8 +2613,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2538,7 +2631,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:45
-           
         </div>
       </div>
       <div
@@ -2548,8 +2640,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2564,7 +2658,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:00
-           
         </div>
       </div>
       <div
@@ -2574,8 +2667,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2590,7 +2685,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:15
-           
         </div>
       </div>
       <div
@@ -2600,8 +2694,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2616,7 +2712,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:30
-           
         </div>
       </div>
       <div
@@ -2626,8 +2721,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2642,7 +2739,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:45
-           
         </div>
       </div>
       <div
@@ -2652,8 +2748,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2668,7 +2766,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:00
-           
         </div>
       </div>
       <div
@@ -2678,8 +2775,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2694,7 +2793,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:15
-           
         </div>
       </div>
       <div
@@ -2704,8 +2802,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2720,7 +2820,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:30
-           
         </div>
       </div>
       <div
@@ -2730,8 +2829,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2746,7 +2847,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:45
-           
         </div>
       </div>
       <div
@@ -2756,8 +2856,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2772,7 +2874,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:00
-           
         </div>
       </div>
       <div
@@ -2782,8 +2883,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2798,7 +2901,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:15
-           
         </div>
       </div>
       <div
@@ -2808,8 +2910,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2824,7 +2928,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:30
-           
         </div>
       </div>
       <div
@@ -2834,8 +2937,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2850,7 +2955,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:45
-           
         </div>
       </div>
       <div
@@ -2860,8 +2964,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2876,7 +2982,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:00
-           
         </div>
       </div>
       <div
@@ -2886,8 +2991,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2902,7 +3009,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:15
-           
         </div>
       </div>
       <div
@@ -2912,8 +3018,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2928,7 +3036,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:30
-           
         </div>
       </div>
       <div
@@ -2938,8 +3045,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -2954,7 +3063,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:45
-           
         </div>
       </div>
     </div>
@@ -3013,8 +3121,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3029,7 +3139,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:00
-           
         </div>
       </div>
       <div
@@ -3039,8 +3148,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3055,7 +3166,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:15
-           
         </div>
       </div>
       <div
@@ -3065,8 +3175,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3081,7 +3193,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:30
-           
         </div>
       </div>
       <div
@@ -3091,8 +3202,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3107,7 +3220,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:45
-           
         </div>
       </div>
       <div
@@ -3117,8 +3229,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3133,7 +3247,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:00
-           
         </div>
       </div>
       <div
@@ -3143,8 +3256,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3159,7 +3274,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:15
-           
         </div>
       </div>
       <div
@@ -3169,8 +3283,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3185,7 +3301,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:30
-           
         </div>
       </div>
       <div
@@ -3195,8 +3310,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3211,7 +3328,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:45
-           
         </div>
       </div>
       <div
@@ -3221,8 +3337,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3237,7 +3355,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:00
-           
         </div>
       </div>
       <div
@@ -3247,8 +3364,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3263,7 +3382,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:15
-           
         </div>
       </div>
       <div
@@ -3273,8 +3391,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3289,7 +3409,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:30
-           
         </div>
       </div>
       <div
@@ -3299,8 +3418,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3315,7 +3436,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:45
-           
         </div>
       </div>
       <div
@@ -3325,8 +3445,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3341,7 +3463,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:00
-           
         </div>
       </div>
       <div
@@ -3351,8 +3472,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3367,7 +3490,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:15
-           
         </div>
       </div>
       <div
@@ -3377,8 +3499,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3393,7 +3517,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:30
-           
         </div>
       </div>
       <div
@@ -3403,8 +3526,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3419,7 +3544,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:45
-           
         </div>
       </div>
       <div
@@ -3429,8 +3553,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3445,7 +3571,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:00
-           
         </div>
       </div>
       <div
@@ -3455,8 +3580,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3471,7 +3598,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:15
-           
         </div>
       </div>
       <div
@@ -3481,8 +3607,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3497,7 +3625,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:30
-           
         </div>
       </div>
       <div
@@ -3507,8 +3634,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3523,7 +3652,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:45
-           
         </div>
       </div>
       <div
@@ -3533,8 +3661,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3549,7 +3679,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:00
-           
         </div>
       </div>
       <div
@@ -3559,8 +3688,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3575,7 +3706,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:15
-           
         </div>
       </div>
       <div
@@ -3585,8 +3715,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3601,7 +3733,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:30
-           
         </div>
       </div>
       <div
@@ -3611,8 +3742,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3627,7 +3760,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:45
-           
         </div>
       </div>
       <div
@@ -3637,8 +3769,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3653,7 +3787,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:00
-           
         </div>
       </div>
       <div
@@ -3663,8 +3796,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3679,7 +3814,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:15
-           
         </div>
       </div>
       <div
@@ -3689,8 +3823,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3705,7 +3841,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:30
-           
         </div>
       </div>
       <div
@@ -3715,8 +3850,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3731,7 +3868,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:45
-           
         </div>
       </div>
       <div
@@ -3741,8 +3877,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3757,7 +3895,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:00
-           
         </div>
       </div>
       <div
@@ -3767,8 +3904,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3783,7 +3922,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:15
-           
         </div>
       </div>
       <div
@@ -3793,8 +3931,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3809,7 +3949,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:30
-           
         </div>
       </div>
       <div
@@ -3819,8 +3958,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3835,7 +3976,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:45
-           
         </div>
       </div>
       <div
@@ -3845,8 +3985,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3861,7 +4003,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:00
-           
         </div>
       </div>
       <div
@@ -3871,8 +4012,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3887,7 +4030,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:15
-           
         </div>
       </div>
       <div
@@ -3897,8 +4039,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3913,7 +4057,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:30
-           
         </div>
       </div>
       <div
@@ -3923,8 +4066,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -3939,7 +4084,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:45
-           
         </div>
       </div>
     </div>
@@ -3998,8 +4142,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4014,7 +4160,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:00
-           
         </div>
       </div>
       <div
@@ -4024,8 +4169,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4040,7 +4187,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:15
-           
         </div>
       </div>
       <div
@@ -4050,8 +4196,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4066,7 +4214,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:30
-           
         </div>
       </div>
       <div
@@ -4076,8 +4223,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4092,7 +4241,6 @@ exports[`renders correctly 1`] = `
         >
            
           09:45
-           
         </div>
       </div>
       <div
@@ -4102,8 +4250,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4118,7 +4268,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:00
-           
         </div>
       </div>
       <div
@@ -4128,8 +4277,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4144,7 +4295,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:15
-           
         </div>
       </div>
       <div
@@ -4154,8 +4304,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4170,7 +4322,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:30
-           
         </div>
       </div>
       <div
@@ -4180,8 +4331,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4196,7 +4349,6 @@ exports[`renders correctly 1`] = `
         >
            
           10:45
-           
         </div>
       </div>
       <div
@@ -4206,8 +4358,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4222,7 +4376,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:00
-           
         </div>
       </div>
       <div
@@ -4232,8 +4385,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4248,7 +4403,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:15
-           
         </div>
       </div>
       <div
@@ -4258,8 +4412,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4274,7 +4430,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:30
-           
         </div>
       </div>
       <div
@@ -4284,8 +4439,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4300,7 +4457,6 @@ exports[`renders correctly 1`] = `
         >
            
           11:45
-           
         </div>
       </div>
       <div
@@ -4310,8 +4466,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4326,7 +4484,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:00
-           
         </div>
       </div>
       <div
@@ -4336,8 +4493,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4352,7 +4511,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:15
-           
         </div>
       </div>
       <div
@@ -4362,8 +4520,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4378,7 +4538,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:30
-           
         </div>
       </div>
       <div
@@ -4388,8 +4547,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4404,7 +4565,6 @@ exports[`renders correctly 1`] = `
         >
            
           12:45
-           
         </div>
       </div>
       <div
@@ -4414,8 +4574,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4430,7 +4592,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:00
-           
         </div>
       </div>
       <div
@@ -4440,8 +4601,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4456,7 +4619,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:15
-           
         </div>
       </div>
       <div
@@ -4466,8 +4628,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4482,7 +4646,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:30
-           
         </div>
       </div>
       <div
@@ -4492,8 +4655,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4508,7 +4673,6 @@ exports[`renders correctly 1`] = `
         >
            
           13:45
-           
         </div>
       </div>
       <div
@@ -4518,8 +4682,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4534,7 +4700,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:00
-           
         </div>
       </div>
       <div
@@ -4544,8 +4709,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4560,7 +4727,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:15
-           
         </div>
       </div>
       <div
@@ -4570,8 +4736,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4586,7 +4754,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:30
-           
         </div>
       </div>
       <div
@@ -4596,8 +4763,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4612,7 +4781,6 @@ exports[`renders correctly 1`] = `
         >
            
           14:45
-           
         </div>
       </div>
       <div
@@ -4622,8 +4790,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4638,7 +4808,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:00
-           
         </div>
       </div>
       <div
@@ -4648,8 +4817,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4664,7 +4835,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:15
-           
         </div>
       </div>
       <div
@@ -4674,8 +4844,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4690,7 +4862,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:30
-           
         </div>
       </div>
       <div
@@ -4700,8 +4871,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4716,7 +4889,6 @@ exports[`renders correctly 1`] = `
         >
            
           15:45
-           
         </div>
       </div>
       <div
@@ -4726,8 +4898,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4742,7 +4916,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:00
-           
         </div>
       </div>
       <div
@@ -4752,8 +4925,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4768,7 +4943,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:15
-           
         </div>
       </div>
       <div
@@ -4778,8 +4952,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4794,7 +4970,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:30
-           
         </div>
       </div>
       <div
@@ -4804,8 +4979,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4820,7 +4997,6 @@ exports[`renders correctly 1`] = `
         >
            
           16:45
-           
         </div>
       </div>
       <div
@@ -4830,8 +5006,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4846,7 +5024,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:00
-           
         </div>
       </div>
       <div
@@ -4856,8 +5033,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4872,7 +5051,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:15
-           
         </div>
       </div>
       <div
@@ -4882,8 +5060,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4898,7 +5078,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:30
-           
         </div>
       </div>
       <div
@@ -4908,8 +5087,10 @@ exports[`renders correctly 1`] = `
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -4924,7 +5105,6 @@ exports[`renders correctly 1`] = `
         >
            
           17:45
-           
         </div>
       </div>
     </div>
