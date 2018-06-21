@@ -1,9 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Container } from "reactstrap"
-import { Element } from "react-scroll"
-
-import {} from "../display"
 
 import { makeTimeslotsReceived } from "../actions/actions"
 
@@ -22,8 +19,7 @@ class TimeSlots extends Component {
   render() {
     return (
       <Container>
-        <ResultCalendar />
-        {this.props.timeSlots.map(timeSlot => <p>{timeSlot.date}</p>)}
+        <ResultCalendar weekTimeSlots={this.props.timeSlots} />
       </Container>
     )
   }

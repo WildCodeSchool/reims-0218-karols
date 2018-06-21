@@ -1,27 +1,31 @@
 import React from "react"
+import { DateTime } from "luxon"
 
-const CalendarDay = () => {
-  return (
-    <div
+const transformDate = date =>
+  DateTime.fromISO(date)
+    .setLocale("fr")
+    .toFormat("cccc dd LLLL")
+
+const CalendarDay = ({ date }) => (
+  <div
+    style={{
+      textAlign: "center",
+      marginBottom: "24px",
+      fontSize: "14px",
+      color: "#435f71"
+    }}
+  >
+    <p style={{ fontWeight: "700" }} />
+    <p
       style={{
         textAlign: "center",
         marginBottom: "24px",
-        fontSize: "14px",
-        color: "#435f71"
+        fontSize: "14px"
       }}
     >
-      <p style={{ fontWeight: "700" }}>mercredi</p>
-      <p
-        style={{
-          textAlign: "center",
-          marginBottom: "24px",
-          fontSize: "14px"
-        }}
-      >
-        {" 6 juin"}
-      </p>
-    </div>
-  )
-}
+      {transformDate(date)}
+    </p>
+  </div>
+)
 
 export default CalendarDay

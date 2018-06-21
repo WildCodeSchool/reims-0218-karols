@@ -1,16 +1,15 @@
 import React from "react"
 import CalendarTime from "./CalendarTime"
 
-const ListCalendarTime = () => (
+const ListCalendarTime = ({ timeSlots }) => (
   <div
     style={{
       display: "block"
     }}
   >
-    <CalendarTime />
-    <CalendarTime />
-    <CalendarTime />
-    <CalendarTime />
+    {timeSlots.map((timeSlot, index) => (
+      <CalendarTime timeSlot={timeSlot} key={index} />
+    ))}
   </div>
 )
 

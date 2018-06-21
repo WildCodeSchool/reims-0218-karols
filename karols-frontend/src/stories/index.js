@@ -89,13 +89,6 @@ storiesOf("ChoiceService", module).add("Choice service render", () => (
   <ChoiceService />
 ))
 
-storiesOf("CalendarTime", module).add("Choose a time in the calendar", () => (
-  <CalendarTime />
-))
-
-storiesOf("CalendarDay", module).add("Choose a day in the calendar", () => (
-  <CalendarDay />
-))
 storiesOf("Header", module).add("Header render", () => <Header />)
 
 storiesOf("ChoicePrestation", module).add("ChoicePrestation render", () => (
@@ -115,17 +108,2108 @@ storiesOf("PreferredDateChoice", module).add("Preferred Date Choice", () => (
   <PreferredDateChoice />
 ))
 
-storiesOf("ListCalendarTime", module).add("Render the calendar", () => (
-  <ListCalendarTime />
+storiesOf("CardModel", module).add("Render CardModel", () => <CardModel />)
+
+const timeSlot = {
+  available: true,
+  time: {
+    s: "2018-07-25T09:00:00.000+02:00",
+    e: "2018-07-25T09:15:00.000+02:00",
+    invalid: null
+  }
+}
+
+storiesOf("CalendarTime", module).add("Render CalendarTime", () => (
+  <CalendarTime timeSlot={timeSlot} />
 ))
 
+const timeSlots = [
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T09:00:00.000+02:00",
+      e: "2018-07-25T09:15:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T09:15:00.000+02:00",
+      e: "2018-07-25T09:30:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T09:30:00.000+02:00",
+      e: "2018-07-25T09:45:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T09:45:00.000+02:00",
+      e: "2018-07-25T10:00:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T10:00:00.000+02:00",
+      e: "2018-07-25T10:15:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T10:15:00.000+02:00",
+      e: "2018-07-25T10:30:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T10:30:00.000+02:00",
+      e: "2018-07-25T10:45:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T10:45:00.000+02:00",
+      e: "2018-07-25T11:00:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T11:00:00.000+02:00",
+      e: "2018-07-25T11:15:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T11:15:00.000+02:00",
+      e: "2018-07-25T11:30:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T11:30:00.000+02:00",
+      e: "2018-07-25T11:45:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T11:45:00.000+02:00",
+      e: "2018-07-25T12:00:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T12:00:00.000+02:00",
+      e: "2018-07-25T12:15:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T12:15:00.000+02:00",
+      e: "2018-07-25T12:30:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T12:30:00.000+02:00",
+      e: "2018-07-25T12:45:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T12:45:00.000+02:00",
+      e: "2018-07-25T13:00:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T13:00:00.000+02:00",
+      e: "2018-07-25T13:15:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T13:15:00.000+02:00",
+      e: "2018-07-25T13:30:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T13:30:00.000+02:00",
+      e: "2018-07-25T13:45:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T13:45:00.000+02:00",
+      e: "2018-07-25T14:00:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T14:00:00.000+02:00",
+      e: "2018-07-25T14:15:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T14:15:00.000+02:00",
+      e: "2018-07-25T14:30:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T14:30:00.000+02:00",
+      e: "2018-07-25T14:45:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T14:45:00.000+02:00",
+      e: "2018-07-25T15:00:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T15:00:00.000+02:00",
+      e: "2018-07-25T15:15:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T15:15:00.000+02:00",
+      e: "2018-07-25T15:30:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T15:30:00.000+02:00",
+      e: "2018-07-25T15:45:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T15:45:00.000+02:00",
+      e: "2018-07-25T16:00:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T16:00:00.000+02:00",
+      e: "2018-07-25T16:15:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T16:15:00.000+02:00",
+      e: "2018-07-25T16:30:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T16:30:00.000+02:00",
+      e: "2018-07-25T16:45:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T16:45:00.000+02:00",
+      e: "2018-07-25T17:00:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T17:00:00.000+02:00",
+      e: "2018-07-25T17:15:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T17:15:00.000+02:00",
+      e: "2018-07-25T17:30:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T17:30:00.000+02:00",
+      e: "2018-07-25T17:45:00.000+02:00",
+      invalid: null
+    }
+  },
+  {
+    available: true,
+    time: {
+      s: "2018-07-25T17:45:00.000+02:00",
+      e: "2018-07-25T18:00:00.000+02:00",
+      invalid: null
+    }
+  }
+]
+
+storiesOf("ListCalendarTime", module).add("Render the calendar", () => (
+  <ListCalendarTime timeSlots={timeSlots} />
+))
+
+const date = "2018-07-25T00:00:00.000+02:00"
+
+//  CalendarDay
+storiesOf("CalendarDay", module).add("Render the calendar day", () => (
+  <CalendarDay date={day.date} />
+))
+
+//ListCalendarDayTime
 storiesOf("ListCalendarDayTime", module).add(
   "Render the calendar with time",
-  () => <ListCalendarDayTime />
+  () => <ListCalendarDayTime day={day} />
 )
 
+const day = {
+  date: "2018-07-25T00:00:00.000+02:00",
+  timeSlots: [
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T09:00:00.000+02:00",
+        e: "2018-07-25T09:15:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T09:15:00.000+02:00",
+        e: "2018-07-25T09:30:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T09:30:00.000+02:00",
+        e: "2018-07-25T09:45:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T09:45:00.000+02:00",
+        e: "2018-07-25T10:00:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T10:00:00.000+02:00",
+        e: "2018-07-25T10:15:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T10:15:00.000+02:00",
+        e: "2018-07-25T10:30:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T10:30:00.000+02:00",
+        e: "2018-07-25T10:45:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T10:45:00.000+02:00",
+        e: "2018-07-25T11:00:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T11:00:00.000+02:00",
+        e: "2018-07-25T11:15:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T11:15:00.000+02:00",
+        e: "2018-07-25T11:30:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T11:30:00.000+02:00",
+        e: "2018-07-25T11:45:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T11:45:00.000+02:00",
+        e: "2018-07-25T12:00:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T12:00:00.000+02:00",
+        e: "2018-07-25T12:15:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T12:15:00.000+02:00",
+        e: "2018-07-25T12:30:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T12:30:00.000+02:00",
+        e: "2018-07-25T12:45:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T12:45:00.000+02:00",
+        e: "2018-07-25T13:00:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T13:00:00.000+02:00",
+        e: "2018-07-25T13:15:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T13:15:00.000+02:00",
+        e: "2018-07-25T13:30:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T13:30:00.000+02:00",
+        e: "2018-07-25T13:45:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T13:45:00.000+02:00",
+        e: "2018-07-25T14:00:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T14:00:00.000+02:00",
+        e: "2018-07-25T14:15:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T14:15:00.000+02:00",
+        e: "2018-07-25T14:30:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T14:30:00.000+02:00",
+        e: "2018-07-25T14:45:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T14:45:00.000+02:00",
+        e: "2018-07-25T15:00:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T15:00:00.000+02:00",
+        e: "2018-07-25T15:15:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T15:15:00.000+02:00",
+        e: "2018-07-25T15:30:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T15:30:00.000+02:00",
+        e: "2018-07-25T15:45:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T15:45:00.000+02:00",
+        e: "2018-07-25T16:00:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T16:00:00.000+02:00",
+        e: "2018-07-25T16:15:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T16:15:00.000+02:00",
+        e: "2018-07-25T16:30:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T16:30:00.000+02:00",
+        e: "2018-07-25T16:45:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T16:45:00.000+02:00",
+        e: "2018-07-25T17:00:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T17:00:00.000+02:00",
+        e: "2018-07-25T17:15:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T17:15:00.000+02:00",
+        e: "2018-07-25T17:30:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T17:30:00.000+02:00",
+        e: "2018-07-25T17:45:00.000+02:00",
+        invalid: null
+      }
+    },
+    {
+      available: true,
+      time: {
+        s: "2018-07-25T17:45:00.000+02:00",
+        e: "2018-07-25T18:00:00.000+02:00",
+        invalid: null
+      }
+    }
+  ]
+}
+
+// ResultCalendar
 storiesOf("ResultCalendar", module).add("Render the calendar with time", () => (
-  <ResultCalendar />
+  <ResultCalendar weekTimeSlots={weekTimeSlots} />
 ))
 
-storiesOf("CardModel", module).add("Render CardModel", () => <CardModel />)
+// timeslots of the week from the server
+const weekTimeSlots = [
+  {
+    date: "2018-07-25T00:00:00.000+02:00",
+    timeSlots: [
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T09:00:00.000+02:00",
+          e: "2018-07-25T09:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T09:15:00.000+02:00",
+          e: "2018-07-25T09:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T09:30:00.000+02:00",
+          e: "2018-07-25T09:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T09:45:00.000+02:00",
+          e: "2018-07-25T10:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T10:00:00.000+02:00",
+          e: "2018-07-25T10:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T10:15:00.000+02:00",
+          e: "2018-07-25T10:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T10:30:00.000+02:00",
+          e: "2018-07-25T10:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T10:45:00.000+02:00",
+          e: "2018-07-25T11:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T11:00:00.000+02:00",
+          e: "2018-07-25T11:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T11:15:00.000+02:00",
+          e: "2018-07-25T11:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T11:30:00.000+02:00",
+          e: "2018-07-25T11:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T11:45:00.000+02:00",
+          e: "2018-07-25T12:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T12:00:00.000+02:00",
+          e: "2018-07-25T12:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T12:15:00.000+02:00",
+          e: "2018-07-25T12:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T12:30:00.000+02:00",
+          e: "2018-07-25T12:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T12:45:00.000+02:00",
+          e: "2018-07-25T13:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T13:00:00.000+02:00",
+          e: "2018-07-25T13:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T13:15:00.000+02:00",
+          e: "2018-07-25T13:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T13:30:00.000+02:00",
+          e: "2018-07-25T13:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T13:45:00.000+02:00",
+          e: "2018-07-25T14:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T14:00:00.000+02:00",
+          e: "2018-07-25T14:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T14:15:00.000+02:00",
+          e: "2018-07-25T14:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T14:30:00.000+02:00",
+          e: "2018-07-25T14:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T14:45:00.000+02:00",
+          e: "2018-07-25T15:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T15:00:00.000+02:00",
+          e: "2018-07-25T15:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T15:15:00.000+02:00",
+          e: "2018-07-25T15:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T15:30:00.000+02:00",
+          e: "2018-07-25T15:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T15:45:00.000+02:00",
+          e: "2018-07-25T16:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T16:00:00.000+02:00",
+          e: "2018-07-25T16:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T16:15:00.000+02:00",
+          e: "2018-07-25T16:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T16:30:00.000+02:00",
+          e: "2018-07-25T16:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T16:45:00.000+02:00",
+          e: "2018-07-25T17:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T17:00:00.000+02:00",
+          e: "2018-07-25T17:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T17:15:00.000+02:00",
+          e: "2018-07-25T17:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T17:30:00.000+02:00",
+          e: "2018-07-25T17:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-25T17:45:00.000+02:00",
+          e: "2018-07-25T18:00:00.000+02:00",
+          invalid: null
+        }
+      }
+    ]
+  },
+  {
+    date: "2018-07-26T00:00:00.000+02:00",
+    timeSlots: [
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T09:00:00.000+02:00",
+          e: "2018-07-26T09:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T09:15:00.000+02:00",
+          e: "2018-07-26T09:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T09:30:00.000+02:00",
+          e: "2018-07-26T09:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T09:45:00.000+02:00",
+          e: "2018-07-26T10:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T10:00:00.000+02:00",
+          e: "2018-07-26T10:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T10:15:00.000+02:00",
+          e: "2018-07-26T10:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T10:30:00.000+02:00",
+          e: "2018-07-26T10:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T10:45:00.000+02:00",
+          e: "2018-07-26T11:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T11:00:00.000+02:00",
+          e: "2018-07-26T11:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T11:15:00.000+02:00",
+          e: "2018-07-26T11:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T11:30:00.000+02:00",
+          e: "2018-07-26T11:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T11:45:00.000+02:00",
+          e: "2018-07-26T12:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T12:00:00.000+02:00",
+          e: "2018-07-26T12:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T12:15:00.000+02:00",
+          e: "2018-07-26T12:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T12:30:00.000+02:00",
+          e: "2018-07-26T12:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T12:45:00.000+02:00",
+          e: "2018-07-26T13:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T13:00:00.000+02:00",
+          e: "2018-07-26T13:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T13:15:00.000+02:00",
+          e: "2018-07-26T13:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T13:30:00.000+02:00",
+          e: "2018-07-26T13:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T13:45:00.000+02:00",
+          e: "2018-07-26T14:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T14:00:00.000+02:00",
+          e: "2018-07-26T14:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T14:15:00.000+02:00",
+          e: "2018-07-26T14:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T14:30:00.000+02:00",
+          e: "2018-07-26T14:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T14:45:00.000+02:00",
+          e: "2018-07-26T15:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T15:00:00.000+02:00",
+          e: "2018-07-26T15:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T15:15:00.000+02:00",
+          e: "2018-07-26T15:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T15:30:00.000+02:00",
+          e: "2018-07-26T15:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T15:45:00.000+02:00",
+          e: "2018-07-26T16:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T16:00:00.000+02:00",
+          e: "2018-07-26T16:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T16:15:00.000+02:00",
+          e: "2018-07-26T16:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T16:30:00.000+02:00",
+          e: "2018-07-26T16:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T16:45:00.000+02:00",
+          e: "2018-07-26T17:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T17:00:00.000+02:00",
+          e: "2018-07-26T17:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T17:15:00.000+02:00",
+          e: "2018-07-26T17:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T17:30:00.000+02:00",
+          e: "2018-07-26T17:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-26T17:45:00.000+02:00",
+          e: "2018-07-26T18:00:00.000+02:00",
+          invalid: null
+        }
+      }
+    ]
+  },
+  {
+    date: "2018-07-27T00:00:00.000+02:00",
+    timeSlots: [
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T09:00:00.000+02:00",
+          e: "2018-07-27T09:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T09:15:00.000+02:00",
+          e: "2018-07-27T09:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T09:30:00.000+02:00",
+          e: "2018-07-27T09:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T09:45:00.000+02:00",
+          e: "2018-07-27T10:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T10:00:00.000+02:00",
+          e: "2018-07-27T10:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T10:15:00.000+02:00",
+          e: "2018-07-27T10:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T10:30:00.000+02:00",
+          e: "2018-07-27T10:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T10:45:00.000+02:00",
+          e: "2018-07-27T11:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T11:00:00.000+02:00",
+          e: "2018-07-27T11:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T11:15:00.000+02:00",
+          e: "2018-07-27T11:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T11:30:00.000+02:00",
+          e: "2018-07-27T11:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T11:45:00.000+02:00",
+          e: "2018-07-27T12:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T12:00:00.000+02:00",
+          e: "2018-07-27T12:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T12:15:00.000+02:00",
+          e: "2018-07-27T12:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T12:30:00.000+02:00",
+          e: "2018-07-27T12:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T12:45:00.000+02:00",
+          e: "2018-07-27T13:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T13:00:00.000+02:00",
+          e: "2018-07-27T13:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T13:15:00.000+02:00",
+          e: "2018-07-27T13:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T13:30:00.000+02:00",
+          e: "2018-07-27T13:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T13:45:00.000+02:00",
+          e: "2018-07-27T14:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T14:00:00.000+02:00",
+          e: "2018-07-27T14:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T14:15:00.000+02:00",
+          e: "2018-07-27T14:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T14:30:00.000+02:00",
+          e: "2018-07-27T14:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T14:45:00.000+02:00",
+          e: "2018-07-27T15:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T15:00:00.000+02:00",
+          e: "2018-07-27T15:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T15:15:00.000+02:00",
+          e: "2018-07-27T15:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T15:30:00.000+02:00",
+          e: "2018-07-27T15:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T15:45:00.000+02:00",
+          e: "2018-07-27T16:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T16:00:00.000+02:00",
+          e: "2018-07-27T16:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T16:15:00.000+02:00",
+          e: "2018-07-27T16:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T16:30:00.000+02:00",
+          e: "2018-07-27T16:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T16:45:00.000+02:00",
+          e: "2018-07-27T17:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T17:00:00.000+02:00",
+          e: "2018-07-27T17:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T17:15:00.000+02:00",
+          e: "2018-07-27T17:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T17:30:00.000+02:00",
+          e: "2018-07-27T17:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-27T17:45:00.000+02:00",
+          e: "2018-07-27T18:00:00.000+02:00",
+          invalid: null
+        }
+      }
+    ]
+  },
+  {
+    date: "2018-07-28T00:00:00.000+02:00",
+    timeSlots: [
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T09:00:00.000+02:00",
+          e: "2018-07-28T09:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T09:15:00.000+02:00",
+          e: "2018-07-28T09:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T09:30:00.000+02:00",
+          e: "2018-07-28T09:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T09:45:00.000+02:00",
+          e: "2018-07-28T10:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T10:00:00.000+02:00",
+          e: "2018-07-28T10:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T10:15:00.000+02:00",
+          e: "2018-07-28T10:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T10:30:00.000+02:00",
+          e: "2018-07-28T10:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T10:45:00.000+02:00",
+          e: "2018-07-28T11:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T11:00:00.000+02:00",
+          e: "2018-07-28T11:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T11:15:00.000+02:00",
+          e: "2018-07-28T11:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T11:30:00.000+02:00",
+          e: "2018-07-28T11:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T11:45:00.000+02:00",
+          e: "2018-07-28T12:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T12:00:00.000+02:00",
+          e: "2018-07-28T12:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T12:15:00.000+02:00",
+          e: "2018-07-28T12:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T12:30:00.000+02:00",
+          e: "2018-07-28T12:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T12:45:00.000+02:00",
+          e: "2018-07-28T13:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T13:00:00.000+02:00",
+          e: "2018-07-28T13:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T13:15:00.000+02:00",
+          e: "2018-07-28T13:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T13:30:00.000+02:00",
+          e: "2018-07-28T13:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T13:45:00.000+02:00",
+          e: "2018-07-28T14:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T14:00:00.000+02:00",
+          e: "2018-07-28T14:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T14:15:00.000+02:00",
+          e: "2018-07-28T14:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T14:30:00.000+02:00",
+          e: "2018-07-28T14:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T14:45:00.000+02:00",
+          e: "2018-07-28T15:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T15:00:00.000+02:00",
+          e: "2018-07-28T15:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T15:15:00.000+02:00",
+          e: "2018-07-28T15:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T15:30:00.000+02:00",
+          e: "2018-07-28T15:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T15:45:00.000+02:00",
+          e: "2018-07-28T16:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T16:00:00.000+02:00",
+          e: "2018-07-28T16:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T16:15:00.000+02:00",
+          e: "2018-07-28T16:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T16:30:00.000+02:00",
+          e: "2018-07-28T16:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T16:45:00.000+02:00",
+          e: "2018-07-28T17:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T17:00:00.000+02:00",
+          e: "2018-07-28T17:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T17:15:00.000+02:00",
+          e: "2018-07-28T17:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T17:30:00.000+02:00",
+          e: "2018-07-28T17:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-28T17:45:00.000+02:00",
+          e: "2018-07-28T18:00:00.000+02:00",
+          invalid: null
+        }
+      }
+    ]
+  },
+  {
+    date: "2018-07-29T00:00:00.000+02:00",
+    timeSlots: [
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T09:00:00.000+02:00",
+          e: "2018-07-29T09:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T09:15:00.000+02:00",
+          e: "2018-07-29T09:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T09:30:00.000+02:00",
+          e: "2018-07-29T09:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T09:45:00.000+02:00",
+          e: "2018-07-29T10:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T10:00:00.000+02:00",
+          e: "2018-07-29T10:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T10:15:00.000+02:00",
+          e: "2018-07-29T10:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T10:30:00.000+02:00",
+          e: "2018-07-29T10:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T10:45:00.000+02:00",
+          e: "2018-07-29T11:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T11:00:00.000+02:00",
+          e: "2018-07-29T11:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T11:15:00.000+02:00",
+          e: "2018-07-29T11:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T11:30:00.000+02:00",
+          e: "2018-07-29T11:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T11:45:00.000+02:00",
+          e: "2018-07-29T12:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T12:00:00.000+02:00",
+          e: "2018-07-29T12:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T12:15:00.000+02:00",
+          e: "2018-07-29T12:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T12:30:00.000+02:00",
+          e: "2018-07-29T12:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T12:45:00.000+02:00",
+          e: "2018-07-29T13:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T13:00:00.000+02:00",
+          e: "2018-07-29T13:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T13:15:00.000+02:00",
+          e: "2018-07-29T13:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T13:30:00.000+02:00",
+          e: "2018-07-29T13:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T13:45:00.000+02:00",
+          e: "2018-07-29T14:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T14:00:00.000+02:00",
+          e: "2018-07-29T14:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T14:15:00.000+02:00",
+          e: "2018-07-29T14:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T14:30:00.000+02:00",
+          e: "2018-07-29T14:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T14:45:00.000+02:00",
+          e: "2018-07-29T15:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T15:00:00.000+02:00",
+          e: "2018-07-29T15:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T15:15:00.000+02:00",
+          e: "2018-07-29T15:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T15:30:00.000+02:00",
+          e: "2018-07-29T15:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T15:45:00.000+02:00",
+          e: "2018-07-29T16:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T16:00:00.000+02:00",
+          e: "2018-07-29T16:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T16:15:00.000+02:00",
+          e: "2018-07-29T16:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T16:30:00.000+02:00",
+          e: "2018-07-29T16:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T16:45:00.000+02:00",
+          e: "2018-07-29T17:00:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T17:00:00.000+02:00",
+          e: "2018-07-29T17:15:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T17:15:00.000+02:00",
+          e: "2018-07-29T17:30:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T17:30:00.000+02:00",
+          e: "2018-07-29T17:45:00.000+02:00",
+          invalid: null
+        }
+      },
+      {
+        available: true,
+        time: {
+          s: "2018-07-29T17:45:00.000+02:00",
+          e: "2018-07-29T18:00:00.000+02:00",
+          invalid: null
+        }
+      }
+    ]
+  }
+]
+
+// const transformWeekTimeSlots = weekTimeSlots =>
+//   weekTimeSlots.map(dayTimeSlots =>
+//     dayTimeSlots.timeSlots.map(timeSlot => {
+//       return DateTime.fromISO(timeSlot.time.s)
+//         .setLocale("fr")
+//         .toFormat("T")
+//     })
+//   )
+
+// // console.log(arrayOfTimes)
+
+// storiesOf("ResultCalendar", module).add("Render the calendar with time", () => (
+//   <ResultCalendar />
+// ))
