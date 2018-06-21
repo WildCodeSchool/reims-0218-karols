@@ -2,7 +2,9 @@ import React, { Component } from "react"
 import InfiniteCalendar from "react-infinite-calendar"
 import "react-infinite-calendar/styles.css" // Make sure to import the default stylesheet
 import DatePickerTitle from "../components/DatePickerTitle"
+import { fetchDateSelected } from "../api/fetchDateSelected"
 import { Button, Modal, ModalHeader, ModalBody, Container } from "reactstrap"
+const { DateTime } = require("luxon")
 
 // Render the Calendar
 let today = new Date()
@@ -57,6 +59,11 @@ class DatePickerSelect extends Component {
                   this.setState({
                     dateSelected: date
                   })
+                  // Fetch route date selected
+                  const dateFromJsDate = DateTime.fromJSDate(date).toISO()
+                  console.log(dateFromJsDate)
+
+                  fetchDateSelected(dateFromJsDate)
                 }}
                 style={{ margin: "auto" }}
                 width="100%"
