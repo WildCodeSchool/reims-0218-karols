@@ -31,6 +31,7 @@ import PreferredDateChoice from "../components/PreferredDateChoice"
 import CardHover from "../components/CardHover"
 import ListChoiceShop from "../components/ListChoiceShop"
 import CardModel from "../components/CardModel"
+import Resume from "../components/Resume"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -93,6 +94,17 @@ storiesOf("Header", module).add("Header render", () => <Header />)
 
 storiesOf("ChoicePrestation", module).add("ChoicePrestation render", () => (
   <ChoicePrestation />
+))
+
+storiesOf("Resume", module).add("Resume render", () => (
+  <Resume
+    shop="Paris"
+    preparation="preparation"
+    gender="une Femme"
+    prestation="Maquillage ultime"
+    prestation2="Coiffure belle gosse"
+    horaire="Dimanche à 23H"
+  />
 ))
 
 storiesOf("ListChoiceGender", module).add("ListChoicegender render", () => (

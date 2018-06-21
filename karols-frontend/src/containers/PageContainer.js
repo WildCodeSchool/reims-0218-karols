@@ -18,13 +18,13 @@ import PrestationMaleContainer from "./PrestationMaleContainer"
 import GenderContainer from "./GenderContainer"
 import DatePickerContainer from "./DatePickerContainer"
 import CalendarContainer from "./CalendarContainer"
+import ResumeContainer from "./ResumeContainer"
 
 import { makeShopsPrestationsReceived } from "../actions/actions"
 
 import { fetchShopsPrestations } from "../api"
 
 const mapStateToProps = state => ({
-  service: state.services.find(service => service.selected),
   showServices: showServices(state),
   showSex: showSex(state),
   showFemalePrestation: showFemalePrestation(state),
@@ -56,6 +56,7 @@ class Page extends Component {
           {this.props.showMalePrestation && <PrestationMaleContainer />}
         </Element>
         {this.props.showDatePicker && <DatePickerContainer />}
+        <ResumeContainer />
       </Container>
     )
   }
