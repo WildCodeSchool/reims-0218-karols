@@ -2,7 +2,10 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Container } from "reactstrap"
 
-import { makeTimeslotsReceived } from "../actions/actions"
+import {
+  makeTimeslotsReceived,
+  makeChooseSlotReservation
+} from "../actions/actions"
 
 import ResultCalendar from "../components/ResultCalendar"
 
@@ -11,14 +14,18 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  onTimeSlotsReceived: response => dispatch(makeTimeslotsReceived(response))
+  onTimeSlotsReceived: response => dispatch(makeTimeslotsReceived(response)),
+  onTimeSlotSelected: timeSlot => dispatch(makeChooseSlotReservation(timeSlot))
 })
 
 class TimeSlots extends Component {
   render() {
     return (
       <Container>
-        <ResultCalendar weekTimeSlots={this.props.timeSlots} />
+        <ResultCalendar
+          weekTimeSlots={this.props.timeSlots}
+          selectTimeSlot={this.props.onTimeSlotSelected}
+        />
       </Container>
     )
   }
