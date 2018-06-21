@@ -7,7 +7,7 @@ const timeSlot = (prevState = initialState, action) => {
   if (action.type === CHOOSE_TIMESLOT) {
     return prevState.map(timeSlot => ({
       ...timeSlot,
-      selected: action.timeSlot === timeSlot.id
+      selected: action.timeSlot.time.s === timeSlot.time.s
     }))
   }
   if (action.type === TIMESLOTS_RECEIVED) {
