@@ -7,8 +7,12 @@ const transformTimeSlot = timeSlot =>
     .toFormat("T")
 
 const CalendarTime = ({ timeSlot }) => {
+  //function timeslot.time.s
   return (
-    <div className="justify-content-center">
+    <div
+      className="justify-content-center"
+      onClick={() => console.log("clic sur horaire")}
+    >
       <div
         style={{
           position: "relative",
