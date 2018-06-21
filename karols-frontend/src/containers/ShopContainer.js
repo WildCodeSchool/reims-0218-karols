@@ -23,7 +23,7 @@ class ShopSelect extends Component {
         <ShopTitle />
         <Row className="justify-content-center">
           {this.props.shops.map(shop => (
-            <Col key={shop.id} md="6" className="text-center mb-3">
+            <Col key={shop.id} md="4" className="text-center mb-3">
               <CardModel
                 title={shop.city}
                 description={shop.address}
