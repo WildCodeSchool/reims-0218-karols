@@ -41,7 +41,6 @@ class Page extends Component {
   render() {
     return (
       <Container>
-        <CalendarContainer />
         <ShopContainer />
         <Element name="services">
           {this.props.showServices && <ServiceContainer />}
@@ -56,6 +55,7 @@ class Page extends Component {
           {this.props.showMalePrestation && <PrestationMaleContainer />}
         </Element>
         {this.props.showDatePicker && <DatePickerContainer />}
+        <CalendarContainer />
         <ResumeContainer />
       </Container>
     )
