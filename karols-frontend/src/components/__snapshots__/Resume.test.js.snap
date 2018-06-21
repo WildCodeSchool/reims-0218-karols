@@ -33,6 +33,11 @@ exports[`renders correctly 1`] = `
        
     </p>
     <p
+      className="firstName"
+    >
+      Prénom :
+    </p>
+    <p
       className="gender"
     >
       Pour 
