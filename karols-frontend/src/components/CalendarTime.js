@@ -6,12 +6,12 @@ const transformTimeSlot = timeSlot =>
     .setLocale("fr")
     .toFormat("T")
 
-const CalendarTime = ({ timeSlot }) => {
+const CalendarTime = ({ timeSlot, selectTimeSlot }) => {
   //function timeslot.time.s
   return (
     <div
       className="justify-content-center"
-      onClick={() => console.log("clic sur horaire")}
+      onClick={() => selectTimeSlot(timeSlot)}
     >
       <div
         style={{
