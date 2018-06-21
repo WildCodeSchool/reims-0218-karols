@@ -5,6 +5,10 @@
   src: url("https://fonts.googleapis.com/css?family=Didact+Gothic");
 }
 
+* {
+  font-family: "Didact Gothic", Arial, Helvetica, sans-serif;
+}
+
 .App {
   text-align: center;
 }
