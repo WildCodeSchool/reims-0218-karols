@@ -8,9 +8,7 @@ import { fetchDateSelected } from "../api/fetchDateSelected"
 import { Button, Modal, ModalHeader, ModalBody, Container } from "reactstrap"
 const { DateTime } = require("luxon")
 
-const mapStateToProps = state => ({
-  timeSlots: state.timeSlots
-})
+const mapStateToProps = state => ({})
 
 const mapDispatchToProps = dispatch => ({
   onTimeSlotsReceived: response => dispatch(makeTimeslotsReceived(response))
@@ -71,11 +69,8 @@ class DatePickerSelect extends Component {
                   })
                   // Fetch route date selected
                   const dateFromJsDate = DateTime.fromJSDate(date).toISO()
-                  console.log(dateFromJsDate)
-
                   fetchDateSelected(dateFromJsDate).then(response => {
                     this.props.onTimeSlotsReceived(response)
-                    console.log(response)
                   })
                 }}
                 style={{ margin: "auto" }}
