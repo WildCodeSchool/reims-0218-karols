@@ -1,5 +1,5 @@
-export const fetchTimeReservation = data =>
-  fetch("https://localhost:8000/reservations", {
+export const fetchCreateReservation = data =>
+  fetch("http://localhost:8000/reservations", {
     method: "POST",
     headers: {
       Accept: "application/json",
