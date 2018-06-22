@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import { Jumbotron } from "reactstrap"
+import { Jumbotron, Button } from "reactstrap"
 
 import {
   getSelectedShop,
@@ -9,6 +9,8 @@ import {
   getSelectedForm,
   getSelectedPreparations
 } from "../resume"
+
+import { fetchCreateReservation } from "../api/fetchCreateReservation"
 
 const mapStateToProps = state => ({
   selectedShop: getSelectedShop(state),
@@ -42,7 +44,6 @@ class ShowResume extends Component {
             Vous avez choisi {this.props.selectedService.name}
           </p>
         )}
-
         {this.props.selectedForm && (
           <p className="form">Prénom :{this.props.selectedForm.firstName}</p>
         )}
@@ -62,10 +63,28 @@ class ShowResume extends Component {
                 {preparation.preparations[0].titlePreparation}
               </p>
             )
+
             // <p className="horaire">
             //   Vous désirez être pris en charge le {horaire}{" "}
             // </p>
           })}
+        <Button
+          outline
+          color="secondary"
+          onClick={() =>
+            fetchCreateReservation({
+              selectedShop: this.props.selectedShop,
+              selectedService: this.props.selectedService,
+              selectedGender: this.props.selectedGender,
+              selectedForm: this.props.selectedForm,
+              selectedPreparations: this.props.selectedPreparations
+            }).then(data => {
+              console.log(data)
+            })
+          }
+        >
+          Creer cette réservation
+        </Button>{" "}
       </Jumbotron>
     )
   }
