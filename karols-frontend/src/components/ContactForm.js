@@ -17,11 +17,11 @@ class ContactForm extends Component {
         }}
       >
         <div>
-          <label htmlFor="firstName">* First Name :</label>
+          <label htmlFor="firstName">* Prénom :</label>
           <Field name="firstName" component="input" type="text" />
         </div>
         <div>
-          <label htmlFor="lastName">* Last Name :</label>
+          <label htmlFor="lastName">* Nom :</label>
           <Field name="lastName" component="input" type="text" />
         </div>
         <div>

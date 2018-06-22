@@ -49,11 +49,14 @@ class DatePickerSelect extends Component {
           <DatePickerTitle />
           <Button
             style={{
-              height: "100px",
-              width: "200px",
-              marginTop: "50px"
+              height: "50px",
+              width: "150px",
+              marginTop: "50px",
+              marginBottom: "50px"
             }}
             onClick={this.showModal.bind(this)}
+            outline
+            color="secondary"
           >
             Choisir une date
           </Button>
