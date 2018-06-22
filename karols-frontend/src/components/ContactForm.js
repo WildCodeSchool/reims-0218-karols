@@ -10,8 +10,8 @@ class ContactForm extends Component {
         style={{
           backgroundColor: "#FFF",
           border: "2px solid grey",
-          paddingTop: "10%",
-          paddingBottom: "10%",
+          paddingTop: "25px",
+          paddingBottom: "25px",
           borderRadius: "50px",
           fontSize: "25px"
         }}

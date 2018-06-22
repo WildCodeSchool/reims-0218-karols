@@ -21,7 +21,7 @@ class ShopSelect extends Component {
     return (
       <div>
         <ShopTitle />
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mt-5">
           {this.props.shops.map(shop => (
             <Col key={shop.id} md="4" className="text-center mb-3">
               <CardModel
