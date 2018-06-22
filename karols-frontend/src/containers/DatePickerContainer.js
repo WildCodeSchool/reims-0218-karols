@@ -71,11 +71,8 @@ class DatePickerSelect extends Component {
                   })
                   // Fetch route date selected
                   const dateFromJsDate = DateTime.fromJSDate(date).toISO()
-                  console.log(dateFromJsDate)
-
                   fetchDateSelected(dateFromJsDate).then(response => {
                     this.props.onTimeSlotsReceived(response)
-                    console.log(response)
                   })
                 }}
                 style={{ margin: "auto" }}
