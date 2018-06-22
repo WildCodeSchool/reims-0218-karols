@@ -25,6 +25,7 @@ class ShowResume extends Component {
     return (
       <Jumbotron
         style={{
+          marginTop: "2em",
           textAlign: "center",
           backgroundColor: "#FFF",
           fontSize: "25px",
