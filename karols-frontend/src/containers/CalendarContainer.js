@@ -56,7 +56,7 @@ class TimeSlots extends Component {
         </ButtonGroup>
         <ResultCalendar
           weekTimeSlots={this.props.timeSlots}
-          selectTimeSlots={this.props.onTimeSlotSelected}
+          selectTimeSlot={this.props.onTimeSlotSelected}
         />
       </Container>
     )
