@@ -2,7 +2,7 @@ import React from "react"
 import ListCalendarTime from "./ListCalendarTime"
 import CalendarDay from "./CalendarDay"
 
-const ListCalendarDayTime = ({ day }) => (
+const ListCalendarDayTime = ({ day, selectTimeSlot }) => (
   <div
     style={{
       flexGrow: "1",
@@ -13,7 +13,10 @@ const ListCalendarDayTime = ({ day }) => (
     }}
   >
     <CalendarDay date={day.date} />
-    <ListCalendarTime timeSlots={day.timeSlots} />
+    <ListCalendarTime
+      timeSlots={day.timeSlots}
+      selectTimeSlot={selectTimeSlot}
+    />
   </div>
 )
 

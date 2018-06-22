@@ -19,6 +19,7 @@ import GenderContainer from "./GenderContainer"
 import DatePickerContainer from "./DatePickerContainer"
 import CalendarContainer from "./CalendarContainer"
 import ResumeContainer from "./ResumeContainer"
+import ContactForm from "../components/ContactForm"
 
 import { makeShopsPrestationsReceived } from "../actions/actions"
 
@@ -47,6 +48,9 @@ class Page extends Component {
         </Element>
         <Element name="genders">
           {this.props.showSex && <GenderContainer />}
+          <Element name="genders">
+            {this.props.showSex && <ContactForm />}
+          </Element>
         </Element>
         <Element name="female">
           {this.props.showFemalePrestation && <PrestationFemaleContainer />}

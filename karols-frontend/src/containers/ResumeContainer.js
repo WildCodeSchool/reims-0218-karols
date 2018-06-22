@@ -1,18 +1,22 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import { Jumbotron } from "reactstrap"
+import { Jumbotron, Button } from "reactstrap"
 
 import {
   getSelectedShop,
   getSelectedService,
   getSelectedGender,
+  getSelectedForm,
   getSelectedPreparations
 } from "../resume"
+
+import { fetchCreateReservation } from "../api/fetchCreateReservation"
 
 const mapStateToProps = state => ({
   selectedShop: getSelectedShop(state),
   selectedService: getSelectedService(state),
   selectedGender: getSelectedGender(state),
+  selectedForm: getSelectedForm(state),
   selectedPreparations: getSelectedPreparations(state)
 })
 
@@ -21,10 +25,12 @@ class ShowResume extends Component {
     return (
       <Jumbotron
         style={{
+          marginTop: "2em",
           textAlign: "center",
-          backgroundColor: "#d7dbe2",
+          backgroundColor: "#FFF",
           fontSize: "25px",
-          borderRadius: "100px"
+          borderRadius: "70px",
+          border: "2px solid black"
         }}
       >
         <h1 className="display-12">Récapitulatif</h1>
@@ -39,6 +45,15 @@ class ShowResume extends Component {
             Vous avez choisi {this.props.selectedService.name}
           </p>
         )}
+        {this.props.selectedForm && (
+          <p className="form">Prénom :{this.props.selectedForm.firstName}</p>
+        )}
+        {this.props.selectedForm && (
+          <p className="form">Nom :{this.props.selectedForm.lastName}</p>
+        )}
+        {this.props.selectedForm && (
+          <p className="form">Email :{this.props.selectedForm.email}</p>
+        )}
         {this.props.selectedGender && (
           <p className="gender">Pour {this.props.selectedGender.sex}</p>
         )}
@@ -49,10 +64,28 @@ class ShowResume extends Component {
                 {preparation.preparations[0].titlePreparation}
               </p>
             )
+
             // <p className="horaire">
             //   Vous désirez être pris en charge le {horaire}{" "}
             // </p>
           })}
+        <Button
+          outline
+          color="secondary"
+          onClick={() =>
+            fetchCreateReservation({
+              selectedShop: this.props.selectedShop,
+              selectedService: this.props.selectedService,
+              selectedGender: this.props.selectedGender,
+              selectedForm: this.props.selectedForm,
+              selectedPreparations: this.props.selectedPreparations
+            }).then(data => {
+              console.log(data)
+            })
+          }
+        >
+          Creer cette réservation
+        </Button>{" "}
       </Jumbotron>
     )
   }

@@ -8,9 +8,7 @@ import { fetchDateSelected } from "../api/fetchDateSelected"
 import { Button, Modal, ModalHeader, ModalBody, Container } from "reactstrap"
 const { DateTime } = require("luxon")
 
-const mapStateToProps = state => ({
-  timeSlots: state.timeSlots
-})
+const mapStateToProps = state => ({})
 
 const mapDispatchToProps = dispatch => ({
   onTimeSlotsReceived: response => dispatch(makeTimeslotsReceived(response))
@@ -99,17 +97,17 @@ class DatePickerSelect extends Component {
                   }
                 }}
                 theme={{
-                  selectionColor: "rgb(146, 118, 255)",
+                  selectionColor: "#110F0F",
                   textColor: {
                     default: "#333",
                     active: "#FFF"
                   },
-                  weekdayColor: "rgb(146, 118, 255)",
-                  headerColor: "rgb(127, 95, 251)",
+                  weekdayColor: "#110F0F",
+                  headerColor: "#110F0F",
                   floatingNav: {
-                    background: "rgba(81, 67, 138, 0.96)",
+                    background: "#110F0F",
                     color: "#FFF",
-                    chevron: "#FFA726"
+                    chevron: "#110F0F"
                   }
                 }}
               />

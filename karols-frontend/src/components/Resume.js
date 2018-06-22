@@ -1,10 +1,11 @@
 import React from "react"
 import { Jumbotron } from "reactstrap"
-// Resume
+
 const Resume = ({
   shop,
   preparation,
   gender,
+  firstName,
   prestation,
   prestation2,
   horaire
@@ -23,6 +24,7 @@ const Resume = ({
         <p className="shop">Votre réservation se fera à {shop}</p>
         <hr className="my-2" />
         <p className="préparation">Vous avez choisi {preparation} </p>
+        <p className="firstName">Prénom :{firstName}</p>
         <p className="gender">Pour {gender} </p>
         <p className="prestation">
           Vous voulez {prestation} <br />

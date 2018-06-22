@@ -2,10 +2,13 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Container } from "reactstrap"
 
-import { makeTimeslotsReceived } from "../actions/actions"
 import { fetchDateSelected } from "../api/fetchDateSelected"
 
 import { ButtonGroup, Button } from "reactstrap"
+import {
+  makeTimeslotsReceived,
+  makeChooseSlotReservation
+} from "../actions/actions"
 
 import ResultCalendar from "../components/ResultCalendar"
 const { DateTime } = require("luxon")
@@ -15,7 +18,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  onTimeSlotsReceived: response => dispatch(makeTimeslotsReceived(response))
+  onTimeSlotsReceived: response => dispatch(makeTimeslotsReceived(response)),
+  onTimeSlotSelected: timeSlot => dispatch(makeChooseSlotReservation(timeSlot))
 })
 
 class TimeSlots extends Component {

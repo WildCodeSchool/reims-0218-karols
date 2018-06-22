@@ -21,7 +21,7 @@ exports[`renders correctly 1`] = `
     <p
       className="shop"
     >
-      Votre réservation se fera à .....
+      Votre réservation se fera à 
     </p>
     <hr
       className="my-2"
@@ -29,25 +29,34 @@ exports[`renders correctly 1`] = `
     <p
       className="préparation"
     >
-      Vous avez choisi ..... 
+      Vous avez choisi 
+       
+    </p>
+    <p
+      className="firstName"
+    >
+      Prénom :
     </p>
     <p
       className="gender"
     >
-      Pour ..... 
+      Pour 
+       
     </p>
     <p
       className="prestation"
     >
-      Vous voulez ..... 
+      Vous voulez 
+       
       <br />
-      Vous voulez .....
+      Vous voulez 
        
     </p>
     <p
       className="horaire"
     >
-      Vous désirez être pris en charge le ..... 
+      Vous désirez être pris en charge le 
+       
     </p>
     <p
       className="lead"
