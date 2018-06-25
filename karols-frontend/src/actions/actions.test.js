@@ -8,7 +8,9 @@ import {
   CHOOSE_TIMESLOT,
   makeChooseSlotReservation,
   CHOOSE_PRESTATION,
-  makeChoosePrestation
+  makeChoosePrestation,
+  SUCCESS_RESERVATION,
+  makeSuccessReservation
 } from "./actions"
 // import des actions et actions creator pour faire des testes
 
@@ -28,13 +30,24 @@ describe("action to choose a prestation", () => {
   })
 })
 
+describe("action success reservation", () => {
+  it("should return an action SUCCESS_RESERVATION", () => {
+    const expected = {
+      type: SUCCESS_RESERVATION
+    }
+    expect(makeSuccessReservation()).toEqual(expected)
+  })
+})
+
 describe("action add slot creator", () => {
   it("should return an action CHOOSE_TIMESLOT WITH TIME", () => {
     const expected = {
       type: CHOOSE_TIMESLOT,
       timeSlot: { year: 2018, month: 4, day: 24, hour: 12 }
     }
-    expect(makeChooseSlotReservation(expected.timeSlot)).toEqual(expected)
+    expect(
+      makeChooseSlotReservation({ year: 2018, month: 4, day: 24, hour: 12 })
+    ).toEqual(expected)
   })
 })
 

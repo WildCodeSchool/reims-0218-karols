@@ -5,11 +5,16 @@ export const CHOOSE_SHOP = "CHOOSE_SHOP"
 export const CHOOSE_TIMESLOT = "CHOOSE_TIMESLOT"
 export const SHOPS_PRESTATIONS_RECEIVED = "SHOPS_PRESTATIONS_RECEIVED"
 export const TIMESLOTS_RECEIVED = "TIMESLOTS_RECEIVED"
+export const SUCCESS_RESERVATION = "SUCCESS_RESERVATION"
 
 export const makeChoosePrestation = (prestationId, preparationId) => ({
   type: CHOOSE_PRESTATION,
   prestationId,
   preparationId
+})
+
+export const makeSuccessReservation = () => ({
+  type: SUCCESS_RESERVATION
 })
 
 export const makeChooseService = serviceId => ({
