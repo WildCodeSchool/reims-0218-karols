@@ -3304,7 +3304,7 @@ describe("getSelectedPreparations", () => {
 })
 
 describe("getSelectedTimeSlots" , () => {
-  it("should return an empty array if no timeSlots selected", () => {
+  it("should return falsy if no timeSlots selected", () => {
     const noGetTimeSlotState = {
     timeSlots: [
       {
@@ -4953,7 +4953,7 @@ describe("getSelectedTimeSlots" , () => {
         ]
       }
     ]}
-    expect(getSelectedTimeSlot(noGetTimeSlotState)).toEqual([])
+    expect(getSelectedTimeSlot(noGetTimeSlotState)).toBeFalsy()
   })
   it("should return timeSlots data of the timeSlot selected", () => {
     const getTimeSlotState = {
@@ -6605,10 +6605,7 @@ describe("getSelectedTimeSlots" , () => {
         }
       ]
     }
-    const expected = [
-      {
-      date: '2018-06-24T00:00:00.000+02:00',
-      timeSlots: [
+    const expected = 
         {
           available: true,
           selected: true,
@@ -6618,8 +6615,6 @@ describe("getSelectedTimeSlots" , () => {
             invalid: null
           }
         }  
-      ]} 
-    ]
     expect(getSelectedTimeSlot(getTimeSlotState)).toEqual(expected)
   })
 })

@@ -23,30 +23,15 @@ export const getSelectedPreparations = state =>
       )
     }))
 
-export const getSelectedTimeSlot = state =>
-  state.timeSlots
-    .filter(
-      timeSlot =>
-        timeSlot.timeSlots.filter(timeSlot => timeSlot.selected).length > 0
-    )
-    .map(timeSlot => ({
-      ...timeSlot,
-      timeSlots: timeSlot.timeSlots.filter(timeSlot => timeSlot.selected)
-    }))
-
-// export const getSelectedTimeSlot = state =>
-// state.timeSlots.filter(
-//   timeSlot =>
-//     timeSlot.timeSlots.filter(timeSlot => timeSlot.selected).length > 0
-// )
-
-// export const getSelectedTimeSlot = state =>
-//   state.timeSlots
-//     .filter(
-//       timeSlot =>
-//         timeSlot.timeSlots.filter(timeSlot => timeSlot.selected).length > 0
-//     )
-//     .map(timeSlot => ({
-//       ...timeSlot,
-//       timeSlots: timeSlot.timeSlots.filter(timeSlot => timeSlot.selected)
-//     }))
+export const getSelectedTimeSlot = state => {
+  let result = false
+  state.timeSlots.find(day =>
+    day.timeSlots.find(timeSlot => {
+      if (timeSlot.selected) {
+        result = timeSlot
+      }
+      return timeSlot.selected
+    })
+  )
+  return result
+}
