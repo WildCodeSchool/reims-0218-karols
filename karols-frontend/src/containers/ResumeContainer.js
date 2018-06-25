@@ -7,7 +7,8 @@ import {
   getSelectedService,
   getSelectedGender,
   getSelectedForm,
-  getSelectedPreparations
+  getSelectedPreparations,
+  getSelectedTimeSlot
 } from "../resume"
 
 import { fetchCreateReservation } from "../api/fetchCreateReservation"
@@ -17,7 +18,8 @@ const mapStateToProps = state => ({
   selectedService: getSelectedService(state),
   selectedGender: getSelectedGender(state),
   selectedForm: getSelectedForm(state),
-  selectedPreparations: getSelectedPreparations(state)
+  selectedPreparations: getSelectedPreparations(state),
+  selectedTimeSlot: getSelectedTimeSlot(state)
 })
 
 class ShowResume extends Component {
@@ -64,11 +66,23 @@ class ShowResume extends Component {
                 {preparation.preparations[0].titlePreparation}
               </p>
             )
-
-            // <p className="horaire">
-            //   Vous désirez être pris en charge le {horaire}{" "}
-            // </p>
           })}
+        {this.props.selectedTimeSlot &&
+          this.props.selectedTimeSlot.map((timeSlot, index) => {
+            return (
+              <p className="horaire" key={index}>
+                Vous désirez être pris en charge le
+                {timeSlot.timeSlots[0].date}
+              </p>
+            )
+          })}
+        {/* {this.props.selectedTimeSlot && (
+          <p className="horaire">
+            Vous désirez être pris en charge le
+            {this.props.selectedTimeSlot.date}
+          </p>
+        )} */}
+        {console.log(this.props.selectedTimeSlot)}
         <Button
           outline
           color="secondary"
@@ -92,3 +106,12 @@ class ShowResume extends Component {
 }
 
 export default connect(mapStateToProps, null)(ShowResume)
+
+// this.props.selectedTimeSlot.map((timeSlot, index) => {
+//   return (
+//     <p className="horaire" key={index}>
+//       Vous désirez être pris en charge le
+//       {timeSlot.timeSlots[0].date}
+//     </p>
+//   )
+// })
