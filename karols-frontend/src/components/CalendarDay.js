@@ -4,14 +4,19 @@ import { DateTime } from "luxon"
 const transformDate = date =>
   DateTime.fromISO(date)
     .setLocale("fr")
-    .toFormat("cccc dd LLLL")
+    .toFormat("dd LLLL")
+
+const transformDay = date =>
+  DateTime.fromISO(date)
+    .setLocale("fr")
+    .toFormat("cccc")
 
 const CalendarDay = ({ date }) => (
   <div
     style={{
       textAlign: "center",
       marginBottom: "24px",
-      fontSize: "14px",
+      fontSize: "13px",
       color: "#435f71"
     }}
   >
@@ -20,9 +25,11 @@ const CalendarDay = ({ date }) => (
       style={{
         textAlign: "center",
         marginBottom: "24px",
-        fontSize: "14px"
+        fontSize: "13px"
       }}
     >
+      {transformDay(date)}
+      <br />
       {transformDate(date)}
     </p>
   </div>
