@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Jumbotron, Button } from "reactstrap"
+import Recaptcha from "react-grecaptcha"
 
 import {
   getSelectedShop,
@@ -21,6 +22,20 @@ const mapStateToProps = state => ({
 })
 
 class ShowResume extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      validCaptcha: false
+    }
+    this.verifyCallback = this.verifyCallback.bind(this)
+  }
+
+  verifyCallback() {
+    this.setState({
+      validCaptcha: true
+    })
+  }
+
   render() {
     return (
       <Jumbotron
@@ -69,11 +84,25 @@ class ShowResume extends Component {
             //   Vous désirez être pris en charge le {horaire}{" "}
             // </p>
           })}
+        <Recaptcha
+          sitekey={"6LenQWAUAAAAAPa99VtqSlKXvI_uNBqZA5XyD-hQ"}
+          callback={this.verifyCallback}
+          expiredCallback={() => console.log("expiredcaptcha")}
+          locale="fr-FR"
+          className="customClassName"
+          data-theme="grey"
+          style={{
+            display: "table",
+            margin: "0 auto",
+            paddingBottom: "30px"
+          }}
+        />
         <Button
+          disabled={!this.state.validCaptcha}
           outline
           color="secondary"
-          onClick={() =>
-            fetchCreateReservation({
+          onClick={() => {
+            return fetchCreateReservation({
               selectedShop: this.props.selectedShop,
               selectedService: this.props.selectedService,
               selectedGender: this.props.selectedGender,
@@ -82,7 +111,7 @@ class ShowResume extends Component {
             }).then(data => {
               console.log(data)
             })
-          }
+          }}
         >
           Creer cette réservation
         </Button>{" "}
