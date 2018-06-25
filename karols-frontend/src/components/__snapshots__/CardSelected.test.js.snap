@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="card text-white"
+  >
+    <img
+      className="card-img"
+      src={undefined}
+      width="100%"
+    />
+    <div
+      className="card-img-overlay"
+    >
+      <h5
+        className="card-title"
+        style={
+          Object {
+            "fontSize": "2em",
+          }
+        }
+      />
+      <p
+        className="card-text"
+        style={
+          Object {
+            "fontSize": "1.5em",
+          }
+        }
+      />
+    </div>
+    <div
+      className="card-footer"
+    >
+      <button
+        className="btn btn-primary btn-lg btn-block"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Choisir
+      </button>
+    </div>
+  </div>
+</div>
+`;

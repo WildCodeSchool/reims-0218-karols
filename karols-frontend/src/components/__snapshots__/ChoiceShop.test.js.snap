@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="mb-4"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="wrapper text-center"
+      style={
+        Object {
+          "backgroundImage": "url(undefined)",
+          "backgroundPosition": "center",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    >
+      <div
+        className="data"
+      >
+        <div
+          className="content card-body"
+        >
+          <h5
+            className="city card-title"
+            style={
+              Object {
+                "fontWeight": "500",
+                "marginTop": "10px",
+              }
+            }
+          >
+            <p
+              style={
+                Object {
+                  "color": "#FFF",
+                }
+              }
+            />
+          </h5>
+          <button
+            className="btn btn-secondary"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "#fff",
+                "display": "block",
+                "fontSize": "12px",
+                "fontWeight": "700",
+                "lineHeight": "1",
+                "margin": "2em auto 1em",
+                "marginBottom": "40px",
+                "padding": "10px 20px",
+                "position": "relative",
+                "textAlign": "center",
+              }
+            }
+            type={undefined}
+          >
+            Sélectionner
+          </button>
+        </div>
+        <div
+          className="card-footer"
+          style={
+            Object {
+              "backgroundColor": "rgba(136,136,136, 0.5)",
+            }
+          }
+        >
+          <p
+            className="text"
+            style={
+              Object {
+                "height": "70px",
+                "margin": "0",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

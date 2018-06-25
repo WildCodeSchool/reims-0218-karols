@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "color": "#435f71",
+      "fontSize": "14px",
+      "marginBottom": "24px",
+      "textAlign": "center",
+    }
+  }
+>
+  <p
+    style={
+      Object {
+        "fontWeight": "700",
+      }
+    }
+  />
+  <p
+    style={
+      Object {
+        "fontSize": "14px",
+        "marginBottom": "24px",
+        "textAlign": "center",
+      }
+    }
+  >
+    Invalid DateTime
+  </p>
+</div>
+`;
