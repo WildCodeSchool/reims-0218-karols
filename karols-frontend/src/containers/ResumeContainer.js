@@ -67,22 +67,12 @@ class ShowResume extends Component {
               </p>
             )
           })}
-        {this.props.selectedTimeSlot &&
-          this.props.selectedTimeSlot.map((timeSlot, index) => {
-            return (
-              <p className="horaire" key={index}>
-                Vous désirez être pris en charge le
-                {timeSlot.timeSlots[0].date}
-              </p>
-            )
-          })}
-        {/* {this.props.selectedTimeSlot && (
+        {this.props.selectedTimeSlot && (
           <p className="horaire">
             Vous désirez être pris en charge le
-            {this.props.selectedTimeSlot.date}
+            {this.props.selectedTimeSlot.time.s}
           </p>
-        )} */}
-        {console.log(this.props.selectedTimeSlot)}
+        )}
         <Button
           outline
           color="secondary"
