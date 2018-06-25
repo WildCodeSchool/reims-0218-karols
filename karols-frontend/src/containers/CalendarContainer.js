@@ -51,13 +51,18 @@ class TimeSlots extends Component {
     return (
       <Container>
         <ButtonGroup size="lg">
-          <Button onClick={() => this.handleMinusClick()}>-</Button>
-          <Button onClick={() => this.handlePlusClick()}>+</Button>
+          <Button onClick={() => this.handleMinusClick()}>&lt;</Button>
+          <Button onClick={() => this.handlePlusClick()}>&gt;</Button>
         </ButtonGroup>
         <ResultCalendar
           weekTimeSlots={this.props.timeSlots}
           selectTimeSlot={this.props.onTimeSlotSelected}
         />
+        <div className="availabilities-more-button mt-3">
+          <Button outline color="secondary">
+            Voir plus d'horaires
+          </Button>
+        </div>
       </Container>
     )
   }

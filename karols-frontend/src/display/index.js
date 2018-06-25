@@ -24,3 +24,5 @@ export const showDatePicker = state =>
       prestation.preparations.filter(preparation => preparation.selected)
         .length > 0
   ).length > 0 && showSex(state)
+
+export const showCalendar = state => state.timeSlots.length >= 1

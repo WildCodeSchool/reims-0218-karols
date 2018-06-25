@@ -39,6 +39,10 @@ router.get("/timeslots", (req, res) => {
 
 router.post("/reservations", (req, res) => {
   console.log("body", req.body)
+  res.json({
+    name: "Reservation",
+    success: true
+  })
   let smtpTransport = nodemailer.createTransport({
     service: "Gmail",
     auth: {
