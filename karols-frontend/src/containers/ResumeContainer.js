@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import { Jumbotron, Button } from "reactstrap"
+import { Jumbotron, Button, Alert } from "reactstrap"
 
 import {
   getSelectedShop,
@@ -21,6 +21,23 @@ const mapStateToProps = state => ({
 })
 
 class ShowResume extends Component {
+  constructor(props) {
+    super(props)
+    this.showAlert = this.showAlert.bind(this)
+
+    this.state = {
+      visibility: false
+    }
+  }
+
+  showAlert() {
+    this.setState(prevState => {
+      return {
+        visibility: true
+      }
+    })
+  }
+
   render() {
     return (
       <Jumbotron
@@ -72,7 +89,8 @@ class ShowResume extends Component {
         <Button
           outline
           color="secondary"
-          onClick={() =>
+          onClick={() => {
+            this.showAlert()
             fetchCreateReservation({
               selectedShop: this.props.selectedShop,
               selectedService: this.props.selectedService,
@@ -82,10 +100,22 @@ class ShowResume extends Component {
             }).then(data => {
               console.log(data)
             })
-          }
+          }}
         >
           Creer cette réservation
         </Button>{" "}
+        {this.state.visibility && (
+          <Alert
+            color="success"
+            style={{
+              marginTop: "30px"
+            }}
+          >
+            {" "}
+            Vous avez reçu un mail de confirmation sur{" "}
+            {this.props.selectedForm.email}{" "}
+          </Alert>
+        )}
       </Jumbotron>
     )
   }
