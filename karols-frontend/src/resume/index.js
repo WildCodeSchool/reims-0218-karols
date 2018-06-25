@@ -1,5 +1,3 @@
-import timeSlot from "../reducers/timeSlots"
-
 export const getSelectedShop = state => state.shops.find(shop => shop.selected)
 
 export const getSelectedService = state =>
