@@ -1,4 +1,4 @@
-import { getSelectedShop, getSelectedService, getSelectedGender, getSelectedPreparations } from "."
+import { getSelectedShop, getSelectedService, getSelectedGender, getSelectedPreparations, getSelectedTimeSlot } from "."
 
 describe("getSelectedShop", () => {
   it("should return falsy if no shop selected", () => {
@@ -2855,7 +2855,7 @@ describe("getSelectedPreparations", () => {
     }
     expect(getSelectedPreparations(noGetPreparationState)).toEqual([])
   })
-  it("sould return preparation data of the preparation selected", () => {
+  it("should return preparation data of the preparation selected", () => {
     const getPreparationsState = {
       prestations: [
         {
@@ -3300,5 +3300,3326 @@ describe("getSelectedPreparations", () => {
       ]
     
     expect(getSelectedPreparations(getPreparationsState)).toEqual(expected)
+  })
+})
+
+describe("getSelectedTimeSlots" , () => {
+  it("should return an empty array if no timeSlots selected", () => {
+    const noGetTimeSlotState = {
+    timeSlots: [
+      {
+        date: '2018-06-24T00:00:00.000+02:00',
+        timeSlots: [
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T09:00:00.000+02:00',
+              e: '2018-06-24T09:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T09:15:00.000+02:00',
+              e: '2018-06-24T09:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T09:30:00.000+02:00',
+              e: '2018-06-24T09:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T09:45:00.000+02:00',
+              e: '2018-06-24T10:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T10:00:00.000+02:00',
+              e: '2018-06-24T10:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T10:15:00.000+02:00',
+              e: '2018-06-24T10:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T10:30:00.000+02:00',
+              e: '2018-06-24T10:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T10:45:00.000+02:00',
+              e: '2018-06-24T11:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T11:00:00.000+02:00',
+              e: '2018-06-24T11:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T11:15:00.000+02:00',
+              e: '2018-06-24T11:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T11:30:00.000+02:00',
+              e: '2018-06-24T11:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T11:45:00.000+02:00',
+              e: '2018-06-24T12:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T12:00:00.000+02:00',
+              e: '2018-06-24T12:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T12:15:00.000+02:00',
+              e: '2018-06-24T12:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T12:30:00.000+02:00',
+              e: '2018-06-24T12:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T12:45:00.000+02:00',
+              e: '2018-06-24T13:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T13:00:00.000+02:00',
+              e: '2018-06-24T13:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T13:15:00.000+02:00',
+              e: '2018-06-24T13:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T13:30:00.000+02:00',
+              e: '2018-06-24T13:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T13:45:00.000+02:00',
+              e: '2018-06-24T14:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T14:00:00.000+02:00',
+              e: '2018-06-24T14:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T14:15:00.000+02:00',
+              e: '2018-06-24T14:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T14:30:00.000+02:00',
+              e: '2018-06-24T14:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T14:45:00.000+02:00',
+              e: '2018-06-24T15:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T15:00:00.000+02:00',
+              e: '2018-06-24T15:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T15:15:00.000+02:00',
+              e: '2018-06-24T15:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T15:30:00.000+02:00',
+              e: '2018-06-24T15:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T15:45:00.000+02:00',
+              e: '2018-06-24T16:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T16:00:00.000+02:00',
+              e: '2018-06-24T16:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T16:15:00.000+02:00',
+              e: '2018-06-24T16:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T16:30:00.000+02:00',
+              e: '2018-06-24T16:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T16:45:00.000+02:00',
+              e: '2018-06-24T17:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T17:00:00.000+02:00',
+              e: '2018-06-24T17:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T17:15:00.000+02:00',
+              e: '2018-06-24T17:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T17:30:00.000+02:00',
+              e: '2018-06-24T17:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-24T17:45:00.000+02:00',
+              e: '2018-06-24T18:00:00.000+02:00',
+              invalid: null
+            }
+          }
+        ]
+      },
+      {
+        date: '2018-06-25T00:00:00.000+02:00',
+        timeSlots: [
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T09:00:00.000+02:00',
+              e: '2018-06-25T09:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T09:15:00.000+02:00',
+              e: '2018-06-25T09:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T09:30:00.000+02:00',
+              e: '2018-06-25T09:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T09:45:00.000+02:00',
+              e: '2018-06-25T10:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T10:00:00.000+02:00',
+              e: '2018-06-25T10:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T10:15:00.000+02:00',
+              e: '2018-06-25T10:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T10:30:00.000+02:00',
+              e: '2018-06-25T10:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T10:45:00.000+02:00',
+              e: '2018-06-25T11:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T11:00:00.000+02:00',
+              e: '2018-06-25T11:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T11:15:00.000+02:00',
+              e: '2018-06-25T11:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T11:30:00.000+02:00',
+              e: '2018-06-25T11:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T11:45:00.000+02:00',
+              e: '2018-06-25T12:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T12:00:00.000+02:00',
+              e: '2018-06-25T12:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T12:15:00.000+02:00',
+              e: '2018-06-25T12:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T12:30:00.000+02:00',
+              e: '2018-06-25T12:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T12:45:00.000+02:00',
+              e: '2018-06-25T13:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T13:00:00.000+02:00',
+              e: '2018-06-25T13:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T13:15:00.000+02:00',
+              e: '2018-06-25T13:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T13:30:00.000+02:00',
+              e: '2018-06-25T13:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T13:45:00.000+02:00',
+              e: '2018-06-25T14:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T14:00:00.000+02:00',
+              e: '2018-06-25T14:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T14:15:00.000+02:00',
+              e: '2018-06-25T14:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T14:30:00.000+02:00',
+              e: '2018-06-25T14:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T14:45:00.000+02:00',
+              e: '2018-06-25T15:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T15:00:00.000+02:00',
+              e: '2018-06-25T15:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T15:15:00.000+02:00',
+              e: '2018-06-25T15:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T15:30:00.000+02:00',
+              e: '2018-06-25T15:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T15:45:00.000+02:00',
+              e: '2018-06-25T16:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T16:00:00.000+02:00',
+              e: '2018-06-25T16:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T16:15:00.000+02:00',
+              e: '2018-06-25T16:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T16:30:00.000+02:00',
+              e: '2018-06-25T16:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T16:45:00.000+02:00',
+              e: '2018-06-25T17:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T17:00:00.000+02:00',
+              e: '2018-06-25T17:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T17:15:00.000+02:00',
+              e: '2018-06-25T17:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T17:30:00.000+02:00',
+              e: '2018-06-25T17:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-25T17:45:00.000+02:00',
+              e: '2018-06-25T18:00:00.000+02:00',
+              invalid: null
+            }
+          }
+        ]
+      },
+      {
+        date: '2018-06-26T00:00:00.000+02:00',
+        timeSlots: [
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T09:00:00.000+02:00',
+              e: '2018-06-26T09:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T09:15:00.000+02:00',
+              e: '2018-06-26T09:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T09:30:00.000+02:00',
+              e: '2018-06-26T09:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T09:45:00.000+02:00',
+              e: '2018-06-26T10:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T10:00:00.000+02:00',
+              e: '2018-06-26T10:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T10:15:00.000+02:00',
+              e: '2018-06-26T10:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T10:30:00.000+02:00',
+              e: '2018-06-26T10:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T10:45:00.000+02:00',
+              e: '2018-06-26T11:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T11:00:00.000+02:00',
+              e: '2018-06-26T11:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T11:15:00.000+02:00',
+              e: '2018-06-26T11:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T11:30:00.000+02:00',
+              e: '2018-06-26T11:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T11:45:00.000+02:00',
+              e: '2018-06-26T12:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T12:00:00.000+02:00',
+              e: '2018-06-26T12:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T12:15:00.000+02:00',
+              e: '2018-06-26T12:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T12:30:00.000+02:00',
+              e: '2018-06-26T12:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T12:45:00.000+02:00',
+              e: '2018-06-26T13:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T13:00:00.000+02:00',
+              e: '2018-06-26T13:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T13:15:00.000+02:00',
+              e: '2018-06-26T13:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T13:30:00.000+02:00',
+              e: '2018-06-26T13:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T13:45:00.000+02:00',
+              e: '2018-06-26T14:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T14:00:00.000+02:00',
+              e: '2018-06-26T14:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T14:15:00.000+02:00',
+              e: '2018-06-26T14:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T14:30:00.000+02:00',
+              e: '2018-06-26T14:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T14:45:00.000+02:00',
+              e: '2018-06-26T15:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T15:00:00.000+02:00',
+              e: '2018-06-26T15:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T15:15:00.000+02:00',
+              e: '2018-06-26T15:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T15:30:00.000+02:00',
+              e: '2018-06-26T15:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T15:45:00.000+02:00',
+              e: '2018-06-26T16:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T16:00:00.000+02:00',
+              e: '2018-06-26T16:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T16:15:00.000+02:00',
+              e: '2018-06-26T16:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T16:30:00.000+02:00',
+              e: '2018-06-26T16:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T16:45:00.000+02:00',
+              e: '2018-06-26T17:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T17:00:00.000+02:00',
+              e: '2018-06-26T17:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T17:15:00.000+02:00',
+              e: '2018-06-26T17:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T17:30:00.000+02:00',
+              e: '2018-06-26T17:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-26T17:45:00.000+02:00',
+              e: '2018-06-26T18:00:00.000+02:00',
+              invalid: null
+            }
+          }
+        ]
+      },
+      {
+        date: '2018-06-27T00:00:00.000+02:00',
+        timeSlots: [
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T09:00:00.000+02:00',
+              e: '2018-06-27T09:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T09:15:00.000+02:00',
+              e: '2018-06-27T09:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T09:30:00.000+02:00',
+              e: '2018-06-27T09:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T09:45:00.000+02:00',
+              e: '2018-06-27T10:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T10:00:00.000+02:00',
+              e: '2018-06-27T10:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T10:15:00.000+02:00',
+              e: '2018-06-27T10:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T10:30:00.000+02:00',
+              e: '2018-06-27T10:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T10:45:00.000+02:00',
+              e: '2018-06-27T11:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T11:00:00.000+02:00',
+              e: '2018-06-27T11:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T11:15:00.000+02:00',
+              e: '2018-06-27T11:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T11:30:00.000+02:00',
+              e: '2018-06-27T11:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T11:45:00.000+02:00',
+              e: '2018-06-27T12:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T12:00:00.000+02:00',
+              e: '2018-06-27T12:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T12:15:00.000+02:00',
+              e: '2018-06-27T12:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T12:30:00.000+02:00',
+              e: '2018-06-27T12:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T12:45:00.000+02:00',
+              e: '2018-06-27T13:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T13:00:00.000+02:00',
+              e: '2018-06-27T13:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T13:15:00.000+02:00',
+              e: '2018-06-27T13:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T13:30:00.000+02:00',
+              e: '2018-06-27T13:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T13:45:00.000+02:00',
+              e: '2018-06-27T14:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T14:00:00.000+02:00',
+              e: '2018-06-27T14:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T14:15:00.000+02:00',
+              e: '2018-06-27T14:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T14:30:00.000+02:00',
+              e: '2018-06-27T14:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T14:45:00.000+02:00',
+              e: '2018-06-27T15:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T15:00:00.000+02:00',
+              e: '2018-06-27T15:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T15:15:00.000+02:00',
+              e: '2018-06-27T15:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T15:30:00.000+02:00',
+              e: '2018-06-27T15:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T15:45:00.000+02:00',
+              e: '2018-06-27T16:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T16:00:00.000+02:00',
+              e: '2018-06-27T16:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T16:15:00.000+02:00',
+              e: '2018-06-27T16:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T16:30:00.000+02:00',
+              e: '2018-06-27T16:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T16:45:00.000+02:00',
+              e: '2018-06-27T17:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T17:00:00.000+02:00',
+              e: '2018-06-27T17:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T17:15:00.000+02:00',
+              e: '2018-06-27T17:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T17:30:00.000+02:00',
+              e: '2018-06-27T17:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-27T17:45:00.000+02:00',
+              e: '2018-06-27T18:00:00.000+02:00',
+              invalid: null
+            }
+          }
+        ]
+      },
+      {
+        date: '2018-06-28T00:00:00.000+02:00',
+        timeSlots: [
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T09:00:00.000+02:00',
+              e: '2018-06-28T09:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T09:15:00.000+02:00',
+              e: '2018-06-28T09:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T09:30:00.000+02:00',
+              e: '2018-06-28T09:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T09:45:00.000+02:00',
+              e: '2018-06-28T10:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T10:00:00.000+02:00',
+              e: '2018-06-28T10:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T10:15:00.000+02:00',
+              e: '2018-06-28T10:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T10:30:00.000+02:00',
+              e: '2018-06-28T10:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T10:45:00.000+02:00',
+              e: '2018-06-28T11:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T11:00:00.000+02:00',
+              e: '2018-06-28T11:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T11:15:00.000+02:00',
+              e: '2018-06-28T11:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T11:30:00.000+02:00',
+              e: '2018-06-28T11:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T11:45:00.000+02:00',
+              e: '2018-06-28T12:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T12:00:00.000+02:00',
+              e: '2018-06-28T12:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T12:15:00.000+02:00',
+              e: '2018-06-28T12:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T12:30:00.000+02:00',
+              e: '2018-06-28T12:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T12:45:00.000+02:00',
+              e: '2018-06-28T13:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T13:00:00.000+02:00',
+              e: '2018-06-28T13:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T13:15:00.000+02:00',
+              e: '2018-06-28T13:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T13:30:00.000+02:00',
+              e: '2018-06-28T13:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T13:45:00.000+02:00',
+              e: '2018-06-28T14:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T14:00:00.000+02:00',
+              e: '2018-06-28T14:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T14:15:00.000+02:00',
+              e: '2018-06-28T14:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T14:30:00.000+02:00',
+              e: '2018-06-28T14:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T14:45:00.000+02:00',
+              e: '2018-06-28T15:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T15:00:00.000+02:00',
+              e: '2018-06-28T15:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T15:15:00.000+02:00',
+              e: '2018-06-28T15:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T15:30:00.000+02:00',
+              e: '2018-06-28T15:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T15:45:00.000+02:00',
+              e: '2018-06-28T16:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T16:00:00.000+02:00',
+              e: '2018-06-28T16:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T16:15:00.000+02:00',
+              e: '2018-06-28T16:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T16:30:00.000+02:00',
+              e: '2018-06-28T16:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T16:45:00.000+02:00',
+              e: '2018-06-28T17:00:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T17:00:00.000+02:00',
+              e: '2018-06-28T17:15:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T17:15:00.000+02:00',
+              e: '2018-06-28T17:30:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T17:30:00.000+02:00',
+              e: '2018-06-28T17:45:00.000+02:00',
+              invalid: null
+            }
+          },
+          {
+            available: true,
+            selected: false,
+            time: {
+              s: '2018-06-28T17:45:00.000+02:00',
+              e: '2018-06-28T18:00:00.000+02:00',
+              invalid: null
+            }
+          }
+        ]
+      }
+    ]}
+    expect(getSelectedTimeSlot(noGetTimeSlotState)).toEqual([])
+  })
+  it("should return timeSlots data of the timeSlot selected", () => {
+    const getTimeSlotState = {
+      timeSlots: [
+        {
+          date: '2018-06-24T00:00:00.000+02:00',
+          timeSlots: [
+            {
+              available: true,
+              selected: true,
+              time: {
+                s: '2018-06-24T09:00:00.000+02:00',
+                e: '2018-06-24T09:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T09:15:00.000+02:00',
+                e: '2018-06-24T09:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T09:30:00.000+02:00',
+                e: '2018-06-24T09:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T09:45:00.000+02:00',
+                e: '2018-06-24T10:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T10:00:00.000+02:00',
+                e: '2018-06-24T10:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T10:15:00.000+02:00',
+                e: '2018-06-24T10:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T10:30:00.000+02:00',
+                e: '2018-06-24T10:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T10:45:00.000+02:00',
+                e: '2018-06-24T11:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T11:00:00.000+02:00',
+                e: '2018-06-24T11:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T11:15:00.000+02:00',
+                e: '2018-06-24T11:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T11:30:00.000+02:00',
+                e: '2018-06-24T11:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T11:45:00.000+02:00',
+                e: '2018-06-24T12:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T12:00:00.000+02:00',
+                e: '2018-06-24T12:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T12:15:00.000+02:00',
+                e: '2018-06-24T12:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T12:30:00.000+02:00',
+                e: '2018-06-24T12:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T12:45:00.000+02:00',
+                e: '2018-06-24T13:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T13:00:00.000+02:00',
+                e: '2018-06-24T13:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T13:15:00.000+02:00',
+                e: '2018-06-24T13:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T13:30:00.000+02:00',
+                e: '2018-06-24T13:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T13:45:00.000+02:00',
+                e: '2018-06-24T14:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T14:00:00.000+02:00',
+                e: '2018-06-24T14:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T14:15:00.000+02:00',
+                e: '2018-06-24T14:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T14:30:00.000+02:00',
+                e: '2018-06-24T14:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T14:45:00.000+02:00',
+                e: '2018-06-24T15:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T15:00:00.000+02:00',
+                e: '2018-06-24T15:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T15:15:00.000+02:00',
+                e: '2018-06-24T15:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T15:30:00.000+02:00',
+                e: '2018-06-24T15:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T15:45:00.000+02:00',
+                e: '2018-06-24T16:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T16:00:00.000+02:00',
+                e: '2018-06-24T16:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T16:15:00.000+02:00',
+                e: '2018-06-24T16:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T16:30:00.000+02:00',
+                e: '2018-06-24T16:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T16:45:00.000+02:00',
+                e: '2018-06-24T17:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T17:00:00.000+02:00',
+                e: '2018-06-24T17:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T17:15:00.000+02:00',
+                e: '2018-06-24T17:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T17:30:00.000+02:00',
+                e: '2018-06-24T17:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-24T17:45:00.000+02:00',
+                e: '2018-06-24T18:00:00.000+02:00',
+                invalid: null
+              }
+            }
+          ]
+        },
+        {
+          date: '2018-06-25T00:00:00.000+02:00',
+          timeSlots: [
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T09:00:00.000+02:00',
+                e: '2018-06-25T09:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T09:15:00.000+02:00',
+                e: '2018-06-25T09:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T09:30:00.000+02:00',
+                e: '2018-06-25T09:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T09:45:00.000+02:00',
+                e: '2018-06-25T10:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T10:00:00.000+02:00',
+                e: '2018-06-25T10:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T10:15:00.000+02:00',
+                e: '2018-06-25T10:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T10:30:00.000+02:00',
+                e: '2018-06-25T10:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T10:45:00.000+02:00',
+                e: '2018-06-25T11:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T11:00:00.000+02:00',
+                e: '2018-06-25T11:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T11:15:00.000+02:00',
+                e: '2018-06-25T11:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T11:30:00.000+02:00',
+                e: '2018-06-25T11:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T11:45:00.000+02:00',
+                e: '2018-06-25T12:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T12:00:00.000+02:00',
+                e: '2018-06-25T12:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T12:15:00.000+02:00',
+                e: '2018-06-25T12:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T12:30:00.000+02:00',
+                e: '2018-06-25T12:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T12:45:00.000+02:00',
+                e: '2018-06-25T13:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T13:00:00.000+02:00',
+                e: '2018-06-25T13:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T13:15:00.000+02:00',
+                e: '2018-06-25T13:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T13:30:00.000+02:00',
+                e: '2018-06-25T13:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T13:45:00.000+02:00',
+                e: '2018-06-25T14:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T14:00:00.000+02:00',
+                e: '2018-06-25T14:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T14:15:00.000+02:00',
+                e: '2018-06-25T14:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T14:30:00.000+02:00',
+                e: '2018-06-25T14:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T14:45:00.000+02:00',
+                e: '2018-06-25T15:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T15:00:00.000+02:00',
+                e: '2018-06-25T15:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T15:15:00.000+02:00',
+                e: '2018-06-25T15:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T15:30:00.000+02:00',
+                e: '2018-06-25T15:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T15:45:00.000+02:00',
+                e: '2018-06-25T16:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T16:00:00.000+02:00',
+                e: '2018-06-25T16:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T16:15:00.000+02:00',
+                e: '2018-06-25T16:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T16:30:00.000+02:00',
+                e: '2018-06-25T16:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T16:45:00.000+02:00',
+                e: '2018-06-25T17:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T17:00:00.000+02:00',
+                e: '2018-06-25T17:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T17:15:00.000+02:00',
+                e: '2018-06-25T17:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T17:30:00.000+02:00',
+                e: '2018-06-25T17:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-25T17:45:00.000+02:00',
+                e: '2018-06-25T18:00:00.000+02:00',
+                invalid: null
+              }
+            }
+          ]
+        },
+        {
+          date: '2018-06-26T00:00:00.000+02:00',
+          timeSlots: [
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T09:00:00.000+02:00',
+                e: '2018-06-26T09:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T09:15:00.000+02:00',
+                e: '2018-06-26T09:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T09:30:00.000+02:00',
+                e: '2018-06-26T09:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T09:45:00.000+02:00',
+                e: '2018-06-26T10:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T10:00:00.000+02:00',
+                e: '2018-06-26T10:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T10:15:00.000+02:00',
+                e: '2018-06-26T10:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T10:30:00.000+02:00',
+                e: '2018-06-26T10:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T10:45:00.000+02:00',
+                e: '2018-06-26T11:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T11:00:00.000+02:00',
+                e: '2018-06-26T11:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T11:15:00.000+02:00',
+                e: '2018-06-26T11:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T11:30:00.000+02:00',
+                e: '2018-06-26T11:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T11:45:00.000+02:00',
+                e: '2018-06-26T12:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T12:00:00.000+02:00',
+                e: '2018-06-26T12:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T12:15:00.000+02:00',
+                e: '2018-06-26T12:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T12:30:00.000+02:00',
+                e: '2018-06-26T12:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T12:45:00.000+02:00',
+                e: '2018-06-26T13:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T13:00:00.000+02:00',
+                e: '2018-06-26T13:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T13:15:00.000+02:00',
+                e: '2018-06-26T13:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T13:30:00.000+02:00',
+                e: '2018-06-26T13:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T13:45:00.000+02:00',
+                e: '2018-06-26T14:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T14:00:00.000+02:00',
+                e: '2018-06-26T14:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T14:15:00.000+02:00',
+                e: '2018-06-26T14:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T14:30:00.000+02:00',
+                e: '2018-06-26T14:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T14:45:00.000+02:00',
+                e: '2018-06-26T15:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T15:00:00.000+02:00',
+                e: '2018-06-26T15:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T15:15:00.000+02:00',
+                e: '2018-06-26T15:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T15:30:00.000+02:00',
+                e: '2018-06-26T15:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T15:45:00.000+02:00',
+                e: '2018-06-26T16:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T16:00:00.000+02:00',
+                e: '2018-06-26T16:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T16:15:00.000+02:00',
+                e: '2018-06-26T16:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T16:30:00.000+02:00',
+                e: '2018-06-26T16:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T16:45:00.000+02:00',
+                e: '2018-06-26T17:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T17:00:00.000+02:00',
+                e: '2018-06-26T17:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T17:15:00.000+02:00',
+                e: '2018-06-26T17:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T17:30:00.000+02:00',
+                e: '2018-06-26T17:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-26T17:45:00.000+02:00',
+                e: '2018-06-26T18:00:00.000+02:00',
+                invalid: null
+              }
+            }
+          ]
+        },
+        {
+          date: '2018-06-27T00:00:00.000+02:00',
+          timeSlots: [
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T09:00:00.000+02:00',
+                e: '2018-06-27T09:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T09:15:00.000+02:00',
+                e: '2018-06-27T09:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T09:30:00.000+02:00',
+                e: '2018-06-27T09:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T09:45:00.000+02:00',
+                e: '2018-06-27T10:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T10:00:00.000+02:00',
+                e: '2018-06-27T10:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T10:15:00.000+02:00',
+                e: '2018-06-27T10:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T10:30:00.000+02:00',
+                e: '2018-06-27T10:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T10:45:00.000+02:00',
+                e: '2018-06-27T11:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T11:00:00.000+02:00',
+                e: '2018-06-27T11:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T11:15:00.000+02:00',
+                e: '2018-06-27T11:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T11:30:00.000+02:00',
+                e: '2018-06-27T11:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T11:45:00.000+02:00',
+                e: '2018-06-27T12:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T12:00:00.000+02:00',
+                e: '2018-06-27T12:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T12:15:00.000+02:00',
+                e: '2018-06-27T12:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T12:30:00.000+02:00',
+                e: '2018-06-27T12:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T12:45:00.000+02:00',
+                e: '2018-06-27T13:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T13:00:00.000+02:00',
+                e: '2018-06-27T13:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T13:15:00.000+02:00',
+                e: '2018-06-27T13:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T13:30:00.000+02:00',
+                e: '2018-06-27T13:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T13:45:00.000+02:00',
+                e: '2018-06-27T14:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T14:00:00.000+02:00',
+                e: '2018-06-27T14:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T14:15:00.000+02:00',
+                e: '2018-06-27T14:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T14:30:00.000+02:00',
+                e: '2018-06-27T14:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T14:45:00.000+02:00',
+                e: '2018-06-27T15:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T15:00:00.000+02:00',
+                e: '2018-06-27T15:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T15:15:00.000+02:00',
+                e: '2018-06-27T15:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T15:30:00.000+02:00',
+                e: '2018-06-27T15:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T15:45:00.000+02:00',
+                e: '2018-06-27T16:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T16:00:00.000+02:00',
+                e: '2018-06-27T16:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T16:15:00.000+02:00',
+                e: '2018-06-27T16:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T16:30:00.000+02:00',
+                e: '2018-06-27T16:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T16:45:00.000+02:00',
+                e: '2018-06-27T17:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T17:00:00.000+02:00',
+                e: '2018-06-27T17:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T17:15:00.000+02:00',
+                e: '2018-06-27T17:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T17:30:00.000+02:00',
+                e: '2018-06-27T17:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-27T17:45:00.000+02:00',
+                e: '2018-06-27T18:00:00.000+02:00',
+                invalid: null
+              }
+            }
+          ]
+        },
+        {
+          date: '2018-06-28T00:00:00.000+02:00',
+          timeSlots: [
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T09:00:00.000+02:00',
+                e: '2018-06-28T09:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T09:15:00.000+02:00',
+                e: '2018-06-28T09:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T09:30:00.000+02:00',
+                e: '2018-06-28T09:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T09:45:00.000+02:00',
+                e: '2018-06-28T10:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T10:00:00.000+02:00',
+                e: '2018-06-28T10:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T10:15:00.000+02:00',
+                e: '2018-06-28T10:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T10:30:00.000+02:00',
+                e: '2018-06-28T10:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T10:45:00.000+02:00',
+                e: '2018-06-28T11:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T11:00:00.000+02:00',
+                e: '2018-06-28T11:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T11:15:00.000+02:00',
+                e: '2018-06-28T11:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T11:30:00.000+02:00',
+                e: '2018-06-28T11:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T11:45:00.000+02:00',
+                e: '2018-06-28T12:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T12:00:00.000+02:00',
+                e: '2018-06-28T12:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T12:15:00.000+02:00',
+                e: '2018-06-28T12:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T12:30:00.000+02:00',
+                e: '2018-06-28T12:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T12:45:00.000+02:00',
+                e: '2018-06-28T13:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T13:00:00.000+02:00',
+                e: '2018-06-28T13:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T13:15:00.000+02:00',
+                e: '2018-06-28T13:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T13:30:00.000+02:00',
+                e: '2018-06-28T13:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T13:45:00.000+02:00',
+                e: '2018-06-28T14:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T14:00:00.000+02:00',
+                e: '2018-06-28T14:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T14:15:00.000+02:00',
+                e: '2018-06-28T14:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T14:30:00.000+02:00',
+                e: '2018-06-28T14:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T14:45:00.000+02:00',
+                e: '2018-06-28T15:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T15:00:00.000+02:00',
+                e: '2018-06-28T15:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T15:15:00.000+02:00',
+                e: '2018-06-28T15:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T15:30:00.000+02:00',
+                e: '2018-06-28T15:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T15:45:00.000+02:00',
+                e: '2018-06-28T16:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T16:00:00.000+02:00',
+                e: '2018-06-28T16:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T16:15:00.000+02:00',
+                e: '2018-06-28T16:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T16:30:00.000+02:00',
+                e: '2018-06-28T16:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T16:45:00.000+02:00',
+                e: '2018-06-28T17:00:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T17:00:00.000+02:00',
+                e: '2018-06-28T17:15:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T17:15:00.000+02:00',
+                e: '2018-06-28T17:30:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T17:30:00.000+02:00',
+                e: '2018-06-28T17:45:00.000+02:00',
+                invalid: null
+              }
+            },
+            {
+              available: true,
+              selected: false,
+              time: {
+                s: '2018-06-28T17:45:00.000+02:00',
+                e: '2018-06-28T18:00:00.000+02:00',
+                invalid: null
+              }
+            }
+          ]
+        }
+      ]
+    }
+    const expected = [
+      {
+      date: '2018-06-24T00:00:00.000+02:00',
+      timeSlots: [
+        {
+          available: true,
+          selected: true,
+          time: {
+            s: '2018-06-24T09:00:00.000+02:00',
+            e: '2018-06-24T09:15:00.000+02:00',
+            invalid: null
+          }
+        }  
+      ]} 
+    ]
+    expect(getSelectedTimeSlot(getTimeSlotState)).toEqual(expected)
   })
 })

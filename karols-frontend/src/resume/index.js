@@ -1,3 +1,5 @@
+import timeSlot from "../reducers/timeSlots"
+
 export const getSelectedShop = state => state.shops.find(shop => shop.selected)
 
 export const getSelectedService = state =>
@@ -23,4 +25,30 @@ export const getSelectedPreparations = state =>
       )
     }))
 
-// reste à faire : fonction datepicker resume
+export const getSelectedTimeSlot = state =>
+  state.timeSlots
+    .filter(
+      timeSlot =>
+        timeSlot.timeSlots.filter(timeSlot => timeSlot.selected).length > 0
+    )
+    .map(timeSlot => ({
+      ...timeSlot,
+      timeSlots: timeSlot.timeSlots.filter(timeSlot => timeSlot.selected)
+    }))
+
+// export const getSelectedTimeSlot = state =>
+// state.timeSlots.filter(
+//   timeSlot =>
+//     timeSlot.timeSlots.filter(timeSlot => timeSlot.selected).length > 0
+// )
+
+// export const getSelectedTimeSlot = state =>
+//   state.timeSlots
+//     .filter(
+//       timeSlot =>
+//         timeSlot.timeSlots.filter(timeSlot => timeSlot.selected).length > 0
+//     )
+//     .map(timeSlot => ({
+//       ...timeSlot,
+//       timeSlots: timeSlot.timeSlots.filter(timeSlot => timeSlot.selected)
+//     }))
