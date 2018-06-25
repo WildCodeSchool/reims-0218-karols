@@ -12,6 +12,7 @@ import {
 } from "../resume"
 
 import { fetchCreateReservation } from "../api/fetchCreateReservation"
+import ContactForm from "../components/ContactForm"
 
 const mapStateToProps = state => ({
   selectedShop: getSelectedShop(state),
@@ -42,12 +43,13 @@ class ShowResume extends Component {
         style={{
           marginTop: "2em",
           textAlign: "center",
-          backgroundColor: "#FFF",
+          backgroundColor: "#F7F7F7",
           fontSize: "25px",
           borderRadius: "70px",
           border: "2px solid black"
         }}
       >
+        <ContactForm />
         <h1 className="display-12">Récapitulatif</h1>
         {this.props.selectedShop && (
           <p className="shop">
@@ -61,13 +63,13 @@ class ShowResume extends Component {
           </p>
         )}
         {this.props.selectedForm && (
-          <p className="form">Prénom :{this.props.selectedForm.firstName}</p>
+          <p className="form">Prénom : {this.props.selectedForm.firstName}</p>
         )}
         {this.props.selectedForm && (
-          <p className="form">Nom :{this.props.selectedForm.lastName}</p>
+          <p className="form">Nom : {this.props.selectedForm.lastName}</p>
         )}
         {this.props.selectedForm && (
-          <p className="form">Email :{this.props.selectedForm.email}</p>
+          <p className="form">Email : {this.props.selectedForm.email}</p>
         )}
         {this.props.selectedGender && (
           <p className="gender">Pour {this.props.selectedGender.sex}</p>
