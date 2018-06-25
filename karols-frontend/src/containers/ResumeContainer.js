@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { DateTime } from "luxon"
 import { connect } from "react-redux"
 import { Jumbotron, Button } from "reactstrap"
 
@@ -21,6 +22,11 @@ const mapStateToProps = state => ({
   selectedPreparations: getSelectedPreparations(state),
   selectedTimeSlot: getSelectedTimeSlot(state)
 })
+
+const transformTimeSlot = timeSlot =>
+  DateTime.fromISO(timeSlot.time.s)
+    .setLocale("fr")
+    .toFormat("cccc dd LLLL HH 'h' mm")
 
 class ShowResume extends Component {
   render() {
@@ -69,8 +75,8 @@ class ShowResume extends Component {
           })}
         {this.props.selectedTimeSlot && (
           <p className="horaire">
-            Vous désirez être pris en charge le
-            {this.props.selectedTimeSlot.time.s}
+            Vous désirez être pris en charge le {""}
+            {transformTimeSlot(this.props.selectedTimeSlot)}
           </p>
         )}
         <Button
@@ -96,12 +102,3 @@ class ShowResume extends Component {
 }
 
 export default connect(mapStateToProps, null)(ShowResume)
-
-// this.props.selectedTimeSlot.map((timeSlot, index) => {
-//   return (
-//     <p className="horaire" key={index}>
-//       Vous désirez être pris en charge le
-//       {timeSlot.timeSlots[0].date}
-//     </p>
-//   )
-// })
