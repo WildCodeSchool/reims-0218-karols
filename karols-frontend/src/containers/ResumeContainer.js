@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { DateTime } from "luxon"
 import { connect } from "react-redux"
 import { Jumbotron, Button } from "reactstrap"
 import Recaptcha from "react-grecaptcha"
@@ -8,7 +9,8 @@ import {
   getSelectedService,
   getSelectedGender,
   getSelectedForm,
-  getSelectedPreparations
+  getSelectedPreparations,
+  getSelectedTimeSlot
 } from "../resume"
 
 import { fetchCreateReservation } from "../api/fetchCreateReservation"
@@ -19,8 +21,14 @@ const mapStateToProps = state => ({
   selectedService: getSelectedService(state),
   selectedGender: getSelectedGender(state),
   selectedForm: getSelectedForm(state),
-  selectedPreparations: getSelectedPreparations(state)
+  selectedPreparations: getSelectedPreparations(state),
+  selectedTimeSlot: getSelectedTimeSlot(state)
 })
+
+const transformTimeSlot = timeSlot =>
+  DateTime.fromISO(timeSlot.time.s)
+    .setLocale("fr")
+    .toFormat("cccc dd LLLL HH 'h' mm")
 
 class ShowResume extends Component {
   constructor(props) {
@@ -81,11 +89,13 @@ class ShowResume extends Component {
                 {preparation.preparations[0].titlePreparation}
               </p>
             )
-
-            // <p className="horaire">
-            //   Vous désirez être pris en charge le {horaire}{" "}
-            // </p>
           })}
+        {this.props.selectedTimeSlot && (
+          <p className="horaire">
+            Vous désirez être pris en charge le {""}
+            {transformTimeSlot(this.props.selectedTimeSlot)}
+          </p>
+        )}
         <Recaptcha
           sitekey={"6LenQWAUAAAAAPa99VtqSlKXvI_uNBqZA5XyD-hQ"}
           callback={this.verifyCallback}
