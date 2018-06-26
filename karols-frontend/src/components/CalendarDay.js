@@ -25,7 +25,7 @@ const CalendarDay = ({ date }) => (
       style={{
         textAlign: "center",
         marginBottom: "24px",
-        fontSize: "13px"
+        fontSize: "12px"
       }}
     >
       {transformDay(date)}
