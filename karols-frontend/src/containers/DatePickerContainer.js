@@ -47,7 +47,6 @@ class DatePickerSelect extends Component {
   validate() {
     // Fetch route date selected
     const dateFromJsDate = DateTime.fromJSDate(this.state.dateSelected).toISO()
-    console.log(dateFromJsDate)
     fetchDateSelected(dateFromJsDate).then(response => {
       this.props.onTimeSlotsReceived(response)
     })
