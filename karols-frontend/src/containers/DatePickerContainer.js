@@ -121,7 +121,11 @@ class DatePickerSelect extends Component {
               />
             </ModalBody>
             <ModalFooter>
-              <Button color="secondary" onClick={this.closeModal.bind(this)}>
+              <Button
+                outline
+                color="secondary"
+                onClick={this.closeModal.bind(this)}
+              >
                 Valider
               </Button>
             </ModalFooter>
