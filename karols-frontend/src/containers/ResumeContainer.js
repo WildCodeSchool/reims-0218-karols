@@ -65,7 +65,6 @@ class ShowResume extends Component {
           border: "2px solid #797979"
         }}
       >
-        <ContactForm />
         <h1 className="display-12">Récapitulatif</h1>
         {this.props.selectedShop && (
           <p className="shop">

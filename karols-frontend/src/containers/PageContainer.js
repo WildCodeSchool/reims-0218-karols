@@ -25,6 +25,8 @@ import ResumeContainer from "./ResumeContainer"
 import { makeShopsPrestationsReceived } from "../actions/actions"
 
 import { fetchShopsPrestations } from "../api"
+import ContactForm from "../components/ContactForm"
+import Resume from "../components/Resume"
 
 const mapStateToProps = state => ({
   showServices: showServices(state),
@@ -60,9 +62,8 @@ class Page extends Component {
         </Element>
         {this.props.showDatePicker && <DatePickerContainer />}
         {this.props.showCalendar && <CalendarContainer />}
-        <Element name="form">
-          {this.props.showForm && <ResumeContainer />}
-        </Element>
+        <Element name="form">{this.props.showForm && <ContactForm />}</Element>
+        <ResumeContainer />
       </Container>
     )
   }
