@@ -56,13 +56,9 @@ class TimeSlots extends Component {
     })
   }
   seeMoreTimeSlots = () => {
-    console.log(
-      this.props.timeSlots.map(day => ({
-        ...day,
-        timeSlots: day.timeSlots.slice(0, 4)
-      }))
-    )
-    console.log(this.state.actualizedTimeSLots)
+    this.setState({
+      showMore: !this.state.showMore
+    })
   }
   render() {
     return (
@@ -84,7 +80,9 @@ class TimeSlots extends Component {
             outline
             color="secondary"
           >
-            Voir plus d'horaires
+            {this.state.showMore
+              ? "Voir moins d'horaires"
+              : "Voir plus d'horaires"}
           </Button>
         </div>
       </Container>
