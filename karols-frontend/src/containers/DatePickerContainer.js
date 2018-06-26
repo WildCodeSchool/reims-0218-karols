@@ -39,6 +39,12 @@ class DatePickerSelect extends Component {
   }
 
   closeModal() {
+    // Fetch route date selected
+    const dateFromJsDate = DateTime.fromJSDate(this.state.dateSelected).toISO()
+    console.log(dateFromJsDate)
+    fetchDateSelected(dateFromJsDate).then(response => {
+      this.props.onTimeSlotsReceived(response)
+    })
     this.setState({
       modal: false
     })
@@ -76,11 +82,6 @@ class DatePickerSelect extends Component {
                 onSelect={date => {
                   this.setState({
                     dateSelected: date
-                  })
-                  // Fetch route date selected
-                  const dateFromJsDate = DateTime.fromJSDate(date).toISO()
-                  fetchDateSelected(dateFromJsDate).then(response => {
-                    this.props.onTimeSlotsReceived(response)
                   })
                 }}
                 style={{ margin: "auto" }}
