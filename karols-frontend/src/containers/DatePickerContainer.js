@@ -39,16 +39,20 @@ class DatePickerSelect extends Component {
   }
 
   closeModal() {
+    this.setState({
+      modal: false
+    })
+  }
+
+  validate() {
     // Fetch route date selected
     const dateFromJsDate = DateTime.fromJSDate(this.state.dateSelected).toISO()
     console.log(dateFromJsDate)
     fetchDateSelected(dateFromJsDate).then(response => {
       this.props.onTimeSlotsReceived(response)
     })
-    this.setState({
-      modal: false
-    })
   }
+
   showModal() {
     this.setState({
       modal: true
@@ -124,7 +128,7 @@ class DatePickerSelect extends Component {
               />
             </ModalBody>
             <ModalFooter>
-              <Button color="secondary" onClick={this.closeModal.bind(this)}>
+              <Button color="secondary" onClick={this.validate.bind(this)}>
                 Valider
               </Button>
             </ModalFooter>
