@@ -26,7 +26,6 @@ import { makeShopsPrestationsReceived } from "../actions/actions"
 
 import { fetchShopsPrestations } from "../api"
 import ContactForm from "../components/ContactForm"
-import Resume from "../components/Resume"
 
 const mapStateToProps = state => ({
   showServices: showServices(state),
