@@ -13,6 +13,7 @@ import {
 import { fetchCreateReservation } from "../api/fetchCreateReservation"
 
 const mapStateToProps = state => ({
+  showAlert: state.reservation.success,
   selectedShop: getSelectedShop(state),
   selectedService: getSelectedService(state),
   selectedGender: getSelectedGender(state),
@@ -91,6 +92,7 @@ class ShowResume extends Component {
           color="secondary"
           onClick={() => {
             this.showAlert()
+
             fetchCreateReservation({
               selectedShop: this.props.selectedShop,
               selectedService: this.props.selectedService,
@@ -102,6 +104,7 @@ class ShowResume extends Component {
             })
           }}
         >
+          {/* {this.props.showAlert && <Alert> Blabla </Alert> */}
           Creer cette réservation
         </Button>{" "}
         {this.state.visibility && (
