@@ -1,5 +1,6 @@
 import React from "react"
 import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
+import Info from "./Info"
 
 const CardModel = ({
   id,
@@ -8,7 +9,8 @@ const CardModel = ({
   description,
   image,
   selected,
-  select
+  select,
+  info
 }) => {
   return (
     <div>
@@ -100,6 +102,7 @@ const CardModel = ({
               >
                 {description}
               </p>
+              {info && <Info />}
             </CardFooter>
           </div>
         </div>

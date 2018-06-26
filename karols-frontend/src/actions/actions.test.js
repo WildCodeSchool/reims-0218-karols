@@ -24,7 +24,6 @@ describe("action to choose a prestation", () => {
       prestationId: 2
       // déclaration d'une variable expected qui prend un object
     }
-
     expect(makeChoosePrestation(2, 4)).toEqual(expected)
     //le resultat attendu
   })
