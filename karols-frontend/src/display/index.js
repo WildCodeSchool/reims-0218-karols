@@ -26,3 +26,6 @@ export const showDatePicker = state =>
   ).length > 0 && showSex(state)
 
 export const showCalendar = state => state.timeSlots.length >= 1
+
+export const showTimeSlots = state =>
+  state.timeSlots.map(day => ({ ...day, timeSlots: day.timeSlots.slice(0, 4) }))
