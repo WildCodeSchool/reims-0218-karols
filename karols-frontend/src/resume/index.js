@@ -23,4 +23,15 @@ export const getSelectedPreparations = state =>
       )
     }))
 
-// reste à faire : fonction datepicker resume
+export const getSelectedTimeSlot = state => {
+  let result = false
+  state.timeSlots.find(day =>
+    day.timeSlots.find(timeSlot => {
+      if (timeSlot.selected) {
+        result = timeSlot
+      }
+      return timeSlot.selected
+    })
+  )
+  return result
+}
