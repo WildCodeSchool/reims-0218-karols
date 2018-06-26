@@ -22,23 +22,6 @@ const mapStateToProps = state => ({
 })
 
 class ShowResume extends Component {
-  constructor(props) {
-    super(props)
-    this.showAlert = this.showAlert.bind(this)
-
-    this.state = {
-      visibility: false
-    }
-  }
-
-  showAlert() {
-    this.setState(prevState => {
-      return {
-        visibility: true
-      }
-    })
-  }
-
   render() {
     return (
       <Jumbotron
@@ -91,8 +74,6 @@ class ShowResume extends Component {
           outline
           color="secondary"
           onClick={() => {
-            this.showAlert()
-
             fetchCreateReservation({
               selectedShop: this.props.selectedShop,
               selectedService: this.props.selectedService,
@@ -107,17 +88,8 @@ class ShowResume extends Component {
           {/* {this.props.showAlert && <Alert> Blabla </Alert> */}
           Creer cette réservation
         </Button>{" "}
-        {this.state.visibility && (
-          <Alert
-            color="success"
-            style={{
-              marginTop: "30px"
-            }}
-          >
-            {" "}
-            Vous avez reçu un mail de confirmation sur{" "}
-            {this.props.selectedForm.email}{" "}
-          </Alert>
+        {this.props.showAlert && (
+          <Alert> Vous avez reçu un mail de confirmation </Alert>
         )}
       </Jumbotron>
     )
