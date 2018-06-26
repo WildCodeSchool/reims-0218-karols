@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
     style={
       Object {
         "color": "#435f71",
-        "fontSize": "14px",
+        "fontSize": "13px",
         "marginBottom": "24px",
         "textAlign": "center",
       }
@@ -32,13 +32,15 @@ exports[`renders correctly 1`] = `
     <p
       style={
         Object {
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
       }
     >
-      Wed 25 M07
+      Wed
+      <br />
+      25 M07
     </p>
   </div>
   <div

@@ -19,7 +19,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#435f71",
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
@@ -35,13 +35,15 @@ exports[`renders correctly 1`] = `
       <p
         style={
           Object {
-            "fontSize": "14px",
+            "fontSize": "13px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
         }
       >
-        Wed 25 M07
+        Wed
+        <br />
+        25 M07
       </p>
     </div>
     <div
@@ -1040,7 +1042,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#435f71",
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
@@ -1056,13 +1058,15 @@ exports[`renders correctly 1`] = `
       <p
         style={
           Object {
-            "fontSize": "14px",
+            "fontSize": "13px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
         }
       >
-        Thu 26 M07
+        Thu
+        <br />
+        26 M07
       </p>
     </div>
     <div
@@ -2061,7 +2065,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#435f71",
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
@@ -2077,13 +2081,15 @@ exports[`renders correctly 1`] = `
       <p
         style={
           Object {
-            "fontSize": "14px",
+            "fontSize": "13px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
         }
       >
-        Fri 27 M07
+        Fri
+        <br />
+        27 M07
       </p>
     </div>
     <div
@@ -3082,7 +3088,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#435f71",
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
@@ -3098,13 +3104,15 @@ exports[`renders correctly 1`] = `
       <p
         style={
           Object {
-            "fontSize": "14px",
+            "fontSize": "13px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
         }
       >
-        Sat 28 M07
+        Sat
+        <br />
+        28 M07
       </p>
     </div>
     <div
@@ -4103,7 +4111,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#435f71",
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
@@ -4119,13 +4127,15 @@ exports[`renders correctly 1`] = `
       <p
         style={
           Object {
-            "fontSize": "14px",
+            "fontSize": "13px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
         }
       >
-        Sun 29 M07
+        Sun
+        <br />
+        29 M07
       </p>
     </div>
     <div

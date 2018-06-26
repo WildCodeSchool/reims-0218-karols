@@ -54,7 +54,7 @@ class ShowResume extends Component {
           backgroundColor: "#F7F7F7",
           fontSize: "25px",
           borderRadius: "70px",
-          border: "2px solid black"
+          border: "2px solid #797979"
         }}
       >
         <ContactForm />
