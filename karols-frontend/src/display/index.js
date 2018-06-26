@@ -1,3 +1,5 @@
+import { getSelectedTimeSlot } from "../resume/index"
+
 // declaration of all functions that will determine if we want to show or not a section
 
 // show services if a shop is selected
@@ -34,3 +36,5 @@ export const showFourFirstTimeSlots = (timeSlots, showMore) =>
         timeSlots: day.timeSlots.slice(0, 4)
       }))
     : timeSlots
+
+export const showForm = state => getSelectedTimeSlot(state)

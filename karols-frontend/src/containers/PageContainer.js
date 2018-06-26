@@ -9,7 +9,8 @@ import {
   showFemalePrestation,
   showMalePrestation,
   showDatePicker,
-  showCalendar
+  showCalendar,
+  showForm
 } from "../display"
 
 import ServiceContainer from "./ServiceContainer"
@@ -31,6 +32,7 @@ const mapStateToProps = state => ({
   showFemalePrestation: showFemalePrestation(state),
   showMalePrestation: showMalePrestation(state),
   showDatePicker: showDatePicker(state),
+  showForm: showForm(state),
   showCalendar: showCalendar(state)
 })
 
@@ -58,7 +60,9 @@ class Page extends Component {
         </Element>
         {this.props.showDatePicker && <DatePickerContainer />}
         {this.props.showCalendar && <CalendarContainer />}
-        <ResumeContainer />
+        <Element name="form">
+          {this.props.showForm && <ResumeContainer />}
+        </Element>
       </Container>
     )
   }
