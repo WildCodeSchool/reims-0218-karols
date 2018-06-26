@@ -1,9 +1,10 @@
 import React, { Component } from "react"
 import { DateTime } from "luxon"
 import { connect } from "react-redux"
-import { Jumbotron, Button } from "reactstrap"
+import { Jumbotron, Button, Alert } from "reactstrap"
 import Recaptcha from "react-grecaptcha"
 
+import { makeSuccessReservation } from "../actions/actions"
 import {
   getSelectedShop,
   getSelectedService,
@@ -16,7 +17,14 @@ import {
 import { fetchCreateReservation } from "../api/fetchCreateReservation"
 import ContactForm from "../components/ContactForm"
 
+const mapDispatchToProps = dispatch => ({
+  success: () => {
+    dispatch(makeSuccessReservation())
+  }
+})
+
 const mapStateToProps = state => ({
+  showAlert: state.reservation.success,
   selectedShop: getSelectedShop(state),
   selectedService: getSelectedService(state),
   selectedGender: getSelectedGender(state),
@@ -121,15 +129,18 @@ class ShowResume extends Component {
               selectedForm: this.props.selectedForm,
               selectedPreparations: this.props.selectedPreparations
             }).then(data => {
-              console.log(data)
+              this.props.success()
             })
           }}
         >
           Creer cette réservation
         </Button>{" "}
+        {this.props.showAlert && (
+          <Alert> Vous avez reçu un mail de confirmation </Alert>
+        )}
       </Jumbotron>
     )
   }
 }
 
-export default connect(mapStateToProps, null)(ShowResume)
+export default connect(mapStateToProps, mapDispatchToProps, null)(ShowResume)
