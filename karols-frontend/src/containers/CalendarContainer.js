@@ -62,15 +62,13 @@ class TimeSlots extends Component {
   render() {
     return (
       <Container>
-        <ButtonGroup size="lg">
-          <Button onClick={() => this.handleMinusClick()}>&lt;</Button>
-          <Button onClick={() => this.handlePlusClick()}>&gt;</Button>
-        </ButtonGroup>
         <ResultCalendar
+          handleMinusClick={this.handleMinusClick}
           weekTimeSlots={showFourFirstTimeSlots(
             this.props.timeSlots,
             this.state.showMore
           )}
+          handlePlusClick={this.handlePlusClick}
           selectTimeSlot={this.props.onTimeSlotSelected}
         />
         <div className="availabilities-more-button mt-3">
