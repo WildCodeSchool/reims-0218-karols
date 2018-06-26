@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Jumbotron, Button, Alert } from "reactstrap"
 
+import { makeSuccessReservation } from "../actions/actions"
 import {
   getSelectedShop,
   getSelectedService,
@@ -11,6 +12,12 @@ import {
 } from "../resume"
 
 import { fetchCreateReservation } from "../api/fetchCreateReservation"
+
+const mapDispatchToProps = dispatch => ({
+  success: () => {
+    dispatch(makeSuccessReservation())
+  }
+})
 
 const mapStateToProps = state => ({
   showAlert: state.reservation.success,
@@ -65,14 +72,11 @@ class ShowResume extends Component {
                 {preparation.preparations[0].titlePreparation}
               </p>
             )
-
-            // <p className="horaire">
-            //   Vous désirez être pris en charge le {horaire}{" "}
-            // </p>
           })}
         <Button
           outline
           color="secondary"
+          showAlert
           onClick={() => {
             fetchCreateReservation({
               selectedShop: this.props.selectedShop,
@@ -81,11 +85,10 @@ class ShowResume extends Component {
               selectedForm: this.props.selectedForm,
               selectedPreparations: this.props.selectedPreparations
             }).then(data => {
-              console.log(data)
+              this.props.success()
             })
           }}
         >
-          {/* {this.props.showAlert && <Alert> Blabla </Alert> */}
           Creer cette réservation
         </Button>{" "}
         {this.props.showAlert && (
@@ -96,4 +99,4 @@ class ShowResume extends Component {
   }
 }
 
-export default connect(mapStateToProps, null)(ShowResume)
+export default connect(mapStateToProps, mapDispatchToProps, null)(ShowResume)
