@@ -136,7 +136,14 @@ class ShowResume extends Component {
           Creer cette réservation
         </Button>{" "}
         {this.props.showAlert && (
-          <Alert> Vous avez reçu un mail de confirmation </Alert>
+          <Alert
+            style={{
+              marginTop: "30px"
+            }}
+          >
+            {" "}
+            Vous avez reçu un mail de confirmation{" "}
+          </Alert>
         )}
       </Jumbotron>
     )
