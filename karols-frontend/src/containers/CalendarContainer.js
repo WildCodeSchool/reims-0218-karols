@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import { Container } from "reactstrap"
 
 import { fetchDateSelected } from "../api/fetchDateSelected"
+import { showFourFirstTimeSlots } from "../display/index"
 
 import { ButtonGroup, Button } from "reactstrap"
 import {
@@ -23,6 +24,13 @@ const mapDispatchToProps = dispatch => ({
 })
 
 class TimeSlots extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      actualizedTimeSLots: [],
+      showMore: false
+    }
+  }
   handleMinusClick = () => {
     this.props.timeSlots.map((timeSlot, key) => {
       if (key === 2) {
@@ -47,6 +55,15 @@ class TimeSlots extends Component {
       }
     })
   }
+  seeMoreTimeSlots = () => {
+    console.log(
+      this.props.timeSlots.map(day => ({
+        ...day,
+        timeSlots: day.timeSlots.slice(0, 4)
+      }))
+    )
+    console.log(this.state.actualizedTimeSLots)
+  }
   render() {
     return (
       <Container>
@@ -55,11 +72,18 @@ class TimeSlots extends Component {
           <Button onClick={() => this.handlePlusClick()}>&gt;</Button>
         </ButtonGroup>
         <ResultCalendar
-          weekTimeSlots={this.props.timeSlots}
+          weekTimeSlots={showFourFirstTimeSlots(
+            this.props.timeSlots,
+            this.state.showMore
+          )}
           selectTimeSlot={this.props.onTimeSlotSelected}
         />
         <div className="availabilities-more-button mt-3">
-          <Button outline color="secondary">
+          <Button
+            onClick={() => this.seeMoreTimeSlots()}
+            outline
+            color="secondary"
+          >
             Voir plus d'horaires
           </Button>
         </div>

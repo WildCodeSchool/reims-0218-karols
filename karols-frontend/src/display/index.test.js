@@ -4,7 +4,8 @@ import {
   showSex,
   showFemalePrestation,
   showMalePrestation,
-  showCalendar
+  showCalendar,
+  showFourFirstTimeSlots
 } from "."
 
 describe("showServices", () => {
@@ -7295,8 +7296,8 @@ describe.only("showCalendar", () => {
 })
 
 describe.only("showTimeSlots", () => {
-  it("should return the actualized timeslots with 4 timeslots", () => {
-    const returnedTimeSlots = [
+  it("should return the actualized timeslots with four timeslots by day", () => {
+    const allTimeSlots = [
       {
         "date": "2018-07-25T00:00:00.000+02:00",
         "timeSlots": [
@@ -8943,6 +8944,205 @@ describe.only("showTimeSlots", () => {
         ]
       }
     ]
-    expect(showTimeSlots(returnedTimeSlots).toEqual(true))
+    const expectedTimeSlots = [
+      {
+        "date": "2018-07-25T00:00:00.000+02:00",
+        "timeSlots": [
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-25T09:00:00.000+02:00",
+              "e": "2018-07-25T09:15:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-25T09:15:00.000+02:00",
+              "e": "2018-07-25T09:30:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-25T09:30:00.000+02:00",
+              "e": "2018-07-25T09:45:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-25T09:45:00.000+02:00",
+              "e": "2018-07-25T10:00:00.000+02:00",
+              "invalid": null
+            }
+          }]},
+      {
+        "date": "2018-07-26T00:00:00.000+02:00",
+        "timeSlots": [
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-26T09:00:00.000+02:00",
+              "e": "2018-07-26T09:15:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-26T09:15:00.000+02:00",
+              "e": "2018-07-26T09:30:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-26T09:30:00.000+02:00",
+              "e": "2018-07-26T09:45:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-26T09:45:00.000+02:00",
+              "e": "2018-07-26T10:00:00.000+02:00",
+              "invalid": null
+            }
+          }]},
+      {
+        "date": "2018-07-27T00:00:00.000+02:00",
+        "timeSlots": [
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-27T09:00:00.000+02:00",
+              "e": "2018-07-27T09:15:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-27T09:15:00.000+02:00",
+              "e": "2018-07-27T09:30:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-27T09:30:00.000+02:00",
+              "e": "2018-07-27T09:45:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-27T09:45:00.000+02:00",
+              "e": "2018-07-27T10:00:00.000+02:00",
+              "invalid": null
+            }
+          }]},
+      {
+        "date": "2018-07-28T00:00:00.000+02:00",
+        "timeSlots": [
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-28T09:00:00.000+02:00",
+              "e": "2018-07-28T09:15:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-28T09:15:00.000+02:00",
+              "e": "2018-07-28T09:30:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-28T09:30:00.000+02:00",
+              "e": "2018-07-28T09:45:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-28T09:45:00.000+02:00",
+              "e": "2018-07-28T10:00:00.000+02:00",
+              "invalid": null
+            }
+          }]},
+      {
+        "date": "2018-07-29T00:00:00.000+02:00",
+        "timeSlots": [
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-29T09:00:00.000+02:00",
+              "e": "2018-07-29T09:15:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-29T09:15:00.000+02:00",
+              "e": "2018-07-29T09:30:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-29T09:30:00.000+02:00",
+              "e": "2018-07-29T09:45:00.000+02:00",
+              "invalid": null
+            }
+          },
+          {
+            "available": true,
+            "selected": false,
+            "time": {
+              "s": "2018-07-29T09:45:00.000+02:00",
+              "e": "2018-07-29T10:00:00.000+02:00",
+              "invalid": null
+            }
+          }
+        ]
+      }
+    ]
+    expect(showFourFirstTimeSlots(allTimeSlots, false)).toEqual(expectedTimeSlots)
   })
 })

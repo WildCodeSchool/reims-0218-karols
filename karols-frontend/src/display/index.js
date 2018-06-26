@@ -27,5 +27,10 @@ export const showDatePicker = state =>
 
 export const showCalendar = state => state.timeSlots.length >= 1
 
-export const showTimeSlots = state =>
-  state.timeSlots.map(day => ({ ...day, timeSlots: day.timeSlots.slice(0, 4) }))
+export const showFourFirstTimeSlots = (timeSlots, showMore) =>
+  !showMore
+    ? timeSlots.map(day => ({
+        ...day,
+        timeSlots: day.timeSlots.slice(0, 4)
+      }))
+    : timeSlots
