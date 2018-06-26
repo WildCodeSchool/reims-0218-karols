@@ -49,6 +49,7 @@ class DatePickerSelect extends Component {
     const dateFromJsDate = DateTime.fromJSDate(this.state.dateSelected).toISO()
     fetchDateSelected(dateFromJsDate).then(response => {
       this.props.onTimeSlotsReceived(response)
+      this.closeModal()
     })
   }
 
