@@ -68,7 +68,9 @@ class DatePickerSelect extends Component {
             Choisir une date
           </Button>
           <Modal isOpen={this.state.modal}>
-            <ModalHeader>Choisissez la date de votre prestation</ModalHeader>
+            <ModalHeader toggle={this.closeModal.bind(this)}>
+              Choisissez la date de votre prestation
+            </ModalHeader>
             <ModalBody>
               <InfiniteCalendar
                 onSelect={date => {
@@ -121,11 +123,7 @@ class DatePickerSelect extends Component {
               />
             </ModalBody>
             <ModalFooter>
-              <Button
-                outline
-                color="secondary"
-                onClick={this.closeModal.bind(this)}
-              >
+              <Button color="secondary" onClick={this.closeModal.bind(this)}>
                 Valider
               </Button>
             </ModalFooter>
