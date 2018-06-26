@@ -5,7 +5,14 @@ import InfiniteCalendar from "react-infinite-calendar"
 import "react-infinite-calendar/styles.css" // Make sure to import the default stylesheet
 import DatePickerTitle from "../components/DatePickerTitle"
 import { fetchDateSelected } from "../api/fetchDateSelected"
-import { Button, Modal, ModalHeader, ModalBody, Container } from "reactstrap"
+import {
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Container
+} from "reactstrap"
 const { DateTime } = require("luxon")
 
 const mapStateToProps = state => ({})
@@ -60,10 +67,8 @@ class DatePickerSelect extends Component {
           >
             Choisir une date
           </Button>
-          <Modal isOpen={this.state.modal} toggle={this.closeModal.bind(this)}>
-            <ModalHeader toggle={this.closeModal.bind(this)}>
-              Choisissez la date de votre prestation
-            </ModalHeader>
+          <Modal isOpen={this.state.modal}>
+            <ModalHeader>Choisissez la date de votre prestation</ModalHeader>
             <ModalBody>
               <InfiniteCalendar
                 onSelect={date => {
@@ -115,6 +120,11 @@ class DatePickerSelect extends Component {
                 }}
               />
             </ModalBody>
+            <ModalFooter>
+              <Button color="secondary" onClick={this.closeModal.bind(this)}>
+                Valider
+              </Button>
+            </ModalFooter>
           </Modal>
         </Container>
       </div>
