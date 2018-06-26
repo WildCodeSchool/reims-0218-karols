@@ -43,6 +43,16 @@ class DatePickerSelect extends Component {
       modal: false
     })
   }
+
+  validate() {
+    // Fetch route date selected
+    const dateFromJsDate = DateTime.fromJSDate(this.state.dateSelected).toISO()
+    fetchDateSelected(dateFromJsDate).then(response => {
+      this.props.onTimeSlotsReceived(response)
+      this.closeModal()
+    })
+  }
+
   showModal() {
     this.setState({
       modal: true
@@ -68,17 +78,14 @@ class DatePickerSelect extends Component {
             Choisir une date
           </Button>
           <Modal isOpen={this.state.modal}>
-            <ModalHeader>Choisissez la date de votre prestation</ModalHeader>
+            <ModalHeader toggle={this.closeModal.bind(this)}>
+              Choisissez la date de votre prestation
+            </ModalHeader>
             <ModalBody>
               <InfiniteCalendar
                 onSelect={date => {
                   this.setState({
                     dateSelected: date
-                  })
-                  // Fetch route date selected
-                  const dateFromJsDate = DateTime.fromJSDate(date).toISO()
-                  fetchDateSelected(dateFromJsDate).then(response => {
-                    this.props.onTimeSlotsReceived(response)
                   })
                 }}
                 style={{ margin: "auto" }}
@@ -121,11 +128,7 @@ class DatePickerSelect extends Component {
               />
             </ModalBody>
             <ModalFooter>
-              <Button
-                outline
-                color="secondary"
-                onClick={this.closeModal.bind(this)}
-              >
+              <Button color="secondary" onClick={this.validate.bind(this)}>
                 Valider
               </Button>
             </ModalFooter>
