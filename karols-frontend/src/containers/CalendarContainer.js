@@ -27,7 +27,6 @@ class TimeSlots extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      actualizedTimeSLots: [],
       showMore: false
     }
   }
