@@ -15,7 +15,6 @@ import {
 } from "../resume"
 
 import { fetchCreateReservation } from "../api/fetchCreateReservation"
-import ContactForm from "../components/ContactForm"
 
 const mapDispatchToProps = dispatch => ({
   success: () => {
