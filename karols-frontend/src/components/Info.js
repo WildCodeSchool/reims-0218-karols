@@ -1,7 +1,7 @@
 import React from "react"
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap"
 
-class infoConditional extends React.Component {
+class Info extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -70,4 +70,4 @@ class infoConditional extends React.Component {
   }
 }
 
-export default infoConditional
+export default Info

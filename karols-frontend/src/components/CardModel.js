@@ -1,6 +1,6 @@
 import React from "react"
 import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
-import InfoConditional from "./InfoConditional"
+import Info from "./Info"
 
 const CardModel = ({
   id,
@@ -102,7 +102,7 @@ const CardModel = ({
               >
                 {description}
               </p>
-              {info && <InfoConditional />}
+              {info && <Info />}
             </CardFooter>
           </div>
         </div>
