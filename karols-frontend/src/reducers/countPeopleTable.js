@@ -1,7 +1,7 @@
 import { CHOOSE_COUNT_PEOPLE } from "../actions/actions"
 
 const initialState = {
-  count: 0
+  count: 2
 }
 const countPeopleTable = (prevState = initialState, action) => {
   if (action.type === CHOOSE_COUNT_PEOPLE) {

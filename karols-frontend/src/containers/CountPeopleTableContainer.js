@@ -17,7 +17,12 @@ class CountPeopleTable extends Component {
   render() {
     return (
       <div>
-        <SelectClient />
+        <SelectClient
+          onCountChange={event => {
+            this.props.onCountChange(event.target.value)
+          }}
+          count={this.props.count}
+        />
       </div>
     )
   }
