@@ -40,6 +40,7 @@ class TimeSlots extends Component {
           this.props.onTimeSlotsReceived(response)
         })
       }
+      return false
     })
   }
   handlePlusClick = () => {
@@ -52,6 +53,7 @@ class TimeSlots extends Component {
           this.props.onTimeSlotsReceived(response)
         })
       }
+      return false
     })
   }
   seeMoreTimeSlots = () => {
