@@ -6,7 +6,7 @@ export const CHOOSE_TIMESLOT = "CHOOSE_TIMESLOT"
 export const SHOPS_PRESTATIONS_RECEIVED = "SHOPS_PRESTATIONS_RECEIVED"
 export const TIMESLOTS_RECEIVED = "TIMESLOTS_RECEIVED"
 export const SUCCESS_RESERVATION = "SUCCESS_RESERVATION"
-export const CHOOSE_NUMBER_PEOPLE = "CHOOSE_NUMBER_PEOPLE"
+export const CHOOSE_COUNT_PEOPLE = "CHOOSE_COUNT_PEOPLE"
 
 export const makeChoosePrestation = (prestationId, preparationId) => ({
   type: CHOOSE_PRESTATION,
@@ -48,7 +48,7 @@ export const makeTimeslotsReceived = response => ({
   response
 })
 
-export const makeChooseNumberPeopleTable = number => ({
-  type: CHOOSE_NUMBER_PEOPLE,
-  number
+export const makeChooseCountPeopleTable = count => ({
+  type: CHOOSE_COUNT_PEOPLE,
+  count
 })
