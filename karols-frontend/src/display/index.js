@@ -21,11 +21,14 @@ export const showMalePrestation = state =>
     0 && showSex(state)
 
 export const showDatePicker = state =>
-  state.prestations.filter(
+  (state.prestations.filter(
     prestation =>
       prestation.preparations.filter(preparation => preparation.selected)
         .length > 0
-  ).length > 0 && showSex(state)
+  ).length > 0 &&
+    showSex(state)) ||
+  state.services.filter(service => service.selected && service.id === 2)
+    .length > 0
 
 export const showCalendar = state => state.timeSlots.length >= 1
 
