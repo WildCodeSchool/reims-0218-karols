@@ -1,5 +1,5 @@
 import React from "react"
-import { Label, Input, FormGroup } from "reactstrap"
+import { Label, Input, FormGroup, Button } from "reactstrap"
 
 const SelectClient = () => {
   return (
@@ -13,6 +13,9 @@ const SelectClient = () => {
         placeholder="Indiquez le nombre de personnes"
         onChange={() => {}}
       />
+      <Button outline color="secondary">
+        Valider
+      </Button>
     </FormGroup>
   )
 }
