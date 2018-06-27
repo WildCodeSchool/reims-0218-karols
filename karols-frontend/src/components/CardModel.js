@@ -102,7 +102,9 @@ const CardModel = ({
               >
                 {description}
               </p>
-              {info && <Info />}
+              {info && <Info info={info} />}
+              {/* 
+              si info est true dans le json il renvoie le composant Info auquel on a passé la props info */}
             </CardFooter>
           </div>
         </div>

@@ -53,7 +53,7 @@ class Info extends React.Component {
           <ModalHeader toggle={this.toggle}>Description</ModalHeader>
           <ModalBody>
             <Iframe
-              url="https://fr.wikipedia.org/wiki/Bob_Marley"
+              url={this.props.info}
               width="450px"
               height="450px"
               id="myId"
