@@ -10,7 +10,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  select: count => dispatch(makeChooseCountPeopleTable(count))
+  onCountChange: count => dispatch(makeChooseCountPeopleTable(count))
 })
 
 class CountPeopleTable extends Component {

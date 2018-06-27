@@ -1,6 +1,9 @@
 import React from "react"
 import { Label, Input, FormGroup, Button } from "reactstrap"
 
+//la valeur affichée devrait venir des props
+// onChange devrait appeler une fonction depuis les props
+
 const SelectClient = () => {
   return (
     <FormGroup className="mt-3">
