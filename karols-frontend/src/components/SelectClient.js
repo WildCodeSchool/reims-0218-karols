@@ -8,7 +8,7 @@ const SelectClient = () => {
       <Input
         type="number"
         id="select-client"
-        max="6"
+        max="48"
         min="0"
         placeholder="Indiquez le nombre de personnes"
         onChange={() => {}}
