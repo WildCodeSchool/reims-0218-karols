@@ -5,7 +5,7 @@ import { Container } from "reactstrap"
 import { fetchDateSelected } from "../api/fetchDateSelected"
 import { showFourFirstTimeSlots } from "../display/index"
 
-import { ButtonGroup, Button } from "reactstrap"
+import { Button } from "reactstrap"
 import {
   makeTimeslotsReceived,
   makeChooseSlotReservation
@@ -40,6 +40,7 @@ class TimeSlots extends Component {
           this.props.onTimeSlotsReceived(response)
         })
       }
+      return false
     })
   }
   handlePlusClick = () => {
@@ -52,6 +53,7 @@ class TimeSlots extends Component {
           this.props.onTimeSlotsReceived(response)
         })
       }
+      return false
     })
   }
   seeMoreTimeSlots = () => {

@@ -34,10 +34,10 @@ class Info extends React.Component {
             style={{
               position: "relative",
               top: "50%",
-              webkitTransform: "translateY(-20%)",
-              mozTransform: "translateY(-20%)",
+              WebkitTransform: "translateY(-20%)",
+              MozTransform: "translateY(-20%)",
               msTransform: "translateY(-20%)",
-              oTransform: "translateY(-20%)",
+              OTransform: "translateY(-20%)",
               transform: "translateY(-20%)"
             }}
           >
