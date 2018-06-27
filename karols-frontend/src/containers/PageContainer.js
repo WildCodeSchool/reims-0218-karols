@@ -10,7 +10,8 @@ import {
   showMalePrestation,
   showDatePicker,
   showCalendar,
-  showForm
+  showForm,
+  showCountPeopleTable
 } from "../display"
 
 import ServiceContainer from "./ServiceContainer"
@@ -21,6 +22,7 @@ import GenderContainer from "./GenderContainer"
 import DatePickerContainer from "./DatePickerContainer"
 import CalendarContainer from "./CalendarContainer"
 import ResumeContainer from "./ResumeContainer"
+import CountPeopleTableContainer from "./CountPeopleTableContainer"
 
 import { makeShopsPrestationsReceived } from "../actions/actions"
 
@@ -34,7 +36,8 @@ const mapStateToProps = state => ({
   showMalePrestation: showMalePrestation(state),
   showDatePicker: showDatePicker(state),
   showForm: showForm(state),
-  showCalendar: showCalendar(state)
+  showCalendar: showCalendar(state),
+  showCountPeopleTable: showCountPeopleTable(state)
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -50,6 +53,7 @@ class Page extends Component {
         <Element name="services">
           {this.props.showServices && <ServiceContainer />}
         </Element>
+        {this.props.showCountPeopleTable && <CountPeopleTableContainer />}
         <Element name="genders">
           {this.props.showSex && <GenderContainer />}
         </Element>

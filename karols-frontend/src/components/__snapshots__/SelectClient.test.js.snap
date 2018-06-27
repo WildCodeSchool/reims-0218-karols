@@ -13,11 +13,12 @@ exports[`renders correctly 1`] = `
   <input
     className="form-control"
     id="select-client"
-    max="6"
-    min="0"
-    onChange={[Function]}
+    max="48"
+    min="2"
+    onChange={undefined}
     placeholder="Indiquez le nombre de personnes"
     type="number"
+    value={undefined}
   />
 </div>
 `;

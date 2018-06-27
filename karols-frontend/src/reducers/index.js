@@ -6,6 +6,7 @@ import shops from "./shops"
 import reservation from "./reservation"
 import genders from "./genders"
 import timeSlots from "./timeSlots"
+import countPeopleTable from "./countPeopleTable"
 import { reducer as formReducer } from "redux-form"
 
 export default combineReducers({
@@ -15,5 +16,6 @@ export default combineReducers({
   genders,
   reservation,
   timeSlots,
-  form: formReducer
+  form: formReducer,
+  countPeopleTable
 })
