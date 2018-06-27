@@ -178,7 +178,8 @@ class ContactForm extends Component {
               selectedService: this.props.selectedService,
               selectedGender: this.props.selectedGender,
               selectedForm: this.props.selectedForm,
-              selectedPreparations: this.props.selectedPreparations
+              selectedPreparations: this.props.selectedPreparations,
+              selectedTimeSlot: this.props.selectedTimeSlot
             }).then(data => {
               this.props.success()
             })
