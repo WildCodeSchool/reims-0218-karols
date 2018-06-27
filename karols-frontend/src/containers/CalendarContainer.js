@@ -5,7 +5,7 @@ import { Container } from "reactstrap"
 import { fetchDateSelected } from "../api/fetchDateSelected"
 import { showFourFirstTimeSlots } from "../display/index"
 
-import { ButtonGroup, Button } from "reactstrap"
+import { Button } from "reactstrap"
 import {
   makeTimeslotsReceived,
   makeChooseSlotReservation
