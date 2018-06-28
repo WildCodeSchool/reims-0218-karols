@@ -14,7 +14,11 @@ import {
   INCREMENT_SEX,
   makeIncrementSex,
   DECREMENT_SEX,
-  makeDecrementSex
+  makeDecrementSex,
+  INCREMENT_PRESTATION,
+  makeIncrementPrestation,
+  DECREMENT_PRESTATION,
+  makeDecrementPrestation
 } from "./actions"
 // import des actions et actions creator pour faire des testes
 
@@ -112,5 +116,27 @@ describe("action decrement sex", () => {
       sex: "M"
     }
     expect(makeDecrementSex("M")).toEqual(expected)
+  })
+})
+
+describe("action to increment prestation", () => {
+  it("should return a count increment prestation with a prestation id", () => {
+    const expected = {
+      type: INCREMENT_PRESTATION,
+      preparationId: 4,
+      prestationId: 2
+    }
+    expect(makeIncrementPrestation(2, 4)).toEqual(expected)
+  })
+})
+
+describe("action to decrement prestation", () => {
+  it("should return a count decrement prestation with a prestation id", () => {
+    const expected = {
+      type: DECREMENT_PRESTATION,
+      preparationId: 4,
+      prestationId: 2
+    }
+    expect(makeDecrementPrestation(2, 4)).toEqual(expected)
   })
 })

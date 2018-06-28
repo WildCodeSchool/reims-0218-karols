@@ -9,6 +9,8 @@ export const SUCCESS_RESERVATION = "SUCCESS_RESERVATION"
 export const CHOOSE_COUNT_PEOPLE = "CHOOSE_COUNT_PEOPLE"
 export const INCREMENT_SEX = "INCREMENT_SEX"
 export const DECREMENT_SEX = "DECREMENT_SEX"
+export const INCREMENT_PRESTATION = "INCREMENT_PRESTATION"
+export const DECREMENT_PRESTATION = "DECREMENT_PRESTATION"
 
 export const makeChoosePrestation = (prestationId, preparationId) => ({
   type: CHOOSE_PRESTATION,
@@ -63,4 +65,16 @@ export const makeIncrementSex = sex => ({
 export const makeDecrementSex = sex => ({
   type: DECREMENT_SEX,
   sex
+})
+
+export const makeIncrementPrestation = (prestationId, preparationId) => ({
+  type: INCREMENT_PRESTATION,
+  prestationId,
+  preparationId
+})
+
+export const makeDecrementPrestation = (prestationId, preparationId) => ({
+  type: DECREMENT_PRESTATION,
+  prestationId,
+  preparationId
 })
