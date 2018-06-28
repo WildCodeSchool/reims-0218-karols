@@ -97,8 +97,8 @@ describe("action increment sex", () => {
   it("should return a count sex +1", () => {
     const expected = {
       type: INCREMENT_SEX,
-      sex: 2
+      sex: "M"
     }
-    expect(makeIncrementSex(2)).toEqual(expected)
+    expect(makeIncrementSex("M")).toEqual(expected)
   })
 })

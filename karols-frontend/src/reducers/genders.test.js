@@ -93,10 +93,10 @@ describe("gendersCount", () => {
       {
         sex: "F",
         selected: false,
-        count: 1
+        count: 0
       }
     ]
-    const action = makeIncrementSex()
+    const action = makeIncrementSex("M")
     expect(genders(prevState, action)).toEqual(expectedState)
   })
 })

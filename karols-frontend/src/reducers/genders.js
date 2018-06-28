@@ -25,9 +25,12 @@ const genders = (prevState = initialState, action) => {
     }))
   }
   if (action.type === INCREMENT_SEX) {
-    return prevState.map(counterSex => ({
-      ...counterSex,
-      count: counterSex.count + 1
+    return prevState.map(sexObject => ({
+      ...sexObject,
+      count:
+        action.sex === sexObject.sex ? sexObject.count + 1 : sexObject.count
+      // la propriete count incremente de 1 la valeur de count si action.sex === sexObject.sex
+      // sinon il renvoie la valeur de sexObjet par defaut
     }))
   }
   return prevState
