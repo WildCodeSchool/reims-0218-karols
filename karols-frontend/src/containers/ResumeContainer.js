@@ -1,8 +1,7 @@
 import React, { Component } from "react"
 import { DateTime } from "luxon"
 import { connect } from "react-redux"
-import { Jumbotron, Button, Alert } from "reactstrap"
-import Recaptcha from "react-grecaptcha"
+import { Jumbotron } from "reactstrap"
 
 import { makeSuccessReservation } from "../actions/actions"
 import {
@@ -13,8 +12,6 @@ import {
   getSelectedPreparations,
   getSelectedTimeSlot
 } from "../resume"
-
-import { fetchCreateReservation } from "../api/fetchCreateReservation"
 
 const mapDispatchToProps = dispatch => ({
   success: () => {
@@ -38,20 +35,6 @@ const transformTimeSlot = timeSlot =>
     .toFormat("cccc dd LLLL HH 'h' mm")
 
 class ShowResume extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      validCaptcha: false
-    }
-    this.verifyCallback = this.verifyCallback.bind(this)
-  }
-
-  verifyCallback() {
-    this.setState({
-      validCaptcha: true
-    })
-  }
-
   render() {
     return (
       <Jumbotron
@@ -76,18 +59,6 @@ class ShowResume extends Component {
             Vous avez choisi {this.props.selectedService.name}
           </p>
         )}
-        {this.props.selectedForm && (
-          <p className="form">Prénom : {this.props.selectedForm.firstName}</p>
-        )}
-        {this.props.selectedForm && (
-          <p className="form">Nom : {this.props.selectedForm.lastName}</p>
-        )}
-        {this.props.selectedForm && (
-          <p className="form">Email : {this.props.selectedForm.email}</p>
-        )}
-        {this.props.selectedGender && (
-          <p className="gender">Pour {this.props.selectedGender.sex}</p>
-        )}
         {this.props.selectedPreparations &&
           this.props.selectedPreparations.map((preparation, index) => {
             return (
@@ -101,47 +72,6 @@ class ShowResume extends Component {
             Vous désirez être pris en charge le {""}
             {transformTimeSlot(this.props.selectedTimeSlot)}
           </p>
-        )}
-        <Recaptcha
-          sitekey={"6LenQWAUAAAAAPa99VtqSlKXvI_uNBqZA5XyD-hQ"}
-          callback={this.verifyCallback}
-          expiredCallback={() => console.log("expiredcaptcha")}
-          locale="fr-FR"
-          className="customClassName"
-          data-theme="grey"
-          style={{
-            display: "table",
-            margin: "0 auto",
-            paddingBottom: "30px"
-          }}
-        />
-        <Button
-          disabled={!this.state.validCaptcha}
-          outline
-          color="secondary"
-          onClick={() => {
-            return fetchCreateReservation({
-              selectedShop: this.props.selectedShop,
-              selectedService: this.props.selectedService,
-              selectedGender: this.props.selectedGender,
-              selectedForm: this.props.selectedForm,
-              selectedPreparations: this.props.selectedPreparations
-            }).then(data => {
-              this.props.success()
-            })
-          }}
-        >
-          Creer cette réservation
-        </Button>{" "}
-        {this.props.showAlert && (
-          <Alert
-            style={{
-              marginTop: "30px"
-            }}
-          >
-            {" "}
-            Vous avez reçu un mail de confirmation{" "}
-          </Alert>
         )}
       </Jumbotron>
     )

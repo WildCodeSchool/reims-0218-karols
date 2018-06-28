@@ -1,7 +1,51 @@
 import React, { Component } from "react"
 import { Field, reduxForm } from "redux-form"
+import Recaptcha from "react-grecaptcha"
+import { connect } from "react-redux"
+import { Button, Alert } from "reactstrap"
+
+import { fetchCreateReservation } from "../api/fetchCreateReservation"
+import { makeSuccessReservation } from "../actions/actions"
+import {
+  getSelectedShop,
+  getSelectedService,
+  getSelectedGender,
+  getSelectedForm,
+  getSelectedPreparations,
+  getSelectedTimeSlot
+} from "../resume"
+
+const mapDispatchToProps = dispatch => ({
+  success: () => {
+    dispatch(makeSuccessReservation())
+  }
+})
+
+const mapStateToProps = state => ({
+  showAlert: state.reservation.success,
+  selectedShop: getSelectedShop(state),
+  selectedService: getSelectedService(state),
+  selectedGender: getSelectedGender(state),
+  selectedForm: getSelectedForm(state),
+  selectedPreparations: getSelectedPreparations(state),
+  selectedTimeSlot: getSelectedTimeSlot(state)
+})
 
 class ContactForm extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      validCaptcha: false
+    }
+    this.verifyCallback = this.verifyCallback.bind(this)
+  }
+
+  verifyCallback() {
+    this.setState({
+      validCaptcha: true
+    })
+  }
+
   render() {
     const { handleSubmit } = this.props
     return (
@@ -12,8 +56,9 @@ class ContactForm extends Component {
           padding: "16px",
           background: "#F7F7F7",
           fontSize: "22px",
-          borderRadius: "10px",
-          textAlign: "center"
+          borderRadius: "60px",
+          textAlign: "center",
+          border: "2px solid grey"
         }}
         className="justify-content-center"
       >
@@ -110,14 +155,55 @@ class ContactForm extends Component {
             }}
           />
         </div>
+        <Recaptcha
+          sitekey={"6LenQWAUAAAAAPa99VtqSlKXvI_uNBqZA5XyD-hQ"}
+          callback={this.verifyCallback}
+          expiredCallback={() => console.log("expiredcaptcha")}
+          locale="fr-FR"
+          className="customClassName"
+          data-theme="grey"
+          style={{
+            display: "table",
+            margin: "0 auto",
+            paddingBottom: "30px"
+          }}
+        />
+        <Button
+          disabled={!this.state.validCaptcha}
+          outline
+          color="secondary"
+          onClick={() => {
+            return fetchCreateReservation({
+              selectedShop: this.props.selectedShop,
+              selectedService: this.props.selectedService,
+              selectedGender: this.props.selectedGender,
+              selectedForm: this.props.selectedForm,
+              selectedPreparations: this.props.selectedPreparations,
+              selectedTimeSlot: this.props.selectedTimeSlot
+            }).then(data => {
+              this.props.success()
+            })
+          }}
+        >
+          Creer cette réservation
+        </Button>{" "}
+        {this.props.showAlert && (
+          <Alert
+            style={{
+              marginTop: "30px"
+            }}
+          >
+            {" "}
+            Vous avez reçu un mail de confirmation{" "}
+          </Alert>
+        )}
       </form>
     )
   }
 }
 
-// Decorate the form component
 ContactForm = reduxForm({
-  form: "contact" // a unique name for this form
+  form: "contact"
 })(ContactForm)
 
-export default ContactForm
+export default connect(mapStateToProps, mapDispatchToProps)(ContactForm)
