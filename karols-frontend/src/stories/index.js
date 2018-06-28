@@ -2227,7 +2227,25 @@ const weekTimeSlots = [
 //   <ResultCalendar />
 // ))
 
+const showCounter = true
+
+const handleMinus = () => {
+  console.log("Moins")
+}
+
+const handlePlus = () => {
+  console.log("Plus")
+}
+
 storiesOf("Counter", module).add(
   "Counter render",
-  () => <Counter />
+  () =>
+    showCounter && (
+      <Counter
+        handleMinus={handleMinus}
+        handlePlus={handlePlus}
+        count={5}
+        showCounter={true}
+      />
+    )
 )
