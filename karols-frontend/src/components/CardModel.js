@@ -1,6 +1,7 @@
 import React from "react"
 import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
 import Info from "./Info"
+import Counter from "./Counter"
 
 const CardModel = ({
   id,
@@ -10,7 +11,11 @@ const CardModel = ({
   image,
   selected,
   select,
-  info
+  info,
+  showCounter,
+  count,
+  handleMinus,
+  handlePlus
 }) => {
   return (
     <div>
@@ -100,7 +105,7 @@ const CardModel = ({
                   transform: "translateY(calc(0px + 1em))"
                 }}
               >
-                {description}
+                {description} <Counter />
               </p>
               {info && <Info info={info} />}
               {/* 

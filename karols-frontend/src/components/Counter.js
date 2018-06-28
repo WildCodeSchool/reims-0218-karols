@@ -12,11 +12,21 @@ const HandlePLus = () => {
 const Counter = () => {
   return (
     <div>
-      <Button onClick={HandleMinus} size="sm">
+      <Button
+        onClick={HandleMinus}
+        size="sm"
+        style={{ display: "inline-block" }}
+        className="mr-3"
+      >
         -
       </Button>
-      <p>0</p>
-      <Button onClick={HandlePLus} size="sm">
+      <p style={{ display: "inline-block" }}>0</p>
+      <Button
+        onClick={HandlePLus}
+        size="sm"
+        style={{ display: "inline-block" }}
+        className="ml-3"
+      >
         +
       </Button>
     </div>
