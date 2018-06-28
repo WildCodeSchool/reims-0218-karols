@@ -1,4 +1,4 @@
-import { CHOOSE_SEX, INCREMENT_SEX } from "../actions/actions"
+import { CHOOSE_SEX, INCREMENT_SEX, DECREMENT_SEX } from "../actions/actions"
 
 const initialState = [
   {
@@ -30,6 +30,15 @@ const genders = (prevState = initialState, action) => {
       count:
         action.sex === sexObject.sex ? sexObject.count + 1 : sexObject.count
       // la propriete count incremente de 1 la valeur de count si action.sex === sexObject.sex
+      // sinon il renvoie la valeur de sexObjet par defaut
+    }))
+  }
+  if (action.type === DECREMENT_SEX) {
+    return prevState.map(sexObject => ({
+      ...sexObject,
+      count:
+        action.sex === sexObject.sex ? sexObject.count - 1 : sexObject.count
+      // la propriete count decremente de 1 la valeur de count si action.sex === sexObject.sex
       // sinon il renvoie la valeur de sexObjet par defaut
     }))
   }
