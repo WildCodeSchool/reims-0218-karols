@@ -32,6 +32,7 @@ import CardHover from "../components/CardHover"
 import ListChoiceShop from "../components/ListChoiceShop"
 import CardModel from "../components/CardModel"
 import Resume from "../components/Resume"
+import Counter from "../components/Counter"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -2225,3 +2226,8 @@ const weekTimeSlots = [
 // storiesOf("ResultCalendar", module).add("Render the calendar with time", () => (
 //   <ResultCalendar />
 // ))
+
+storiesOf("Counter", module).add(
+  "Counter render",
+  () => <Counter />
+)
