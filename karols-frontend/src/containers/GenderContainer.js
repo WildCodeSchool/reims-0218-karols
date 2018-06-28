@@ -8,6 +8,10 @@ import { makeChooseSex } from "../actions/actions"
 import GenderTitle from "../components/GenderTitle"
 import CardModelGender from "../components/CardModelGender"
 
+// Pour la connection avec les compteurs
+// ajouter handlePlus et handleMInus dans le mapDispatchToProps
+// les passer à CardModel
+
 const mapStateToProps = state => ({
   genders: state.genders
 })
