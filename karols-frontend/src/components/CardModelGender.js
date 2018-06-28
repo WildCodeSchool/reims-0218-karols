@@ -1,5 +1,6 @@
 import React from "react"
-import { Card, CardTitle, CardBody } from "reactstrap"
+import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
+import Counter from "./Counter"
 
 const CardModelGender = ({
   id,
@@ -7,7 +8,11 @@ const CardModelGender = ({
   description,
   image,
   selected,
-  select
+  select,
+  showCounter,
+  count,
+  handleMinus,
+  handlePlus
 }) => {
   return (
     <div>
@@ -65,6 +70,15 @@ const CardModelGender = ({
                 </p>
               </CardTitle>
             </CardBody>
+            <CardFooter>
+              {showCounter && (
+                <Counter
+                  count={count}
+                  handleMinus={handleMinus}
+                  handlePlus={handlePlus}
+                />
+              )}
+            </CardFooter>
           </div>
         </div>
       </Card>
