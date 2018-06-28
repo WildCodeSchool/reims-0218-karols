@@ -7,6 +7,8 @@ export const SHOPS_PRESTATIONS_RECEIVED = "SHOPS_PRESTATIONS_RECEIVED"
 export const TIMESLOTS_RECEIVED = "TIMESLOTS_RECEIVED"
 export const SUCCESS_RESERVATION = "SUCCESS_RESERVATION"
 export const CHOOSE_COUNT_PEOPLE = "CHOOSE_COUNT_PEOPLE"
+export const INCREMENT_SEX = "INCREMENT_SEX"
+export const DECREMENT_SEX = "DECREMENT_SEX"
 
 export const makeChoosePrestation = (prestationId, preparationId) => ({
   type: CHOOSE_PRESTATION,
@@ -51,4 +53,14 @@ export const makeTimeslotsReceived = response => ({
 export const makeChooseCountPeopleTable = count => ({
   type: CHOOSE_COUNT_PEOPLE,
   count
+})
+
+export const makeIncrementSex = sex => ({
+  type: INCREMENT_SEX,
+  sex
+})
+
+export const makeDecrementSex = sex => ({
+  type: DECREMENT_SEX,
+  sex
 })

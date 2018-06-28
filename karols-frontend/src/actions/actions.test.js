@@ -10,7 +10,9 @@ import {
   CHOOSE_PRESTATION,
   makeChoosePrestation,
   SUCCESS_RESERVATION,
-  makeSuccessReservation
+  makeSuccessReservation,
+  INCREMENT_SEX,
+  makeIncrementSex
 } from "./actions"
 // import des actions et actions creator pour faire des testes
 
@@ -88,5 +90,15 @@ describe("action selected shop", () => {
     }
 
     expect(makeChooseShop(1)).toEqual(expected)
+  })
+})
+
+describe("action increment sex", () => {
+  it("should return a count sex +1", () => {
+    const expected = {
+      type: INCREMENT_SEX,
+      sex: 2
+    }
+    expect(makeIncrementSex(2)).toEqual(expected)
   })
 })
