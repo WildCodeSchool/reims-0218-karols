@@ -59,18 +59,6 @@ class ShowResume extends Component {
             Vous avez choisi {this.props.selectedService.name}
           </p>
         )}
-        {/* {this.props.selectedForm && (
-          <p className="form">Prénom : {this.props.selectedForm.firstName}</p>
-        )}
-        {this.props.selectedForm && (
-          <p className="form">Nom : {this.props.selectedForm.lastName}</p>
-        )}
-        {this.props.selectedForm && (
-          <p className="form">Email : {this.props.selectedForm.email}</p>
-        )}
-        {this.props.selectedGender && (
-          <p className="gender">Pour {this.props.selectedGender.sex}</p>
-        )} */}
         {this.props.selectedPreparations &&
           this.props.selectedPreparations.map((preparation, index) => {
             return (

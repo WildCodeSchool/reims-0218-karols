@@ -202,9 +202,8 @@ class ContactForm extends Component {
   }
 }
 
-// Decorate the form component
 ContactForm = reduxForm({
-  form: "contact" // a unique name for this form
+  form: "contact"
 })(ContactForm)
 
-export default connect(mapStateToProps, mapDispatchToProps, null)(ContactForm)
+export default connect(mapStateToProps, mapDispatchToProps)(ContactForm)
