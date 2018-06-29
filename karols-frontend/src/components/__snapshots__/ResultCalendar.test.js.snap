@@ -4,6 +4,20 @@ exports[`renders correctly 1`] = `
 <div
   className="d-flex justify-content-center"
 >
+  <button
+    className="btn btn-secondary btn-sm"
+    onClick={[Function]}
+    style={
+      Object {
+        "height": "30px",
+        "marginTop": "20px",
+        "paddingBottom": "20px",
+      }
+    }
+    type="button"
+  >
+    &lt;
+  </button>
   <div
     style={
       Object {
@@ -35,7 +49,7 @@ exports[`renders correctly 1`] = `
       <p
         style={
           Object {
-            "fontSize": "13px",
+            "fontSize": "12px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
@@ -1058,7 +1072,7 @@ exports[`renders correctly 1`] = `
       <p
         style={
           Object {
-            "fontSize": "13px",
+            "fontSize": "12px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
@@ -2081,7 +2095,7 @@ exports[`renders correctly 1`] = `
       <p
         style={
           Object {
-            "fontSize": "13px",
+            "fontSize": "12px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
@@ -3104,7 +3118,7 @@ exports[`renders correctly 1`] = `
       <p
         style={
           Object {
-            "fontSize": "13px",
+            "fontSize": "12px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
@@ -4127,7 +4141,7 @@ exports[`renders correctly 1`] = `
       <p
         style={
           Object {
-            "fontSize": "13px",
+            "fontSize": "12px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
@@ -5119,5 +5133,19 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
   </div>
+  <button
+    className="btn btn-secondary btn-sm"
+    onClick={[Function]}
+    style={
+      Object {
+        "height": "30px",
+        "marginTop": "20px",
+        "paddingBottom": "20px",
+      }
+    }
+    type="button"
+  >
+    &gt;
+  </button>
 </div>
 `;

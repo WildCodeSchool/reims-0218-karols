@@ -10,7 +10,15 @@ import {
   CHOOSE_PRESTATION,
   makeChoosePrestation,
   SUCCESS_RESERVATION,
-  makeSuccessReservation
+  makeSuccessReservation,
+  INCREMENT_SEX,
+  makeIncrementSex,
+  DECREMENT_SEX,
+  makeDecrementSex,
+  INCREMENT_PRESTATION,
+  makeIncrementPrestation,
+  DECREMENT_PRESTATION,
+  makeDecrementPrestation
 } from "./actions"
 // import des actions et actions creator pour faire des testes
 
@@ -88,5 +96,47 @@ describe("action selected shop", () => {
     }
 
     expect(makeChooseShop(1)).toEqual(expected)
+  })
+})
+
+describe("action increment sex", () => {
+  it("should return a count sex +1", () => {
+    const expected = {
+      type: INCREMENT_SEX,
+      sex: "M"
+    }
+    expect(makeIncrementSex("M")).toEqual(expected)
+  })
+})
+
+describe("action decrement sex", () => {
+  it("should return a count sex -1", () => {
+    const expected = {
+      type: DECREMENT_SEX,
+      sex: "M"
+    }
+    expect(makeDecrementSex("M")).toEqual(expected)
+  })
+})
+
+describe("action to increment prestation", () => {
+  it("should return a count increment prestation with a prestation id", () => {
+    const expected = {
+      type: INCREMENT_PRESTATION,
+      preparationId: 4,
+      prestationId: 2
+    }
+    expect(makeIncrementPrestation(2, 4)).toEqual(expected)
+  })
+})
+
+describe("action to decrement prestation", () => {
+  it("should return a count decrement prestation with a prestation id", () => {
+    const expected = {
+      type: DECREMENT_PRESTATION,
+      preparationId: 4,
+      prestationId: 2
+    }
+    expect(makeDecrementPrestation(2, 4)).toEqual(expected)
   })
 })

@@ -1,6 +1,8 @@
 import {
   CHOOSE_PRESTATION,
-  SHOPS_PRESTATIONS_RECEIVED
+  SHOPS_PRESTATIONS_RECEIVED,
+  INCREMENT_PRESTATION,
+  DECREMENT_PRESTATION
 } from "../actions/actions"
 
 const initialState = []
@@ -24,9 +26,41 @@ const prestations = (prevState = initialState, action) => {
       }))
     }))
   }
+
   if (action.type === SHOPS_PRESTATIONS_RECEIVED) {
     return action.response.prestations
   }
+
+  if (action.type === INCREMENT_PRESTATION) {
+    return prevState.map(prestation => ({
+      ...prestation,
+      preparations: prestation.preparations.map(preparation => ({
+        ...preparation,
+        count:
+          prestation.id === action.prestationId
+            ? preparation.id === action.preparationId
+              ? preparation.count + 1
+              : preparation.count
+            : preparation.count
+      }))
+    }))
+  }
+
+  if (action.type === DECREMENT_PRESTATION) {
+    return prevState.map(prestation => ({
+      ...prestation,
+      preparations: prestation.preparations.map(preparation => ({
+        ...preparation,
+        count:
+          prestation.id === action.prestationId
+            ? preparation.id === action.preparationId
+              ? preparation.count - 1
+              : preparation.count
+            : preparation.count
+      }))
+    }))
+  }
+
   return prevState
 }
 
