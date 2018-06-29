@@ -10,9 +10,7 @@ export const showServices = state =>
 
 export const showSex = state =>
   state.services.filter(service => service.selected && service.id === 1)
-    .length > 0
-
-export const showSexTablePreparation = state =>
+    .length > 0 ||
   state.services.filter(service => service.selected && service.id === 3)
     .length > 0
 

@@ -1,4 +1,4 @@
-import { showSex, showSexTablePreparation } from "."
+import { showSex } from "."
 
 describe("showSex", () => {
   it("should return false if no service is selected", () => {
@@ -1209,6 +1209,6 @@ describe("showSex", () => {
       ],
       timeSlots: []
     }
-    expect(showSexTablePreparation(ServiceSelectedState)).toEqual(true)
+    expect(showSex(ServiceSelectedState)).toEqual(true)
   })
 })
