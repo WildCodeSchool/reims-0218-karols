@@ -4,20 +4,28 @@ import { Row, Col } from "reactstrap"
 import { scroller } from "react-scroll"
 import Zoom from "react-reveal/Zoom"
 
-import { makeChooseSex } from "../actions/actions"
+import {
+  makeChooseSex,
+  makeIncrementSex,
+  makeDecrementSex
+} from "../actions/actions"
 import GenderTitle from "../components/GenderTitle"
 import CardModelGender from "../components/CardModelGender"
+import { showCounter } from "../display"
 
 // Pour la connection avec les compteurs
 // ajouter handlePlus et handleMInus dans le mapDispatchToProps
 // les passer à CardModel
 
 const mapStateToProps = state => ({
-  genders: state.genders
+  genders: state.genders,
+  showCounter: state.showCounter
 })
 
 const mapDispatchToProps = dispatch => ({
-  select: sex => dispatch(makeChooseSex(sex))
+  select: sex => dispatch(makeChooseSex(sex)),
+  handlePlus: sex => dispatch(makeIncrementSex(sex)),
+  handleMinus: sex => dispatch(makeDecrementSex(sex))
 })
 
 class GenderSelect extends Component {
@@ -40,6 +48,7 @@ class GenderSelect extends Component {
                   id={gender.sex}
                   select={this.props.select}
                   {...gender}
+                  showCounter={showCounter}
                 />
               </Zoom>
             </Col>
