@@ -2249,3 +2249,15 @@ storiesOf("Counter", module).add(
       />
     )
 )
+
+storiesOf("CardModelGender", module).add("CardModelGender render",
+  () =>
+    showCounter && (
+      <Counter
+      handleMinus={handleMinus}
+      handlePlus={handlePlus}
+      count={5}
+      showCounter={true}
+      />
+    )
+)
