@@ -10,6 +10,8 @@ export const showServices = state =>
 
 export const showSex = state =>
   state.services.filter(service => service.selected && service.id === 1)
+    .length > 0 ||
+  state.services.filter(service => service.selected && service.id === 3)
     .length > 0
 
 export const showFemalePrestation = state =>
@@ -44,4 +46,8 @@ export const showForm = state => getSelectedTimeSlot(state)
 
 export const showCountPeopleTable = state =>
   state.services.filter(service => service.selected && service.id === 2)
+    .length > 0
+
+export const showCounter = state =>
+  state.services.filter(service => service.selected && service.id === 3)
     .length > 0

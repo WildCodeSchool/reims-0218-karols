@@ -59,6 +59,9 @@ exports[`renders correctly 1`] = `
             />
           </h5>
         </div>
+        <div
+          className="card-footer"
+        />
       </div>
     </div>
   </div>

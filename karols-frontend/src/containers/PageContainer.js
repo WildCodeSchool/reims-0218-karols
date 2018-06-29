@@ -45,20 +45,6 @@ const mapDispatchToProps = dispatch => ({
     dispatch(makeShopsPrestationsReceived(response))
 })
 
-// TODO
-// Counter component - 0 + props : count, handleMinus, handlePlus
-// => dans le storybook avec console log quand je click sur les - +
-// le mettre dans un cardModel en footer
-// cardModel ajouter une prop showCounter + (count auto), handleMinus, handlePlus
-
-// Redux
-// modifier les reducers pour gérer une quantité sur sex et prestation
-// créer des actions INCREMENT_SEX / DECREMENT_SEX | INCREMENT_PRESTATION / DECREMENT_PRESTATION
-// modifier les reducers
-// ajouter la propriété count dans l'initial state pour sex
-// ajouter la propriété count pour les prestations dans le json
-// handle actions attention on bloque à 0 on met pas de max pour l'instant
-
 // Affichage conditionnel
 // on affiche PrestationFemaleContainer si on a au moins 1 dans count F
 // on affiche PrestationMaleContainer si on a au moins 1 dans count F
