@@ -47,3 +47,7 @@ export const showForm = state => getSelectedTimeSlot(state)
 export const showCountPeopleTable = state =>
   state.services.filter(service => service.selected && service.id === 2)
     .length > 0
+
+export const showCounter = state =>
+  state.services.filter(service => service.selected && service.id === 3)
+    .length > 0
