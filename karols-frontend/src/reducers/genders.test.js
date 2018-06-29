@@ -1,4 +1,8 @@
-import { makeChooseSex, CHOOSE_SEX } from "../actions/actions"
+import {
+  makeChooseSex,
+  makeIncrementSex,
+  makeDecrementSex
+} from "../actions/actions"
 
 import genders from "./genders"
 
@@ -45,6 +49,110 @@ describe("genders", () => {
     ]
 
     const action = makeChooseSex("M")
+    expect(genders(prevState, action)).toEqual(expectedState)
+  })
+})
+
+describe("gendersCount", () => {
+  it("should not change the state for unhandled action", () => {
+    const prevState = [
+      {
+        sex: "M",
+        selected: false,
+        count: 0
+      },
+      {
+        sex: "F",
+        selected: false,
+        count: 0
+      }
+    ]
+
+    const anyAction = {
+      type: "ANY_ACTION"
+    }
+
+    expect(genders(prevState, anyAction)).toEqual(prevState)
+  })
+
+  it("should change the state for increment gender action", () => {
+    const prevState = [
+      {
+        sex: "M",
+        selected: false,
+        count: 0
+      },
+      {
+        sex: "F",
+        selected: false,
+        count: 0
+      }
+    ]
+    const expectedState = [
+      {
+        sex: "M",
+        selected: false,
+        count: 1
+      },
+      {
+        sex: "F",
+        selected: false,
+        count: 0
+      }
+    ]
+    const action = makeIncrementSex("M")
+    expect(genders(prevState, action)).toEqual(expectedState)
+  })
+})
+
+describe("gendersCount", () => {
+  it("should not change the state for unhandled action", () => {
+    const prevState = [
+      {
+        sex: "M",
+        selected: false,
+        count: 0
+      },
+      {
+        sex: "F",
+        selected: false,
+        count: 0
+      }
+    ]
+
+    const anyAction = {
+      type: "ANY_ACTION"
+    }
+
+    expect(genders(prevState, anyAction)).toEqual(prevState)
+  })
+
+  it("should change the state for increment gender action", () => {
+    const prevState = [
+      {
+        sex: "M",
+        selected: false,
+        count: 1
+      },
+      {
+        sex: "F",
+        selected: false,
+        count: 0
+      }
+    ]
+    const expectedState = [
+      {
+        sex: "M",
+        selected: false,
+        count: 0
+      },
+      {
+        sex: "F",
+        selected: false,
+        count: 0
+      }
+    ]
+    const action = makeDecrementSex("M")
     expect(genders(prevState, action)).toEqual(expectedState)
   })
 })

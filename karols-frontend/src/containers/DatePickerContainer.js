@@ -1,8 +1,25 @@
 import React, { Component } from "react"
+import { connect } from "react-redux"
+import { makeTimeslotsReceived } from "../actions/actions"
 import InfiniteCalendar from "react-infinite-calendar"
 import "react-infinite-calendar/styles.css" // Make sure to import the default stylesheet
 import DatePickerTitle from "../components/DatePickerTitle"
-import { Button, Modal, ModalHeader, ModalBody, Container } from "reactstrap"
+import { fetchDateSelected } from "../api/fetchDateSelected"
+import {
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Container
+} from "reactstrap"
+const { DateTime } = require("luxon")
+
+const mapStateToProps = state => ({})
+
+const mapDispatchToProps = dispatch => ({
+  onTimeSlotsReceived: response => dispatch(makeTimeslotsReceived(response))
+})
 
 // Render the Calendar
 let today = new Date()
@@ -26,6 +43,16 @@ class DatePickerSelect extends Component {
       modal: false
     })
   }
+
+  validate() {
+    // Fetch route date selected
+    const dateFromJsDate = DateTime.fromJSDate(this.state.dateSelected).toISO()
+    fetchDateSelected(dateFromJsDate).then(response => {
+      this.props.onTimeSlotsReceived(response)
+      this.closeModal()
+    })
+  }
+
   showModal() {
     this.setState({
       modal: true
@@ -39,15 +66,18 @@ class DatePickerSelect extends Component {
           <DatePickerTitle />
           <Button
             style={{
-              height: "100px",
-              width: "200px",
-              marginTop: "50px"
+              height: "50px",
+              width: "150px",
+              marginTop: "50px",
+              marginBottom: "50px"
             }}
             onClick={this.showModal.bind(this)}
+            outline
+            color="secondary"
           >
             Choisir une date
           </Button>
-          <Modal isOpen={this.state.modal} toggle={this.closeModal.bind(this)}>
+          <Modal isOpen={this.state.modal}>
             <ModalHeader toggle={this.closeModal.bind(this)}>
               Choisissez la date de votre prestation
             </ModalHeader>
@@ -82,21 +112,26 @@ class DatePickerSelect extends Component {
                   }
                 }}
                 theme={{
-                  selectionColor: "rgb(146, 118, 255)",
+                  selectionColor: "#110F0F",
                   textColor: {
                     default: "#333",
                     active: "#FFF"
                   },
-                  weekdayColor: "rgb(146, 118, 255)",
-                  headerColor: "rgb(127, 95, 251)",
+                  weekdayColor: "#110F0F",
+                  headerColor: "#110F0F",
                   floatingNav: {
-                    background: "rgba(81, 67, 138, 0.96)",
+                    background: "#110F0F",
                     color: "#FFF",
-                    chevron: "#FFA726"
+                    chevron: "#110F0F"
                   }
                 }}
               />
             </ModalBody>
+            <ModalFooter>
+              <Button color="secondary" onClick={this.validate.bind(this)}>
+                Valider
+              </Button>
+            </ModalFooter>
           </Modal>
         </Container>
       </div>
@@ -104,4 +139,4 @@ class DatePickerSelect extends Component {
   }
 }
 
-export default DatePickerSelect
+export default connect(mapStateToProps, mapDispatchToProps)(DatePickerSelect)

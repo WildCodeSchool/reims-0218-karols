@@ -4,6 +4,20 @@ exports[`renders correctly 1`] = `
 <div
   className="d-flex justify-content-center"
 >
+  <button
+    className="btn btn-secondary btn-sm"
+    onClick={[Function]}
+    style={
+      Object {
+        "height": "30px",
+        "marginTop": "20px",
+        "paddingBottom": "20px",
+      }
+    }
+    type="button"
+  >
+    &lt;
+  </button>
   <div
     style={
       Object {
@@ -19,7 +33,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#435f71",
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
@@ -31,19 +45,19 @@ exports[`renders correctly 1`] = `
             "fontWeight": "700",
           }
         }
-      >
-        mercredi
-      </p>
+      />
       <p
         style={
           Object {
-            "fontSize": "14px",
+            "fontSize": "12px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
         }
       >
-         6 juin
+        Wed
+        <br />
+        25 M07
       </p>
     </div>
     <div
@@ -55,12 +69,15 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -74,18 +91,20 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:00
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -99,18 +118,20 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:15
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -124,18 +145,425 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:30
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          09:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -150,7 +578,465 @@ exports[`renders correctly 1`] = `
         >
            
           13:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
            
+          13:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:45
         </div>
       </div>
     </div>
@@ -170,7 +1056,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#435f71",
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
@@ -182,19 +1068,19 @@ exports[`renders correctly 1`] = `
             "fontWeight": "700",
           }
         }
-      >
-        mercredi
-      </p>
+      />
       <p
         style={
           Object {
-            "fontSize": "14px",
+            "fontSize": "12px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
         }
       >
-         6 juin
+        Thu
+        <br />
+        26 M07
       </p>
     </div>
     <div
@@ -206,12 +1092,15 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -225,18 +1114,20 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:00
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -250,18 +1141,20 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:15
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -275,18 +1168,425 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:30
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          09:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -301,7 +1601,465 @@ exports[`renders correctly 1`] = `
         >
            
           13:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
            
+          13:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:45
         </div>
       </div>
     </div>
@@ -321,7 +2079,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#435f71",
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
@@ -333,19 +2091,19 @@ exports[`renders correctly 1`] = `
             "fontWeight": "700",
           }
         }
-      >
-        mercredi
-      </p>
+      />
       <p
         style={
           Object {
-            "fontSize": "14px",
+            "fontSize": "12px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
         }
       >
-         6 juin
+        Fri
+        <br />
+        27 M07
       </p>
     </div>
     <div
@@ -357,12 +2115,15 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -376,18 +2137,20 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:00
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -401,18 +2164,20 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:15
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -426,18 +2191,425 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:30
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          09:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -452,7 +2624,465 @@ exports[`renders correctly 1`] = `
         >
            
           13:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
            
+          13:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:45
         </div>
       </div>
     </div>
@@ -472,7 +3102,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#435f71",
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
@@ -484,19 +3114,19 @@ exports[`renders correctly 1`] = `
             "fontWeight": "700",
           }
         }
-      >
-        mercredi
-      </p>
+      />
       <p
         style={
           Object {
-            "fontSize": "14px",
+            "fontSize": "12px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
         }
       >
-         6 juin
+        Sat
+        <br />
+        28 M07
       </p>
     </div>
     <div
@@ -508,12 +3138,15 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -527,18 +3160,20 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:00
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -552,18 +3187,20 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:15
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -577,18 +3214,425 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:30
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          09:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -603,7 +3647,465 @@ exports[`renders correctly 1`] = `
         >
            
           13:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
            
+          13:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:45
         </div>
       </div>
     </div>
@@ -623,7 +4125,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#435f71",
-          "fontSize": "14px",
+          "fontSize": "13px",
           "marginBottom": "24px",
           "textAlign": "center",
         }
@@ -635,19 +4137,19 @@ exports[`renders correctly 1`] = `
             "fontWeight": "700",
           }
         }
-      >
-        mercredi
-      </p>
+      />
       <p
         style={
           Object {
-            "fontSize": "14px",
+            "fontSize": "12px",
             "marginBottom": "24px",
             "textAlign": "center",
           }
         }
       >
-         6 juin
+        Sun
+        <br />
+        29 M07
       </p>
     </div>
     <div
@@ -659,12 +4161,15 @@ exports[`renders correctly 1`] = `
     >
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -678,18 +4183,20 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:00
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -703,18 +4210,20 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:15
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -728,18 +4237,425 @@ exports[`renders correctly 1`] = `
           }
         >
            
-          13:30
-           
+          09:30
         </div>
       </div>
       <div
         className="justify-content-center"
+        onClick={[Function]}
       >
         <div
           style={
             Object {
-              "backgroundColor": "#ccecfa",
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
               "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          09:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          10:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          11:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          12:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          13:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
               "cursor": "pointer",
               "fontSize": "14px",
               "fontWeight": "700",
@@ -754,10 +4670,482 @@ exports[`renders correctly 1`] = `
         >
            
           13:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
            
+          13:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          14:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          15:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          16:45
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:00
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:15
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:30
+        </div>
+      </div>
+      <div
+        className="justify-content-center"
+        onClick={[Function]}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.9)",
+              "border": "solid 1px #110F0F",
+              "borderRadius": "4px",
+              "color": "#000",
+              "cursor": "pointer",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "height": "34px",
+              "lineHeight": "34px",
+              "margin": "10px 0",
+              "position": "relative",
+              "textAlign": "center",
+              "width": "100%",
+            }
+          }
+        >
+           
+          17:45
         </div>
       </div>
     </div>
   </div>
+  <button
+    className="btn btn-secondary btn-sm"
+    onClick={[Function]}
+    style={
+      Object {
+        "height": "30px",
+        "marginTop": "20px",
+        "paddingBottom": "20px",
+      }
+    }
+    type="button"
+  >
+    &gt;
+  </button>
 </div>
 `;

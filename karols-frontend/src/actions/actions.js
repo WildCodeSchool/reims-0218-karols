@@ -5,6 +5,13 @@ export const CHOOSE_SEX = "CHOOSE_SEX"
 export const CHOOSE_SHOP = "CHOOSE_SHOP"
 export const CHOOSE_TIMESLOT = "CHOOSE_TIMESLOT"
 export const SHOPS_PRESTATIONS_RECEIVED = "SHOPS_PRESTATIONS_RECEIVED"
+export const TIMESLOTS_RECEIVED = "TIMESLOTS_RECEIVED"
+export const SUCCESS_RESERVATION = "SUCCESS_RESERVATION"
+export const CHOOSE_COUNT_PEOPLE = "CHOOSE_COUNT_PEOPLE"
+export const INCREMENT_SEX = "INCREMENT_SEX"
+export const DECREMENT_SEX = "DECREMENT_SEX"
+export const INCREMENT_PRESTATION = "INCREMENT_PRESTATION"
+export const DECREMENT_PRESTATION = "DECREMENT_PRESTATION"
 
 export const makeChoosePrestation = (prestationId, preparationId) => ({
   // export d'une fonction qui prend en parametre prestationId et preparationId / les acollade
@@ -13,6 +20,10 @@ export const makeChoosePrestation = (prestationId, preparationId) => ({
   prestationId,
   preparationId
   //propriété: CHOOSE_PRESTATION, prestationId, preparationId
+})
+
+export const makeSuccessReservation = () => ({
+  type: SUCCESS_RESERVATION
 })
 
 export const makeChooseService = serviceId => ({
@@ -38,4 +49,36 @@ export const makeChooseSlotReservation = timeSlot => ({
 export const makeShopsPrestationsReceived = response => ({
   type: SHOPS_PRESTATIONS_RECEIVED,
   response
+})
+
+export const makeTimeslotsReceived = response => ({
+  type: TIMESLOTS_RECEIVED,
+  response
+})
+
+export const makeChooseCountPeopleTable = count => ({
+  type: CHOOSE_COUNT_PEOPLE,
+  count
+})
+
+export const makeIncrementSex = sex => ({
+  type: INCREMENT_SEX,
+  sex
+})
+
+export const makeDecrementSex = sex => ({
+  type: DECREMENT_SEX,
+  sex
+})
+
+export const makeIncrementPrestation = (prestationId, preparationId) => ({
+  type: INCREMENT_PRESTATION,
+  prestationId,
+  preparationId
+})
+
+export const makeDecrementPrestation = (prestationId, preparationId) => ({
+  type: DECREMENT_PRESTATION,
+  prestationId,
+  preparationId
 })

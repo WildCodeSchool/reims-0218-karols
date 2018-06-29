@@ -1,5 +1,7 @@
 import React from "react"
 import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
+import Info from "./Info"
+import Counter from "./Counter"
 
 const CardModel = ({
   id,
@@ -8,7 +10,12 @@ const CardModel = ({
   description,
   image,
   selected,
-  select
+  select,
+  info,
+  showCounter,
+  count,
+  handleMinus,
+  handlePlus
 }) => {
   return (
     <div>
@@ -98,8 +105,18 @@ const CardModel = ({
                   transform: "translateY(calc(0px + 1em))"
                 }}
               >
-                {description}
+                {description}{" "}
+                {showCounter && (
+                  <Counter
+                    count={count}
+                    handleMinus={handleMinus}
+                    handlePlus={handlePlus}
+                  />
+                )}
               </p>
+              {info && <Info info={info} />}
+              {/* 
+              si info est true dans le json il renvoie le composant Info auquel on a passé la props info */}
             </CardFooter>
           </div>
         </div>

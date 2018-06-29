@@ -8,7 +8,10 @@ import {
   showSex,
   showFemalePrestation,
   showMalePrestation,
-  showDatePicker
+  showDatePicker,
+  showCalendar,
+  showForm,
+  showCountPeopleTable
 } from "../display"
 
 import ServiceContainer from "./ServiceContainer"
@@ -17,18 +20,24 @@ import PrestationFemaleContainer from "./PrestationFemaleContainer"
 import PrestationMaleContainer from "./PrestationMaleContainer"
 import GenderContainer from "./GenderContainer"
 import DatePickerContainer from "./DatePickerContainer"
+import CalendarContainer from "./CalendarContainer"
+import ResumeContainer from "./ResumeContainer"
+import CountPeopleTableContainer from "./CountPeopleTableContainer"
 
 import { makeShopsPrestationsReceived } from "../actions/actions"
 
 import { fetchShopsPrestations } from "../api"
+import ContactForm from "../components/ContactForm"
 
 const mapStateToProps = state => ({
-  service: state.services.find(service => service.selected),
   showServices: showServices(state),
   showSex: showSex(state),
   showFemalePrestation: showFemalePrestation(state),
   showMalePrestation: showMalePrestation(state),
-  showDatePicker: showDatePicker(state)
+  showDatePicker: showDatePicker(state),
+  showForm: showForm(state),
+  showCalendar: showCalendar(state),
+  showCountPeopleTable: showCountPeopleTable(state)
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -36,15 +45,37 @@ const mapDispatchToProps = dispatch => ({
     dispatch(makeShopsPrestationsReceived(response))
 })
 
+// TODO
+// Counter component - 0 + props : count, handleMinus, handlePlus
+// => dans le storybook avec console log quand je click sur les - +
+// le mettre dans un cardModel en footer
+// cardModel ajouter une prop showCounter + (count auto), handleMinus, handlePlus
+
+// Redux
+// modifier les reducers pour gérer une quantité sur sex et prestation
+// créer des actions INCREMENT_SEX / DECREMENT_SEX | INCREMENT_PRESTATION / DECREMENT_PRESTATION
+// modifier les reducers
+// ajouter la propriété count dans l'initial state pour sex
+// ajouter la propriété count pour les prestations dans le json
+// handle actions attention on bloque à 0 on met pas de max pour l'instant
+
+// Affichage conditionnel
+// on affiche PrestationFemaleContainer si on a au moins 1 dans count F
+// on affiche PrestationMaleContainer si on a au moins 1 dans count F
+// le faire avec le test (deplacere le test dans un nouveau fichier)
+
+// ENSUITE on connecte dans les containers
+// pour la suite gérer les maxs
+
 class Page extends Component {
   render() {
     return (
       <Container>
-        {this.props.service && this.props.service.name}
         <ShopContainer />
         <Element name="services">
           {this.props.showServices && <ServiceContainer />}
         </Element>
+        {this.props.showCountPeopleTable && <CountPeopleTableContainer />}
         <Element name="genders">
           {this.props.showSex && <GenderContainer />}
         </Element>
@@ -55,6 +86,9 @@ class Page extends Component {
           {this.props.showMalePrestation && <PrestationMaleContainer />}
         </Element>
         {this.props.showDatePicker && <DatePickerContainer />}
+        {this.props.showCalendar && <CalendarContainer />}
+        <ResumeContainer />
+        <Element name="form">{this.props.showForm && <ContactForm />}</Element>
       </Container>
     )
   }

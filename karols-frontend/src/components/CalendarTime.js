@@ -1,9 +1,18 @@
 import React from "react"
-import { Col } from "reactstrap"
+import { DateTime } from "luxon"
 
-const CalendarTime = () => {
+const transformTimeSlot = timeSlot =>
+  DateTime.fromISO(timeSlot.time.s)
+    .setLocale("fr")
+    .toFormat("T")
+
+const CalendarTime = ({ timeSlot, selectTimeSlot }) => {
+  //function timeslot.time.s
   return (
-    <div className="justify-content-center">
+    <div
+      className="justify-content-center"
+      onClick={() => selectTimeSlot(timeSlot)}
+    >
       <div
         style={{
           position: "relative",
@@ -16,11 +25,15 @@ const CalendarTime = () => {
           fontSize: "14px",
           fontWeight: "700",
           cursor: "pointer",
-          backgroundColor: "#ccecfa"
+          border: timeSlot.selected ? "" : "solid 1px #110F0F",
+          color: timeSlot.selected ? "#fff" : "#000",
+          backgroundColor: timeSlot.selected
+            ? "#110F0F"
+            : "rgba(255, 255, 255, 0.9)"
         }}
       >
         {" "}
-        13:30{" "}
+        {transformTimeSlot(timeSlot)}
       </div>
     </div>
   )

@@ -8,7 +8,17 @@ import {
   CHOOSE_TIMESLOT,
   makeChooseSlotReservation,
   CHOOSE_PRESTATION,
-  makeChoosePrestation
+  makeChoosePrestation,
+  SUCCESS_RESERVATION,
+  makeSuccessReservation,
+  INCREMENT_SEX,
+  makeIncrementSex,
+  DECREMENT_SEX,
+  makeDecrementSex,
+  INCREMENT_PRESTATION,
+  makeIncrementPrestation,
+  DECREMENT_PRESTATION,
+  makeDecrementPrestation
 } from "./actions"
 // import des actions et actions creator pour faire des testes
 
@@ -22,9 +32,17 @@ describe("action to choose a prestation", () => {
       prestationId: 2
       // déclaration d'une variable expected qui prend un object
     }
-
     expect(makeChoosePrestation(2, 4)).toEqual(expected)
     //le resultat attendu des parametre 2 et 4 de la fonction makeChoosePrestation doivent etre égal à expected
+  })
+})
+
+describe("action success reservation", () => {
+  it("should return an action SUCCESS_RESERVATION", () => {
+    const expected = {
+      type: SUCCESS_RESERVATION
+    }
+    expect(makeSuccessReservation()).toEqual(expected)
   })
 })
 
@@ -34,7 +52,9 @@ describe("action add slot creator", () => {
       type: CHOOSE_TIMESLOT,
       timeSlot: { year: 2018, month: 4, day: 24, hour: 12 }
     }
-    expect(makeChooseSlotReservation(expected.timeSlot)).toEqual(expected)
+    expect(
+      makeChooseSlotReservation({ year: 2018, month: 4, day: 24, hour: 12 })
+    ).toEqual(expected)
   })
 })
 
@@ -76,5 +96,47 @@ describe("action selected shop", () => {
     }
 
     expect(makeChooseShop(1)).toEqual(expected)
+  })
+})
+
+describe("action increment sex", () => {
+  it("should return a count sex +1", () => {
+    const expected = {
+      type: INCREMENT_SEX,
+      sex: "M"
+    }
+    expect(makeIncrementSex("M")).toEqual(expected)
+  })
+})
+
+describe("action decrement sex", () => {
+  it("should return a count sex -1", () => {
+    const expected = {
+      type: DECREMENT_SEX,
+      sex: "M"
+    }
+    expect(makeDecrementSex("M")).toEqual(expected)
+  })
+})
+
+describe("action to increment prestation", () => {
+  it("should return a count increment prestation with a prestation id", () => {
+    const expected = {
+      type: INCREMENT_PRESTATION,
+      preparationId: 4,
+      prestationId: 2
+    }
+    expect(makeIncrementPrestation(2, 4)).toEqual(expected)
+  })
+})
+
+describe("action to decrement prestation", () => {
+  it("should return a count decrement prestation with a prestation id", () => {
+    const expected = {
+      type: DECREMENT_PRESTATION,
+      preparationId: 4,
+      prestationId: 2
+    }
+    expect(makeDecrementPrestation(2, 4)).toEqual(expected)
   })
 })
