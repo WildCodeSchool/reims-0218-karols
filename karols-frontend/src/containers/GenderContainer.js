@@ -19,7 +19,7 @@ import { showCounter } from "../display"
 
 const mapStateToProps = state => ({
   genders: state.genders,
-  showCounter: state.showCounter
+  showCounter: showCounter(state)
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -48,7 +48,7 @@ class GenderSelect extends Component {
                   id={gender.sex}
                   select={this.props.select}
                   {...gender}
-                  showCounter={showCounter}
+                  showCounter={this.props.showCounter}
                 />
               </Zoom>
             </Col>
