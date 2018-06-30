@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 // déclaration de toutes les fonctions qui détermineront si nous voulons montrer ou non une section
-=======
 import { getSelectedTimeSlot } from "../resume/index"
 
 // declaration of all functions that will determine if we want to show or not a section
->>>>>>> bd60981ea2ebb3c62ba7964c7a119fda8ec2dad8
 
 // afficher les services si un magasin est sélectionné
 export const showServices = state =>
