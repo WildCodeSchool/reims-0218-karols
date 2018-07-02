@@ -73,12 +73,6 @@ class ShowResume extends Component {
             {transformTimeSlot(this.props.selectedTimeSlot)}
           </p>
         )}
-        {this.props.selectedShop && (
-          <p className="shop">
-            Si vous désirez plus d'informations, n'hésitez pas à appeler au{" "}
-            {this.props.selectedShop.phone}
-          </p>
-        )}
       </Jumbotron>
     )
   }

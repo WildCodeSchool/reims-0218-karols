@@ -10,12 +10,14 @@ import {
   makeTimeslotsReceived,
   makeChooseSlotReservation
 } from "../actions/actions"
+import { getSelectedShop } from "../resume"
 
 import ResultCalendar from "../components/ResultCalendar"
 const { DateTime } = require("luxon")
 
 const mapStateToProps = state => ({
-  timeSlots: state.timeSlots
+  timeSlots: state.timeSlots,
+  selectedShop: getSelectedShop(state)
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -82,7 +84,15 @@ class TimeSlots extends Component {
             {this.state.showMore
               ? "Voir moins d'horaires"
               : "Voir plus d'horaires"}
-          </Button>
+          </Button>{" "}
+          <div className="phone mt-3">
+            {this.props.selectedShop && (
+              <p className="shop">
+                Si aucun horaire ne vous convient, n'hésitez pas à appeler au{" "}
+                {this.props.selectedShop.phone}
+              </p>
+            )}
+          </div>
         </div>
       </Container>
     )
