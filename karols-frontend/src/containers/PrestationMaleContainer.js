@@ -6,8 +6,13 @@ import { makeChoosePrestation } from "../actions/actions"
 import { scroller } from "react-scroll"
 import Zoom from "react-reveal/Zoom"
 
+import { showCounter } from "../display"
+
 const mapStateToProps = state => ({
-  prestations: state.prestations.filter(prestation => prestation.gender === "M")
+  prestations: state.prestations.filter(
+    prestation => prestation.gender === "M"
+  ),
+  showCounter: showCounter(state)
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -27,7 +32,10 @@ class MaleSelected extends Component {
     return (
       <div>
         <Zoom>
-          <ListChoicePrestation {...this.props} />
+          <ListChoicePrestation
+            {...this.props}
+            showCounter={this.props.showCounter}
+          />
         </Zoom>
       </div>
     )
