@@ -10,6 +10,7 @@ export default class ListChoiceShop extends React.Component {
           <ChoiceShop
             city="Paris"
             adress="75000"
+            phone="0123456789"
             image="https://images.unsplash.com/33/YOfYx7zhTvYBGYs6g83s_IMG_8643.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82fecbde67b1966b4ea8118f3bea896e&auto=format&fit=crop&w=967&q=80"
           />
         </Col>
@@ -17,6 +18,7 @@ export default class ListChoiceShop extends React.Component {
           <ChoiceShop
             city="Lyon"
             adress="69000"
+            phone="0223456789"
             image="https://images.unsplash.com/photo-1496277195689-21125faa0eeb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=789210ffc73d1822ce69059fcefcabf0&auto=format&fit=crop&w=1050&q=80"
           />
         </Col>
@@ -24,6 +26,7 @@ export default class ListChoiceShop extends React.Component {
           <ChoiceShop
             city="Cannes"
             adress="06150"
+            phone="0423456789"
             image="https://thumbs.dreamstime.com/z/ville-de-cannes-france-2627857.jpg"
           />
         </Col>

@@ -1,7 +1,7 @@
 import React from "react"
 import { Card, CardTitle, CardBody, CardFooter, Button } from "reactstrap"
 
-const ChoiceShop = ({ city, image, adress }) => {
+const ChoiceShop = ({ city, image, adress, phone }) => {
   return (
     <div className="mb-4">
       <Card>
@@ -61,6 +61,8 @@ const ChoiceShop = ({ city, image, adress }) => {
                 }}
               >
                 {adress}
+                {""}
+                {phone}
               </p>
             </CardFooter>
           </div>
