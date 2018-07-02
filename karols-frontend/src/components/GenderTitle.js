@@ -4,7 +4,7 @@ const GenderTitle = () => {
   return (
     <div>
       <hr />
-      <h2 className="display-4">Choix du sexe</h2>
+      <h2 className="display-4">Etes vous une femme ou un homme ?</h2>
     </div>
   )
 }
