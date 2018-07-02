@@ -18,7 +18,8 @@ import { DECREMENT_TABLE } from "../actions/actions"
 // export default countPeopleTable
 
 const initialState = {
-  count: 0
+  count: 0,
+  image: "http://bar-legacy.com/img/main_6.jpg"
 }
 
 const countPeopleTable = (prevState = initialState, action) => {

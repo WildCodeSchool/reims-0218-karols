@@ -53,12 +53,13 @@ import { showCounter } from "../display"
 // les passer à CardModel
 
 const mapStateToProps = state => ({
-  CountPeopleTable: state.CountPeopleTable,
-  showCounter: showCounter(state)
+  showCounter: showCounter(state),
+  count: state.countPeopleTable.count,
+  image: state.countPeopleTable.image
 })
 
 const mapDispatchToProps = dispatch => ({
-  // select: count => dispatch(makeChoosecount(count)),
+  //select: count => dispatch(makeChoosecount(count)),
   handlePlus: count => dispatch(makeIncrementTable(count)),
   handleMinus: count => dispatch(makeDecrementTable(count))
 })
@@ -76,18 +77,25 @@ class Table extends Component {
       <div>
         <TableTitle />
         <Row className="justify-content-center">
-          <Zoom>
-            <CardModelTable
-              select={this.props.select}
-              showCounter={this.props.showCounter}
-            />
-            {/* <CardModelGender
+          <Col md="6">
+            <Zoom>
+              <CardModelTable
+                style={{
+                  width: "100px"
+                }}
+                image={this.props.image}
+                count={this.props.count}
+                select={true}
+                showCounter={this.props.showCounter}
+              />
+              {/* <CardModelGender
                   id={gender.count}
                   select={this.props.select}
                   {...gender}
                   showCounter={this.props.showCounter}
                 /> */}
-          </Zoom>
+            </Zoom>
+          </Col>
         </Row>
       </div>
     )
