@@ -3,7 +3,14 @@ import CardModel from "./CardModel"
 import { Row, Col } from "reactstrap"
 import Zoom from "react-reveal/Zoom"
 
-const PreparationChoice = ({ id, name, preparations, select, image }) => (
+const PreparationChoice = ({
+  id,
+  name,
+  preparations,
+  select,
+  image,
+  showCounter
+}) => (
   <div>
     <h5
       style={{
@@ -33,6 +40,7 @@ const PreparationChoice = ({ id, name, preparations, select, image }) => (
               select={preparationId => {
                 select(id, preparationId)
               }}
+              showCounter={showCounter}
             />
           </Zoom>
         </Col>
