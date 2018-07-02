@@ -88,7 +88,7 @@ class TimeSlots extends Component {
           <div className="phone mt-3">
             {this.props.selectedShop && (
               <p className="shop">
-                Si aucun horaire ne vous convient, n'hésitez pas à appeler au{" "}
+                Si vous ne trouvez aucun crénaux, n'hésitez pas à appeler au{" "}
                 {this.props.selectedShop.phone}
               </p>
             )}
