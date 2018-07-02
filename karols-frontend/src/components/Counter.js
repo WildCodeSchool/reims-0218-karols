@@ -1,13 +1,11 @@
 import React from "react"
 import { Button } from "reactstrap"
 
-const Counter = ({ count, handleMinus, handlePlus, sex }) => {
+const Counter = ({ count, handleMinus, handlePlus }) => {
   return (
     <div>
       <Button
-        onClick={() => {
-          handleMinus(sex)
-        }}
+        onClick={handleMinus}
         size="sm"
         style={{ display: "inline-block" }}
         className="mr-3"
@@ -16,9 +14,7 @@ const Counter = ({ count, handleMinus, handlePlus, sex }) => {
       </Button>
       <p style={{ display: "inline-block" }}>{count}</p>
       <Button
-        onClick={() => {
-          handlePlus(sex)
-        }}
+        onClick={handlePlus}
         size="sm"
         style={{ display: "inline-block" }}
         className="ml-3"
