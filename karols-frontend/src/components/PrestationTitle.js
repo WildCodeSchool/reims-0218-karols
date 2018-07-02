@@ -4,7 +4,7 @@ const PrestationTitle = () => {
   return (
     <div>
       <hr />
-      <h2 className="display-4">Etape 4: Sélectionnez vos prestations</h2>
+      <h2 className="display-4">Sélectionnez vos prestations</h2>
     </div>
   )
 }
