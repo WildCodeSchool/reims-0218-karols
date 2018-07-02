@@ -6,8 +6,13 @@ const Counter = ({ count, handleMinus, handlePlus }) => {
     <div>
       <Button
         onClick={handleMinus}
-        size="sm"
-        style={{ display: "inline-block" }}
+        size="large"
+        style={{
+          display: "inline-block",
+          backgroundColor: "#FFF",
+          color: "#000",
+          fontWeight: "bold"
+        }}
         className="mr-3"
       >
         -
@@ -15,8 +20,13 @@ const Counter = ({ count, handleMinus, handlePlus }) => {
       <p style={{ display: "inline-block" }}>{count}</p>
       <Button
         onClick={handlePlus}
-        size="sm"
-        style={{ display: "inline-block" }}
+        size="large"
+        style={{
+          display: "inline-block",
+          backgroundColor: "#FFF",
+          color: "#000",
+          fontWeight: "bold"
+        }}
         className="ml-3"
       >
         +
