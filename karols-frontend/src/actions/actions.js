@@ -11,6 +11,8 @@ export const INCREMENT_SEX = "INCREMENT_SEX"
 export const DECREMENT_SEX = "DECREMENT_SEX"
 export const INCREMENT_PRESTATION = "INCREMENT_PRESTATION"
 export const DECREMENT_PRESTATION = "DECREMENT_PRESTATION"
+export const INCREMENT_TABLE = "INCREMENT_TABLE"
+export const DECREMENT_TABLE = "DECREMENT_TABLE"
 
 export const makeChoosePrestation = (prestationId, preparationId) => ({
   type: CHOOSE_PRESTATION,
@@ -77,4 +79,14 @@ export const makeDecrementPrestation = (prestationId, preparationId) => ({
   type: DECREMENT_PRESTATION,
   prestationId,
   preparationId
+})
+
+export const makeIncrementTable = count => ({
+  type: INCREMENT_TABLE,
+  count
+})
+
+export const makeDecrementTable = count => ({
+  type: DECREMENT_TABLE,
+  count
 })
