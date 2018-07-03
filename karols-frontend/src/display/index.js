@@ -50,4 +50,6 @@ export const showCountPeopleTable = state =>
 
 export const showCounter = state =>
   state.services.filter(service => service.selected && service.id === 3)
+    .length > 0 ||
+  state.services.filter(service => service.selected && service.id === 2)
     .length > 0

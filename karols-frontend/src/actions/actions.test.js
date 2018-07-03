@@ -18,7 +18,11 @@ import {
   INCREMENT_PRESTATION,
   makeIncrementPrestation,
   DECREMENT_PRESTATION,
-  makeDecrementPrestation
+  makeDecrementPrestation,
+  INCREMENT_TABLE,
+  makeIncrementTable,
+  DECREMENT_TABLE,
+  makeDecrementTable
 } from "./actions"
 // import des actions et actions creator pour faire des testes
 
@@ -96,6 +100,24 @@ describe("action selected shop", () => {
     }
 
     expect(makeChooseShop(1)).toEqual(expected)
+  })
+})
+
+describe("action increment count table", () => {
+  it("should return a count table +1", () => {
+    const expected = {
+      type: INCREMENT_TABLE
+    }
+    expect(makeIncrementTable()).toEqual(expected)
+  })
+})
+
+describe("action decrement count table", () => {
+  it("should return a count table -1", () => {
+    const expected = {
+      type: DECREMENT_TABLE
+    }
+    expect(makeDecrementTable()).toEqual(expected)
   })
 })
 
