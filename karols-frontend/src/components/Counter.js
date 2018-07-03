@@ -24,7 +24,9 @@ const Counter = ({
       >
         -
       </Button>
-      <p style={{ display: "inline-block" }}>{count}</p>
+      <p style={{ display: "inline-block", color: "#FFF", fontWeight: "bold" }}>
+        {count}
+      </p>
       <Button
         onClick={() => handlePlus(id, preparationId)}
         size="large"
