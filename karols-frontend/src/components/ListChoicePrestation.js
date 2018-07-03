@@ -2,7 +2,13 @@ import React from "react"
 import ChoicePrestation from "./ChoicePrestation"
 import PrestationTitle from "./PrestationTitle"
 
-const ListChoicePrestation = ({ prestations, select, showCounter }) => (
+const ListChoicePrestation = ({
+  prestations,
+  select,
+  showCounter,
+  handlePlus,
+  handleMinus
+}) => (
   <div>
     <PrestationTitle />
     {prestations.map(prestation => (
@@ -11,6 +17,8 @@ const ListChoicePrestation = ({ prestations, select, showCounter }) => (
         {...prestation}
         select={select}
         showCounter={showCounter}
+        handleMinus={handleMinus}
+        handlePlus={handlePlus}
       />
     ))}
   </div>
