@@ -105,15 +105,15 @@ const CardModel = ({
                   transform: "translateY(calc(0px + 1em))"
                 }}
               >
-                {description}{" "}
-                {showCounter && (
-                  <Counter
-                    count={count}
-                    handleMinus={handleMinus}
-                    handlePlus={handlePlus}
-                  />
-                )}
+                {description}
               </p>
+              {showCounter && (
+                <Counter
+                  count={count}
+                  handleMinus={handleMinus}
+                  handlePlus={handlePlus}
+                />
+              )}
               {info && <Info info={info} />}
               {/* 
               si info est true dans le json il renvoie le composant Info auquel on a passé la props info */}

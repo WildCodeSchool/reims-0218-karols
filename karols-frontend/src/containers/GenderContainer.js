@@ -49,6 +49,8 @@ class GenderSelect extends Component {
                   select={this.props.select}
                   {...gender}
                   showCounter={this.props.showCounter}
+                  handleMinus={this.props.handleMinus}
+                  handlePlus={this.props.handlePlus}
                 />
               </Zoom>
             </Col>

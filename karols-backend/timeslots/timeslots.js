@@ -36,8 +36,8 @@ const createWeekTimeSlots = date => {
   // On crée une fonction pour créer des timeslots par semaine de 5 jours
   // determiner la date du jour 1
   const dayArray = [] // declarer un tableau vide days
-  const today = DateTime.local()
-  const dateSelected = DateTime.fromISO(date)
+  const today = DateTime.local().set({ hour: 0, minute: 00 })
+  const dateSelected = DateTime.fromISO(date).set({ hour: 0, minute: 00 })
 
   const day = Interval.fromDateTimes(today, dateSelected).length("days") > 1 ? date.minus({days: 2}): today
 
