@@ -2293,27 +2293,30 @@ const preparation01 = {
   showCounter: false
 }
 
-storiesOf("CardModel Basic - 01 ", module).add("Render CardModel basic", () => (
-  <Container>
-    <div>
-      <Row className="justify-content-center">
-        <Col
-          key={prestation01.id}
-          md="4"
-          className="text-center mb-6"
-          style={{
-            height: "325px"
-          }}
-        >
-          <CardModel />
-        </Col>
-      </Row>
-    </div>
-  </Container>
-))
+storiesOf("CardModel Basic with no props", module).add(
+  "Render CardModel",
+  () => (
+    <Container>
+      <div>
+        <Row className="justify-content-center">
+          <Col
+            key={prestation01.id}
+            md="4"
+            className="text-center mb-6"
+            style={{
+              height: "325px"
+            }}
+          >
+            <CardModel />
+          </Col>
+        </Row>
+      </div>
+    </Container>
+  )
+)
 
-storiesOf("CardModel Classic - 02 ", module).add(
-  "Render CardModel title image description",
+storiesOf("CardModel with Prestation image and description", module).add(
+  "Render CardModel",
   () => (
     <Container>
       <div>
@@ -2334,8 +2337,8 @@ storiesOf("CardModel Classic - 02 ", module).add(
   )
 )
 
-storiesOf("CardModel Info - 03 ", module).add(
-  "Render CardModel description info",
+storiesOf("CardModel with Préparation Description", module).add(
+  "Render CardModel",
   () => (
     <Container>
       <div>
@@ -2348,36 +2351,35 @@ storiesOf("CardModel Info - 03 ", module).add(
               height: "325px"
             }}
           >
-          <CardModel {...preparation01} />
+            <CardModel {...preparation01} />
           </Col>
         </Row>
       </div>
     </Container>
-))
+  )
+)
 
-storiesOf("CardModel Info - 04 ", module).add(
-  "Render CardModel showCounter",
-  () => (
-    <Container>
-      <div>
-        <Row className="justify-content-center">
-          <Col
-            key={prestation01.id}
-            md="4"
-            className="text-center mb-6"
-            style={{
-              height: "325px"
-            }}
-          >
+storiesOf("CardModel with Counter", module).add("Render CardModel", () => (
+  <Container>
+    <div>
+      <Row className="justify-content-center">
+        <Col
+          key={prestation01.id}
+          md="4"
+          className="text-center mb-6"
+          style={{
+            height: "325px"
+          }}
+        >
           <CardModel {...preparation01} showCounter={true} />
-          </Col>
-        </Row>
-      </div>
-    </Container>
+        </Col>
+      </Row>
+    </div>
+  </Container>
 ))
 
-storiesOf("CardModel Info - 05 ", module).add(
-  "Render CardModel Selected",
+storiesOf("CardModel with Counter and Selected", module).add(
+  "Render CardModel",
   () => (
     <Container>
       <div>
@@ -2390,9 +2392,10 @@ storiesOf("CardModel Info - 05 ", module).add(
               height: "325px"
             }}
           >
-          <CardModel {...preparation01} showCounter={true} selected={true} />
+            <CardModel {...preparation01} showCounter={true} selected={true} />
           </Col>
         </Row>
       </div>
     </Container>
-))
+  )
+)
