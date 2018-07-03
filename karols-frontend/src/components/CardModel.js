@@ -2,9 +2,11 @@ import React from "react"
 import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
 import Info from "./Info"
 import Counter from "./Counter"
+import PreparationChoice from "./ChoicePrestation"
 
 const CardModel = ({
   id,
+  key,
   index,
   title,
   description,
@@ -12,6 +14,8 @@ const CardModel = ({
   selected,
   select,
   info,
+  prestation,
+  preparation,
   showCounter,
   count,
   handleMinus,
@@ -106,16 +110,10 @@ const CardModel = ({
                 }}
               >
                 {description}
-                {showCounter && (
-                  <Counter
-                    count={count}
-                    handleMinus={handleMinus}
-                    handlePlus={handlePlus}
-                  />
-                )}
               </p>
               {showCounter && (
                 <Counter
+                  preparation={preparation.id}
                   count={count}
                   handleMinus={handleMinus}
                   handlePlus={handlePlus}
