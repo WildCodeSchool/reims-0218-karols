@@ -17,7 +17,9 @@ const Counter = ({ count, handleMinus, handlePlus, id }) => {
       >
         -
       </Button>
-      <p style={{ display: "inline-block" }}>{count}</p>
+      <p style={{ display: "inline-block", color: "#FFF", fontWeight: "bold" }}>
+        {count}
+      </p>
       <Button
         onClick={() => handlePlus(id)}
         size="large"
