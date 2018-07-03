@@ -6,7 +6,7 @@ exports[`renders correctly 1`] = `
   <h2
     className="display-4"
   >
-    Etape 2: Créez votre réservation
+    Créez votre réservation
   </h2>
 </div>
 `;
