@@ -106,20 +106,18 @@ describe("action selected shop", () => {
 describe("action increment count table", () => {
   it("should return a count table +1", () => {
     const expected = {
-      type: INCREMENT_TABLE,
-      count: 2
+      type: INCREMENT_TABLE
     }
-    expect(makeIncrementTable(2)).toEqual(expected)
+    expect(makeIncrementTable()).toEqual(expected)
   })
 })
 
 describe("action decrement count table", () => {
   it("should return a count table -1", () => {
     const expected = {
-      type: DECREMENT_TABLE,
-      count: 2
+      type: DECREMENT_TABLE
     }
-    expect(makeDecrementTable(2)).toEqual(expected)
+    expect(makeDecrementTable()).toEqual(expected)
   })
 })
 
