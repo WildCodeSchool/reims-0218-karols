@@ -61,7 +61,9 @@ class Page extends Component {
         <Element name="services">
           {this.props.showServices && <ServiceContainer />}
         </Element>
-        {this.props.showCountPeopleTable && <CountPeopleTableContainer />}
+        <Element name="table">
+          {this.props.showCountPeopleTable && <CountPeopleTableContainer />}
+        </Element>
         <Element name="genders">
           {this.props.showSex && <GenderContainer />}
         </Element>

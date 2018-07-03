@@ -66,7 +66,7 @@ const mapDispatchToProps = dispatch => ({
 
 class Table extends Component {
   componentDidMount() {
-    scroller.scrollTo("CountPeopleTable", {
+    scroller.scrollTo("table", {
       duration: 1500,
       delay: 100,
       smooth: true
