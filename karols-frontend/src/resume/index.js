@@ -1,9 +1,7 @@
 export const getSelectedShop = state => state.shops.find(shop => shop.selected)
 
 export const getSelectedService = state =>
-  state.services.find(service => service.selected && service.id === 1) ||
-  state.services.find(service => service.selected && service.id === 2) ||
-  state.services.find(service => service.selected && service.id === 3)
+  state.services.find(service => service.selected)
 
 export const getSelectedForm = state =>
   state.form.contact ? state.form.contact.values : {}
