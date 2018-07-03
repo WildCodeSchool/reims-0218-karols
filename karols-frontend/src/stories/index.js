@@ -6,6 +6,7 @@ import { linkTo } from "@storybook/addon-links"
 import { Button, Welcome } from "@storybook/react/demo"
 
 import "bootstrap/dist/css/bootstrap.min.css"
+import { Row, Container, Col } from "reactstrap"
 
 import ChoiceShop from "../components/ChoiceShop"
 import PrestationLabel from "../components/PrestationLabel"
@@ -120,8 +121,6 @@ storiesOf("ListChoicePrestation", module).add(
 storiesOf("PreferredDateChoice", module).add("Preferred Date Choice", () => (
   <PreferredDateChoice />
 ))
-
-storiesOf("CardModel", module).add("Render CardModel", () => <CardModel />)
 
 const timeSlot = {
   available: true,
@@ -2250,14 +2249,153 @@ storiesOf("Counter", module).add(
     )
 )
 
-storiesOf("CardModelGender", module).add("CardModelGender render",
+storiesOf("CardModelGender", module).add(
+  "CardModelGender render",
   () =>
     showCounter && (
       <Counter
-      handleMinus={handleMinus}
-      handlePlus={handlePlus}
-      count={5}
-      showCounter={true}
+        handleMinus={handleMinus}
+        handlePlus={handlePlus}
+        count={5}
+        showCounter={true}
       />
     )
+)
+
+const prestation01 = {
+  id: 1,
+  name: "Préparation",
+  image:
+    "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e93589105d9189784b921b9b22be9826&auto=format&fit=crop&w=675&q=80",
+  description: "Venez vous faire maquiller",
+  selected: false
+}
+
+const preparation01 = {
+  id: 1,
+  selected: false,
+  count: 15,
+  image: "http://localhost:8000/images/preparation1.1.png",
+  info: "https://www.mille-et-une-bieres.fr/les-boutiques/boutique-de-reims/",
+  titlePreparation:
+    "Maquillage' focus sur un élément' ou 'effet bonne mine' (au choix)",
+  duration: {
+    minutes: 20
+  },
+  price: 550,
+  choices: [
+    {
+      id: 1,
+      title: "Uniforme et 'Effet bonne mine', sur tout le visage",
+      options: []
+    }
+  ],
+  showCounter: false
+}
+
+storiesOf("CardModel Basic with no props", module).add(
+  "Render CardModel",
+  () => (
+    <Container>
+      <div>
+        <Row className="justify-content-center">
+          <Col
+            key={prestation01.id}
+            md="4"
+            className="text-center mb-6"
+            style={{
+              height: "325px"
+            }}
+          >
+            <CardModel />
+          </Col>
+        </Row>
+      </div>
+    </Container>
+  )
+)
+
+storiesOf("CardModel with Prestation image and description", module).add(
+  "Render CardModel",
+  () => (
+    <Container>
+      <div>
+        <Row className="justify-content-center">
+          <Col
+            key={prestation01.id}
+            md="4"
+            className="text-center mb-6"
+            style={{
+              height: "325px"
+            }}
+          >
+            <CardModel {...prestation01} />
+          </Col>
+        </Row>
+      </div>
+    </Container>
+  )
+)
+
+storiesOf("CardModel with Préparation Description", module).add(
+  "Render CardModel",
+  () => (
+    <Container>
+      <div>
+        <Row className="justify-content-center">
+          <Col
+            key={prestation01.id}
+            md="4"
+            className="text-center mb-6"
+            style={{
+              height: "325px"
+            }}
+          >
+            <CardModel {...preparation01} />
+          </Col>
+        </Row>
+      </div>
+    </Container>
+  )
+)
+
+storiesOf("CardModel with Counter", module).add("Render CardModel", () => (
+  <Container>
+    <div>
+      <Row className="justify-content-center">
+        <Col
+          key={prestation01.id}
+          md="4"
+          className="text-center mb-6"
+          style={{
+            height: "325px"
+          }}
+        >
+          <CardModel {...preparation01} showCounter={true} />
+        </Col>
+      </Row>
+    </div>
+  </Container>
+))
+
+storiesOf("CardModel with Counter and Selected", module).add(
+  "Render CardModel",
+  () => (
+    <Container>
+      <div>
+        <Row className="justify-content-center">
+          <Col
+            key={prestation01.id}
+            md="4"
+            className="text-center mb-6"
+            style={{
+              height: "325px"
+            }}
+          >
+            <CardModel {...preparation01} showCounter={true} selected={true} />
+          </Col>
+        </Row>
+      </div>
+    </Container>
+  )
 )
