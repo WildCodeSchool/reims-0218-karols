@@ -106,13 +106,6 @@ const CardModel = ({
                 }}
               >
                 {description}
-                {showCounter && (
-                  <Counter
-                    count={count}
-                    handleMinus={handleMinus}
-                    handlePlus={handlePlus}
-                  />
-                )}
               </p>
               {showCounter && (
                 <Counter
