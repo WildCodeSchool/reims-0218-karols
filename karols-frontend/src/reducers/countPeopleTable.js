@@ -10,7 +10,7 @@ const countPeopleTable = (prevState = initialState, action) => {
   if (action.type === INCREMENT_TABLE) {
     return {
       ...prevState,
-      count: action.count ? prevState.count + 1 : prevState.count
+      count: prevState.count + 1
       // la propriete count incremente de 1 la valeur de count si action.count === countObjet.count
       // sinon il renvoie la valeur de countObjet par defaut
     }
@@ -18,7 +18,7 @@ const countPeopleTable = (prevState = initialState, action) => {
   if (action.type === DECREMENT_TABLE) {
     return {
       ...prevState,
-      count: action.count ? prevState.count - 1 : prevState.count
+      count: prevState.count - 1
     }
     // la propriete count decremente de 1 la valeur de count si action.count === countObjet.count
     // sinon il renvoie la valeur de countObjet par defaut

@@ -81,12 +81,10 @@ export const makeDecrementPrestation = (prestationId, preparationId) => ({
   preparationId
 })
 
-export const makeIncrementTable = count => ({
-  type: INCREMENT_TABLE,
-  count
+export const makeIncrementTable = () => ({
+  type: INCREMENT_TABLE
 })
 
-export const makeDecrementTable = count => ({
-  type: DECREMENT_TABLE,
-  count
+export const makeDecrementTable = () => ({
+  type: DECREMENT_TABLE
 })
