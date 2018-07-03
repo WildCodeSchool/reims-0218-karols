@@ -22,7 +22,7 @@ describe("Count", () => {
     const expectedState = {
       count: 1
     }
-    const action = makeIncrementTable(1)
+    const action = makeIncrementTable()
     expect(countPeopleTable(prevState, action)).toEqual(expectedState)
   })
 })
@@ -47,7 +47,7 @@ describe("Counte", () => {
     const expectedState = {
       count: 1
     }
-    const action = makeDecrementTable(1)
+    const action = makeDecrementTable()
     expect(countPeopleTable(prevState, action)).toEqual(expectedState)
   })
 })
