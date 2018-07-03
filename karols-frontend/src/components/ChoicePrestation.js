@@ -9,7 +9,10 @@ const PreparationChoice = ({
   preparations,
   select,
   image,
-  showCounter
+  showCounter,
+  handleMinus,
+  handlePlus,
+  preparationId
 }) => (
   <div>
     <h5
@@ -41,6 +44,8 @@ const PreparationChoice = ({
                 select(id, preparationId)
               }}
               showCounter={showCounter}
+              handleMinus={() => handleMinus(id, preparation.id)}
+              handlePlus={() => handlePlus(id, preparation.id)}
             />
           </Zoom>
         </Col>
