@@ -7,7 +7,7 @@ exports[`renders correctly 1`] = `
     <h2
       className="display-4"
     >
-      Etape 4: Sélectionnez vos prestations
+      Sélectionnez vos prestations
     </h2>
   </div>
 </div>
