@@ -51,6 +51,3 @@ export const showCountPeopleTable = state =>
 export const showCounter = state =>
   state.services.filter(service => service.selected && service.id === 3)
     .length > 0
-
-export const showPhone = state =>
-  state.shops.filter(shop => shop.selected).length > 0
