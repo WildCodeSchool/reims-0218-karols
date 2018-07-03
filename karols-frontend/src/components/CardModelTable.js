@@ -20,9 +20,7 @@ const CardModelTable = ({
         style={{
           cursor: "pointer"
         }}
-        onClick={() => {
-          select(id)
-        }}
+        onClick={() => {}}
       >
         <div
           style={{

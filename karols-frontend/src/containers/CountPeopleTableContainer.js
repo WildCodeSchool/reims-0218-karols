@@ -85,6 +85,8 @@ class Table extends Component {
                 }}
                 image={this.props.image}
                 count={this.props.count}
+                handleMinus={this.props.handleMinus}
+                handlePlus={this.props.handlePlus}
                 select={true}
                 showCounter={this.props.showCounter}
               />
