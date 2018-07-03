@@ -76,6 +76,7 @@ const CardModelGender = ({
                   count={count}
                   handleMinus={handleMinus}
                   handlePlus={handlePlus}
+                  id={id}
                 />
               )}
             </CardFooter>
