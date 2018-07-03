@@ -69,16 +69,17 @@ class ShowResume extends Component {
               </p>
             )
           })}
-        {this.props.selectedService &&
-          (this.props.selectedService.id === 3 &&
-            this.props.selectedPreparations) &&
+
+        {/* Next step : display resume of prestation when a count is selected   */}
+
+        {/* {this.props.selectedPreparations &&
           this.props.selectedPreparations.map((preparation, index) => {
             return (
               <p className="prestation" key={index}>
                 {preparation.preparations[0].titlePreparation}
               </p>
             )
-          })}
+          })} */}
 
         {this.props.selectedTimeSlot && (
           <p className="horaire">
