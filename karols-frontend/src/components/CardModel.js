@@ -105,7 +105,14 @@ const CardModel = ({
                   transform: "translateY(calc(0px + 1em))"
                 }}
               >
-                {description}{" "}
+                {description}
+                {showCounter && (
+                  <Counter
+                    count={count}
+                    handleMinus={handleMinus}
+                    handlePlus={handlePlus}
+                  />
+                )}
               </p>
               {showCounter && (
                 <Counter
