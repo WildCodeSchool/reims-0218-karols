@@ -8,7 +8,6 @@ const CardModel = ({
   index,
   title,
   description,
-  phone,
   image,
   selected,
   select,
@@ -106,8 +105,7 @@ const CardModel = ({
                   transform: "translateY(calc(0px + 1em))"
                 }}
               >
-                {description} <br />
-                <p> Tél : {phone} </p>
+                {description}
                 {showCounter && (
                   <Counter
                     count={count}
