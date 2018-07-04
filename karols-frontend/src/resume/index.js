@@ -36,4 +36,4 @@ export const getSelectedTimeSlot = state => {
   return result
 }
 
-export const getReservationData = state => false
+export const getReservationData = state => null
