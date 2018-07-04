@@ -35,3 +35,11 @@ export const getSelectedTimeSlot = state => {
   )
   return result
 }
+
+export const getReservationData = state => ({
+  shop: getSelectedShop(state),
+  service: getSelectedService(state),
+  gender: getSelectedGender(state),
+  preparations: getSelectedPreparations(state),
+  timeSlots: getSelectedTimeSlot(state)
+})
