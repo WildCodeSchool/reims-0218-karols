@@ -1,8 +1,8 @@
 import getReservationData from "."
 
 describe("getReservationData", () => {
-  it("should return an empty array if no data selected", () => {
-    const noGetReservationData = {
+  it("should return an empty object if no data selected", () => {
+    const noServiceSelectedState = {
       prestations: [
         {
           id: 1,
@@ -384,10 +384,10 @@ describe("getReservationData", () => {
       ],
       timeSlots: []
     }
-    expect(getReservationData(noGetReservationData)).toEqual([])
+    expect(getReservationData(noServiceSelectedState)).toBeFalsy()
   })
   it("should return reservation data when preparation is selected", () => {
-    const getReservationData = {
+    const getServiceSelectedState = {
       prestations: [
         {
           id: 1,
@@ -1151,7 +1151,6 @@ describe("getReservationData", () => {
       ],
       timeSlots: []
     }
-
-    expect(getReservationData(getReservationData)).toEqual(expected)
+    expect(getReservationData(getServiceSelectedState)).toEqual(expected)
   })
 })
