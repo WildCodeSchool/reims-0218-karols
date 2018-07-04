@@ -1,4 +1,4 @@
-import getReservationData from "."
+import { getReservationData } from "."
 
 describe("getReservationData", () => {
   it("should return an empty object if no data selected", () => {
