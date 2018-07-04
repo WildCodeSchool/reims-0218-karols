@@ -1,14 +1,12 @@
 import React, { Component } from "react"
 import Header from "./Header"
 
-import ListChoiceService from "./ListChoiceService"
 import ResultCalendar from "./ResultCalendar"
 import ListChoiceGender from "./ListChoiceGender"
 import { Container, Row, Col } from "reactstrap"
 import PrestationLabel from "./PrestationLabel"
 import ListChoicePrestation from "./ListChoicePrestation"
-import SelectClient from "./SelectClient"
-import InfoClient from "./InfoClient"
+
 import Footer from "./Footer"
 import ValidationReservationButton from "./ValidationReservationButton"
 import PreferredDateChoice from "./PreferredDateChoice"

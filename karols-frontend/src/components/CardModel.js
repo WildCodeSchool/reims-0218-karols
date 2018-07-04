@@ -3,6 +3,18 @@ import { Card, CardTitle, CardBody, CardFooter } from "reactstrap"
 import Info from "./Info"
 import Counter from "./Counter"
 
+export const isOn = (selected, showCounter, count) => {
+  if (selected && !showCounter) {
+    return true
+  } else if (showCounter && count === 0) {
+    return false
+  } else if (!selected && !showCounter) {
+    return false
+  } else if (showCounter && count > 0) {
+    return true
+  }
+}
+
 const CardModel = ({
   id,
   index,
@@ -34,7 +46,7 @@ const CardModel = ({
             overflow: "hidden",
             boxShadow:
               "0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2)",
-            background: selected
+            background: isOn(selected, showCounter, count)
               ? `linear-gradient(
   rgba(255, 255, 255, 0.1), 
  rgba(255, 255, 255, 0.1)
