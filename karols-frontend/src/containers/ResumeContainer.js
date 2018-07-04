@@ -59,7 +59,9 @@ class ShowResume extends Component {
             Vous avez choisi {this.props.selectedService.name}
           </p>
         )}
-        {this.props.selectedPreparations &&
+        {this.props.selectedService &&
+          (this.props.selectedService.id === 1 &&
+            this.props.selectedPreparations) &&
           this.props.selectedPreparations.map((preparation, index) => {
             return (
               <p className="prestation" key={index}>
@@ -67,6 +69,18 @@ class ShowResume extends Component {
               </p>
             )
           })}
+
+        {/* Next step : display resume of prestation when a count is selected   */}
+
+        {/* {this.props.selectedPreparations &&
+          this.props.selectedPreparations.map((preparation, index) => {
+            return (
+              <p className="prestation" key={index}>
+                {preparation.preparations[0].titlePreparation}
+              </p>
+            )
+          })} */}
+
         {this.props.selectedTimeSlot && (
           <p className="horaire">
             Vous désirez être pris en charge le {""}
