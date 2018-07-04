@@ -8,6 +8,7 @@ const createWeekTimeSlots = require("../timeslots/timeslots")
 
 const Shop = require("../models/shop")
 const Prestation = require("../models/prestation")
+const Service = require("../models/service")
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
@@ -30,6 +31,13 @@ router.get("/prestations", (req, res) => {
   //get the prestations collection
   Prestation.find()
     .then(prestations => res.json(prestations))
+    .catch(err => res.send(err))
+})
+
+router.get("/services", (req, res) => {
+  //get the services collection
+  Service.find()
+    .then(services => res.json(services))
     .catch(err => res.send(err))
 })
 
