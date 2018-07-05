@@ -85,6 +85,15 @@ class ShowResume extends Component {
             )}
           </div>
         )}
+        {(reservationData.service && reservationData.service.id) === 3 && (
+          <div>
+            {reservationData.service && (
+              <p className="préparation">
+                Vous avez choisi {reservationData.service.name}
+              </p>
+            )}
+          </div>
+        )}
       </Jumbotron>
     )
   }

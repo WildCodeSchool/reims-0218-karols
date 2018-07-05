@@ -61,6 +61,12 @@ export const getReservationData = state => {
       timeSlots: getSelectedTimeSlot(state)
     }
   }
+  if (selectedService.id === 3) {
+    return {
+      shop: getSelectedShop(state),
+      service: getSelectedService(state)
+    }
+  }
 }
 
 export const getCountTable = state => state.countPeopleTable.count
