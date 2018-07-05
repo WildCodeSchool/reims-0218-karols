@@ -4,14 +4,7 @@ import { connect } from "react-redux"
 import { Jumbotron } from "reactstrap"
 
 import { makeSuccessReservation } from "../actions/actions"
-import {
-  getSelectedShop,
-  getSelectedService,
-  getSelectedGender,
-  getSelectedForm,
-  getSelectedPreparations,
-  getSelectedTimeSlot
-} from "../resume"
+import { getReservationData } from "../resume"
 
 const mapDispatchToProps = dispatch => ({
   success: () => {
@@ -21,12 +14,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = state => ({
   showAlert: state.reservation.success,
-  selectedShop: getSelectedShop(state),
-  selectedService: getSelectedService(state),
-  selectedGender: getSelectedGender(state),
-  selectedForm: getSelectedForm(state),
-  selectedPreparations: getSelectedPreparations(state),
-  selectedTimeSlot: getSelectedTimeSlot(state)
+  reservationData: getReservationData(state)
 })
 
 const transformTimeSlot = timeSlot =>
@@ -36,6 +24,7 @@ const transformTimeSlot = timeSlot =>
 
 class ShowResume extends Component {
   render() {
+    const reservationData = this.props.reservationData
     return (
       <Jumbotron
         style={{
@@ -48,7 +37,71 @@ class ShowResume extends Component {
         }}
       >
         <h1 className="display-12">Récapitulatif</h1>
-        {this.props.selectedShop && (
+
+        {reservationData.shop && (
+          <p className="shop">
+            Votre réservation se fera à {reservationData.shop.city}
+          </p>
+        )}
+        <hr className="my-2" />
+        {(reservationData.service && reservationData.service.id) === 1 && (
+          <div>
+            {reservationData.service && (
+              <p className="préparation">
+                Vous avez choisi {reservationData.service.name}
+              </p>
+            )}
+            {reservationData.preparations &&
+              reservationData.preparations.map((preparation, index) => {
+                return (
+                  <p className="prestation" key={index}>
+                    {preparation.preparations[0].titlePreparation}
+                  </p>
+                )
+              })}
+            {reservationData.timeSlots && (
+              <p className="horaire">
+                Vous désirez être pris en charge le {""}
+                {transformTimeSlot(reservationData.timeSlots)}
+              </p>
+            )}
+          </div>
+        )}
+        {(reservationData.service && reservationData.service.id) === 2 && (
+          <div>
+            {reservationData.service && (
+              <p className="préparation">
+                Vous avez choisi {reservationData.service.name}
+              </p>
+            )}
+            {reservationData.countTable && (
+              <p className="count">Vous êtes {reservationData.countTable}</p>
+            )}
+            {reservationData.timeSlots && (
+              <p className="horaire">
+                Vous désirez être pris en charge le {""}
+                {transformTimeSlot(reservationData.timeSlots)}
+              </p>
+            )}
+          </div>
+        )}
+        {(reservationData.service && reservationData.service.id) === 3 && (
+          <div>
+            {reservationData.service && (
+              <p className="préparation">
+                Vous avez choisi {reservationData.service.name}
+              </p>
+            )}
+          </div>
+        )}
+      </Jumbotron>
+    )
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps, null)(ShowResume)
+
+/* {this.props.selectedShop && (
           <p className="shop">
             Votre réservation se fera à {this.props.selectedShop.city}
           </p>
@@ -72,10 +125,4 @@ class ShowResume extends Component {
             Vous désirez être pris en charge le {""}
             {transformTimeSlot(this.props.selectedTimeSlot)}
           </p>
-        )}
-      </Jumbotron>
-    )
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps, null)(ShowResume)
+        )} */
