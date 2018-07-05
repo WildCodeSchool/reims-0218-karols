@@ -1,10 +1,8 @@
 import { INCREMENT_TABLE } from "../actions/actions"
 import { DECREMENT_TABLE } from "../actions/actions"
+import { SHOPS_PRESTATIONS_RECEIVED } from "../actions/actions"
 
-const initialState = {
-  count: 2,
-  image: "http://bar-legacy.com/img/main_6.jpg"
-}
+const initialState = {}
 
 const countPeopleTable = (prevState = initialState, action) => {
   if (action.type === INCREMENT_TABLE) {
@@ -22,6 +20,9 @@ const countPeopleTable = (prevState = initialState, action) => {
     }
     // la propriete count decremente de 1 la valeur de count si action.count === countObjet.count
     // sinon il renvoie la valeur de countObjet par defaut
+  }
+  if (action.type === SHOPS_PRESTATIONS_RECEIVED) {
+    return action.response.table
   }
 
   return prevState
