@@ -35,3 +35,32 @@ export const getSelectedTimeSlot = state => {
   )
   return result
 }
+
+export const getReservationData = state => {
+  let result = {}
+
+  const selectedService = getSelectedService(state)
+  if (!selectedService) {
+    return result
+    // if no service is selected > return {}
+  }
+  if (selectedService.id === 1) {
+    return {
+      shop: getSelectedShop(state),
+      service: getSelectedService(state),
+      gender: getSelectedGender(state),
+      preparations: getSelectedPreparations(state),
+      timeSlots: getSelectedTimeSlot(state)
+    }
+  }
+  if (selectedService.id === 2) {
+    return {
+      shop: getSelectedShop(state),
+      service: getSelectedService(state),
+      countTable: getCountTable(state),
+      timeSlots: getSelectedTimeSlot(state)
+    }
+  }
+}
+
+export const getCountTable = state => state.countPeopleTable.count

@@ -1,4 +1,4 @@
-import { makeChooseShop, CHOOSE_SHOP } from "../actions/actions"
+import { makeChooseShop } from "../actions/actions"
 
 import shops from "./shops"
 

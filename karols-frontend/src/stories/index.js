@@ -8,12 +8,11 @@ import { Button, Welcome } from "@storybook/react/demo"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Container, Col } from "reactstrap"
 
-import ChoiceShop from "../components/ChoiceShop"
+
 import PrestationLabel from "../components/PrestationLabel"
 import ReservationTitle from "../components/ReservationTitle"
 import ListChoiceService from "../components/ListChoiceService"
 import Logo from "../components/Logo"
-import SelectClient from "../components/SelectClient"
 import ChoiceService from "../components/ChoiceService"
 import InfoClient from "../components/InfoClient"
 import Footer from "../components/Footer"
@@ -30,10 +29,10 @@ import Page from "../components/Page"
 import ValidationReservationButton from "../components/ValidationReservationButton"
 import PreferredDateChoice from "../components/PreferredDateChoice"
 import CardHover from "../components/CardHover"
-import ListChoiceShop from "../components/ListChoiceShop"
 import CardModel from "../components/CardModel"
 import Resume from "../components/Resume"
 import Counter from "../components/Counter"
+import CardSelectCounter from "../components/CardSelectCounter"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
@@ -53,10 +52,8 @@ storiesOf("Button", module)
 
 storiesOf("Page", module).add("Page with all the content", () => <Page />)
 
-storiesOf("ChoiceShop", module).add("choice your shop", () => <ChoiceShop />)
-
-storiesOf("ListChoiceShop", module).add("List choice Shop render", () => (
-  <ListChoiceShop />
+storiesOf("CardSelectCounter", module).add("List choice Shop render", () => (
+  <CardSelectCounter />
 ))
 
 storiesOf("ValidationReservationButton", module).add(
@@ -64,7 +61,58 @@ storiesOf("ValidationReservationButton", module).add(
   () => <ValidationReservationButton />
 )
 
-storiesOf("SelectClient", module).add("Selected client", () => <SelectClient />)
+storiesOf("CardSelectCounter", module).add(
+  "Render CardSelectCounter",
+  () => (
+    <Container>
+      <div>
+        <Row className="justify-content-center">
+          <Col
+            key={prestation02.id}
+            md="4"
+            className="text-center mb-6"
+            style={{
+              height: "325px"
+            }}
+          >
+            <CardSelectCounter {...preparation02}showCounter={true} />
+          </Col>
+        </Row>
+      </div>
+    </Container>
+  )
+)
+
+const prestation02 = {
+  id: 2,
+  name: "Préparation",
+  image:
+    "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e93589105d9189784b921b9b22be9826&auto=format&fit=crop&w=675&q=80",
+  description: "Venez vous faire coiffer",
+  selected: false
+}
+
+const preparation02 = {
+  id: 2,
+  selected: false,
+  count: 15,
+  image: "http://resize-elle.ladmedia.fr/r/,900,forcey/img/var/plain_site/storage/images/beaute/cheveux/tendances/les-50-plus-belles-coiffures-de-mariee-de-pinterest/coiffure-de-mariee-vintage/60607469-1-fre-FR/Coiffure-de-mariee-vintage.jpg",
+  info: "http://boutique.fff.fr/",
+  titlePreparation:
+    "coiffure à l'ancienne ",
+  duration: {
+    minutes: 20
+  },
+  price: 550,
+  choices: [
+    {
+      id: 1,
+      title: "Uniforme et 'Effet bonne mine', sur tout le visage",
+      options: []
+    }
+  ],
+  showCounter: false
+}
 
 storiesOf("CardHover", module).add("just a CardHover", () => <CardHover />)
 
@@ -85,6 +133,8 @@ storiesOf("ReservationTitle", module).add(
 storiesOf("ListChoiceService", module).add("List choice service render", () => (
   <ListChoiceService />
 ))
+
+
 
 storiesOf("Logo", module).add("Logo render", () => <Logo />)
 
@@ -430,7 +480,7 @@ storiesOf("ListCalendarTime", module).add("Render the calendar", () => (
   <ListCalendarTime timeSlots={timeSlots} />
 ))
 
-const date = "2018-07-25T00:00:00.000+02:00"
+// const date = "2018-07-25T00:00:00.000+02:00"
 
 //  CalendarDay
 storiesOf("CalendarDay", module).add("Render the calendar day", () => (
