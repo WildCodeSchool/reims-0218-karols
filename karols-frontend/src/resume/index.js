@@ -54,3 +54,5 @@ export const getReservationData = state => {
     }
   }
 }
+
+export const getCountTable = state => state.countPeopleTable.count
